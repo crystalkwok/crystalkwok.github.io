@@ -1,0 +1,344 @@
+body {
+font-family: 'Proxima Nova', sans-serif;
+font-size:20px;
+}
+
+
+
+.jumbotron{
+	background-color: #1E5754;
+	position:relative;
+	top:50px;
+	width:100%;
+	background-position:50% 50% 50% 50%;
+	height:80vh;
+}
+
+.jumbotron p {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 30px;
+	color:#fbfcfc;
+	padding-bottom: 60px;
+}
+
+
+
+.logo img{
+	height:350px;
+}
+
+.triangle {
+	 width: 0;
+    height: 0;
+    border: solid 60px ;
+    border-color: #1E5754 transparent transparent transparent;
+    margin-left:40%;
+    margin-right:50%;
+}
+
+
+.trianglerec{
+	background-color:#f3f1ae;
+}
+
+.triangle_rectangle {
+	left:50%;
+}
+
+.art_p{
+	position:relative;
+	float:right;
+	max-width:100%;
+	display: table-cell;
+	margin-right:150px;
+	vertical-align: middle;
+	height:100%;
+}
+
+
+.navbar {
+	position:fixed;
+	background-color: #d3d3d3;
+	top:0;
+	width:100%;
+	height:50px;
+	z-index:10;
+}
+
+.navbar li{
+	display:inline;
+	font-size:30px;
+	padding:20px;
+	text-decoration:none;
+}
+
+.navbar_dropdown{
+	display:none;
+}
+
+.dropdown a{
+	font-size:40px;
+}
+
+.icon-menu{
+	display:none;
+}
+
+.intro{
+background-color:#f3f1ae;
+width:100%;
+}
+
+
+.navbar_art {
+	width:100%;
+}
+
+.navbar_art li{
+	display:inline;
+	font-size:20px;
+	padding:20px;
+	color:#575654;
+	text-decoration:none;
+}
+
+.navbar_art a{
+	text-decoration:none;
+	color:#575654;
+}
+
+.navbar_art a:hover{
+	color:#82d3a5;
+	text-decoration:none;
+}
+
+.concentration p{
+float:left;
+font-size:15px;
+}
+
+.concentration img{
+	height:100px;
+}
+
+table{
+	text-align:center;
+	width:100%;
+}
+
+td{
+	padding:10px;
+}
+
+.other_work img{
+	height:100px;
+}
+
+.typography p{
+	float:left;
+	font-size:15px;
+}
+
+#switchfoot{
+	width:240px;
+}
+
+
+#isaiah{
+	width:500px;
+}
+
+#after{
+	display:none;
+}
+
+@media only screen and (max-width:995px){
+	.jumbotron{
+		height:100%;
+		top:-20px;
+	}
+/*}
+
+@media only screen and (max-width: 950px){*/
+
+	.logo img{
+		width:100%;
+		height:100%;
+	}
+
+	.art_p p{
+		margin-left:20%;
+		width:90%;
+	}
+
+	#isaiah{
+		width:100%;
+	}
+
+	#switchfoot{
+		width:80%;
+	}
+
+
+/*}
+
+@media only screen and (max-width: 770px){*/
+
+	.navbar{
+		display:none;
+	}
+
+	.icon-menu{
+		display:block;
+		height:100%;
+		font-size:40px;
+	}
+
+	.navbar_dropdown{
+		display:inline-block;
+		background-color: #d3d3d3;
+		width:100%;
+		height:100%;
+	}
+
+	.dropdown{
+		display:none;
+	}
+
+	.dropdown li{
+		text-decoration:none;
+		margin:10px;
+		text-align:center;
+	}
+
+	.dropdown ul{
+		list-style-type: none;
+	}
+
+
+	.menu-left{
+		float:left;
+		margin:10px;
+	}
+
+	.menu-right{
+		float:right;
+		margin:10px;
+	}
+
+
+	.trianglerec{
+		margin-top:-50px;
+	}
+
+	#artnux{
+		font-size:40px;
+	}
+
+	.intro p{
+		font-size:25px;
+		width:100%;
+	}
+
+	.navbar_art a{
+		font-size:30px;
+	}
+
+	.concentration p{
+		font-size: 22px;
+	}
+
+	.typography p{
+		font-size:22px;
+	}
+
+	#sfquote{
+		font-size:22px;
+	}
+
+	.concentration img{
+		height:150px;
+	}
+
+	.other_work img{
+		height:110px;
+	}
+
+
+}
+
+@media only screen and (max-width: 580px){
+
+	.icon-menu{
+		font-size:25px;
+	}
+
+	.dropdown a{
+		font-size:22px;
+	}
+
+	.intro p{
+		font-size:20px;
+	}
+
+	.concentration p{
+		font-size:20px;
+	}
+
+	.navbar_art a{
+		font-size:22px;
+	}
+
+	#artq{
+		font-size:140px;
+	}
+
+	#artnux{
+		font-size:28px;
+	}
+
+	.art_p p{
+		padding-left:10%;
+	}
+
+	.typography p{
+		font-size:20px;
+	}
+
+	.concentration_pictures{
+		width:100%;
+		margin-left:7%;
+	}
+	.concentration img{
+		height:135px;
+	}
+
+	.other_work{
+		margin-left:12%;
+	}
+
+	#after{
+		display:block;
+	}
+
+	#before_concentration{
+		display:none;
+	}
+
+	#otherworktable{
+		display:none;
+	}
+
+	.intro{
+		font-size:18px;
+	}
+
+	#isaiah{
+		width:100%;
+	}
+
+	#switchfoot{
+		width:100%;
+	}
+
+}

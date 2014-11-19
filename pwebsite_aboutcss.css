@@ -1,0 +1,300 @@
+body {
+font-family: 'Proxima Nova', sans-serif;
+font-size:20px;
+}
+
+
+
+.navbar {
+	position:fixed;
+	background-color: #d3d3d3;
+	top:0;
+	width:100%;
+	height:50px;
+	z-index:10;
+}
+
+.navbar li{
+	display:inline;
+	font-size:30px;
+	text-decoration:none;
+}
+
+.right li{
+	padding:20px;
+}
+
+.jumbotron{
+	background-color: #1E5754;
+	position:relative;
+	top:50px;
+	width:100%;
+	height:80vh;
+}
+
+.jumbotron p {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 16px;
+	color:#fbfcfc;
+	text-size-adjust: none;
+
+}
+
+.triangle {
+	 width: 0;
+    height: 0;
+    border: solid 60px ;
+    border-color: #1E5754 transparent transparent transparent;
+    margin-left:40%;
+    margin-right:50%;
+}
+
+
+.trianglerec{
+	left:50%;
+	background-color:#f3f1ae;
+}
+
+.title{
+	width:230px;
+	text-align:center;
+	height:40px;
+	padding-top:5px;
+	background-color:#ac746e;
+	color:#ffffff;
+}
+
+.self img{
+	width:320px;
+}
+
+.melbourneeducation{
+	float:right;
+}
+
+.btn{
+	background-color:#82d3a5;
+	color:#575757;
+	position:relative;
+}
+
+.btn:hover{
+	color:#ffffff;
+}
+
+.button button{
+	position:relative;
+	right:50%;
+	left:40%;
+}
+
+.navbar_dropdown{
+	display:none;
+}
+
+.icon-menu{
+	display:none;
+}
+
+
+
+.contact {
+	margin:auto;
+	background-color:#f3f1ae;
+}
+
+.ucsdeducation {
+	float:left;
+}
+
+
+.description{
+	font-size:15px;
+}
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+	.jumbotron p{
+	font-size: 15px;
+	margin-left:30px;
+	width:590px;
+	}
+
+}
+
+@media only screen and (max-width:1150px){
+	.jumbotron {
+		height:100%;
+	}
+
+	.self img{
+		width:150%;
+	}
+}
+
+/*@media only screen and (max-width:1020px){
+	.self img{
+		width:150%;
+	}
+}*/
+
+
+
+@media only screen and (max-width:990px){
+	body p{
+		font-size:28px;
+	}
+/*change jumbotron*/
+	.jumbotron{
+		height:100%;
+		top:-20px;
+	}
+
+	.jumbotron p{
+		font-size: 28px;
+		width:105%;
+		margin-left:-2%;
+		
+	}
+
+		.self_description{
+		margin-top:20px;
+	}
+
+
+
+	.self img{
+		width:100%;
+	}
+/*end jumbotron changes*/
+
+/*content changes*/
+
+	.melbourneeducation{
+		float:left;
+	}
+
+	.button button{
+		left:0;
+	}
+/*content changes ends*/
+
+
+
+/*}
+
+@media only screen and (max-width: 740px){*/
+
+/*start roll down menu*/
+	.navbar{
+		display:none;
+	}
+
+	.icon-menu{
+		display:block;
+		height:100%;
+		font-size:40px;
+	}
+
+	.navbar_dropdown{
+		display:inline-block;
+		background-color: #d3d3d3;
+		width:100%;
+		height:100%;
+	}
+
+	.dropdown a{
+		font-size:40px;
+	}
+
+	.dropdown{
+		display:none;
+	}
+
+	.dropdown li{
+		font-size: 25px;
+		text-decoration:none;
+		margin:10px;
+		text-align:center;
+	}
+
+	.dropdown ul{
+		list-style-type: none;
+	}
+
+	.close a{
+		font-size:20px;
+	}
+
+	.menu-left{
+		float:left;
+		margin:10px;
+	}
+
+	.menu-right{
+		float:right;
+		margin:10px;
+	}
+
+	.trianglerec{
+		margin-top:-50px;
+	}
+/*end roll down menu & triangle changes*/
+
+/*font sizes for content, button, and description*/
+	.description{
+		font-size:20px;
+	}
+
+
+	.btn{
+		font-size:28px;
+	}
+
+
+
+}
+
+@media only screen and (max-width:500px){
+	.icon-menu{
+		font-size:25px;
+	}
+
+	.dropdown a{
+		font-size: 22px;
+	}
+
+	.self img{
+		width:100%;
+		left:-5%;
+	}
+	.self{
+		width:100%;
+	}
+
+	body p{
+		font-size:15px;
+	}
+
+	.jumbotron p{
+		font-size:15px;
+		margin-left:-20px;
+		margin-right:-20px;
+	}
+
+	.button button{
+		font-size:15px;
+		left:0;
+	}
+
+	.description{
+		font-size:13px;
+	}
+}
+
+
+
+

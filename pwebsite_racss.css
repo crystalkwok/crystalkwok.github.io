@@ -1,0 +1,84 @@
+body {
+font-family: 'Proxima Nova', sans-serif;
+}
+
+body p{
+	font-size:15px;
+}
+
+.navbar {
+	position:fixed;
+	background-color: #d3d3d3;
+	top:0;
+	width:100%;
+	height:50px;
+	z-index:10;
+}
+
+.navbar li{
+	display:inline;
+	font-size:30px;
+	padding:20px;
+}
+
+.navbar a:hover{
+	color:#d3d3d3;
+}
+
+.jumbotron {
+	background-color: #1E5754;
+	position:relative;
+	top:40px;
+	width:100%;
+}
+
+.jumbotron img{
+	width:270px;
+}
+
+
+.triangle {
+	 width: 0;
+    height: 0;
+    border: solid 60px ;
+    border-color: #1E5754 transparent transparent transparent;
+    margin-left:500px;
+}
+
+.trianglerec{
+	left:10000px;
+	background-color:#f3f1ae;
+}
+
+.jumbotron p{
+	color:#ffffff;
+}
+
+td{
+	padding:10px;
+}
+
+.title{
+	background-color:#82d3a5;
+	color:#ffffff;
+	width:340px;
+	padding:20px;
+	margin:auto;
+}
+
+.title p{
+	margin:auto;
+}
+
+.what_do_you_do{
+background-color:#f3f1ae;
+}
+
+.pictures img{
+	height:200px;
+	margin:auto;
+}
+
+.pictures table{
+	margin:auto;
+}
