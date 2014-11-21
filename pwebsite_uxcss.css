@@ -1,9 +1,9 @@
 body {
-font-family:'Proxima Nova', 'Open Sans', sans-serif;
+font-family:'Proxima Nova', 'Lato', sans-serif;
 }
 
 .description{
-	position: relative;
+position: relative;
 max-width: 100%;
 display: table-cell;
 vertical-align: middle;
@@ -11,7 +11,7 @@ height: 100%;
 }
 
 .jumbotron p {
-	font-family:'Proxima Nova', 'Montserrat';
+	font-family:'Proxima Nova', 'Montserrat', sans-serif;
 	font-size: 30px;
 	color:#fbfcfc;
 	width:650px;
@@ -359,6 +359,8 @@ width: 100%;
 		margin-right:55%;
 	}
 }
+
+
 
 
 

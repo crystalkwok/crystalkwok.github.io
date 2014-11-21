@@ -1,5 +1,5 @@
 body {
-font-family: 'Proxima Nova', 'Source Sans Pro', sans-serif;
+font-family: 'Proxima Nova', 'Lato', sans-serif;
 font-size:20px;
 }
 
@@ -15,7 +15,7 @@ font-size:20px;
 }
 
 .jumbotron p {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Proxima Nova', 'Montserrat', sans-serif;
 	font-size: 30px;
 	color:#fbfcfc;
 	padding-bottom: 60px;

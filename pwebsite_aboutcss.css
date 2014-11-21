@@ -1,5 +1,5 @@
 body {
-font-family: 'Proxima Nova', 'Open Sans', sans-serif;
+font-family:'Proxima Nova', 'Lato', sans-serif;
 font-size:20px;
 }
 
@@ -20,6 +20,11 @@ font-size:20px;
 	text-decoration:none;
 }
 
+#experience_title{
+	font-size:22px;
+	font-weight:700;
+}
+
 .right li{
 	padding:20px;
 }
@@ -33,9 +38,10 @@ font-size:20px;
 }
 
 .jumbotron p {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Proxima Nova', 'Lato', sans-serif;
 	font-size: 16px;
 	color:#fbfcfc;
+	font-weight:100;
 	text-size-adjust: none;
 
 }
@@ -182,6 +188,9 @@ font-size:20px;
 	}
 /*content changes ends*/
 
+#experience_title{
+	font-size: 30px;
+}
 
 
 /*}
@@ -292,6 +301,36 @@ font-size:20px;
 
 	.description{
 		font-size:13px;
+	}
+}
+
+@media only screen and (min-width:1520px){
+
+	.jumbotron p{
+		font-size: 18px;
+	}
+
+	.self img{
+		width:130%;
+		margin-top:50px;
+	}
+}
+
+@media only screen and (min-width:1600px){
+	.self img{
+		margin-top:0px;
+		margin-top:30%;
+	}
+
+}
+
+@media only screen and (min-width:2000px){
+	.self img{
+		margin-top:50%;
+	}
+
+	.jumbotron p{
+		margin-top:10%;
 	}
 }
 
