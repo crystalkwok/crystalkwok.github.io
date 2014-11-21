@@ -1,5 +1,5 @@
 body {
-font-family: 'Proxima Nova', sans-serif;
+font-family: 'Proxima Nova', 'Open Sans', sans-serif;
 font-size:20px;
 }
 
@@ -45,7 +45,7 @@ font-size:20px;
     height: 0;
     border: solid 60px ;
     border-color: #1E5754 transparent transparent transparent;
-    margin-left:40%;
+    margin-left:45%;
     margin-right:50%;
 }
 
