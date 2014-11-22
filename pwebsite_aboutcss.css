@@ -263,6 +263,12 @@ font-size:20px;
 		font-size:28px;
 	}
 
+	.relevant_courses .title{
+		width:400px;
+	}
+
+
+
 
 
 }
@@ -322,15 +328,23 @@ font-size:20px;
 		margin-top:30%;
 	}
 
+	.jumbotron{
+		height:85vh;
+	}
+
 }
 
-@media only screen and (min-width:2000px){
+@media only screen and (min-width:2100px){
 	.self img{
-		margin-top:50%;
+		margin-top:100%;
 	}
 
 	.jumbotron p{
-		margin-top:10%;
+		margin-top:35%;
+	}
+
+	.jumbotron{
+		height:90vh;
 	}
 }
 

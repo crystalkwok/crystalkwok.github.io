@@ -152,6 +152,34 @@ td{
 	display:none;
 }
 
+@media only screen and (min-width:1600px){
+	.jumbotron p{
+		margin-top:20%;
+	}
+
+	#logo{
+		margin-top:25%;
+	}
+
+	.jumbotron{
+		height:85vh;
+	}
+}
+
+@media only screen and (min-width:2100px){
+	.jumbotron p{
+		margin-top:50%;
+	}
+
+	#logo{
+		margin-top:70%;
+	}
+
+	.jumbotron{
+		height:90vh;
+	}
+}
+
 @media only screen and (max-width:995px){
 	.jumbotron{
 		height:100%;
