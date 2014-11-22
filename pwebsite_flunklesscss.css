@@ -1,5 +1,5 @@
 body {
-font-family: 'Proxima Nova', sans-serif;
+font-family: 'Proxima Nova', 'Lato', sans-serif;
 }
 
 body p{
@@ -15,6 +15,10 @@ body p{
 .skip{
 	color:#cea34f;
 	text-decoration:none;
+}
+
+.problem p{
+	font-family:'Montserrat', sans-serif;
 }
 
 .problem_content3 a{
@@ -51,6 +55,10 @@ a:hover{
 	display:none;
 }
 
+.dropdown a{
+	font-size:40px;
+}
+
 .description {
 	float:left;
 	color:#fbfcfc;
@@ -73,6 +81,7 @@ a:hover{
 
 .jumbotron #title{
 	font-size:23px;
+	font-family:'Montserrat', sans-serif;
 }
 
 
@@ -169,6 +178,10 @@ width:100%;
 	background-color:#82d3a5;
 }
 
+.content_small{
+	display:none;
+}
+
 @media only screen and (max-width:1200px){
 	.problem_content3 img{
 		width:120px;
@@ -179,7 +192,19 @@ width:100%;
 	}
 }
 
-@media only screen and (max-width:995px){
+@media only screen and (max-width:990px){
+	.content_big{
+		display:none;
+	}
+
+	.content_small{
+		display:inline;
+	}
+
+	.total{
+		margin-left:30px;
+	}
+
 	.jumbotron p{
 		font-size:25px;
 	}
@@ -246,6 +271,8 @@ width:100%;
 	}
 
 	/*end change navbar*/
-
+	.content p{
+		font-size:20px;
+	}
 
 }
