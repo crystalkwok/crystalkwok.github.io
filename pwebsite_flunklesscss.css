@@ -276,7 +276,7 @@ width:100%;
 	}
 
 	.skip{
-		font-size:25px;
+		display:none;
 	}
 
 }
