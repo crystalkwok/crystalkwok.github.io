@@ -121,6 +121,11 @@ padding-top:50px;
 	width:280px;
 }
 
+#uxwork_description #title{
+	font-family:'Montserrat', sans-serif;
+	font-size:18px;
+}
+
 @media only screen and (min-width:1600px){
 	.jumbotron p{
 		margin-top:30%;
