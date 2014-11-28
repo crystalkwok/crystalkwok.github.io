@@ -1,8 +1,8 @@
 body {
 font-family:'Proxima Nova', 'Lato', sans-serif;
 font-size:20px;
+background-color:#494647;
 }
-
 
 
 .navbar {
@@ -42,8 +42,6 @@ font-size:20px;
 	font-size: 16px;
 	color:#fbfcfc;
 	font-weight:100;
-	text-size-adjust: none;
-
 }
 
 .triangle {
@@ -61,21 +59,25 @@ font-size:20px;
 	background-color:#f3f1ae;
 }
 
-.title{
-	width:230px;
-	text-align:center;
-	height:40px;
-	padding-top:5px;
-	background-color:#ac746e;
+.contact {
+	margin:auto;
+	background-color:#f3f1ae;
+
+}
+
+.contact p{
+	line-height:200%;
+}
+
+.meatcontent p{
+	line-height:190%;
+	font-weight:200;
 	color:#ffffff;
 }
 
+
 .self img{
 	width:320px;
-}
-
-.melbourneeducation{
-	float:right;
 }
 
 .btn{
@@ -103,20 +105,30 @@ font-size:20px;
 }
 
 
-
-.contact {
-	margin:auto;
-	background-color:#f3f1ae;
-}
-
-.ucsdeducation {
-	float:left;
-}
-
-
 .description{
 	font-size:15px;
 }
+
+.education {
+	background-color:#494647;
+}
+
+.resume {
+	background-color: #5c595a;
+}
+
+.title{
+	width:230px;
+	text-align:center;
+	height:40px;
+	padding-top:5px;
+	background-color:#f4b1aa;
+	font-weight:500;
+	color:#000000;
+}
+
+
+
 
 
 

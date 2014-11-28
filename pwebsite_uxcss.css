@@ -188,63 +188,64 @@ padding-top:50px;
 
 }
 
+/*start change to make for cell phone*/
 @media only screen and (max-width:995px){
 	.jumbotron{
 		height:100%;
-	}
+	} /*make the jumbotron long*/
+    
 	.logo img{
 		height:120%;
 		width:120%;
 		margin-left: -10%;
-	}
+	} /*make self image larger*/
 
 	.description p{
 		margin-left: 10%;
 		width: 90%;
-	}
+	} /*make description in jumbotron larger*/
+    
+    #uxwork_description #title{
+     font-size: 32px;   
+    } /*make title of each project larger*/
+    
 	#hello{
 		font-size: 180px;
-	}
+	} /*hello word*/
 
-	.crown {
+	.project1{
 		width:80%;
 		margin:0px;
 		margin-left:10%;
-	}
-
-	.rainbowart{
-		width:80%;s
-		margin:0px;
-		margin-left:10%;
-	}
+	} /*crown and rainbowart project total move*/
 
 	.flunkless{
 		width:80%;
 		margin:0px;
 		margin-right:10%;
-	}
+	} /*flunkless project description*/
 
 	.ux_work img{
 		width:110%;
 		height:110%;
-	}
+	} /*images of each of the projects*/
 
 	#uxwork_description{
 		width:125%;
 		font-size:35px;
 		margin-left:-15%;
-	}
+	} /*edit project description*/
 
 	#uxwork_note{
 		font-size:20px;
 		width:125%;
 		font-size:30px;
 		margin-left:-15%;
-	}
+	} /*edit small notes in each description*/
 
 	.ux_work{
 		width:100%;
-	}
+	} /*the entire projects part*/
 
 /*}
 

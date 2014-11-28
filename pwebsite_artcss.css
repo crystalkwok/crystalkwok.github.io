@@ -41,6 +41,7 @@ font-size:20px;
 	background-color:#f3f1ae;
 }
 
+/*the whole jumbotron and triangle*/
 .triangle_rectangle {
 	left:50%;
 }
@@ -89,6 +90,10 @@ background-color:#f3f1ae;
 width:100%;
 }
 
+.intro p{
+    line-height: 200%;
+}
+
 
 .navbar_art {
 	width:100%;
@@ -115,10 +120,16 @@ width:100%;
 .concentration p{
 float:left;
 font-size:15px;
+    line-height: 190%;
 }
 
-.concentration img{
-	height:100px;
+.galleria1{
+    margin-left:50px;
+}
+
+.galleria1 img{
+	height:140px;
+padding:20px;
 }
 
 table{
@@ -151,6 +162,15 @@ td{
 #after{
 	display:none;
 }
+
+.galleria-exit{
+    position:absolute;
+    top:12px;
+    right:12px;
+    z-index:10;
+    color:#ffffff;
+}
+
 
 @media only screen and (min-width:1600px){
 	.jumbotron p{
@@ -333,10 +353,10 @@ td{
 		font-size:20px;
 	}
 
-	.concentration_pictures{
+	/*.concentration_pictures{
 		width:100%;
 		margin-left:7%;
-	}
+	}*/
 	.concentration img{
 		height:135px;
 	}

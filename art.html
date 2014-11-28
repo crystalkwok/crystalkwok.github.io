@@ -6,8 +6,7 @@
 		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.css">
 		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
 
-		<!--css-->
-		<link href="pwebsite_artcss.css" rel="stylesheet" type="type/css">
+		
 
 		<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -24,10 +23,17 @@
 		<script src="jquery/jquery.min.js"></script>
 		<script src="jquery-1.11.1.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria/galleria-1.4.2.min.js"></script>
+        <script src="galleria/galleria-1.4.2.js"></script>
+        <!--for the image galleries-->
+        
+        <!--css-->
+		<link href="pwebsite_artcss.css" rel="stylesheet" type="type/css">
 
 	</head>
 	<body>
-
+        <!--normal nav bar-->
 		<div class="navbar">
 			<div class="container">
 				<ul class="pull-left">
@@ -40,25 +46,28 @@
 				</ul>
 			</div>
 		</div>
-
+        
+        <!--nav bar when smaller than 995px (mobile)-->
 		<div class="navbar_dropdown">
 				
 				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
 				<a href="#" style="text-decoration:none; color:#000000" class= "icon-menu menu-right">Crystal Kwok</a>
 			
 			<div class="dropdown">
-			<ul class="dropdown2">
-			</br></br>
-				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
-			</br></br>
-				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="art.html"><b>Art</b></a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="about.html">About & Contact</a></li>
+			     <ul class="dropdown2">
+			     </br></br>
+				    <li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
+			     </br></br>
+				    <li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
+				    <li><a style="text-decoration:none ; color: #000000" href="art.html"><b>Art</b></a></li>
+				    <li><a style="text-decoration:none ; color: #000000" href="about.html">About & Contact</a></li>
 				</br>
-			</ul>
+			     </ul>
+		  </div>
 		</div>
-		</div>
+        
 
+        <!--javascript for mobile navbar-->
 		<script>
 			var main=function(){
 	
@@ -76,7 +85,9 @@
 			$(document).ready(main);
 	
 		</script>
+    
 
+    <!--jumbotron-->
 	<div class="triangle_rectangle">
 		<div class="jumbotron">
 			<div class="container">
@@ -92,6 +103,8 @@
 				</div>
 			</div>
 		</div>
+
+        <!--triangle-->
 		<div class="trianglerec">
 			<div class="container">
 					<div class="triangle"></div>
@@ -99,6 +112,7 @@
 		</div>
 	</div>
 
+    <!--yellow intro part-->
 			<div class="intro">
 				<div class="container">
 						<p>My fine art skills that I have acquired over the years do attribute to user experience design, but mostly the <i>aesthetics</i> part.  These skills have come in handy when drawing prototypes, understanding contrast and color, and making decisions about visual design in terms of shapes and everything else.  I personally just wanted to show my artwork because I've never had a chance to show all my artwork all in one place, and I think this is a big and important part of my journey.  So enjoy! :)</p>
@@ -106,11 +120,9 @@
 				</div>
 			</div>
 
-
-
-		
+	<!--simple navbar for sections in art-->	
 	</br>
-		<div class="navbar_art">
+    <div class="navbar_art">
 		<div class="container">
 			<ul class="pull-left">
 				<li><a href="#" class="skip_concentration">Concentration</a></li>
@@ -120,7 +132,8 @@
 		</div>
 	</div>
 	
-
+    
+    <!--slide to the section in art-->
 	<script>
 	$(document).ready(function(){
 		$(".skip_concentration").click(function(){
@@ -133,59 +146,83 @@
 			$('html,body').animate({ scrollTop:$(".typography").offset().top}, 1500);
 		});
 	});
+        
+        
 	</script>
+
 
 
 
 	<div class="container">
 		<div class="row">
 
-		<div class="concentration">
+		      <div class="concentration">
 					</br></br>
-			<div class="col-md-6">
-			<p><span style="font-size: 27px ; font-weight:900 ; background-color: #ac746e; color:#ffffff; padding:5px">CONCENTRATION</span>
-			</br>A part of an art portfolio is the "concentration", which includes pieces that an artist completes to deeply investigate a theme.  I finished 7 pieces following a deep investigation of dancers, which I called "A Dancer's Journey."  I personally wanted to do this theme of dancers because dancing is another one of my loved interests that brings me a lot of joy.  My concentration is ordered a certain way, because the backgrounds and dancers gradually transform.  The backgrounds and dancers change from realistic to fantasy.  The dancer transforms by starting with a normal position, then gradually doing more dancer-like positions and movements.  I also added the element of lines on the dancer, because it is always said that a dancer's beauty in their body comes from the lines it makes with their body, depending on the uniqueness and fluidity of the lines. The dancers gradually become more fantasy-like, have more movement, and have more lines throughout their bodies to show their journey in finding their identity as a dancer and transforming into a true dancer.</p>
-			</div>
-			<div class="col-md-1"></div>
-			<div class="concentration_pictures col-md-5">
+			     <div class="col-md-6">
+			         <p><span style="font-size: 27px ; font-weight:900 ; background-color: #ac746e; color:#ffffff; padding:5px">CONCENTRATION</span>
+                     </br><span style="margin-top:40px">A part of an art portfolio is the "concentration", which includes pieces that an artist completes to deeply investigate a theme.  I finished 7 pieces following a deep investigation of dancers, which I called "A Dancer's Journey."  I personally wanted to do this theme of dancers because dancing is another one of my loved interests that brings me a lot of joy.  My concentration is ordered a certain way, because the backgrounds and dancers gradually transform.  The backgrounds and dancers change from realistic to fantasy.  The dancer transforms by starting with a normal position, then gradually doing more dancer-like positions and movements.  I also added the element of lines on the dancer, because it is always said that a dancer's beauty in their body comes from the lines it makes with their body, depending on the uniqueness and fluidity of the lines. The dancers gradually become more fantasy-like, have more movement, and have more lines throughout their bodies to show their journey in finding their identity as a dancer and transforming into a true dancer.</span></p>
+			     </div>
+			     <div class="col-md-2"></div>
+               
+            <div class="button">
+                <a> <button type="button" class="btn btn-lg">View Gallery</button></a>
+		      </div>
+                    <div class="galleria1">
+              
+                        <img src="artwork/concentration/c1.jpg" data-big="artwork/concentration/c1.jpg" data-title="concentration" >
+                        <img src="artwork/concentration/c2.jpg" data-big="artwork/concentration/c2.jpg" data-title="concentration">
+                       <img src="artwork/concentration/c3.jpg" data-big="artwork/concentration/c3.jpg" data-title="concentration">
+                        
+                         <img src="artwork/concentration/c4.jpg" data-big="artwork/concentration/c4.jpg" data-title="concentration">
+                         <img src="artwork/concentration/c5.jpg" data-big="artwork/concentration/c5.jpg" data-title="concentration">
+                         <img src="artwork/concentration/c6.jpg" data-big="artwork/concentration/c6.jpg" data-title="concentration">
 
-				<table style="width:100%" id="before_concentration">
-					<tr>
-						<td><img src="artwork/concentration/c1.jpg"></td>
-						<td><img src="artwork/concentration/c2.jpg"></td>
-						<td><img src="artwork/concentration/c3.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/concentration/c4.jpg"></td>
-						<td><img src="artwork/concentration/c5.jpg"></td>
-						<td><img src="artwork/concentration/c6.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/concentration/c7.jpg"></td>
-					</tr>
-				</table>
+                         <img src="artwork/concentration/c7.jpg" data-big="artwork/concentration/c7.jpg" data-title="concentration">
+                        <img src="artwork/concentration/c8.jpg" data-big="artwork/concentration/c8.jpg" data-title="concentration">
+       
+                    </div>
+                        
 
-				<table style="width:100%" id="after">
-					<tr>
-						<td><img src="artwork/concentration/c1.jpg"></td>
-						<td><img src="artwork/concentration/c2.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/concentration/c3.jpg"></td>
-						<td><img src="artwork/concentration/c4.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/concentration/c5.jpg"></td>
-						<td><img src="artwork/concentration/c6.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/concentration/c7.jpg"></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		</div>
-	</div>
+            </div>
+
+                <script> /*script for concentration slideshow*/
+                    $('.btn').click(function(){ 
+
+                        
+                    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+                    Galleria.run('.concentration .galleria1', { trueFullscreen: false });
+
+                        Galleria.ready(function() {
+                            
+                            var gallery=this;
+                            
+                            $('.concentration .galleria1').galleria({
+                                thumbnails:"false"
+                            });
+                            this.addElement('exit').appendChild('container','exit');
+                            var btn = this.$('exit').hide().text('close').click(function(e) {
+                                gallery.exitFullscreen();
+                            });
+
+                            this.bind('fullscreen_enter', function() {
+                                btn.show();
+                            });
+
+                            this.bind('fullscreen_exit', function() {
+                                btn.hide();
+                            });
+                            
+                            this.enterFullscreen();
+
+                        });
+                    });
+
+                </script>
+
+		</div> <!--end row-->
+    </div> <!--end container-->
+</div> <!--NO ONE KNOWS WHAT THE HELL THIS ENDS o.o-->
 
 		<div class="row">
 			<div class="container">
