@@ -84,6 +84,7 @@ background-color:#676565;
 	font-size:30px;
 	padding:20px;
 	text-decoration:none;
+    font-family:'Source Sans Pro', sans-serif;
 }
 
 .navbar_dropdown{
@@ -92,10 +93,12 @@ background-color:#676565;
 
 .dropdown a{
 	font-size:40px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .icon-menu{
 	display:none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn{
@@ -120,5 +123,61 @@ background-color:#676565;
 
 #description{
  color:#ecc476;   
+}
+
+@media only screen and (max-width:995px){
+	
+	.navbar{
+		display:none;
+	}
+
+	.icon-menu{
+		display:block;
+		height:100%;
+		font-size:40px;
+	}
+
+	.navbar_dropdown{
+		display:inline-block;
+		background-color: #d3d3d3;
+		width:100%;
+		height:100%;
+	}
+
+	.dropdown{
+		display:none;
+	}
+
+	.dropdown li{
+		text-decoration:none;
+		margin:10px;
+		text-align:center;
+	}
+
+	.dropdown ul{
+		list-style-type: none;
+	}
+
+
+	.menu-left{
+		float:left;
+		margin:10px;
+	}
+
+	.menu-right{
+		float:right;
+		margin:10px;
+	}
+    /*end nav bar changes*/
+
+    .btn{
+        left:0;
+    }
+    
+    #isaiah{
+        margin-left:-5px;   
+    }
+
+
 }
 
