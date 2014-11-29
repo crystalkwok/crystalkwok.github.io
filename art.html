@@ -20,17 +20,18 @@
 		<title>Art--crystal kwok</title>
 
 		<!--jquery-->
-		<script src="jquery/jquery.min.js"></script>
-		<script src="jquery-1.11.1.min.js"></script>
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="galleria/galleria-1.4.2.min.js"></script>
         <script src="galleria/galleria-1.4.2.js"></script>
+        <script src="jquery/jquery.min.js"></script>
+		<script src="jquery/jquery-1.11.1.min.js"></script>
         <!--for the image galleries-->
         
         <!--css-->
 		<link href="pwebsite_artcss.css" rel="stylesheet" type="type/css">
-
+        
 	</head>
 	<body>
         <!--normal nav bar-->
@@ -115,13 +116,13 @@
     <!--yellow intro part-->
 			<div class="intro">
 				<div class="container">
-						<p>My fine art skills that I have acquired over the years do attribute to user experience design, but mostly the <i>aesthetics</i> part.  These skills have come in handy when drawing prototypes, understanding contrast and color, and making decisions about visual design in terms of shapes and everything else.  I personally just wanted to show my artwork because I've never had a chance to show all my artwork all in one place, and I think this is a big and important part of my journey.  So enjoy! :)</p>
+						<p>My fine art skills that I have acquired over the years do attribute to user experience design, but mostly the <i>aesthetics</i> part.  These skills have come in handy when drawing prototypes, understanding contrast and color, and making decisions about visual design in terms of shapes and everything else.  I personally just wanted to show my artwork because I've never had a chance to show all my artwork all in one place, and I think this is a big and important part of my journey.<br><br> On this page will be thumbnails of all my artwork, and if you click on a thumbnail, a separate tab with the full sized picture will show up.  But below, you will be redirected to separate pages where you can view more information about the separate sections and full screen galleries.  Enjoy! :)</p>
 						</br>
 				</div>
 			</div>
 
 	<!--simple navbar for sections in art-->	
-	</br>
+	<!--</br></br>
     <div class="navbar_art">
 		<div class="container">
 			<ul class="pull-left">
@@ -132,9 +133,9 @@
 		</div>
 	</div>
 	
-    
+    </br>-->
     <!--slide to the section in art-->
-	<script>
+	<!--<script>
 	$(document).ready(function(){
 		$(".skip_concentration").click(function(){
 			$('html,body').animate({ scrollTop:$(".concentration").offset().top}, 1500);
@@ -148,25 +149,21 @@
 	});
         
         
-	</script>
+	</script>-->
 
 
 
 
 	<div class="container">
-		<div class="row">
+	
 
 		      <div class="concentration">
 					</br></br>
-			     <div class="col-md-6">
-			         <p><span style="font-size: 27px ; font-weight:900 ; background-color: #ac746e; color:#ffffff; padding:5px">CONCENTRATION</span>
-                     </br><span style="margin-top:40px">A part of an art portfolio is the "concentration", which includes pieces that an artist completes to deeply investigate a theme.  I finished 7 pieces following a deep investigation of dancers, which I called "A Dancer's Journey."  I personally wanted to do this theme of dancers because dancing is another one of my loved interests that brings me a lot of joy.  My concentration is ordered a certain way, because the backgrounds and dancers gradually transform.  The backgrounds and dancers change from realistic to fantasy.  The dancer transforms by starting with a normal position, then gradually doing more dancer-like positions and movements.  I also added the element of lines on the dancer, because it is always said that a dancer's beauty in their body comes from the lines it makes with their body, depending on the uniqueness and fluidity of the lines. The dancers gradually become more fantasy-like, have more movement, and have more lines throughout their bodies to show their journey in finding their identity as a dancer and transforming into a true dancer.</span></p>
-			     </div>
-			     <div class="col-md-2"></div>
-               
-            <div class="button">
-                <a> <button type="button" class="btn btn-lg">View Gallery</button></a>
-		      </div>
+			
+  
+        <p><span id="title">concentration</span></p>
+			     <br>
+
                     <div class="galleria1">
               
                         <img src="artwork/concentration/c1.jpg" data-big="artwork/concentration/c1.jpg" data-title="concentration" >
@@ -181,155 +178,81 @@
                         <img src="artwork/concentration/c8.jpg" data-big="artwork/concentration/c8.jpg" data-title="concentration">
        
                     </div>
-                        
+                    <br>
+                <a href="art_concentration.html" id="more">gallery &amp; info on concentration</a>
+
+  
 
             </div>
 
-                <script> /*script for concentration slideshow*/
-                    $('.btn').click(function(){ 
 
-                        
-                    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-
-                    Galleria.run('.concentration .galleria1', { trueFullscreen: false });
-
-                        Galleria.ready(function() {
-                            
-                            var gallery=this;
-                            
-                            $('.concentration .galleria1').galleria({
-                                thumbnails:"false"
-                            });
-                            this.addElement('exit').appendChild('container','exit');
-                            var btn = this.$('exit').hide().text('close').click(function(e) {
-                                gallery.exitFullscreen();
-                            });
-
-                            this.bind('fullscreen_enter', function() {
-                                btn.show();
-                            });
-
-                            this.bind('fullscreen_exit', function() {
-                                btn.hide();
-                            });
-                            
-                            this.enterFullscreen();
-
-                        });
-                    });
-
-                </script>
-
-		</div> <!--end row-->
     </div> <!--end container-->
 </div> <!--NO ONE KNOWS WHAT THE HELL THIS ENDS o.o-->
 
-		<div class="row">
+</br></br></br>
+
+	
 			<div class="container">
+                
+                
 			<div class="other_work">
 					</br>
 					</br>
-				<div class="col-md-3">
-				<p><span style="font-size: 27px ; font-weight:900 ; background-color: #ac746e; color:#ffffff; padding:5px">OTHER WORK</span></p>
-				</div>
-				<div class="col-md-2"></div>
-				<div class="other_work_pictures col-md-7">
-				<table style="width:100%" id="otherworktable">
-					<tr>
-						<td><img src="artwork/other work/o1.jpg"></td>
-						<td><img src="artwork/other work/o2.jpg"></td>
-						<td><img src="artwork/other work/o3.jpg"></td>
-						<td><img src="artwork/other work/o4.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o5.jpg"></td>
-						<td><img src="artwork/other work/o6.jpg"></td>
-						<td><img src="artwork/other work/o7.jpg"></td>
-						<td><img src="artwork/other work/o8.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o9.jpg"></td>
-						<td><img src="artwork/other work/o10.jpg"></td>
-						<td><img src="artwork/other work/o11.jpg"></td>
-						<td><img src="artwork/other work/o12.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o13.jpg"></td>
-						<td><img src="artwork/other work/o14.jpg"></td>
-						<td><img src="artwork/other work/o15.jpg"></td>
-						<td><img src="artwork/other work/o16.jpg"></td>
-					</tr>
-				</table>
 
+            <p><span id="title">other work</span></p>
+            <br>
+            
+            <div class="galleria2">
+               <img src="artwork/other work/o1.jpg" data-big="artwork/other work/o1.jpg" data-title="concentration" >
+                        <img src="artwork/other work/o2.jpg" data-big="artwork/other work/o2.jpg" data-title="concentration">
+                       <img src="artwork/other work/o3.jpg" data-big="artwork/other work/o3.jpg" data-title="concentration">
+                        
+                         <img src="artwork/other work/o4.jpg" data-big="artwork/other work/o4.jpg" data-title="concentration">
+                         <img src="artwork/other work/o5.jpg" data-big="artwork/other work/o5.jpg" data-title="concentration">
+                         <img src="artwork/other work/o6.jpg" data-big="artwork/other work/o6.jpg" data-title="concentration">
 
+                         <img src="artwork/other work/o7.jpg" data-big="artwork/other work/o7.jpg" data-title="concentration">
+                        <img src="artwork/other work/o8.jpg" data-big="artwork/other work/o8.jpg" data-title="concentration">
+                        <img src="artwork/other work/o9.jpg" data-big="artwork/other work/o9.jpg" data-title="concentration">
+                        <img src="artwork/other work/o10.jpg" data-big="artwork/other work/o10.jpg" data-title="concentration">
+                        <img src="artwork/other work/o11.jpg" data-big="artwork/other work/o11.jpg" data-title="concentration">
+                       <img src="artwork/other work/o12.jpg" data-big="artwork/other work/o12.jpg" data-title="concentration">
+                        <img src="artwork/other work/o13.jpg" data-big="artwork/other work/o13.jpg" data-title="concentration">
+                        <img src="artwork/other work/o14.jpg" data-big="artwork/other work/o14.jpg" data-title="concentration">
+                        <img src="artwork/other work/o15.jpg" data-big="artwork/other work/o15.jpg" data-title="concentration">
+                        <img src="artwork/other work/o16.jpg" data-big="artwork/other work/o16.jpg" data-title="concentration">
+                       
+            </div>
+            <br>
+            <a href="art_other.html" id="more">gallery on other work</a>
+           
 
-				<table style="width:100%" id="after">
-					<tr>
-						<td><img src="artwork/other work/o1.jpg"></td>
-						<td><img src="artwork/other work/o2.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o3.jpg"></td>
-						<td><img src="artwork/other work/o4.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o5.jpg"></td>
-						<td><img src="artwork/other work/o6.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o7.jpg"></td>
-						<td><img src="artwork/other work/o8.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o9.jpg"></td>
-						<td><img src="artwork/other work/o10.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o11.jpg"></td>
-						<td><img src="artwork/other work/o12.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o13.jpg"></td>
-						<td><img src="artwork/other work/o14.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="artwork/other work/o15.jpg"></td>
-						<td><img src="artwork/other work/o16.jpg"></td>
-					</tr>
-				</table>
-				</div>
 			</div>
-		</div>
-		</div>
+
+                </script>
+		</div><!--end container-->
+</br></br></br>
 
 
-		<div class="row">
+
+		
 			<div class="container">
 				<div class="typography">
-							</br></br>
-					<div class="col-md-5">
-						<p><span style="font-size: 27px ; font-weight:900 ; background-color: #ac746e; color:#ffffff; padding:5px">TYPOGRAPHY</span>
-						</br> i am obsessed with great and creative typography (yes...I have a lot of interests!).  I usually do them by hand, and some of them have been drawn onto cups (which is why some of them may have a slight curve at the edges.)  Here are some of my work where I've played around with fonts and layouts just for fun.</p>
-					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5">
-						<table width="100%">
-							<tr>
-								<td><img id="isaiah" src="images/typography isaiah.jpg"></td>
-							</tr>
-						</table>
-						<p><span style="text-align: left">isaiah 40:28-31 &nbsp; He will not grow tired or weary, and His understanding no one can fathom [...] those who hope in the Lord will renew their strength.  they will soar on wings like eagles, they will run and not grow weary, they will walk and not grow faint.</span></p>
-						<table>
-							<tr>
-								<td><img id="switchfoot" src="images/typography switchfoot.jpg"></td>
-								<td><p id="sfquote">we were meant to live for so much more.  have we lost ourselves? -- switchfoot</p></td>
-							</tr>
+                    </br></br>
+					
+				    <p><span id="title">typography</span></p>
+					<br><br>
+					
+				    <img id="isaiah" src="images/typography isaiah.jpg">
+                    <img id="switchfoot" src="images/typography switchfoot.jpg">
+                    <br>
 
-						</table>
-					</div>
+                    <a href="art_other.html" id="more">info on typography</a>
+				
+
 				</div>
-			</div>
-		</div>
+            </div>
+
 	</br></br></br>
 	</body>
 </html>
