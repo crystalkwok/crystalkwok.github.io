@@ -1,5 +1,5 @@
 body {
-font-family:'Proxima Nova', 'Lato', sans-serif;
+font-family:'Lato', sans-serif;
 }
 
 .description{
@@ -11,7 +11,7 @@ height: 100%;
 }
 
 .jumbotron p {
-	font-family:'Proxima Nova', 'Montserrat', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	font-size: 30px;
 	color:#fbfcfc;
 	width:650px;
@@ -67,6 +67,7 @@ height:350px;
 	font-size:30px;
 	padding:20px;
 	text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .navbar_dropdown{
@@ -75,11 +76,13 @@ height:350px;
 
 .dropdown a{
 	font-size:40px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .icon-menu{
 	display:none;
 	font-size:20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
