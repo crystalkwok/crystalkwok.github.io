@@ -84,7 +84,7 @@ background-color:#676565;
 	font-size:30px;
 	padding:20px;
 	text-decoration:none;
-    font-family:'Source Sans Pro', sans-serif;
+    font-family:'Open Sans', sans-serif;
 }
 
 .navbar_dropdown{
@@ -93,12 +93,12 @@ background-color:#676565;
 
 .dropdown a{
 	font-size:40px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .icon-menu{
 	display:none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn{

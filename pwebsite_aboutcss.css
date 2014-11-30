@@ -4,39 +4,6 @@ font-size:20px;
 background-color: #5c595a;
 }
 
-/*set nav bar*/
-.navbar {
-	position:fixed;
-	background-color: #d3d3d3;
-	top:0;
-	width:100%;
-	height:50px;
-	z-index:10;
-}
-
-.navbar li{
-    font-family: 'Source Sans Pro', sans-serif;
-	display:inline;
-	font-size:30px;
-	text-decoration:none;
-}
-
-
-
-.right li{
-	padding:20px;
-}
-/*small navbar*/
-.navbar_dropdown{
-	display:none;
-}
-
-.icon-menu{
-	display:none;
-}
-
-/*end changes for nav bar*/
-
 /*change jumbotron*/
 .jumbotron{
 	background-color: #1E5754;
@@ -50,10 +17,13 @@ background-color: #5c595a;
 	font-size: 16px;
 	color:#fbfcfc;
 	font-weight:100;
+	margin-top:1%;
+    line-height:145%;
 }
 
 .self img{
 	width:320px;
+    margin-top:5%;
 }
 
 .triangle {
@@ -109,13 +79,12 @@ background-color: #5c595a;
 /*title of each section*/
 .title{
 	width:230px;
-	text-align:center;
 	height:40px;
 	padding-top:5px;
-	background-color:#f4b1aa;
-	font-weight:500;
-	color:#000000;
+	font-weight:700;
+	color:#f4b1aa;
     font-family:'Montserrat', sans-serif;
+    font-size:35px;
 }
 
 /*title of each experience*/
@@ -123,6 +92,16 @@ background-color: #5c595a;
 	font-size:22px;
     font-weight:500;
     font-family:'Montserrat', sans-serif;
+}
+
+/*for projects*/
+#experience_title a{
+    text-decoration: none;
+    color:#82d3a5;
+}
+
+#experience_title a:hover{
+    color:#f3f1ae;
 }
 
 /*part of resume that is not a title*/
@@ -142,8 +121,12 @@ background-color: #5c595a;
 	background-color:#494647;
 }
 
-.relevant_courses{
+.skills{
  background-color:#494647;
+}
+
+.activities {
+     background-color:#494647;
 }
 
 
@@ -223,59 +206,6 @@ background-color: #5c595a;
 
 @media only screen and (max-width: 740px){*/
 
-/*start roll down menu*/
-	.navbar{
-		display:none;
-	}
-
-	.icon-menu{
-		display:block;
-		height:100%;
-		font-size:40px;
-        font-family: "Source Sans Pro", sans-serif;
-	}
-
-	.navbar_dropdown{
-		display:inline-block;
-		background-color: #d3d3d3;
-		width:100%;
-		height:100%;
-	}
-
-	.dropdown a{
-		font-size:40px;
-        font-family: "Source Sans Pro", sans-serif;
-	}
-
-	.dropdown{
-		display:none;
-	}
-
-	.dropdown li{
-		font-size: 25px;
-		text-decoration:none;
-		margin:10px;
-		text-align:center;
-	}
-
-	.dropdown ul{
-		list-style-type: none;
-	}
-
-	.close a{
-		font-size:20px;
-	}
-
-	.menu-left{
-		float:left;
-		margin:10px;
-	}
-
-	.menu-right{
-		float:right;
-		margin:10px;
-	}
-
 	.trianglerec{
 		margin-top:-50px;
 	}
@@ -302,17 +232,11 @@ background-color: #5c595a;
 }
 
 @media only screen and (max-width:500px){
-	.icon-menu{
-		font-size:25px;
-	}
-
-	.dropdown a{
-		font-size: 22px;
-	}
 
 	.self img{
 		width:100%;
 		left:-5%;
+        
 	}
 	.self{
 		width:100%;
@@ -336,6 +260,14 @@ background-color: #5c595a;
 	.description{
 		font-size:13px;
 	}
+    
+    #experience_title{
+        font-size:20px;   
+    }
+    
+    .title{
+        font-size:25px;   
+    }
 }
 
 @media only screen and (min-width:1520px){

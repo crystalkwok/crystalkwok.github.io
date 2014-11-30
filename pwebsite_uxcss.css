@@ -53,37 +53,6 @@ height:350px;
 	background-color:#ffffff;
 }
 
-.navbar {
-	position:fixed;
-	background-color: #d3d3d3;
-	top:0;
-	width:100%;
-	height:50px;
-	z-index:10;
-}
-
-.navbar li{
-	display:inline;
-	font-size:30px;
-	padding:20px;
-	text-decoration:none;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.navbar_dropdown{
-	display:none;
-}
-
-.dropdown a{
-	font-size:40px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.icon-menu{
-	display:none;
-	font-size:20px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 
 .ux_work {
@@ -104,30 +73,38 @@ padding-top:50px;
 
 .ux_work p{
 	font-size:17px;
+	width:280px;
 }
 
-.crown {
+.timeline {
 	float:left;
 	width:280px;
 	margin-right:40px;
 }
 
-.rainbowart{
-	width:280px;
+.left {
 	float:left;
-	margin-right:80px;
-	margin-left:110px;
+	width:280px;
+	margin-right:40px;
 }
 
-.flunkless {
+.middle{
+	float:left;
+	width:280px;
+	padding-left:10%;
+}
+
+.right {
 	float:right;
 	width:280px;
 }
+
 
 #uxwork_description #title{
 	font-family:'Montserrat', sans-serif;
 	font-size:18px;
 }
+
 
 @media only screen and (min-width:1600px){
 	.jumbotron p{
@@ -158,18 +135,18 @@ padding-top:50px;
 }
 
 @media only screen and (max-width:1200px){
-	.crown{
+	.left{
 		margin-right:40px;
 		width:260px;
 	}	
 
-	.rainbowart{
-		margin-right:20px;
-		margin-left:50px;
+	.middle{
+		padding-left:0;
+		margin-left:6%;
 		width:260px;
 	}
 
-	.flunkless{
+	.right{
 		margin-left: 40px;
 		width:260px;
 	}
@@ -177,15 +154,13 @@ padding-top:50px;
 	.ux_work img{
 		width:260px;
 	}
-}
 
-@media only screen and (max-width:1060px) {
 	.jumbotron p{
 	width:500px;
 	}
 
 	#hello{
-		font-size: 160px;
+		font-size: 145px;
 		width:100%;
 	}
 
@@ -193,8 +168,11 @@ padding-top:50px;
 
 /*start change to make for cell phone*/
 @media only screen and (max-width:995px){
+	/*changes in jumbotron*/
+
 	.jumbotron{
 		height:100%;
+		top:-10px;
 	} /*make the jumbotron long*/
     
 	.logo img{
@@ -207,116 +185,82 @@ padding-top:50px;
 		margin-left: 10%;
 		width: 90%;
 	} /*make description in jumbotron larger*/
+
+
+	#hello{
+		font-size:160px;
+	}
+
+	.trianglerec{
+		margin-top:-50px;
+	}
+
+	#love{
+		font-size: 40px;
+	}
     
+
+    /*change the content paragraph stuff*/
+
     #uxwork_description #title{
      font-size: 32px;   
     } /*make title of each project larger*/
-    
-	#hello{
-		font-size: 180px;
-	} /*hello word*/
 
-	.project1{
-		width:80%;
-		margin:0px;
-		margin-left:10%;
-	} /*crown and rainbowart project total move*/
-
-	.flunkless{
-		width:80%;
-		margin:0px;
-		margin-right:10%;
-	} /*flunkless project description*/
-
-	.ux_work img{
-		width:110%;
-		height:110%;
-	} /*images of each of the projects*/
-
-	#uxwork_description{
-		width:125%;
+    #uxwork_description{
+		width:115%;
 		font-size:35px;
-		margin-left:-15%;
 	} /*edit project description*/
 
 	#uxwork_note{
 		font-size:20px;
 		width:125%;
 		font-size:30px;
-		margin-left:-15%;
 	} /*edit small notes in each description*/
 
-	.ux_work{
+	 .ux_work{
 		width:100%;
 	} /*the entire projects part*/
+
+    /*change images*/
+    .ux_work img{
+		width:110%;
+		height:110%;
+	} /*images of each of the projects*/
+
+	/*.project1{
+		width:80%;
+		margin:0px;
+		margin-left:10%;
+	} *//*crown and rainbowart project total move*/
+
+
+	/*change size of sections*/
+	.left{
+		width:80%;
+		margin-left:5%;
+	} /*flunkless project description*/
+
+	.middle{
+		width:80%;
+		margin:0px;
+		margin-left:5%;
+	}
+
+	.right{
+		width:80%;
+		margin:0px;
+		margin-right:15%;
+	}
+
+
 
 /*}
 
 @media only screen and (max-width:835px){*/
-	.navbar{
-		display:none;
-	}
 
-	.icon-menu{
-		display:block;
-		height:100%;
-		font-size:40px;
-	}
-
-	#hello{
-		font-size:150px;
-	}
-
-	.navbar_dropdown{
-		display:inline-block;
-		background-color: #d3d3d3;
-		width:100%;
-		height:100%;
-	}
-
-	.dropdown{
-		display:none;
-	}
-
-	.dropdown li{
-		text-decoration:none;
-		margin:10px;
-		text-align:center;
-	}
-
-	.dropdown ul{
-		list-style-type: none;
-	}
+	
 
 
-	.menu-left{
-		float:left;
-		margin:10px;
-	}
-
-	.menu-right{
-		float:right;
-		margin:10px;
-	}
-
-	.jumbotron{
-		top: -10px;
-	}
-
-		.trianglerec{
-		margin-top:-50px;
-	}
-
-
-	#love{
-		font-size: 40px;
-	}
-
-	.ux_work img{
-		width:130%;
-		height:130%;
-		margin-left:-15%;
-	}
 
 
 }
@@ -331,26 +275,21 @@ padding-top:50px;
 	font-size: 25px;
 }
 
-	#hello {
-		font-size: 130px;
-	}
+#hello {
+	font-size: 130px;
+}
 
 }
 
 @media only screen and (max-width:600px){
-	#hello{
-		font-size:100px;
-	}
+#hello{
+	font-size:100px;
+}
+
 }
 
 @media only screen and (max-width:520px){
-	.icon-menu{
-		font-size:25px;
-	}
-
-	.dropdown a{
-		font-size:22px;
-	}
+	
 
 	#uxwork_description{
 		font-size: 20px;
@@ -364,6 +303,10 @@ padding-top:50px;
 		font-size:100px;
 	}
 
+	#uxwork_description #title{
+		font-size:23px;
+	}
+
 }
 
 @media only screen and (max-width:500px){
@@ -371,10 +314,10 @@ padding-top:50px;
 .description{
 	position: relative;
 	max-width: none;
-display: block;
-vertical-align: none;
-height: 100%;
-width: 100%;
+	display: block;
+	vertical-align: none;
+	height: 100%;
+	width: 100%;
 }
 	#love{
 		width:80%;
