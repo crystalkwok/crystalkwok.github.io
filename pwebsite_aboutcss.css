@@ -185,6 +185,14 @@ background-color: #5c595a;
 		width:100%;
 	}
 /*end jumbotron changes*/
+    
+    .contact{
+        margin-top:-3px;   
+    }
+    
+    	.trianglerec{
+		margin-top:-50px;
+	}
 
 /*content changes*/
 
@@ -200,15 +208,17 @@ background-color: #5c595a;
 #experience_title{
 	font-size: 30px;
 }
+    
+    .title{
+        font-size:40px;   
+    }
 
 
 /*}
 
 @media only screen and (max-width: 740px){*/
 
-	.trianglerec{
-		margin-top:-50px;
-	}
+
 /*end roll down menu & triangle changes*/
 
 /*font sizes for content, button, and description*/
@@ -222,7 +232,7 @@ background-color: #5c595a;
 	}
 
 	.relevant_courses .title{
-		width:400px;
+		width:800px;
 	}
 
 
