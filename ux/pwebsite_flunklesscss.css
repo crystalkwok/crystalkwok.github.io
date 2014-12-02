@@ -3,18 +3,20 @@ font-family:'Lato', sans-serif;
 }
 
 body p{
-	font-size:17px;
     line-height:165%;
 }
 
 .jumbotron a{
 	color:#ecc476;
 	text-decoration:none;
+    font-size:17px;
 }
+
 
 .skip{
 	color:#cea34f;
 	text-decoration:none;
+    font-size:16px;
 }
 
 .problem p{
@@ -25,6 +27,7 @@ body p{
 	color:#ecc476;
 }
 
+
 a:hover{
 	text-decoration:none;
 	color:#82d3a5;
@@ -32,14 +35,14 @@ a:hover{
 
 #left{
   float:left;  
-    height:220px;
+    height:198px;
     margin-left:45px;
     padding-top:10px;
 }
 
 #right{
     float:right;
-    height:220px;
+    height:198px;
     margin-right:50px;
     padding-top:10px;
 }
@@ -50,7 +53,7 @@ a:hover{
 }
 
 .description p{
-	font-size:15px;
+	font-size:18px;
 }
 
 .jumbotron {
@@ -94,6 +97,10 @@ td{
 
 .line{
 	float:left;
+}
+
+#next{
+    float:right;
 }
 
 .circle{
@@ -174,11 +181,11 @@ width:100%;
 	}
     
     #left{
-        height:200px;
+        height:175px;
     }
     
     #right{
-        height:200px;   
+        height:175px;   
     }
 }
 
@@ -189,6 +196,18 @@ width:100%;
     
     #right{
         height:300px;   
+    }
+    
+    .jumbotron a{
+        font-side:25px;   
+    }
+    
+    #next{
+        display:none;   
+    }
+    
+    .skip{
+        display:none;   
     }
     
 	.content_big{
@@ -206,6 +225,10 @@ width:100%;
 	.jumbotron p{
 		font-size:25px;
 	}
+    
+    .jumbotron a{
+        font-size:26px;   
+    }
 
 	.jumbotron #title{
 		font-size:35px;
