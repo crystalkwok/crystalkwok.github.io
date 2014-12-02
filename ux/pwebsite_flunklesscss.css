@@ -184,11 +184,11 @@ width:100%;
 
 @media only screen and (max-width:990px){
     #left{
-        height:260px;   
+        height:300px;   
     }
     
     #right{
-        height:260px;   
+        height:300px;   
     }
     
 	.content_big{
@@ -228,15 +228,13 @@ width:100%;
 
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:780px){
 #left{
-    float:none;
-    margin-left:10px;
+    height:240px;
 }
     
 #right{
-    float:none;
-    margin-right:10px;
+    height:240px;
 }
 
 }
