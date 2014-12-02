@@ -30,22 +30,24 @@
 
 <body>
 
-<div class="navbar">
-	<div class="container">
-		<ul class="pull-left">
-			<li>Crystal Kwok</li>
-		</ul>
-		<ul class="pull-right">
-			<div class="right">
-				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="../art.html">Art</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="../about.html">About & Contact</a></li>
-			</div>
-		</ul>	
-	</div>
-</div>
+<!--normal nav bar-->
+		<div class="navbar">
+			<div class="container">
+				<ul class="pull-left">
+					<li>Crystal Kwok</li>
+				</ul>
+				<ul class="pull-right">
+					<div class="right">
+					<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../art.html">Art</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../about.html">About & Contact</a></li>
+					</div>
+				</ul>
 
-<div class="navbar_dropdown">
+			</div>
+		</div>
+        <!--small nav bar-->
+		<div class="navbar_dropdown">
 				
 				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
 				<a href="#" style="text-decoration:none; color:#000000" class= "icon-menu menu-right">Crystal Kwok</a>
@@ -54,14 +56,15 @@
 			<ul class="dropdown2">
 			</br></br>
 				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
-			</br></br></br>
-				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="../art.html">Art</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="../about.html">About & Contact</a></li>
+			</br></br>
+				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="art.html">Art</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="about.html">About &amp; Contact</a></li>
+				</br>
 			</ul>
-		</br>
+			</div>
 		</div>
-		</div>
+
 
 		<script>
 			var main=function(){
@@ -91,28 +94,20 @@
 						<p>COLLABORATORS:</br>Vlad Bakhurinsky, Michelle Wang, Jared Defigh, Meena Kaushik, Hui Ping Lee, Lucas DePaula, Alex Peterson, Crystal Kwok</p>
 						<p>METHODS:</br>Contextual Inquiry, Ethnographic Studies, Affinity Diagramming, Persona Writing, Cultural and Sequence Modelling, Visioning, Wireframing, Prototyping, Competitive Analysis</p>
 						<p>DESCRIPTION: synchronous communication between professors, teaching assisants, and students during lecture</p>
-						<p>DELIVERABLES:</br><a href="images/flunkless/102cfinalsummary.pdf">Final Executive Summary</a>
-						&nbsp; | &nbsp; <a href="images/flunkless/102cfinalpresentation.pdf">Final Presentation Slides</a> 
-							&nbsp; | &nbsp;  <a href="images/flunkless/102cpaper.pdf">Final Paper</a>
+						<p>DELIVERABLES:</br><a href="../images/flunkless/102cfinalsummary.pdf">Final Executive Summary</a>
+						&nbsp; | &nbsp; <a href="../images/flunkless/102cfinalpresentation.pdf">Final Presentation Slides</a> 
 						</br>
 							</p>
 					</div>
-					<div class="col-md-1"></div>
-					<div class="description_pictures col-md-3">
-							<table cell spacing="0" cell padding="0">
-								<tr>
-									<td><img src="../images/flunkless/flunkless_table1.jpg"></td>
-									<td><img src="../images/flunkless/flunkless_table2.jpg"></td>
-								</tr>
-								<tr>
-									<td><img src="../images/flunkless/flunkless_table3.jpg"></td>
-									<td><img src="../images/flunkless/flunkless_table4.jpg"></td>
-								</tr>
-								<tr>
-									<td><img src="../images/flunkless/flunkless_table5.jpg"></td>
-									<td><img src="../images/flunkless/flunkless_table6.jpg"></td>
-								</tr>
-							</table>
+					
+					<div class="description_pictures">
+							
+									<img id="left" src="../images/flunkless/flunkless_table1.jpg">
+                                    <img id="right" src="../images/flunkless/flunkless_table3.jpg">
+									<img id="left" src="../images/flunkless/flunkless_table4.jpg">
+                                    <img id="right" src="../images/flunkless/flunkless_table6.jpg">
+                    
+
 					</div>
 			</div>
 		</div>
@@ -149,7 +144,7 @@ $(document).ready(function(){
 			<p>what's the PROBLEM?</p>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="line" style="width:5px; height: 40em; background: #000000;"><div class="circle"></div></div> 
+		<div class="line" style="width:5px; height: 26em; background: #000000;"><div class="circle"></div></div> 
 		<div class="col-md-1"></div>
 		<div class="problem_content1 content col-md-6">
 			<p>The motivation behind Flunkless is this question: how do you effectively engage and motivate participation from over a hundred students in a college lecture?  In large universities, such as UCSD, the current way lectures work is that the communication is only from the professor to the students, but not the other way around.  Also, many students are losing interest during lecture and going to their laptops for distractions.  We decided to address this issue by creating a <b>virtual space to ask questions, post comments, and share links DURING LECTURE to enable active participation of multiple students at the same time</b>.</p>
@@ -186,7 +181,7 @@ $(document).ready(function(){
 		<div class="problem_content3 content col-md-6">
 			<p>Some main insights we gained through our data was:</br>- students wanted to share their ideas, work, and other resources</br>- students wanted a way to confidently ask questions instead of being intimidated by the staff</br>- students wanted to be able to meet other students in the class</br>- TAs did not want to mix their social and professional lives through Facebook</br>- professors wanted their students to be more engaged with the material</br>- professors and TAs did not want to answer the same question over and over again</br>- all users wanted easy communication with each other</p>
 		</br>
-			<p>Through this data, we were able to create three personas for the <a href="../images/flunkless/professor persona.pdf">professor</a>, <a href="../images/flunkless/ta persona.pdf">TA</a>, and <a href="../images/flunkless/student persona.pdf">student</a>.  We also created two <a href="../images/flunkless/sequence models.pdf">sequence models</a> and a <a href="../images/flunkless/cultural model.pdf">cultural model</a>.</p>
+			<p>Through this data, we were able to create three personas for the <a href="../images/flunkless/professor persona.pdf">professor</a>, <a href="../images/flunkless/ta persona.pdf">TA</a>, and <a href="../images/flunkless/student persona.pdf">student</a>.  We also created two sequence models and a <a href="../images/flunkless/cultural model.pdf">cultural model</a>.</p>
 			<p>We also started visioning for our users, as well as wireframing and paper prototyping for future interviews.  We decided to go for a synchronous communication between professors, TAs, and students in place of office hours.</p>
 			<table width="100%">
 				<tr>
@@ -211,11 +206,11 @@ $(document).ready(function(){
 			<p id="problem_methods">methods used:</br>contextual inquiry</br>affinity diagram</p>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="line" style="width:5px; height: 37em; background: #000000;"><div class="circle"></div></div> 
+		<div class="line" style="width:5px; height: 42em; background: #000000;"><div class="circle"></div></div> 
 		<div class="col-md-1"></div>
 		<div class="problem_content4 content col-md-6">
 			<p>We decided to continue with user research and conducted 6 more interviews with our new wireframes and paper prototypes to test if it fit the users' needs and passed usability tests.  However, users mentioned that our ideas were nothing new and did not like the ideas.  However, when we posed the question if we were to offer synchronous communication during lecture, users seemed to really like this new idea.  Originally, we thought the problem was finding a more effective way for nonsynchronous communication, but user data has shown us that the user need is for <b>synchronous communication during lecture</b>, which is impossible in a large lecture without technology.  This is reflective of a paper written by a prominent HCI professor, Professor Jim Hollan, who mentions that technology's purpose shound not be to replicate face-to-face interaction, but to go <i>beyond being there</i> and to meet needs that are not met even with physical proximity.</p>
-			<img id="affinity" src="images/flunkless/affinity diagram 2.0.jpg">
+			<img id="affinity" src="../images/flunkless/affinity diagram 2.0.jpg">
 		</div>
 	</div>
 </div>
@@ -228,7 +223,7 @@ $(document).ready(function(){
 			<p id="problem_methods">methods used:</br>competitive analysis</p>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="line" style="width:5px; height: 55em; background: #000000;"><div class="circle"></div></div> 
+		<div class="line" style="width:5px; height: 58em; background: #000000;"><div class="circle"></div></div> 
 		<div class="col-md-1"></div>
 		<div class="problem_content5 content col-md-6">
 			<p>For our synchronous communication during lecture for effective communication between a large number of students and the teachers during lecture, we decided to use these features to meet user needs from our interviews:</p>
@@ -310,7 +305,7 @@ $(document).ready(function(){
 			<div class="problem_content2 content col-md-6">
 				<p>Our original idea was a way to integrate academics and Facebook together.  We decided to conduct interviews of students, teaching assistants, and professors based on how they use Facebook or other tools (like Piazza and Blackboard) for academics.</p>
 				<p>After 12 interviews, we consolidated our user data into an affinity diagram, which is a way to visualize the patterns of the different issues and insights presented by our users that easily reveals our users' needs.</p>
-				<img id="affinity" src="images/flunkless/affinity1.jpg">
+				<img id="affinity" src="../images/flunkless/affinity1.jpg">
 			</div>
 		</div>
 	</div>
@@ -333,18 +328,18 @@ $(document).ready(function(){
 			<div class="problem_content3 content col-md-6">
 				<p>Some main insights we gained through our data was:</br>- students wanted to share their ideas, work, and other resources</br>- students wanted a way to confidently ask questions instead of being intimidated by the staff</br>- students wanted to be able to meet other students in the class</br>- TAs did not want to mix their social and professional lives through Facebook</br>- professors wanted their students to be more engaged with the material</br>- professors and TAs did not want to answer the same question over and over again</br>- all users wanted easy communication with each other</p>
 			</br>
-				<p>Through this data, we were able to create three personas for the <a href="images/flunkless/professor persona.pdf">professor</a>, <a href="images/flunkless/ta persona.pdf">TA</a>, and <a href="images/flunkless/student persona.pdf">student</a>.  We also created two <a href="images/flunkless/sequence models.pdf">sequence models</a> and a <a href="images/flunkless/cultural model.pdf">cultural model</a>.</p>
+				<p>Through this data, we were able to create three personas for the <a href="../images/flunkless/professor persona.pdf">professor</a>, <a href="../images/flunkless/ta persona.pdf">TA</a>, and <a href="../images/flunkless/student persona.pdf">student</a>.  We also created two <a href="../images/flunkless/sequence models.pdf">sequence models</a> and a <a href="../images/flunkless/cultural model.pdf">cultural model</a>.</p>
 				<p>We also started visioning for our users, as well as wireframing and paper prototyping for future interviews.  We decided to go for a synchronous communication between professors, TAs, and students in place of office hours.</p>
 				<table width="100%">
 					<tr>
-						<td><img src="images/flunkless/visioning_student1.jpg"></td>
-						<td><img src="images/flunkless/visioning_student2.jpg"></td>
-						<td><img src="images/flunkless/visioning_ta.jpg"></td>
+						<td><img src="../images/flunkless/visioning_student1.jpg"></td>
+						<td><img src="../images/flunkless/visioning_student2.jpg"></td>
+						<td><img src="../images/flunkless/visioning_ta.jpg"></td>
 					</tr>
 					<tr>
-						<td><img src="images/flunkless/paperprototype1.1.jpg"></td>
-						<td><img src="images/flunkless/paperprototype1.2.jpg"></td>
-						<td><img src="images/flunkless/paperprototype1.3.jpg"></td>
+						<td><img src="../images/flunkless/paperprototype1.1.jpg"></td>
+						<td><img src="../images/flunkless/paperprototype1.2.jpg"></td>
+						<td><img src="../images/flunkless/paperprototype1.3.jpg"></td>
 					</tr>
 				</table>
 			</div>
@@ -366,7 +361,7 @@ $(document).ready(function(){
 			</div>
 			<div class="problem_content4 content col-md-6">
 				<p>We decided to continue with user research and conducted 6 more interviews with our new wireframes and paper prototypes to test if it fit the users' needs and passed usability tests.  However, users mentioned that our ideas were nothing new and did not like the ideas.  However, when we posed the question if we were to offer synchronous communication during lecture, users seemed to really like this new idea.  Originally, we thought the problem was finding a more effective way for nonsynchronous communication, but user data has shown us that the user need is for <b>synchronous communication during lecture</b>, which is impossible in a large lecture without technology.  This is reflective of a paper written by a prominent HCI professor, Professor Jim Hollan, who mentions that technology's purpose shound not be to replicate face-to-face interaction, but to go <i>beyond being there</i> and to meet needs that are not met even with physical proximity.</p>
-				<img id="affinity" src="images/flunkless/affinity diagram 2.0.jpg">
+				<img id="affinity" src="../images/flunkless/affinity diagram 2.0.jpg">
 			</div>
 		</div>
 	</div>
@@ -411,13 +406,13 @@ $(document).ready(function(){
 			<div class="problem_content6 content col-md-6">
 				<table width="100%">
 					<tr>
-						<td><img src="images/flunkless/finalpp1.jpg"></td>
-						<td><img src="images/flunkless/finalpp2.jpg"></td>
+						<td><img src="../images/flunkless/finalpp1.jpg"></td>
+						<td><img src="../images/flunkless/finalpp2.jpg"></td>
 					</tr>
 					<tr>
-						<td><img src="images/flunkless/2.1.png"></td>
-						<td><img src="images/flunkless/3.1.png"></td>
-						<td><img src="images/flunkless/4.png"></td>
+						<td><img src="../images/flunkless/2.1.png"></td>
+						<td><img src="../images/flunkless/3.1.png"></td>
+						<td><img src="../images/flunkless/4.png"></td>
 					</tr>
 				</table>
 			</div>
