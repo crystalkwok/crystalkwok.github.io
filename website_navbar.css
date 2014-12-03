@@ -25,13 +25,13 @@
 }
 
 .dropdown a{
-	font-size:35px;
+	font-size:39px;
     font-family: 'Lato', sans-serif;
 }
 
 .icon-menu{
 	display:none;
-	font-size:38px;
+	font-size:39px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -67,7 +67,6 @@
 		margin:10px;
 		text-align:center;
         letter-spacing: 0.20em;
-        font-size:38px;
 	}
 
 	.dropdown ul{
@@ -92,7 +91,7 @@
 		font-size:25px;
 	}
 
-	.dropdown li{
-		font-size:22px;
+	.dropdown a{
+		font-size:25px;
 	}
 }
