@@ -210,7 +210,7 @@ background-color: #5c595a;
 }
     
     .title{
-        font-size:40px;   
+        font-size:45px;   
     }
 
 
@@ -234,6 +234,10 @@ background-color: #5c595a;
 	.relevant_courses .title{
 		width:800px;
 	}
+    
+    #skills_title{
+        font-weight:400;   
+    }
 
 
 
