@@ -1,3 +1,4 @@
+/*close button for gallery*/
 .galleria-exit{
     position:absolute;
     top:12px;
@@ -13,12 +14,14 @@ font-size:15px;
 background-color:#676565;
 }
 
+/*everything but nav bar*/
 .rest{
 	position:relative;
 	top:50px;
 	width:100%;
 }
 
+/*title of each section: art: concentration*/
 #title{
     font-size:35px;
     font-family: 'Montserrat', sans-serif;
@@ -27,6 +30,7 @@ background-color:#676565;
    color:#ffffff;
 }
 
+/*typography and concentraiton description*/
 .intro{
     padding-right:30px;
     padding-left:30px;
@@ -41,35 +45,35 @@ background-color:#676565;
     font-weight:100;
 }
 
-#back{
+/*go back to art link*/
+#back, #other{
     color:#ffffff;
     text-decoration: none;
 }
 
-#back:hover{
-	color:#e6a59f;
-}
-
+/*go to next link*/
 #other{
   float:right;  
-    color:#ffffff;
-    text-decoration: none;
 }
 
-#other:hover{
+#back:hover, #other:hover{
 	color:#e6a59f;
 }
 
+
+/*paragraph/description part without title in intro*/
 .introp{
     margin-top:-30px;
 }
 
+/*typography images*/
 .intro img{
     height:200px;
     margin-right: 10%;
     margin-left: 10%;
 }
 
+/*button for full gallery*/
 .btn{
 	position:relative;
 	right:50%;
@@ -84,7 +88,7 @@ background-color:#676565;
 }
 
 
-
+/*typography*/
 #sfquote{  
     float:right;
     width:40%;
@@ -93,6 +97,7 @@ background-color:#676565;
 #description{
  color:#ecc476;   
 }
+
 
 @media only screen and (max-width:995px){
 	
@@ -103,6 +108,15 @@ background-color:#676565;
     
     #isaiah{
         margin-left:-5px;   
+    }
+    
+    .intro{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    
+    #other{
+        font-size:15px;   
     }
 
 
