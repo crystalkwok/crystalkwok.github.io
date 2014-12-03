@@ -75,14 +75,9 @@ font-size:20px;
 }
 
 /*set image size of each section*/
-.concentration img{
-    height:100px;
-    margin:20px;
-}
-
-.other_work img{
-    height:100px;
-    margin:20px;
+.concentration img, .other_work img{
+    height:150px;
+    margin:15px;
 }
 
 .typography img{
