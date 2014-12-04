@@ -119,6 +119,21 @@ font-size:19px;
     }
 }
 
+@media only screen and (max-width:1200px){
+
+	#artq{
+		font-size: 85px;
+		width:100%;
+	}
+    
+    .art_p{
+        margin-top: -8%;   
+    }
+    
+    #logo{
+        margin-top:20%;   
+    }
+}
 
 
 @media only screen and (max-width:995px){
@@ -133,7 +148,6 @@ font-size:19px;
 	.art_p p{
 		margin-left:10%;
 		width:80%;
-        margin-top:-9%;
 	}
     
     #artq{
