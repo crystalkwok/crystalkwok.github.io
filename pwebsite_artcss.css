@@ -15,19 +15,28 @@ font-size:19px;
 	vertical-align: middle;
 	height:100%;
     margin-left:-2%;
-    margin-top:-3%;
+    margin-top:8%;
 }
 
 .jumbotron p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	color:#fbfcfc;
 	padding-bottom: 60px;
+    line-height: 190%;
 }
 
 /*ART?*/
 #artq{
     font-size:100px;
+}
+
+.jumbotron { 
+	background-color: #1E5754;
+	position:relative;
+	width:100%;
+	height:80vh;
+    top:50px;
 }
 
 .trianglerec{
@@ -61,31 +70,203 @@ font-size:19px;
     color:#ac746e; 
 }
 
-.concentration, .other_work, .typography{
+.concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
     padding:40px;
 }
 /*set image size of each section*/
-.concentration img, .other_work img{
-    height:150px;
-    margin:15px;
-}
+/*.concentration img, .other_work img*/
+
 
 .typography img{
     height:200px;
     margin:40px;
 }
 
-#more{
+#more, #more_info, #more_infot{
     text-decoration: none;
     color: #606060;
     font-family:'Montserrat', sans-serif;
 }
 
-#more:hover{
+#more:hover, #more_info:hover, #more_infot:hover{
     color:#ac746e;
+    cursor: pointer;
+}
+
+.info_slide, .infot_slide{
+    display:none;
+    line-height:170%;
 }
 
 
+
+/*attempt lightbox*/
+* {margin: 0; padding: 0;}
+
+/*#lightbox {
+	margin: 10px auto;
+	width: 520px; 
+	border-bottom: 1px solid #ccc;
+}*/
+
+/*#lightbox h1 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0;
+	color: white;
+	font-size: 24px;
+	background: rgba(255, 255, 255, 0.1);
+	border-left: 2px solid rgba(255, 255, 255, 0.65);
+	border-right: 2px solid rgba(255, 255, 255, 0.65);
+}
+#lightbox ul {
+	overflow: hidden;
+}
+/*Image styles*/
+#concentration_lightbox ul li, #other_work_lightbox ul li, #typography_lightbox ul li {
+	float: left;
+	padding: 10px;
+	padding: 10px;
+	background: #fff;
+	/*margin: 0 20px 20px 0;*/
+	list-style-type: none;
+	position: relative; /*change*/
+	cursor: pointer;
+}
+/*No right margin for images in the 2nd column*/
+/*#concentration_lightbox ul li:nth-child(even) {
+	margin-right: 0;
+}*/
+#concentration_lightbox ul li img, #other_work_lightbox ul li img, #typography_lightbox ul li img {
+	display: block;
+}
+
+/*Image titles*/
+#concentration_lightbox .image_title, #other_work_lightbox .image_title, #typography_lightbox .image_title {
+	width: 170px; height: 175px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	/*Hover effect - default state*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+/*#concentration_lightbox .title {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	//Vertical center align
+	display: table-cell;
+	vertical-align: middle;
+	//Hover effect - default state
+	transform: scale(0.2);
+	transition: all 0.25s;
+}*/
+
+#concentration_lightbox .title, #other_work_lightbox .title, #typography_lightbox .title {
+    display:none;
+}
+/*Zoom icon over each title using iconfont and pseudo elements*/
+#concentration_lightbox .title::before, #other_work_lightbox .title::before, #typography_lightbox .title::before {
+	/*content: 'L';*/
+	font-family: websymbols;
+	font-size: 24px;
+	color: #fff;
+	opacity: 0.5;
+	display: block;
+	line-height: 36px;
+}
+/*Hover states*/
+#concentration_lightbox li:hover, #other_work_lightbox li:hover, #typography_lightbox li:hover{
+	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+#concentration_lightbox li:hover .image_title, #other_work_lightbox li:hover .image_title, #typography_lightbox li:hover .image_title  {
+	opacity: 1;
+}
+#concentration_lightbox li:hover .title, #other_work_lightbox li:hover .title, #typography_lightbox li:hover .title {
+	transform: scale(1);
+}
+
+/*Lets change the iconfont to websymbols since entypo has some issues with rendering on windows*/
+@font-face {
+	font-family: websymbols;
+	src: url("http://thecodeplayer.com/uploads/fonts/websymbols.eot");
+	src: url('http://thecodeplayer.com/uploads/fonts/websymbols.eot?#iefix') format('embedded-opentype'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.woff') format('woff'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.ttf') format('truetype'),
+	 url('http://thecodeplayer.com/uploads/fonts/websymbols.svg#WebSymbolsRegular') format('svg');
+}
+
+
+
+/*Lightbox element style*/
+.lb_backdrop {
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+/*The canvas contains the larger image*/
+.lb_canvas {
+	background: rgba (0,0,0,0.9);
+	width: 50px; height: 50px;
+	position: fixed;
+	top: 0; left: 0; /*later be centered by jquery*/
+	/*box-shadow: 0 0 5px 5px black;*/
+	padding: 10px;
+}
+
+/*A separate class for loading GIF, for easy Jquery handling*/
+.lb_canvas.loading {
+	background: black url("http://thecodeplayer.com/uploads/media/loading.gif") center center no-repeat;
+}
+/*Lightbox Controls*/
+.lb_controls {
+	width: 400px; 
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	bottom: 10px;
+	color: white;
+	/*To horizontally center it*/
+	left: 0; right: 0; margin: 0 auto; 
+}
+.lb_controls span {
+	line-height: 30px;
+	height: 30px;
+}
+.lb_controls span.inactive {
+	opacity: 0.25;
+}
+.lb_previous, .lb_next {
+	position: absolute;
+	top: 0;
+	padding: 5px 12px;
+	font-family: websymbols;
+	font-size: 14px;
+	background: black;
+	cursor: pointer;
+}
+.lb_previous {
+	left: 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_next {
+	right: 0;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_title {
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+/*end attempt lightbox*/
 
 @media only screen and (min-width:1600px){
 	.art_p p{
@@ -95,6 +276,8 @@ font-size:19px;
 	.jumbotron{
 		height:85vh;
 	}
+    
+    
 
 }
 
@@ -103,10 +286,25 @@ font-size:19px;
         margin-top:65%;   
     }
     
-    .description{
-        margin-top:13%;   
+    .art_p{
+        margin-top:;   
     }
+
     
+}
+
+@media only screen and (min-width:2100px){
+	.jumbotron p{
+		margin-top:60%;
+	}
+
+	#logo{
+		margin-top:65%;
+	}
+
+	.jumbotron{
+		height:90vh;
+	}
 }
 
 @media only screen and (min-width: 2600px){
@@ -125,13 +323,26 @@ font-size:19px;
 		font-size: 85px;
 		width:100%;
 	}
-    
-    .art_p{
-        margin-top: -8%;   
-    }
+
     
     #logo{
         margin-top:20%;   
+    }
+    
+    #artnux{
+        font-size:20px;   
+    }
+    
+    .art_p{
+        margin-bottom:1%;
+    }
+    
+    .jumbotron p{   
+        line-height:150%;
+    }
+    
+    .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
+        padding=0px;   
     }
 }
 
@@ -141,11 +352,16 @@ font-size:19px;
 		height:100%;
 		top:-20px;
 	}
+    
+    #logo{
+         margin-top:-1px;
+    }
 /*}
 
 @media only screen and (max-width: 950px){*/
 
 	.art_p p{
+        margin-top:23%;  
 		margin-left:10%;
 		width:80%;
 	}
@@ -162,16 +378,20 @@ font-size:19px;
     /*end nav bar changes*/
 
     /*change triangle to suit navbar*/
+    
+    body p{
+        font-size:25px;   
+    }
+    
 	.trianglerec{
 		margin-top:-52px;
 	}
 
 	#artnux{
-		font-size:40px;
+		font-size:24px;
 	}
 
 	.intro p{
-		font-size:25px;
 		width:100%;
         padding:0px;
 	}
@@ -202,11 +422,10 @@ font-size:19px;
 		font-size:25px;
 	}
     
-    .intro p{
-		font-size:18px;
-	}
+    body p{
+        font-size:18px;   
+    }
 
-	
 
 	.concentration img{
 		height:135px;

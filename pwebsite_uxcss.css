@@ -13,15 +13,16 @@ display: table-cell;
 vertical-align: middle;
 height: 100%;
     margin-left:-2%;
-margin-top:5%;
+margin-top:8%;
 }
 
 .jumbotron p { /*p words in jumbotron*/
 	font-family:'Montserrat', sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	color:#fbfcfc;
 	/*width:650px;*/
 	padding-bottom:60px;
+    line-height: 180%;
 }
 
 #hello{ /*hello word*/
@@ -29,6 +30,13 @@ margin-top:5%;
 	font-weight:700;
 }
 
+.jumbotron { 
+	background-color: #1E5754;
+	position:relative;
+	width:100%;
+	height:80vh;
+    top:50px;
+}
 
 .trianglerec{
 	left:50%;
@@ -37,7 +45,7 @@ margin-top:5%;
 
 /*the whole section with portfolio*/
 .ux_work {
-padding-top:70px;
+padding-top:20px;
 padding-left:40px;
 }
 
@@ -57,12 +65,17 @@ padding-left:40px;
 	width:280px;
 }
 
+.row{
+    display:block;
+}
+
 /*left sections of ux work*/
 .left, .middle, .right{
 	float:left;
-	width:280px;
-    margin:50px;
-    /*margin-left:40px;*/
+	width:23%;
+    margin-right:50px;
+    margin-left:50px;
+    margin-bottom: 20px;
 }
 
 /*title of all the separate works*/
@@ -86,6 +99,7 @@ padding-left:40px;
 	.jumbotron{
 		height:85vh;
 	}
+
 }
 
 @media only screen and (min-width:1790px){
@@ -94,9 +108,23 @@ padding-left:40px;
     }
     
     .description{
-        margin-top:13%;   
+        margin-top:16%;   
     }
     
+}
+
+@media only screen and (min-width:2100px){
+	.jumbotron p{
+		margin-top:60%;
+	}
+
+	#logo{
+		margin-top:65%;
+	}
+
+	.jumbotron{
+		height:90vh;
+	}
 }
 
 
@@ -122,11 +150,15 @@ padding-left:40px;
 	}
     
     #logo {
-        margin-top:10%;   
+        margin-top:20%;   
     }
     
     .description{
-        margin-top: 2%;   
+        margin-top: 6%;   
+    }
+    
+    #love {
+        font-size:20px;   
     }
 
 }
@@ -139,7 +171,6 @@ padding-left:40px;
 		height:100%;
 		top:-10px;
 	} /*make the jumbotron long*/
-    
 
 
 	.description p{
@@ -148,6 +179,15 @@ padding-left:40px;
 	} /*make description in jumbotron larger*/
 
 
+    .description{
+        padding-top:20%;
+    }
+    
+    
+    #logo{
+        margin-top:-1px;
+    }
+    
 	#hello{
 		font-size:150px;
 	}
@@ -196,22 +236,10 @@ padding-left:40px;
 
 
 	/*change size of sections*/
-	.left{
+	.left, .middle, .right{
 		width:80%;
 		margin-left:5%;
 	} /*flunkless project description*/
-
-	.middle{
-		width:80%;
-		margin:0px;
-		margin-left:5%;
-	}
-
-	.right{
-		width:80%;
-		margin:0px;
-		margin-right:15%;
-	}
 
 
 
