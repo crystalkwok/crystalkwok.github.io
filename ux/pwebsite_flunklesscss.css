@@ -27,6 +27,12 @@ body p{
 	color:#ecc476;
 }
 
+.problem_content3 li{
+    color:#ffffff;
+    font-weight:300;
+    font-size:15px;
+}
+
 
 a:hover{
 	text-decoration:none;
@@ -171,6 +177,13 @@ width:100%;
 	display:none;
 }
 
+#content5_title{
+ font-size:18px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+
+
 @media only screen and (max-width:1200px){
 	.problem_content3 img{
 		width:120px;
@@ -247,6 +260,18 @@ width:100%;
 	.content p{
 		font-size:22px;
 	}
+    
+    #problem_methods{
+        font-size: 18px; 
+    }
+    
+    .problem_content3 li{
+        font-size:17px;   
+    }
+    
+    #content5_title{
+        font-size: 22px;  
+    }
 
 
 }

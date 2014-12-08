@@ -64,8 +64,8 @@ background-color: #5c595a;
 }
 
 .content .container{
-    padding-right:8%;
-    padding-left:8%;
+    padding-right:5%;
+    padding-left:5%;
 }
 /*resume button*/
 .btn{
@@ -153,6 +153,11 @@ background-color: #5c595a;
 	margin-left:30px;
 	width:590px;
 	}
+    
+    .content .container {
+        padding-right:2%;
+        padding-left:2%;
+    }
 
 }
 
@@ -164,6 +169,11 @@ background-color: #5c595a;
 	.self img{
 		width:150%;
 	}
+    
+    .contact .container {
+        padding-right:2%;
+        padding-left:2%;
+    }
 }
 
 /*@media only screen and (max-width:1020px){
@@ -300,23 +310,27 @@ background-color: #5c595a;
     }
 }
 
-@media only screen and (min-width:1520px){
+@media only screen and (min-width:1500px){
 
-	.jumbotron p{
-		font-size: 18px;
-	}
+	.self_description{
+        margin-top:4%;   
+    }
 
 	.self img{
 		width:130%;
-		margin-top:50px;
+		margin-top:40px;
 	}
 }
 
-@media only screen and (min-width:1600px){
+@media only screen and (min-width:1790px){
 	.self img{
 		margin-top:0px;
 		margin-top:30%;
 	}
+    
+    .self_description{
+        margin-top:6%;   
+    }
 
 	.jumbotron{
 		height:85vh;
@@ -329,8 +343,8 @@ background-color: #5c595a;
 		margin-top:100%;
 	}
 
-	.jumbotron p{
-		margin-top:35%;
+	.self_description{
+		margin-top:23%;
 	}
 
 	.jumbotron{
