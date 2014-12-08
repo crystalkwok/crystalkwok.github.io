@@ -185,13 +185,11 @@ width:100%;
 
 
 @media only screen and (max-width:1200px){
-	.problem_content3 img{
-		width:120px;
+	.problem_content3 img, .problem_content6 img{
+		width:150px;
+        padding-bottom:10px;
 	}
 
-	.problem_content6 img{
-		width:120px;
-	}
     
     #left{
         height:175px;
@@ -252,7 +250,7 @@ width:100%;
 		top: -20px;
 	}
 
-			.trianglerec{
+    .trianglerec{
 		margin-top:-50px;
 	}
 
@@ -281,12 +279,10 @@ width:100%;
 }
 
 @media only screen and (max-width:780px){
-#left{
-    height:240px;
+#left, #right{
+    height:220px;
 }
-    
-#right{
-    height:240px;
-}
+
+
 
 }
