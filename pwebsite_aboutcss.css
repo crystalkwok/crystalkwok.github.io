@@ -1,6 +1,6 @@
 body {
 font-family:'Lato', sans-serif;
-font-size:20px;
+font-size:18px;
 background-color: #5c595a;
 }
 
@@ -47,7 +47,11 @@ background-color: #5c595a;
 .contact {
 	margin:auto;
 	background-color:#f3f1ae;
+}
 
+.contact .container {
+	padding-right:8%;
+	padding-left:8%;
 }
 
 .contact p{
@@ -59,7 +63,10 @@ background-color: #5c595a;
     font-family:'Montserrat', sans-serif;
 }
 
-
+.content .container{
+    padding-right:8%;
+    padding-left:8%;
+}
 /*resume button*/
 .btn{
 	background-color:#82d3a5;
@@ -92,7 +99,12 @@ background-color: #5c595a;
 #experience_title{
 	font-size:22px;
     font-weight:500;
-    font-family:'Montserrat', sans-serif;
+        letter-spacing: 0.15em;
+}
+
+#skills_title{
+    font-weight:500;
+        letter-spacing: 0.15em;  
 }
 
 /*for projects*/
@@ -107,14 +119,14 @@ background-color: #5c595a;
 
 /*part of resume that is not a title*/
 .meatcontent p{
-	line-height:190%;
+	line-height:180%;
 	font-weight:200;
 	color:#ffffff;
 }
 
 /*part of the resume that shoud be really small O.O*/
 .description{
-	font-size:15px;
+	font-size:16px;
 }
 
 /*change colors for each section*/
@@ -129,6 +141,9 @@ background-color: #5c595a;
 .activities {
      background-color:#494647;
 }
+
+
+
 
 
 
@@ -237,7 +252,7 @@ background-color: #5c595a;
 	}
     
     #skills_title{
-        font-weight:400;   
+        font-weight:400;  
     }
 
 
