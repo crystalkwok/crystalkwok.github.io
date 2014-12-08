@@ -272,6 +272,10 @@ width:100%;
     #content5_title{
         font-size: 22px;  
     }
+    
+    .line{
+        display:none;   
+    }
 
 
 }
