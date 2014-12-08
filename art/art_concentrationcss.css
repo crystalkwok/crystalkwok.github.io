@@ -14,6 +14,10 @@ font-size:15px;
 background-color:#676565;
 }
 
+body p{
+    font-weight: 300;
+}
+
 /*everything but nav bar*/
 .rest{
 	position:relative;
@@ -38,7 +42,7 @@ background-color:#676565;
 
 
 .intro p{
-	font-size: 15px;
+	font-size: 17px;
 	padding-bottom: 60px;
     color:#ffffff;
     line-height: 280%;
