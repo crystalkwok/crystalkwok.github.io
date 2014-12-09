@@ -24,9 +24,15 @@
 		<title>FlunkLess--crystal kwok</title>
 
 		<!--jquery-->
-		<script src="../jquery/jquery.min.js"></script>
-		<script src="../jquery-1.11.1.smin.js"></script>
-		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <script src="../jquery/jquery.min.js"></script>
+		<script src="../jquery/jquery-1.11.1.min.js"></script>
+        
+                            <!-- PrefixFree -->
+                    <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -166,9 +172,19 @@ $(document).ready(function(){
 		<div class="col-md-1"></div>
 		<div class="problem_content2 content col-md-6">
 			<p>After 12 interviews on students, teaching assistants, and professors, we consolidated our user data into an affinity diagram, which is a way to visualize the patterns of the different issues and insights presented by our users that easily reveals our users' needs.</p>
-			<img id="affinity" src="../images/flunkless/affinity1.jpg">
-		</div>
+            <div id="affinity_lightbox">
+                <ul>
+                    <li><img id="affinity" src="../images/flunkless/affinity1.jpg" data-large= "../images/flunkless/affinity1.2.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Affinity Diagram</h5>
+                        </div>
+                    </li>
+                    
+                </ul>
+            
+		  </div>
 	</div>
+</div>
 </div>
 
 <div class="container">
@@ -178,11 +194,11 @@ $(document).ready(function(){
 			<p id="problem_methods">methods used:</br>persona writing</br>cultural and sequence modelling</br>visioning</br>wireframing</br>prototyping</p>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="line" style="width:5px; height: 52em; background: #000000;"><div class="circle"></div></div> 
+		<div class="line" style="width:5px; height: 60em; background: #000000;"><div class="circle"></div></div> 
 		<div class="col-md-1"></div>
 		<div class="problem_content3 content col-md-6">
 			<p>We found that
-            <ul><li>students wanted to share their ideas, work, and other resources</li> 
+            <ul class="main_ideas_list"><li>students wanted to share their ideas, work, and other resources</li> 
                 <li>students wanted a way to confidently ask questions instead of being intimidated by the staff</li>
                 <li>students wanted to be able to meet other students in the class</li>
                 <li>TAs did not want to mix their social and professional lives through Facebook</li>
@@ -191,19 +207,41 @@ $(document).ready(function(){
                 <li>all users wanted easy communication with each other</li></ul></p>
 		</br>
 <p>Personas: &nbsp; &nbsp;<a href="../images/flunkless/professor persona.pdf">PROFESSOR</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/flunkless/ta persona.pdf">TA</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="../images/flunkless/student persona.pdf">STUDENT</a></p>
-
-			<table width="100%">
-				<tr>
-					<td><img src="../images/flunkless/visioning_student1.jpg"></td>
-					<td><img src="../images/flunkless/visioning_student2.jpg"></td>
-					<td><img src="../images/flunkless/visioning_ta.jpg"></td>
-				</tr>
-				<tr>
-					<td><img src="../images/flunkless/paperprototype1.1.jpg"></td>
-					<td><img src="../images/flunkless/paperprototype1.2.jpg"></td>
-					<td><img src="../images/flunkless/paperprototype1.3.jpg"></td>
-				</tr>
-			</table>
+            <div id="vision_pp_lightbox">
+                <ul>
+                    <li><img src="../images/flunkless/visioning_student1.jpg" data-large= "../images/flunkless/visioning_student1full.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Visioning: Student (1)</h5>
+                        </div>
+                    </li>
+                    <li><img src="../images/flunkless/visioning_student2.jpg" data-large= "../images/flunkless/visioning_student2full.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Visioning: Student (2)</h5>
+                        </div>
+                    </li>
+                    <li><img  src="../images/flunkless/visioning_ta.jpg" data-large= "../images/flunkless/visioning_tafull.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Visioning: TA</h5>
+                        </div>
+                    </li>
+                    <li><img  src="../images/flunkless/paperprototype1.1.jpg" data-large= "../images/flunkless/paperprototype1.1full.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Paper Prototype</h5>
+                        </div>
+                    </li>
+                    <li><img src="../images/flunkless/paperprototype1.2.jpg" data-large= "../images/flunkless/paperprototype1.2full.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Paper Prototype</h5>
+                        </div>
+                    </li> 
+                    <li><img src="../images/flunkless/paperprototype1.3.jpg" data-large= "../images/flunkless/paperprototype1.3full.jpg">
+                        <div class="image_title">
+                            <h5 class="title">Paper Prototype</h5>
+                        </div>
+                    </li>
+                </ul>
+            
+		  </div>
 		</div>
 	</div>
 </div>
@@ -219,7 +257,15 @@ $(document).ready(function(){
 		<div class="col-md-1"></div>
 		<div class="problem_content4 content col-md-6">
 			<p>Originally, we thought the problem was finding a more effective way for nonsynchronous communication, but user data has shown us that the user need is for <b>synchronous communication during lecture</b>, which is impossible in a large lecture without technology.  This is reflective of a paper written by a prominent HCI professor, Professor Jim Hollan, who mentions that technology's purpose shound not be to replicate face-to-face interaction, but to go <i>beyond being there</i> and to meet needs that are not met even with physical proximity.</p>
-			<img id="affinity" src="../images/flunkless/affinity diagram 2.0.jpg">
+			<div id="affinity_lightbox">
+                <ul>
+                    <li><img id="affinity" src="../images/flunkless/affinity diagram 2.0.jpg" data-large="../images/flunkless/affinity diagram 2.0.jpg">
+                            <div class="image_title">
+                                <h5 class="title">Affinity Diagram 2.0</h5>
+                            </div>
+                    </li>
+                </ul>
+            </div>
 		</div>
 	</div>
 </div>
@@ -257,24 +303,49 @@ $(document).ready(function(){
 			<p id="problem_methods">methods used:</br>paper prototyping</br>high fidelity prototyping</p>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="line" style="width:5px; height: 35em; background: #000000;"><div class="circle"></div></div> 
+		<div class="line" style="width:5px; height: 45em; background: #000000;"><div class="circle"></div></div> 
 		<div class="col-md-1"></div>
 		<div class="problem_content6 content col-md-6">
-			<table width="100%">
-				<tr>
-						<td><img src="../images/flunkless/finalpp1.jpg"></td>
-						<td><img src="../images/flunkless/finalpp2.jpg"></td>
-					</tr>
-					<tr>
-						<td><img src="../images/flunkless/2.1.png"></td>
-						<td><img src="../images/flunkless/3.1.png"></td>
-						<td><img src="../images/flunkless/4.png"></td>
-					</tr>
-			</table>
+            <div id="final_lightbox">
+                <ul>
+                    <li><img src="../images/flunkless/finalpp1.jpg" data-large= "../images/flunkless/finalpp1full.jpg">
+                            <div class="image_title">
+                                <h5 class="title">Paper Prototype (1)</h5>
+                            </div>
+                    </li>
+                    <li><img src="../images/flunkless/finalpp2.jpg" data-large= "../images/flunkless/finalpp2full.jpg">
+                            <div class="image_title">
+                                <h5 class="title">Paper Prototype (2)</h5>
+                            </div>
+                    </li>
+                    <li><img src="../images/flunkless/2.1.png" data-large= "../images/flunkless/2.png">
+                            <div class="image_title">
+                                <h5 class="title">Final Prototype (Class List)</h5>
+                            </div>
+                    </li>
+                    <li><img src="../images/flunkless/3.1.png" data-large= "../images/flunkless/3.png">
+                            <div class="image_title">
+                                <h5 class="title">Final Prototype (User's Homescreen)</h5>
+                            </div>
+                    </li>
+                    <li><img src="../images/flunkless/4.1.png" data-large= "../images/flunkless/4.png">
+                            <div class="image_title">
+                                <h5 class="title">Final Prototype (User's Class Page)</h5>
+                            </div>
+                    </li>
+                
+                </ul>
+            </div>
 		</div>
 	</div>
+</div> <!--end container-->
 </div>
-</div>
+
+
+
+
+
+
 
 
 <!--start when width= 990px -->
@@ -445,6 +516,144 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
+<!-- PrefixFree -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+
+<script>
+/*Jquery time*/
+$(document).ready(function(){
+	var item, img, title, large_img;
+	var CW, CH, CL, CT, hpadding, vpadding, imgtag;
+	//Flag for preventing multiple image displays
+	var lb_loading = false;
+	var doc = $(document);
+	
+	$("#affinity_lightbox li, #vision_pp_lightbox li, #final_lightbox li").click(function(){
+		if(lb_loading) return false;
+		lb_loading= true;
+		
+		item = $(this);
+		img = item.find("img");
+		title = item.find(".title").html();
+		
+		//Remove active class from previously clicked LI
+		$("#affinity_lightbox li.active, #vision_pp_lightbox li.active, #final_lightbox li.active").removeClass("active");
+		//Mark the clicked LI as active for later use
+		item.addClass("active");
+		
+		//The large image
+		large_img = new Image();
+		//Use data-large or the src itself if large image url is not available
+		large_img.src = img.attr("data-large") ? img.attr("data-large") : img.attr("src");
+		
+		//Adding additional HTML - only if it hasn't been added before
+		if($(".lb_backdrop").length < 1)
+		{
+			var lb_backdrop = '<div class="lb_backdrop"></div>';
+			var lb_canvas = '<div class="lb_canvas"></div>';
+			var lb_previous = '<span class="lb_previous"><</span>';
+			var lb_title = '<span class="lb_title"></span>';
+			var lb_next = '<span class="lb_next">></span>';
+			var lb_controls = '<div class="lb_controls">'+lb_previous+lb_title+lb_next+'</div>';
+			var total_html = lb_backdrop+lb_canvas+lb_controls;
+			
+			$(total_html).appendTo("body");
+		}
+		//Fade in lightbox elements if they are hidden due to a previous exit
+		if($(".lb_backdrop:visible").length == 0)
+		{
+			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeIn("slow");
+		}
+		
+		//Display preloader till the large image loads and make the previous image translucent so that the loader in the BG is visible
+		if(!large_img.complete) 
+			$(".lb_canvas").addClass("loading").children().css("opacity", "0.5")
+		
+		//Disabling left/right controls on first/last items
+		if(item.prev().length == 0)
+			$(".lb_previous").addClass("inactive");
+		else
+			$(".lb_previous").removeClass("inactive");
+		if(item.next().length == 0)
+			$(".lb_next").addClass("inactive");
+		else
+			$(".lb_next").removeClass("inactive");
+		
+		//Centering .lb_canvas
+		CW = $(".lb_canvas").outerWidth();
+		CH = $(".lb_canvas").outerHeight();
+		//top and left coordinates
+		CL = ($(window).width() - CW)/2;
+		CT = ($(window).height() - CH)/2;
+		$(".lb_canvas").css({top: CT, left: CL});
+		
+		//Inserting the large image into .lb_canvas once it's loaded
+		$(large_img).load(function(){
+			//Recentering .lb_canvas with new dimensions
+			CW = large_img.width;
+			CH = large_img.height;
+			//.lb_canvas padding to be added to image width/height to get the total dimensions
+			hpadding = parseInt($(".lb_canvas").css("paddingLeft")) + parseInt($(".lb_canvas").css("paddingRight"));
+			vpadding = parseInt($(".lb_canvas").css("paddingTop")) + parseInt($(".lb_canvas").css("paddingBottom"));
+			CL = ($(window).width() - CW - hpadding)/2;
+			CT = ($(window).height() - CH - vpadding)/2;
+			
+			//Animating .lb_canvas to new dimentions and position
+			$(".lb_canvas").html("").animate({width: CW, height: CH, top: CT, left: CL}, 500, function(){
+				//Inserting the image but keeping it hidden
+				imgtag = '<img src="'+large_img.src+'" style="opacity: 0;" />';
+				$(".lb_canvas").html(imgtag);
+				$(".lb_canvas img").fadeTo("slow", 1);
+				//Displaying the image title
+				$(".lb_title").html(title);
+				
+				lb_loading= false;
+				$(".lb_canvas").removeClass("loading");
+			})
+		})
+	})
+	
+	//Click based navigation
+	doc.on("click", ".lb_previous", function(){ navigate(-1) });
+	doc.on("click", ".lb_next", function(){ navigate(1) });
+	doc.on("click", ".lb_backdrop", function(){ navigate(0) });
+	
+	//Keyboard based navigation
+	doc.keyup(function(e){
+		//Keyboard navigation should work only if lightbox is active which means backdrop is visible.
+		if($(".lb_backdrop:visible").length == 1)
+		{
+			//Left
+			if(e.keyCode == "37") navigate(-1);
+			//Right
+			else if(e.keyCode == "39") navigate(1);
+			//Esc
+			else if(e.keyCode == "27") navigate(0);
+		}
+	});
+	
+	//Navigation function
+	function navigate(direction)
+	{
+		if(direction == -1) // left
+			$("#affinity_lightbox li.active, #vision_pp_lightbox li.active, #final_lightbox li.active").prev().trigger("click");
+		else if(direction == 1) //right
+			$("#affinity_lightbox li.active, #vision_pp_lightbox li.active, #final_lightbox li.active").next().trigger("click");
+		else if(direction == 0) //exit
+		{
+			$("#affinity_lightbox li.active, #vision_pp_lightbox li.active, #final_lightbox li.active").removeClass("active");
+			$(".lb_canvas").removeClass("loading");
+			//Fade out the lightbox elements
+			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeOut("slow", function(){
+				//empty canvas and title
+				$(".lb_canvas, .lb_title").html("");
+			})
+			lb_loading= false;
+		}
+	}
+})
+
+</script>            
 
 </div>
 

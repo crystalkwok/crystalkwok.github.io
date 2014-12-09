@@ -27,7 +27,7 @@ body p{
 	color:#ecc476;
 }
 
-.problem_content3 li{
+.problem_content3 .main_ideas_list li{
     color:#ffffff;
     font-weight:300;
     font-size:15px;
@@ -134,10 +134,7 @@ td{
 #affinity{
 height:100%;
 width:100%;
-}
-
-.content img{
-	width:150px;
+    margin-left:-20px;
 }
 
 .content{
@@ -177,6 +174,10 @@ width:100%;
 	display:none;
 }
 
+.content img{
+    width:160px;
+}
+
 #content5_title{
  font-size:18px;
     letter-spacing: 0.15em;
@@ -184,11 +185,172 @@ width:100%;
 }
 
 
+/*attempt lightbox*/
+#affinity_lightbox ul li, #vision_pp_lightbox ul li, #final_lightbox ul li{
+	float: left;
+	padding: 10px;
+	/*background: #fff;*/
+	/*margin: 0 20px 20px 0;*/
+    margin-left:-20px;
+	list-style-type: none;
+	position: relative; /*change*/
+	cursor: pointer;
+}
+/*No right margin for images in the 2nd column*/
+/*#concentration_lightbox ul li:nth-child(even) {
+	margin-right: 0;
+}*/
+#affinity_lightbox ul li img, #vision_pp_lightbox ul li img, #final_lightbox ul li img{
+	display: block;
+    float:left;
+    padding:10px;
+}
+
+/*Image titles*/
+.problem_content2 #affinity_lightbox .image_title{
+	width: 100%; height: 250px;
+    margin-left:-20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	/*Hover effect - default state*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+#vision_pp_lightbox .image_title, #final_lightbox .image_title{
+	width: 140px; height: 140px;
+    margin-left:20px;
+    margin-top:20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	/*Hover effect - default state*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.problem_content4 #affinity_lightbox .image_title {
+	width: 93%; height: 85px;
+    margin-top:20px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0;
+	display: table;
+	/*Hover effect - default state*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+#affinity_lightbox .title, #vision_pp_lightbox .title, #final_lightbox .title{
+    display:none;
+}
+/*Zoom icon over each title using iconfont and pseudo elements*/
+#affinity_lightbox .title::before, #vision_pp_lightbox .title::before, #final_lightbox .title::before{
+	/*content: 'L';*/
+	font-family: websymbols;
+	font-size: 24px;
+	color: #fff;
+	opacity: 0.5;
+	display: block;
+	line-height: 36px;
+}
+/*Hover states*/
+/*#affinity_lightbox li:hover{
+	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}*/
+#affinity_lightbox li:hover .image_title, #vision_pp_lightbox li:hover .image_title, #final_lightbox li:hover .image_title{
+	opacity: 1;
+}
+#affinity_lightbox li:hover .title, #vision_pp_lightbox li:hover .title, #final_lightbox li:hover .title{
+	transform: scale(1);
+}
+
+/*Lets change the iconfont to websymbols since entypo has some issues with rendering on windows*/
+@font-face {
+	font-family: websymbols;
+	src: url("http://thecodeplayer.com/uploads/fonts/websymbols.eot");
+	src: url('http://thecodeplayer.com/uploads/fonts/websymbols.eot?#iefix') format('embedded-opentype'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.woff') format('woff'),
+     url('http://thecodeplayer.com/uploads/fonts/websymbols.ttf') format('truetype'),
+	 url('http://thecodeplayer.com/uploads/fonts/websymbols.svg#WebSymbolsRegular') format('svg');
+}
+
+
+
+/*Lightbox element style*/
+.lb_backdrop {
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+/*The canvas contains the larger image*/
+.lb_canvas {
+	background: rgba (0,0,0,0.9);
+	width: 50px; height: 50px;
+	position: fixed;
+	top: 0; left: 0; /*later be centered by jquery*/
+	/*box-shadow: 0 0 5px 5px black;*/
+	padding: 10px;
+}
+
+/*A separate class for loading GIF, for easy Jquery handling*/
+.lb_canvas.loading {
+	background: black url("http://thecodeplayer.com/uploads/media/loading.gif") center center no-repeat;
+}
+/*Lightbox Controls*/
+.lb_controls {
+	width: 400px; 
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	bottom: 10px;
+	color: white;
+	/*To horizontally center it*/
+	left: 0; right: 0; margin: 0 auto; 
+}
+.lb_controls span {
+	line-height: 30px;
+	height: 30px;
+}
+.lb_controls span.inactive {
+	opacity: 0.25;
+}
+.lb_previous, .lb_next {
+	position: absolute;
+	top: 0;
+	padding: 5px 12px;
+	font-family: websymbols;
+	font-size: 14px;
+	background: black;
+	cursor: pointer;
+}
+.lb_previous {
+	left: 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_next {
+	right: 0;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lb_title {
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+/*end attempt lightbox*/
+
+
 @media only screen and (max-width:1200px){
-	.problem_content3 img, .problem_content6 img{
+	/*.problem_content3 img, .problem_content6 img{
 		width:150px;
         padding-bottom:10px;
-	}
+	}*/
 
     
     #left{
@@ -263,7 +425,7 @@ width:100%;
         font-size: 16px; 
     }
     
-    .problem_content3 li{
+    .problem_content3 .main_ideas_list li{
         font-size:17px;   
     }
     
