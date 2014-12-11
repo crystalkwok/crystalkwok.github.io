@@ -390,6 +390,10 @@ font-size:19px;
 	#artnux{
 		font-size:24px;
 	}
+    
+    #artnux p{
+    text-align:center;
+    }
 
 	.intro p{
 		width:100%;
