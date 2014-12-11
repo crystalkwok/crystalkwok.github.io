@@ -12,6 +12,11 @@ body p{
     font-size:17px;
 }
 
+.jumbotron a:hover{
+    text-decoration: none;
+    color:#a2f5d7;
+}
+
 
 .skip{
 	color:#3a828b;
@@ -27,15 +32,17 @@ body p{
 	color:#3a828b;
 }
 
+.problem_content3 a:hover{
+	text-decoration:none;
+	color:#ecc476;
+}
+
 .problem_content3 .main_ideas_list li{
     font-size:15px;
 }
 
 
-a:hover{
-	text-decoration:none;
-	color:#ecc476;
-}
+
 
 #left{
   float:left;  
