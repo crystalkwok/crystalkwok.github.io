@@ -1,58 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+	<!--bootstrap-->
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.min.css">
+    
+    <!--jquery-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+       
+        <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+
+	<!--css-->
+     <link href="../lightbox_gallerycss.css" rel="stylesheet" type="type/css">
+        <link href="../website_navbar.css" rel="stylesheet" type="type/css">
 		<link href="pwebsite_racss.css" rel="stylesheet" type="type/css">
+       
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="http://use.typekit.net/c/a9b600/futura-pt:n7,proxima-nova:i3:i4:i6:i7:i8:i9:n1:n3:n4:n6:n7:n8:n9.SH5:P:2,b5v:P:2,b5x:P:2,b5z:P:2,b61:P:2,b63:P:2,b65:P:2,b5r:P:2,b5t:P:2,b5w:P:2,b5y:P:2,bBh:P:2,b62:P:2,b64:P:2/d?3bb2a6e53c9684ffdc9a9bf5135b2a62a7ab620462a071ba2f63a0275e9b557bba25831002af1f22f20fb70343069b29358d48fc955a3796d7bee5255778756fa463f6940f868357382b35afed944916cbfa773cf97aa288ad1acf7887a5006ed5f9ae1f3bf94f4984931378f6d006b7f362c2ce5f5a714ac9b5b4775012ae5078db4eea3ac4dd6f0c3204">
-		<link rel="Shortcut Icon" type="image/jpg" href="images/icon2.jpg"/>
-		<title>Rainbow Art --crystal kwok</title>
-		<script src="jquery/jquery.min.js"></script>
-		<script src="jquery-1.11.1.min.js"></script>
-		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
+
+		<!--random stuff-->
+		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
+		<title>Rainbow Art & Rainbow Canvas--crystal kwok</title>
+
+
 </head>
 
 <body>
 
-<div class="navbar">
-	<div class="container">
-		<ul class="pull-left">
-			<li>Crystal Kwok</li>
-		</ul>
-		<ul class="pull-right">
-			<div class="right">
-				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="pwebsite_art.html">Art</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="pwebsite_about.html">About & Contact</a></li>
+<!--normal nav bar-->
+		<div class="navbar">
+			<div class="container">
+				<ul class="pull-left">
+					<li>CRYSTAL KWOK</li>
+				</ul>
+				<ul class="pull-right">
+					<div class="right">
+					<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT & CONTACT</a></li>
+					</div>
+				</ul>
+
 			</div>
-		</ul>	
-	</div>
-</div>
+		</div>
+        <!--small nav bar-->
+    
+		<div class="navbar_dropdown">
+				
+				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
+				<a href="#" style="text-decoration:none; color:#000000" class= "icon-menu menu-right">CRYSTAL KWOK</a>
+			
+			<div class="dropdown">
+			<ul class="dropdown2">
+			</br></br>
+				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
+			</br></br><br>
+				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT &amp; CONTACT</a></li>
+				</br>
+			</ul>
+			</div>
+		</div>
+
+
+		<script>
+			var main=function(){
+	
+
+				$('.icon-menu').click(function(){
+					$('.dropdown').toggle();
+					
+				});
+
+
+				$('.close').click(function(){
+					$('.dropdown').hide();
+				});
+			}
+			$(document).ready(main);
+	
+		</script>
+
 
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
-					<div class="description col-md-6">
-						<p><b><span style="font-size:25px">Rainbow Art &amp; Rainbow Canvas</span></b></p></br>
-						<p>DURATION:</br> June 2010 - Present</p>
-						<p>ROLE: </br>Assisant Art Instructor &amp; UX Designer</p>
-						<p>TOOLS:</br>Contextual Inquiry, Ethnographic Studies, Adobe Creative Suite, Front End Developing (HTML, CSS, JS/JQuery)</p>
-						<p>DESCRIPTION: </br>local art school for children and group instruction for paintings</p>
+					<div class="description">
+                        <a class="pull-right" href=#>next project</a>
+                        <br><br><br>
+						<p><b><span id="title">RAINBOW &nbsp; ART &nbsp;&nbsp; || &nbsp;&nbsp; RAINBOW &nbsp; CANVAS</span></b></p>
+                        <br><br>
+                        <div class="row">
+                            <p class="left col-md-5"><span style="font-weight:400">DURATION</span>: June 2010 - Present</p>
+                            <p class="right col-md-5"><span style="font-weight:400">ROLE</span>: Assistant Art Instructor &amp; UX Designer</p>
+                        </div>
+                        <div class="row">
+                            <p class="left col-md-5"><span style="font-weight:400">TOOLS</span>: Contextual Inquiry, Ethnographic Studies, Adobe Creative Suite, Front End Developing (HTML, CSS, JS/JQuery)</p>
+                            <p class="right col-md-5"><span style="font-weight:400">DESCRIPTION</span>: local art school for children and group instruction for painting</p>
+                        </div>
 					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5">
+					<!--<div class="col-md-5">
 						<table>
 							<tr>
-								<td><img src="images/rainbow art/rainbow art logo.jpg"></td>
+								<td><img src="../images/rainbow art/rainbow art logo.png"></td>
 							</tr>
 							<tr>
-								<td><img src="images/rainbow art/rainbow canvas logo.jpg"></td>
+								<td><img src="../images/rainbow art/rainbow canvas logo.png"></td>
 							</tr>
 						</table>
-					</div>
+					</div>-->
 			</div>
 		</div>
 	</div>
@@ -65,34 +134,201 @@
 
 	<div class="what_do_you_do">
 		<div class="container">
-			<p class="title"><span style= "font-size:30px">what do you do here?</span></p></br></br>
-			<p>My main roles at Rainbow Art & Rainbow Canvas are being an assistant art instructor to children and adults, and being the UX designer.  Rainbow Art is a local art school for children, and Rainbow Canvas are various single classes where an art instructor will instruct step-by-step on the featured artwork of the night. I have taught colored pencil, watercolor, markers, and acrylic painting to various students (similar to Wine & Canvas, but without the wine).  
-				<p>I recently became the UX designer of Rainbow Art & Rainbow Canvas simply because I asked for more roles in practicing my Adobe Creative Suite skills, but also in helping to make the experience here more user-centered and to solve problems presented by the users.  For example, one night during a Rainbow Canvas instruction, the original art instructor decided to instruct the students by showing the step-by-step painting on one side of the room, yet keeping the sample painting that she had finished earlier on the other side of the room.  I noticed that the students kept straining their necks by turning back and forth to see the sample painting and the step-by-step painting, because they wished to continue to see the end result while seeing the steps.  I notified the instructor of my observation and she moved the sample painting to the right of her step-by-step painting.  </p>
+            <div class="title"><p>what do you do here?</p></div></br></br>
+<div class="whatido"><p>My main roles at Rainbow Art & Rainbow Canvas are being an assistant art instructor to children and adults, and being the UX designer.  Rainbow Art is a local art school for children, and Rainbow Canvas are various single classes where an art instructor will instruct step-by-step on the featured artwork of the night. I have taught colored pencil, watercolor, markers, and acrylic painting to various students (similar to Wine & Canvas, but without the wine).  </p><br>
+				<p>I recently became the UX designer of Rainbow Art & Rainbow Canvas simply because I asked for more roles in practicing my Adobe Creative Suite skills, but also in helping to make the experience here more user-centered and to solve problems presented by the users.  For example, one night during a Rainbow Canvas instruction, the original art instructor decided to instruct the students by showing the step-by-step painting on one side of the room, yet keeping the sample painting that she had finished earlier on the other side of the room.  I noticed that the students kept straining their necks by turning back and forth to see the sample painting and the step-by-step painting, because they wished to continue to see the end result while seeing the steps.  I notified the instructor of my observation and she moved the sample painting to the right of her step-by-step painting.  </p><br>
 				<p>I have also made flyers, designed the Rainbow Canvas logo, started coding the company website, and made sample paintings for Rainbow Canvas.</p>
 				</br></br>
+            </div>
 		</div>
 	</div>
 </br></br>
 
 	<div class="pictures">
 		<div class="container">
-			<table>
-				<tr>
-					<td><img src="images/rainbow art/rainbow art help thumbnail.jpg"></td>
-					<td><img src="images/rainbow art/rainbow art portfolio seminar thumbnail.png"></td>
-					<td><img src="images/rainbow art/rainbow canvas thumbnail.png"></td>
-				</tr>
-				<tr>
-					<td><img src="images/rainbow art/rainbow canvas 2nd hp thumbnail.png"></td>
-					<td><img src="images/rainbow art/rainbow canvas true1 thumbnail.png"></td>
-					<td><img src="images/rainbow art/sample1 thumbnail.jpg"></td>
-				</tr>
-			</table>
+            
+            <div id="lightbox_normal">
+                    <ul>
+                        <li><img src="../images/rainbow art/rainbow art help thumbnail.jpg" data-large= "../images/rainbow art/rainbow art help.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Rainbow Art</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/rainbow art/rainbow art portfolio seminar thumbnail.png" data-large= "../images/rainbow art/rainbow art portfolio seminar.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Rainbow Art Portfolio Seminar</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/rainbow art/rainbow canvas thumbnail.png" data-large= "../images/rainbow art/rainbow canvas.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Rainbow Canvas Logo Prototype</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/rainbow art/rainbow canvas 2nd hp thumbnail.png" data-large= "../images/rainbow art/rainbow canvas 2nd hp.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Final Prototype (User's Homescreen)</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/rainbow art/rainbow canvas true1 thumbnail.png" data-large= "../images/rainbow art/rainbow canvas true1.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Final Prototype (User's Class Page)</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/rainbow art/sample1 thumbnail.jpg" data-large= "../images/rainbow art/sample1.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">Final Prototype (User's Class Page)</h5>
+                                </div>
+                        </li>
+
+                    </ul>
+                    </div>
+			
 		</div>
 	</div>
 
-</br></br>
 
+
+
+<!-- PrefixFree -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+
+<script>
+/*Jquery time*/
+$(document).ready(function(){
+	var item, img, title, large_img;
+	var CW, CH, CL, CT, hpadding, vpadding, imgtag;
+	//Flag for preventing multiple image displays
+	var lb_loading = false;
+	var doc = $(document);
+	
+	$("#lightbox_normal li").click(function(){
+		if(lb_loading) return false;
+		lb_loading= true;
+		
+		item = $(this);
+		img = item.find("img");
+		title = item.find(".title").html();
+		
+		//Remove active class from previously clicked LI
+		$("#lightbox_normal li.active").removeClass("active");
+		//Mark the clicked LI as active for later use
+		item.addClass("active");
+		
+		//The large image
+		large_img = new Image();
+		//Use data-large or the src itself if large image url is not available
+		large_img.src = img.attr("data-large") ? img.attr("data-large") : img.attr("src");
+		
+		//Adding additional HTML - only if it hasn't been added before
+		if($(".lb_backdrop").length < 1)
+		{
+			var lb_backdrop = '<div class="lb_backdrop"></div>';
+			var lb_canvas = '<div class="lb_canvas"></div>';
+			var lb_previous = '<span class="lb_previous"><</span>';
+			var lb_title = '<span class="lb_title"></span>';
+			var lb_next = '<span class="lb_next">></span>';
+			var lb_controls = '<div class="lb_controls">'+lb_previous+lb_title+lb_next+'</div>';
+			var total_html = lb_backdrop+lb_canvas+lb_controls;
+			
+			$(total_html).appendTo("body");
+		}
+		//Fade in lightbox elements if they are hidden due to a previous exit
+		if($(".lb_backdrop:visible").length == 0)
+		{
+			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeIn("slow");
+		}
+		
+		//Display preloader till the large image loads and make the previous image translucent so that the loader in the BG is visible
+		if(!large_img.complete) 
+			$(".lb_canvas").addClass("loading").children().css("opacity", "0.5")
+		
+		//Disabling left/right controls on first/last items
+		if(item.prev().length == 0)
+			$(".lb_previous").addClass("inactive");
+		else
+			$(".lb_previous").removeClass("inactive");
+		if(item.next().length == 0)
+			$(".lb_next").addClass("inactive");
+		else
+			$(".lb_next").removeClass("inactive");
+		
+		//Centering .lb_canvas
+		CW = $(".lb_canvas").outerWidth();
+		CH = $(".lb_canvas").outerHeight();
+		//top and left coordinates
+		CL = ($(window).width() - CW)/2;
+		CT = ($(window).height() - CH)/2;
+		$(".lb_canvas").css({top: CT, left: CL});
+		
+		//Inserting the large image into .lb_canvas once it's loaded
+		$(large_img).load(function(){
+			//Recentering .lb_canvas with new dimensions
+			CW = large_img.width;
+			CH = large_img.height;
+			//.lb_canvas padding to be added to image width/height to get the total dimensions
+			hpadding = parseInt($(".lb_canvas").css("paddingLeft")) + parseInt($(".lb_canvas").css("paddingRight"));
+			vpadding = parseInt($(".lb_canvas").css("paddingTop")) + parseInt($(".lb_canvas").css("paddingBottom"));
+			CL = ($(window).width() - CW - hpadding)/2;
+			CT = ($(window).height() - CH - vpadding)/2;
+			
+			//Animating .lb_canvas to new dimentions and position
+			$(".lb_canvas").html("").animate({width: CW, height: CH, top: CT, left: CL}, 500, function(){
+				//Inserting the image but keeping it hidden
+				imgtag = '<img src="'+large_img.src+'" style="opacity: 0;" />';
+				$(".lb_canvas").html(imgtag);
+				$(".lb_canvas img").fadeTo("slow", 1);
+				//Displaying the image title
+				$(".lb_title").html(title);
+				
+				lb_loading= false;
+				$(".lb_canvas").removeClass("loading");
+			})
+		})
+	})
+	
+	//Click based navigation
+	doc.on("click", ".lb_previous", function(){ navigate(-1) });
+	doc.on("click", ".lb_next", function(){ navigate(1) });
+	doc.on("click", ".lb_backdrop", function(){ navigate(0) });
+	
+	//Keyboard based navigation
+	doc.keyup(function(e){
+		//Keyboard navigation should work only if lightbox is active which means backdrop is visible.
+		if($(".lb_backdrop:visible").length == 1)
+		{
+			//Left
+			if(e.keyCode == "37") navigate(-1);
+			//Right
+			else if(e.keyCode == "39") navigate(1);
+			//Esc
+			else if(e.keyCode == "27") navigate(0);
+		}
+	});
+	
+	//Navigation function
+	function navigate(direction)
+	{
+		if(direction == -1) // left
+			$("#lightbox_normal li.active").prev().trigger("click");
+		else if(direction == 1) //right
+			$("#lightbox_normal li.active").next().trigger("click");
+		else if(direction == 0) //exit
+		{
+			$("#lightbox_normal li.active").removeClass("active");
+			$(".lb_canvas").removeClass("loading");
+			//Fade out the lightbox elements
+			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeOut("slow", function(){
+				//empty canvas and title
+				$(".lb_canvas, .lb_title").html("");
+			})
+			lb_loading= false;
+		}
+	}
+})
+
+</script>
+
+</br></br>
 
 
 

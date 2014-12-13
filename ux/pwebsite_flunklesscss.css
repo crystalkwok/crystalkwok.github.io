@@ -75,8 +75,9 @@ body p{
 }
 
 .jumbotron #title{
-	font-size:23px;
+	font-size:26px;
 	font-family:'Montserrat', sans-serif;
+            letter-spacing: 0.15em;
 }
 
 
@@ -408,6 +409,7 @@ width:100%;
 
 	.jumbotron #title{
 		font-size:35px;
+
 	}
 
     /*change what nav bar affects*/
