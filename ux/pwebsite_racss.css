@@ -205,3 +205,16 @@ margin-left:20%;
         margin-left:19%;
     }
 }
+
+@media only screen and (min-width:1790px){
+    
+    .description{
+        margin-top:8%;
+    }
+}
+
+@media only screen and (min-width:2100px){
+    .description{
+        margin-top:20%;   
+    }
+}
