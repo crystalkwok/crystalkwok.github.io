@@ -8,10 +8,12 @@ body p{
 
 .jumbotron #title{
     font-size:30px;
-    margin-left:8%;
-    margin-right:8%;
+    /*margin-left:8%;
+    margin-right:8%;*/
        letter-spacing: 0.15em;
     color:#ffffff;
+    font-family:'Montserrat', sans-serif;
+    text-align:center;
 }
 
 .description{
@@ -83,11 +85,12 @@ background-color:#c8c6c6;
 	margin:auto;
     font-size:35px;
     font-family:'Montserrat', sans-serif;
+    text-align:center;
 }
 
 
 .title{
-margin-left:30%;
+margin-left:20%;
     margin-right:20%;
 }
 
@@ -119,9 +122,86 @@ margin-left:30%;
     float:right;
 }
 
+#break{
+    display:none;
+}
+
+#and{
+    display:none;
+}
+
 @media only screen and (max-width:1200px){
     .jumbotron #title{
         margin-left:0;
         margin-right:0;
+    }
+    
+    .jumbotron {
+        height:100%;   
+    }
+    
+    #lightbox_normal{
+    margin-left:5%;
+    margin-right:5%;
+    }
+    
+    #and{
+        display:inline;   
+    }
+    
+        #break {
+        display:inline;   
+    }
+    
+    #lines{
+        display:none;   
+    }
+    
+    #spaces{
+        display:none;   
+    }
+    
+    
+}
+
+@media only screen and (max-width:990px){
+    	.jumbotron{
+		top: -20px;
+	}
+
+    .trianglerec{
+		margin-top:-50px;
+	}
+    
+    .right{
+        float:left;   
+    }
+    
+    
+    .jumbotron #title{
+        font-size:35px;   
+    }
+    
+    .what_do_you_do p{
+        margin-right:0;
+        margin-left:0;
+    }
+    
+    .title{
+        margin-right:23%;
+        margin-left:23%;
+    }
+    
+    #lightbox_normal{
+        margin-right:0;
+    }
+
+
+}
+
+@media only screen and (max-width:780px){
+    .title{
+        margin-right:19%;
+        margin-left:19%;
     }
 }
