@@ -16,6 +16,13 @@ body p{
     text-align:center;
 }
 
+
+#catchphrase{
+    text-align: center;
+    font-weight:700;
+    color:#000000;
+}
+
 .description{
     margin-left:10%;
     margin-right:10%;
@@ -39,9 +46,6 @@ body p{
     margin-top:10px;
 }
 
-#catchphrase{
-    text-align: center;
-}
 
 .jumbotron a{
     font-size:17px;
@@ -84,7 +88,7 @@ background-color:#575757;
     margin-right:10%;
     margin-left:10%;
     color:#ffffff;
-    font-size:18px;
+    font-size:17px;
     line-height: 220%;
     font-weight:200;
 }
