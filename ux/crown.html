@@ -4,55 +4,132 @@
     
     <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<!--bootstrap-->
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.css">
+		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.min.css">
     
-    
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.css">
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--jquery-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+       
+        <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+
+	<!--css-->
+     <link href="../lightbox_gallerycss.css" rel="stylesheet" type="type/css">
+        <link href="../website_navbar.css" rel="stylesheet" type="type/css">
 		<link href="pwebsite_crowncss.css" rel="stylesheet" type="type/css">
+       
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="http://use.typekit.net/c/a9b600/futura-pt:n7,proxima-nova:i3:i4:i6:i7:i8:i9:n1:n3:n4:n6:n7:n8:n9.SH5:P:2,b5v:P:2,b5x:P:2,b5z:P:2,b61:P:2,b63:P:2,b65:P:2,b5r:P:2,b5t:P:2,b5w:P:2,b5y:P:2,bBh:P:2,b62:P:2,b64:P:2/d?3bb2a6e53c9684ffdc9a9bf5135b2a62a7ab620462a071ba2f63a0275e9b557bba25831002af1f22f20fb70343069b29358d48fc955a3796d7bee5255778756fa463f6940f868357382b35afed944916cbfa773cf97aa288ad1acf7887a5006ed5f9ae1f3bf94f4984931378f6d006b7f362c2ce5f5a714ac9b5b4775012ae5078db4eea3ac4dd6f0c3204">
-		<link rel="Shortcut Icon" type="image/jpg" href="images/icon2.jpg"/>
-		<title>CROWN --crystal kwok</title>
-		<script src="jquery/jquery.min.js"></script>
-		<script src="jquery-1.11.1.min.js"></script>
-		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
+
+		<!--random stuff-->
+		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
+		<title>Crown -- crystal kwok</title>
+
+
 </head>
 
 <body>
 
-<div class="navbar">
-	<div class="container">
-		<ul class="pull-left">
-			<li>Crystal Kwok</li>
-		</ul>
-		<ul class="pull-right">
-			<div class="right">
-				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="pwebsite_art.html">Art</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="pwebsite_about.html">About & Contact</a></li>
+<!--normal nav bar-->
+		<div class="navbar">
+			<div class="container">
+				<ul class="pull-left">
+					<li>CRYSTAL KWOK</li>
+				</ul>
+				<ul class="pull-right">
+					<div class="right">
+					<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
+					<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT & CONTACT</a></li>
+					</div>
+				</ul>
+
 			</div>
-		</ul>	
-	</div>
-</div>
+		</div>
+        <!--small nav bar-->
+    
+		<div class="navbar_dropdown">
+				
+				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
+				<a href="#" style="text-decoration:none; color:#000000" class= "icon-menu menu-right">CRYSTAL KWOK</a>
+			
+			<div class="dropdown">
+			<ul class="dropdown2">
+			</br></br>
+				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
+			</br></br><br>
+				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT &amp; CONTACT</a></li>
+				</br>
+			</ul>
+			</div>
+		</div>
+
+
+		<script>
+			var main=function(){
+	
+
+				$('.icon-menu').click(function(){
+					$('.dropdown').toggle();
+					
+				});
+
+
+				$('.close').click(function(){
+					$('.dropdown').hide();
+				});
+			}
+			$(document).ready(main);
+	
+		</script>
+
 
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
-					<div class="description col-md-6">
-						<p><b><span style="font-size:25px">CROWN</span></b>&nbsp; &nbsp; <i>top design in course and continued research with professor</i></p></br>
-						<p>DURATION: August 2014</p>
-						<p>ROLE: UX/UI Designer</p>
-                        <p>COLLABORATORS: Kaitlin Garriott, <a href="http://www.melindachu.com">Melinda Chu</a>, Michael Lee, Nick Gibson</p>
-						<p>TOOLS:Contextual Inquiry, Ethnographic Studies, Adobe Creative Suite, Front End Developing (HTML, CSS, JS/JQuery), Competitive Analysis, Wireframing, Prototyping, Work Flow Modelling</p>
-						<p>DESCRIPTION: goal-based calendar with a new way to visually interpret time</p>
-					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5">
+					<div class="description">
+                        <a class="pull-right" href=#>next project</a>
+                        <br><br><br>
+                        <p id="title">CROWN</p>
+                        <p id="catchphrase">rule your life</p>
+                        <br>
+                        <div class="row">
+                            <p class="left col-md-5"><span style="font-weight:400">DURATION</span>: August 2014 - September 2014</p>
+                            <p class="right col-md-5"><span style="font-weight:400">ROLE</span>: UX / UI Designer</p>
+                        </div>
+                        <div class="row">
+                            <p class="left col-md-5"><span style="font-weight:400">TOOLS</span>: Contextual Inquiry, Ethnographic Studies, Adobe Creative Suite, Front End Developing (HTML, CSS, JS/JQuery), Competitive Analysis, Wireframing, Prototyping, Work Flow Modelling</p>
+                            <p class="right col-md-5"><span style="font-weight:400">DESCRIPTION</span>: goal-based calendar with a new way to visually interpret time</p>
+                            
+                            <p class="right col-md-5"><br><span style="font-weight:400">COLLABORATORS</span>: Kaitlin Garriott, Nick Gibson, Michael Lee, <a href="http://www.melindachu.com">Melinda Chu</a></p>
+                        </div>
 
+                        <br>
 					</div>
+					<!--<div class="col-md-5">
+						<table>
+							<tr>
+								<td><img src="../images/rainbow art/rainbow art logo.png"></td>
+							</tr>
+							<tr>
+								<td><img src="../images/rainbow art/rainbow canvas logo.png"></td>
+							</tr>
+						</table>
+					</div>-->
 			</div>
 		</div>
 	</div>
@@ -63,7 +140,14 @@
 				</div>
 	</div>
 
+<div class="motivation">
+		<div class="container">
+            <br>
+            <p>Students often struggle with being able to manage all different aspects of their time, while remembering all the different events and when to start studying for exams.  When will a full-time student find the time to fulfill their dream of becoming a doctor by applying to medical school while frantically trying to maintain their grades?  Students also often struggle with wasting their free time on Facebook, thinking there is nothing they need to work on at that time, and thinking they have more time than they actually do (hence the massive amounts of cramming and procrastination).  This is usually because students often lack the motivation to keep working hard in their studies, because they cannot see or even remember their end goal.  Thus, our question is this: how can a calendar / planner help students be effective with their time.  Studies have shown that people need to believe in what they do, which is why we have chosen to make Crown an interactive goal-based web calendar, where users can set their long-term and short-term goals.  <!--Crown is an interactive web-based calendar and planner where students can manage their time better, plan out when to work on their long-term and short-term goals, and plan when to start studying for exams and when to start assignments.  Another feature we have added is our timeline, where users can view the events in their calendar in a different way that will better show priority and importance in events, which can help students make better decisions on what to work on during their free time.-->  Our motivation for Crown is for students to <b>effectively maximize their time to fulfill their goals</b>, and essentially to <b>make the important urgent</b>.</p>
+				</br></br>
+		</div>
+	</div>
 
 
-		</body>
+	</body>
 </html>

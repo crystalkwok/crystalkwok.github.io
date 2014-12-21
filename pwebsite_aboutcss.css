@@ -313,23 +313,23 @@ background-color: #5c595a;
 @media only screen and (min-width:1500px){
 
 	.self_description{
-        margin-top:4%;   
+        margin-top:6%;   
     }
 
 	.self img{
 		width:130%;
-		margin-top:40px;
+		margin-top:30%;
 	}
 }
 
 @media only screen and (min-width:1790px){
 	.self img{
 		margin-top:0px;
-		margin-top:30%;
+		margin-top:50%;
 	}
     
     .self_description{
-        margin-top:6%;   
+        margin-top:10%;   
     }
 
 	.jumbotron{

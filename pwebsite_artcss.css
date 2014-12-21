@@ -268,10 +268,24 @@ font-size:19px;
 
 /*end attempt lightbox*/
 
+@media only screen and (min-width:1500px){
+    .art_p{
+       margin-top:15%;    
+    }
+    
+    #logo{
+        margin-top:60%;   
+    }
+}
+
 @media only screen and (min-width:1600px){
-	.art_p p{
-		margin-top:30%;
+	.art_p{
+		margin-top:20%;
 	}
+    
+    #logo{
+        margin-top:80%;   
+    }
 
 	.jumbotron{
 		height:85vh;
@@ -283,23 +297,23 @@ font-size:19px;
 
 @media only screen and (min-width:1790px){
     #logo{
-        margin-top:65%;   
+        margin-top:90%;   
     }
     
     .art_p{
-        margin-top:;   
+        margin-top:22%;   
     }
 
     
 }
 
 @media only screen and (min-width:2100px){
-	.jumbotron p{
-		margin-top:60%;
+	.art_p{
+		margin-top:30%;
 	}
 
 	#logo{
-		margin-top:65%;
+		margin-top:125%;
 	}
 
 	.jumbotron{
