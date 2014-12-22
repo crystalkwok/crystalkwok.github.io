@@ -11,7 +11,7 @@ body p{
     /*margin-left:8%;
     margin-right:8%;*/
        letter-spacing: 0.15em;
-    color:#000000;
+    color:#ffffff;
     font-family:'Montserrat', sans-serif;
     text-align:center;
 }
@@ -20,6 +20,10 @@ body p{
 #catchphrase{
     text-align: center;
     font-weight:700;
+    color:#ffffff;
+}
+
+hr{
     color:#000000;
 }
 
@@ -31,30 +35,30 @@ body p{
 
 
 .jumbotron {
-	background-color: #f0c4c5;
+	background-color: #1e6c59;
 	position:relative;
 	top:40px;
 	width:100%;
-    height:80vh;
+    height:82vh;
 }
 
 
 .jumbotron p{
-	color:#484747;
+	color:#f6deac;
     font-weight:400;
-    font-size:20px;
+    font-size:18px;
     margin-top:10px;
 }
 
 
 .jumbotron a{
     font-size:17px;
-    color:#2b7273;
+    color:#82d3a5;
 }
 
 .jumbotron a:hover{
     text-decoration: none;
-    color:#82d3a5;
+    color:#ffffff;
 }
 
 
@@ -62,14 +66,14 @@ body p{
 	 width: 0;
     height: 0;
     border: solid 60px ;
-    border-color: #f0c4c5 transparent transparent transparent;
+    border-color: #1e6c59 transparent transparent transparent;
         margin-left:45%;
     margin-right:50%;
 }
 
 .trianglerec{
 	left:50%;
-	background-color:#575757;
+	background-color:#fabd76;
 }
 
 .left{
@@ -81,17 +85,81 @@ body p{
 }
 
 .motivation{
-background-color:#575757;
+background-color:#fabd76;
 }
 
 .motivation p{
     margin-right:10%;
     margin-left:10%;
-    color:#ffffff;
+    color:#000000;
     font-size:17px;
     line-height: 220%;
-    font-weight:200;
 }
+
+#crownlogo{
+    width:100%;
+    height:100%;
+    margin-top:5%;
+}
+
+.picleft, .picright{
+    width:50%;
+    height:50%;
+}
+
+.picleft{
+    float:left;
+}
+
+.picright{
+    float:right;
+}
+
+.features p{
+    color:#000000;
+    font-size:16px;
+}
+
+.feature_title{ 
+    background-color:#454545;
+}
+
+.features h2{
+     color:#ffffff;
+    padding:8px;
+    font-family:'Montserrat', sans-serif;
+     letter-spacing: 0.15em;
+}
+
+.assignments_tests_todo h2{
+    padding:0px;
+}
+
+.assignments_tests_todo .picright{
+    width:43%;
+    height:43%;
+}
+
+.features {
+    background-color:#ffffff;
+}
+
+.fullside{
+    line-height: 200%;
+    margin-top:7%;
+}
+
+.timeline .fullside{
+    line-height:180%;
+    margin-top:1%;
+}
+
+.timeline img{
+    margin-bottom:40px;
+}
+
+
+
 
 /*.title p{
 	color:#3b786a;
