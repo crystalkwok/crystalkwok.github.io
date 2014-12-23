@@ -52,7 +52,7 @@ hr{
 
 
 .jumbotron a{
-    font-size:17px;
+    font-size:18px;
     color:#82d3a5;
 }
 
@@ -92,6 +92,15 @@ background-color:#fabd76;
     color:#000000;
     font-size:17px;
     line-height: 220%;
+}
+
+.motivation a{
+    color:#1E5754;
+}
+
+.motivation a:hover{
+    text-decoration:none;
+    color:#ffffff;
 }
 
 #crownlogo{
@@ -152,10 +161,22 @@ background-color:#fabd76;
 	width: 200px; height: 200px;
 }
 
-@media only screen and (max-width:1200px){
-    .jumbotron p{
+.add_event span{
+    line-height:190%;
+}
+
+@media only screen and (max-width:1250px){
+    .description{
+        margin-top:-2%;   
+    }
+    
+        .jumbotron p, .jumbotron a{
         font-size:17px;   
     }
+}
+
+@media only screen and (max-width:1200px){
+
     
     .jumbotron {
          height:100%;   
@@ -196,11 +217,23 @@ background-color:#fabd76;
 	}
 
     .trianglerec{
-		margin-top:-50px;
+		margin-top:-52px;
 	}
     
     .jumbotron p{
         font-size:18px;   
+    }
+    
+    .add_event span{
+    line-height:150%;
+    }
+    
+    .jumbotron #title {
+        font-size:50px;   
+    }
+    
+    #catchphrase{
+        font-size: 22px;
     }
 
     
@@ -216,18 +249,16 @@ background-color:#fabd76;
     }
 }
 
+@media only screen and (min-width:1790px){
+    .description {
+        margin-top:5%;   
+    }
 
-/*.title p{
-	color:#3b786a;
-	margin:auto;
-    font-size:35px;
-    font-family:'Montserrat', sans-serif;
-    text-align:center;
+    
 }
 
-
-.title{
-margin-left:20%;
-    margin-right:20%;
+@media only screen and (min-width:2100px){
+	.description {
+        margin-top:15%;   
+    }
 }
-*/

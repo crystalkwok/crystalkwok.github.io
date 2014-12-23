@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+		<link href="calendar/css/cover.css" rel="stylesheet" media="screen">
+		<!--Calendar css files -->
+		<link href="calendar/css/960_12_col.css" rel="stylesheet">
+		<link href="calendar/css/css.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+            
+		<!--more calendar css files-->
+    	<link href='calendar/css/fullcalendar.css' rel='stylesheet' />
+        <link href='calendar/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+        <!--calendar script links -->
+        <script src='calendar/lib/events.js'></script>
+        <script src='calendar/lib/moment.min.js'></script>
+        <script src='calendar/lib/jquery.min.js'></script>
+        <script src='calendar/lib/fullcalendar.js'></script>
+
+		<!--title icon and link -->
+		<link rel="Shortcut Icon" href="img/CROWN_LOGO2.ico"/>
+		<title> CROWN </title>
+        
+		<!--Calendar Script-->
+        <script type="text/javascript">
+        
+            $(document).ready(function() {
+        
+            $('#calendar').fullCalendar({
+                aspectRatio: 2,
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: ''
+                },
+                defaultDate: '2014-09-12',
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: getEvents()
+                });
+        });
+        function viewChange(view) {
+            $('#calendar').fullCalendar('changeView', view);
+    
+            var dayBorder = document.getElementById("dayPic");
+            var weekBorder = document.getElementById("weekPic");
+            var monthBorder = document.getElementById("monthPic");
+    
+            if (view == 'agendaDay')
+            {
+                $('.dailyview_calendar').addClass("active");
+                $('.weeklyview_calendar').removeClass("active");
+                $('.monthlyview_calendar').removeClass("active");
+            }
+            else if (view == 'agendaWeek')
+            {
+                $('.dailyview_calendar').removeClass("active");
+                $('.weeklyview_calendar').addClass("active");
+                $('.monthlyview_calendar').removeClass("active");
+            }
+            else if (view == 'month')
+            {
+                $('.dailyview_calendar').removeClass("active");
+                $('.weeklyview_calendar').removeClass("active");
+                $('.monthlyview_calendar').addClass("active");
+            }
+}
+
+
+
+
+
+        </script>
+
+
+        <style>
+
+        #calendar {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        </style>
+		<!--End Calendar Script-->
+
+		<!--Pop Up SideBar -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+		<!--End Pop SideBar-->
+
+	
+	</head>
+	<!--End Header-->
+
+	<body>
+		<!--Container 12-->
+		<div class="container_12">
+
+			<!--Top TaskBar-->
+			<div class="top">
+
+				<div class="grid_3 monthly_calendar">
+							<img src="img/Monthly_Calendar.jpg">
+				</div>
+
+				<div class="grid_2 logo">
+						<img src="img/CROWN_LOGO2.jpg">
+				</div>
+
+				<!--Grid 3-->
+				<div class="grid_3">
+					<!--Search Bar-->
+					<div class="search_bar">
+							<form method="get" action="/search" id="search">
+								<input name="q" type="text" size="40" placeholder="Search">
+							</form>
+					</div>
+					<!--End Search Bar-->
+
+					<!--Side Mini-Calendar-->
+					<div class="calendar_button active">
+						<img src="img/calendar button.jpg" height="40"/>
+					</div>
+					<!--End Side Mini-Calendar-->
+				</div>
+				<!--End Grid 3-->
+
+				<!--Grid 2-->
+				<div class="grid_2 timeline_button">
+                    <a href="timelinePage.html"><img src="img/timeline button.jpg"></a>
+				</div>
+				<!--End Grid 2-->
+
+				<!--Add Button-->
+				<div class="grid_3">				
+					<div class="add_button">
+						<a href="#"><img src="img/add button.jpg"></a>
+						<div class="dialog" style="display:none">
+							<div class="title"> Add Event or Class</div>
+						  	<form action="foo.php" method="post">
+						 		<select name="type">
+									<option value="a">Event</option>
+									<option value="a">Class</option>
+								</select>
+								<br/>
+
+							    <input name="Name" type="text" placeholder="Name" class="event_name"/>
+							    <br/>
+							    <input name="start_dtm" type="text" class="eventstart_time" placeholder="Start Time (YYYY-MM-DD HH:MM)"/>
+							    <br/>
+							    <input name="end-dtm" class="eventend_time" type="text" placeholder="End Time (YYYY-MM-DD HH:MM)"/>
+						    	</br>
+
+						    	<div class="typeofevent">
+						      		</br>
+						    		<input type="radio" name="allday"> &nbsp;All Day &nbsp;
+						    		<input type="radio" name="repeating"> &nbsp; Repeat 
+						    	</div> 
+						   		<div class="priority">
+						    		<p class="idcwhat" align="left">Priority</p>
+						    		<div class="priority_buttons"> 
+						    			<input type="radio" name="priority_low" value="priority_low"> &nbsp; Low
+										<input type="radio" name="priority_med" value="priority_med"> &nbsp; Med
+						    			<input type="radio" name="priority_high" value="priority_high"> &nbsp; High   
+						    		</div>
+						    	</div>
+						   		<input name="location" type="text" placeholder="Location" class="event_location"/>
+						    	<textarea name="description" placeholder="Description" cols="30" rows="5" wrap="soft"></textarea>
+						    	<!--<input type="submit" value="ADD"/>-->
+						    	<div class="action_btns">
+									<!--mike do css please btn_red2--> <div class="modal_add_event"><a href="#" class="btn btn_red2">ADD</a></div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--End Add Button-->
+					<!--Crystal2 adds script for add button- event dropdown-->
+					<script type="text/javascript">
+									var main=function(){
+							$('.btn_red2').click(function(){
+								
+								var description=$('.event_description').val();
+								var location=$('.event_location').val();
+
+
+								var typeofpriority="";
+									var priority_low=$("input[name=priority_low]:checked");
+									var priority_med=$("input[name=priority_med]:checked");
+									var priority_high=$("input[name=priority_high]:checked");
+									if (priority_low.length>0){
+										typeofpriority="0";
+									}
+									if (priority_med.length>0){
+										typeofpriority="1";
+									}
+									if (priority_high.length>0){
+										typeofpriority="2";
+									}
+
+
+								var typeofday="";
+									var type_allday=$("input[name=allday]:checked");
+									var type_repeating=$("input[name=repeating]:checked");
+									if (type_allday.length>0){
+										typeofday="all day event";
+										}
+									else if (type_repeating.length>0){
+										typeofday="repeating event";
+									}
+
+								var end_time=$('.eventend_time').val();									
+								var start_time=$('.eventstart_time').val();
+								var name_event=$('.event_name').val();
+
+							});
+
+						}
+						$(document).ready(main);
+					</script>
+					<!--crystal2 ends change for add event dropdown-->
+
+
+				<!--Daily View Button-->
+				<div class="add_daily">
+					<div class="grid_2">
+						<div class="dailyview_calendar">
+                    		<a href="#" onclick="return false;"><image onclick="viewChange('agendaDay')" src="img/daily button.jpg" id="dayPic"/></a>
+						</div>
+					</div>
+				</div>
+				<!--End Daily View Button-->
+
+
+				<!--Weekly View Button-->
+				<div class="grid_2 weeklyview_calendar">
+                        <a href="#" onclick="return false;"><image id="weekPic" onclick="viewChange('agendaWeek')" src="img/weekly button.jpg" /></a>
+				</div>
+				<!--End Weekly View Button-->
+
+				<!--Monthly View Button-->
+				<div class="grid_2"> 
+					<div class="monthlyview_calendar active">
+                        <a href="#" onclick="return false;"><image id="monthPic" onclick="viewChange('month')" src="img/monthly button.jpg"></a>
+					</div>
+				</div>
+				<!--End Monthly View Button-->
+
+				<!--Username-->
+				<div class="username">
+						<p>Angela Luh &nbsp; &nbsp; </p> 
+				</div>
+				<!--End Username-->
+
+				<!--Profile Page-->
+				<div class="username_photo">
+						<img src="img/angela.jpg">
+				</div>
+				<!--End Profile Page-->
+
+			</div>
+			<!--End Top TaskBar-->
+
+			<!--Left Task Bar-->
+			<div class="left grid_3">
+
+					<!--To Do List-->
+					<div class="todolist">
+						<h1>TO-DO LIST &nbsp; &nbsp;<a href='#todo_modal' id="todoplus" class="modal_trigger"><img src="img/plus button.jpg" id="plus" class="todoplus"></a></h1>
+						<ul>
+							<div class="todolist_li">
+
+							</div>
+						</ul>
+					</div>
+					<!--End To Do List-->
+
+					</br> <!--Line Filler-->
+
+					<!--Assignment List-->
+					<div class="assignment">
+						<h1>ASSIGNMENTS &nbsp;</h1><a href='#assignment_modal' id="assignmentsplus" class="modal_trigger"><img src="img/plus button.jpg" id="plus" class="assignmentsplus"></a>
+						</br>
+						<ul>
+							<div class="assignments_list_li">
+
+							</div>
+						</ul>
+
+					</div>
+					<!--End Assignment List-->
+
+					<!--Goals List-->
+					<div class="goals">
+						<h1>GOALS&nbsp; <a href='#goals_modal' id="goalsplus" class="modal_trigger"><img src="img/plus button.jpg" id="plus" class="goalsplus"></a></h1>
+
+
+						<ul>
+							<div class="goals_list_li" id=66>
+
+							</div>
+						</ul>
+
+
+						<!--Added Events List-->
+						<ul>
+							<div class="test_event">
+
+							</div>
+						</ul>
+						<!--end Added Events List-->	
+
+					</div>
+					<!--End Goals List-->
+			</div>
+			<!--End Left Task Bar-->
+
+			<!--Nick's Container-->
+			<div class="right">
+				<div class="grid_12">
+					<div id='calendar'></div>
+				</div>
+			</div>
+			<!--End Nick's Container-->
+		</div>
+		<!--End Container 12-->
+
+		<!--Todo PopUp Container-->
+		<div id="todo_modal" class="popupContainer_todo" style="display:none;">
+					<header class="popupHeader">
+						<span class="header_title">to do</span>
+						<span class="modal_close"><i class="fa fa-times"></i></span>
+					</header>
+					
+					<section class="popupBody_todo">
+
+						<!-- Title & Notes form -->
+						<div class="todo_popup">
+							<form>
+								<label class="title_label">to do &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input class="input_box_todo" type="text"/>
+								<br />
+
+								<label class="title_label">notes&nbsp;&nbsp;</label>
+								<input class="notes_box" type="text" />
+								<br /><br/><br/>
+
+								<div class="action_btns">
+									<div class="modal_add_todo"><a href="#" class="btn btn_red">ADD</a></div>
+								</div>
+								<br/><br/>
+							</form>
+
+						</div>
+					</section>
+		</div>
+		<!--End Todo PopUp Container-->
+
+		<!--Assignments PopUp Container-->
+		<div id="assignment_modal" class="popupContainer_assignments" style="display:none;">
+					<header class="popupHeader">
+						<span class="header_title">Assignments</span>
+						<span class="modal_close"><i class="fa fa-times"></i></span>
+					</header>
+					
+					<section class="popupBody_assignments">
+
+						<!-- Title & Notes form -->
+						<div class="user_login">
+							<form>
+								<label class="title_label">title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input class="input_box_assignments_title" type="text"/>
+								<br />
+
+								<label class="title_label">Due Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input class="input_box_assignments_duedate" type="text"/>
+								<br /><br /><br/>
+
+								<label class="title_label">Hours <br />Until<br/> Finished </label>
+								<input class="input_box_assignments" type="text"/>
+								<br /><br /><br />
+
+								<label class="title_label"><br/>Notes</label>
+								<input class="notes_box_assignments" type="text" />
+								<br /><br/><br/>
+
+								<div class="action_btns">
+									<div class="modal_add_todo"><a href="#" class="btn btn_red">ADD</a></div>
+								</div>
+								<br/><br/>
+							</form>
+
+						</div>
+					</section>
+		</div>
+		<!--End Assignments PopUp Container-->
+
+
+		<!--Goals PopUp Container-->
+		<div id="goals_modal" class="popupContainer_todo" style="display:none;">
+					<header class="popupHeader">
+						<span class="header_title">Goals</span>
+						<span class="modal_close"><i class="fa fa-times"></i></span>
+					</header>
+					
+					<section class="popupBody_todo">
+
+						<!-- Title & Notes form -->
+						<div class="todo_popup">
+							<form>
+								<label class="title_label">Goals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input class="input_box_goals" type="text"/>
+								<br />
+
+								<label class="title_label"><br/>Notes</label>
+								<input class="notes_box_goals" type="text" />
+								<br /><br/><br/>
+
+								<div class="action_btns">
+									<div class="modal_add_todo"><a href="#" class="btn btn_red">ADD</a></div>
+								</div>
+								<br/><br/>
+							</form>
+
+						</div>
+					</section>
+		</div>
+		<!--End Assignment PopUp Container-->
+
+		<!--PopUp Container Script-->
+		<script type="text/javascript">
+
+			$(".modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+
+			$(function(){
+				// Calling ToDo Popup Form
+				$("#login_form").click(function(){
+					$(".todo_popup").show();
+					return false;
+				});
+
+				$(".modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_add_todo" });
+
+			})
+		</script>
+		<!--End PopUp Container Script-->
+
+		<!--Add Script for todo popup container-->
+		<script type="text/javascript">
+			var main=function(){
+				$('.btn_red').click(function(){
+					var todo_post=$('.input_box_todo').val();
+					$('<li>').text(todo_post).prependTo('.todolist_li');
+
+					$('.input_box_todo').val('');
+					$('.notes_box').val('');
+
+				});
+			}
+			$(document).ready(main);
+		</script>
+		<!--End Add Script for todo popup container-->
+
+
+		<!--Add Script for assignments popup container-->
+		<script type="text/javascript">
+			var main=function(){
+				$('.btn_red').click(function(){
+					var todo_post=$('.input_box_assignments_duedate').val();
+					$('<li>').text(todo_post).prependTo('.assignments_list_li');					
+					var todo_post=$('.input_box_assignments_title').val();
+					$('<li>').text(todo_post).prependTo('.assignments_list_li');
+
+					$('.input_box_assignments_duedate').val('');
+					$('.notes_box_assignments_title').val('');
+
+				});
+			}
+			$(document).ready(main);
+		</script>
+		<!--End Add Script for assignments popup container-->
+
+		<!--Add Script for assignments popup container-->
+		<script type="text/javascript">
+			var main=function(){
+				$('.btn_red').click(function(){
+					var todo_post=$('.input_box_goals').val();
+					$('<li>').text(todo_post).prependTo('.goals_list_li');
+
+					$('.input_box_goals').val('');
+					$('.notes_box_goals').val('');
+
+				});
+			}
+			$(document).ready(main);
+		</script>
+		<!--End Add Script for assignments popup container-->
+
+		<!--Add Button Script-->
+		<script type="text/javascript">
+
+			$(document).ready( function() {
+
+			 $('.add_button').click(function(e){
+			   e.stopPropagation();
+			  if ($(this).hasClass('active')){
+			    $('.dialog').fadeOut(200);
+			    $(this).removeClass('active');
+			  } else {
+			    $('.dialog').delay(100).fadeIn(100);
+			    $(this).addClass('active');
+			  }
+			});
+			$('.radio > .button').click( function() {
+			  $('.radio').find('.button.active').removeClass('active');
+			  $(this).addClass('active');
+			});
+			  
+			function closeMenu(){
+			  $('.dialog').fadeOut(100);
+			  $('.add_button').removeClass('active');  
+			}
+			  
+			$(document.body).click( function(e) {
+			     closeMenu();
+			});
+
+			$(".dialog").click( function(e) {
+			    e.stopPropagation();
+			});
+			});
+
+		</script>
+		<!--Add Button Script-->
+
+	</body> 
+
+</html>

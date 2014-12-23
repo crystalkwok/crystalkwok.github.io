@@ -1,0 +1,13 @@
+.cover{
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 2000px;
+    background-image: url("CrownBanner.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+
+nav ul li {
+  list-style:none;
+  float:left;
+  margin-right:50px;
+
+}
