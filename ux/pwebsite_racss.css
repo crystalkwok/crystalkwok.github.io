@@ -28,7 +28,7 @@ body p{
 	position:relative;
 	top:40px;
 	width:100%;
-    height:80vh;
+    height:82vh;
 }
 
 
@@ -206,15 +206,29 @@ margin-left:20%;
     }
 }
 
-@media only screen and (min-width:1790px){
+@media only screen and (min-width:1600px){
+    .jumbotron {
+        height:85vh;   
+    }
     
-    .description{
-        margin-top:8%;
+        .description{
+        margin-top:10%;
     }
 }
+
 
 @media only screen and (min-width:2100px){
     .description{
         margin-top:20%;   
+    }
+    
+    .jumbotron {    
+        height:90vh;
+    }
+}
+
+@media only screen and (min-width: 2600px){
+    .description {
+        margin-top: 30%;
     }
 }

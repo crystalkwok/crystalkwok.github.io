@@ -167,6 +167,10 @@ background-color:#fabd76;
     line-height:190%;
 }
 
+.personal p{
+    line-height:200%;
+}
+
 @media only screen and (max-width:1200px){
 
     
@@ -193,6 +197,10 @@ background-color:#fabd76;
 
 @media only screen and (max-width:995px){
 
+        .description{
+        margin-top:0;   
+    }
+    
  .large{
      display:none;
  }
@@ -243,6 +251,10 @@ background-color:#fabd76;
     #catchphrase{
         font-size: 22px;
     }
+    
+    .personal p{
+    line-height:160%;
+}
 
     
 }
@@ -259,8 +271,12 @@ background-color:#fabd76;
 
 @media only screen and (min-width:1790px){
     .description {
-        margin-top:5%;   
+        margin-top:7%;   
     }
+    
+    	.jumbotron{
+		height:85vh;
+	}
 
     
 }
@@ -268,5 +284,15 @@ background-color:#fabd76;
 @media only screen and (min-width:2100px){
 	.description {
         margin-top:15%;   
+    }
+    
+    	.jumbotron{
+		height:90vh;
+	}
+}
+
+@media only screen and (min-width:2700px){
+    .description{
+        margin-top:30%;   
     }
 }
