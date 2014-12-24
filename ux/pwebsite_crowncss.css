@@ -235,6 +235,10 @@ background-color:#fabd76;
     .trianglerec{
 		margin-top:-52px;
 	}
+    
+    .motivation {
+        margin-top: -2px;   
+    }
  /*end change*/   
     .jumbotron p{
         font-size:18px;   
