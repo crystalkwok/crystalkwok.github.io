@@ -3,7 +3,7 @@ font-family: 'Lato', sans-serif;
 }
 
 body p{
-	font-size:15px;
+	font-size:16px;
 }
 
 .jumbotron #title{
@@ -102,6 +102,11 @@ background-color:#1E5754;
     padding-top:5%;
 }
 
+.design_user_text{
+
+    display:none;
+}
+
 .final_prototype iframe, .video iframe {
     margin-bottom:4%;
     margin-top:4%;
@@ -139,7 +144,7 @@ background-color:#1E5754;
     font-size:16px;
 }
 
-.first_prototype span, .final_prototype span{
+#section_title{
     font-size:22px;
     font-weight:700;
     letter-spacing:0.15em;
@@ -165,6 +170,10 @@ background-color:#1E5754;
 .small {
     display:none;
 }
+
+
+
+
 
 @media only screen and (max-width:1250px){
     .description{
