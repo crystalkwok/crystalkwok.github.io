@@ -102,7 +102,7 @@
 		
 					<div class="description">
                         
-                            <a class="pull-right" href="flunkless.html">next project</a><br>
+                            <a class="pull-right" href="rainbow_art.html">next project</a><br>
                             <p id="title">TIMELINE</p>
 
                             <div class="row">
@@ -126,7 +126,7 @@
                                  <p class="col-md-4 col-sm-12 col-xs-12"><span style="font-weight:400">COLLABORATORS</span>: Den Lenzen, Kaitlin Garriott, Nick Gibson, Michael Lee, <a href="http://www.melindachu.com">Melinda Chu</a></p>
                                 <div class="col-md-1"></div>
                             </div>
-
+                        <br>
 					</div>
 					<!--<div class="col-md-5">
 						<table>
@@ -168,7 +168,11 @@
 
 
  <div class="ugh container">
-         <img src="../images/timeline/designprototypes%20(1).png" class="col-md-12 col-sm-12 col-xs-12">
+         <div class="row">
+            <img src="../images/timeline/designprototypes1.png" class="col-md-6 col-sm-12 col-xs-12">
+             
+             <img src="../images/timeline/designprototypes2.png" class="col-md-6 col-sm-12 col-xs-12">
+        </div>
         <p>*prototypes done by <a href="http://www.melindachu.com">Melinda Chu</a> :)</p>
         
         <div class="design_navbar">
@@ -206,40 +210,18 @@
             <p class="col-md-6 col-sm-12 col-xs-12"><span id="design_titles">FIXED VS. RELATIVE TIME</span><br>
             Fixed time is where each hour is represented by a set amount of space, each event takes up a certain amount of space based on the duration, and almost every hour is usually shown.  However, relative time is just the opposite.  Every hour and event may not be represented by a set amount of space, and not every hour may be shown.  The benefits of fixed time is that the amount of space in between each event would be accurately representative of the amount of time in between, and the visualization of the event would be representative of the duration.  However, we noticed the down side of fixed time is that there would often be huge chunks of empty space when there were no events, especially in the middle of the night, or during full days without events.  Also, when people often opened their calendar applications, it would start at a set time, like at 12am or 6am, even if there were no events anywhere around that time, leaving screens empty without any information from the calendar.  The benefits of relative time fixes fixed time's problems, where there would be no empty screens.  In the following examples, even though the an event in the fixed time may be 3.5 hours, it is seen as the same amount of importance and time as one hour events in the relative time.<br>
             Therefore, we decided upon a hybrid (4th prototype).  We decided that when there were events, it would be FIXED time in order to accurately visualize the duration of the event and the time in between events.  However, if there were 8 or more hours without events, it would be indicated by the vertical zigzag line to indicate a time break.  If there were full days without events, it would be indicated by a block of text that showed the date and the quote "no events". Also, each day will start with the first event.  We also set a maximum of 5 events on the screen at once, to prevent overcrowding and cluttering the events. </p>
-        <div class="large"> <!--if screen is large-->
-            <div class="row col-md-6">
-                <img src="../images/timeline/fixed%20time.png" class="col-md-6">
-                <img src="../images/timeline/relative%20time.png" class="col-md-6">
-            </div>
-            <div class="row col-md-6">
-                <br>
-                <p class="captions col-md-6">fixed time</p>
-                 <p class="captions col-md-6">relative time</p>
-            </div>
-        </div>
+
         
-        <div class="small"> <!--if screen is small-->
-            <div class="row">
-                <div class="col-sm-1 col-xs-1"></div>
-                <img src="../images/timeline/fixed%20time.png" class="col-sm-10 col-xs-10">
-                <div class="col-sm-1 col-xs-1"></div>
-            </div>   
-            <div class="row">
-                <div class="col-sm-1 col-xs-1"></div>
-                <p class="captions col-sm-10 col-xs-10">fixed time</p>
-                <div class="col-sm-1 col-xs-1"></div>
-            </div> 
-            <div class="row">
-                <div class="col-sm-1 col-xs-1"></div>
-                <img src="../images/timeline/relative%20time.png" class="col-sm-10 col-xs-10">
-                <div class="col-sm-1 col-xs-1"></div>
-            </div> 
-            <div class="row">
-                <div class="col-sm-1 col-xs-1"></div>
-                <p class="captions col-sm-10 col-xs-10">relative time</p>
-                <div class="col-sm-1 col-xs-1"></div>
-            </div> 
-        </div><!--end if screen is small-->
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                    <img src="../images/timeline/fixed%20time.png" class="col-md-6 col-sm-6 col-xs-6">
+                    <img src="../images/timeline/relative%20time.png" class="col-md-6 col-sm-6 col-xs-6">
+                </div>
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                    <br>
+                    <p class="captions col-md-6 col-xs-6 col-sm-6">fixed time</p>
+                     <p class="captions col-md-6 col-sm-6 col-xs-6">relative time</p>
+                </div>
+        
             </div><!--end row-->
         </div> <!--end fixed and relative time-->
         
@@ -350,13 +332,13 @@ $(document).ready(main);
             <p class="col-md-1 col-sm-12 col-xs-12" id="final_features">FEATURES</p>
                 <div class="col-md-2"></div>
             <p class="col-md-6 col-sm-12 col-xs-12">
-                priority will be indicated by the size of the circle and the size of the text<br><br>
-                clean and simple interface with only 2 colors <br><br>
-                current time will be displayed by a red line<br><br>
-                duration of an event will be indicated by the middle of a circle with an extended tail, along with the start time (and possibly end time, depending on the screen size)<br><br>
+                priority will be indicated by the size of the circle and the size of the text.<br><br>
+                clean and simple interface with only 2 colors. <br><br>
+                current time will be displayed by a red line.<br><br>
+                duration of an event will be indicated by the middle of a circle with an extended tail, along with the start time (and possibly end time, depending on the screen size).<br><br>
                 combination between relative and fixed time ::
-                <br>max 5 events on the screen at at time
-                <br>days will start with the first event
+                <br>max 5 events on the screen at at time.
+                <br>days will start with the first event.
                 <br>time breaks of 8 hours or more will be indicated by a zigzag line or a block with the date if it is a new day. 
             </p>
                 <div class="col-md-1"></div>

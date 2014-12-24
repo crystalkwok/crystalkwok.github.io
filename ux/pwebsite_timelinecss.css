@@ -50,6 +50,10 @@ hr{
     margin-top:10px;
 }
 
+.description{
+    margin-top:2%;
+}
+
 
 .jumbotron a{
     font-size:18px;
@@ -207,7 +211,36 @@ background-color:#5f605f;
     margin-bottom:8%;
 }
 
+.features p{
+    font-size:18px;
+}
+
+@media only screen and (max-width:1250px){
+    .description{
+        margin-top:-2%;   
+    }
+    
+        .jumbotron p, .jumbotron a{
+        font-size:17px;   
+    }
+    
+        .jumbotron #title {
+        font-size:50px;   
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .jumbotron {
+         height:100%;   
+    }
+    
+}
+
 @media only screen and (max-width:995px){
+    .features p{
+        font-size:16px;   
+    }
+    
     #final_design {
         display:none;   
     }
@@ -227,6 +260,45 @@ background-color:#5f605f;
     
     .captions {
         font-size:22px;    
+    }
+    
+    /*what nav bar changes*/
+    .jumbotron{
+		top: -20px;
+        height:100%;
+	}
+
+    .trianglerec{
+		margin-top:-52px;
+	}
+ /*end change*/ 
+}
+
+@media only screen and (min-width:1790px){
+    .description {
+        margin-top:12%;   
+    }
+    
+    	.jumbotron{
+		height:85vh;
+	}
+
+    
+}
+
+@media only screen and (min-width:2100px){
+	.description {
+        margin-top:20%;   
+    }
+    
+    	.jumbotron{
+		height:90vh;
+	}
+}
+
+@media only screen and (min-width:2700px){
+    .description{
+        margin-top:25%;   
     }
 }
 
