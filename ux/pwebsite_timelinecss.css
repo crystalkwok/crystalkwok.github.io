@@ -178,11 +178,11 @@ background-color:#5f605f;
 }
 
 #final_features{
-    margin-top:10%;
-    font-size:28px;
+    font-size:32px;
     font-weight:800;
     letter-spacing: 0.17em;
     color:#5d5fa1;
+    text-align:center;
 }
 
 .personal {
@@ -207,7 +207,7 @@ background-color:#5f605f;
 }
 
 .features {
-    margin-top:8%;
+    margin-top:5%;
     margin-bottom:8%;
 }
 
@@ -245,6 +245,10 @@ background-color:#5f605f;
         display:none;   
     }
     
+    #final_features{
+        text-align:left;   
+    }
+    
     .small {
         display:block;   
     }
@@ -254,7 +258,7 @@ background-color:#5f605f;
     }
     
     .features {
-        margin-top:1%;
+        margin-top:5%;
         margin-bottom:1%;
     }
     
@@ -277,8 +281,8 @@ background-color:#5f605f;
     }
  /*end change*/ 
     
-        .jumbotron p{
-        font-size:18px;   
+        .jumbotron p, .jumbotron a{
+        font-size:19px;   
     }
 
 }

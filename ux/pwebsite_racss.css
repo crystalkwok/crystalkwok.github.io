@@ -164,17 +164,26 @@ margin-left:20%;
     
 }
 
-@media only screen and (max-width:990px){
-    	.jumbotron{
+@media only screen and (max-width:995px){
+    /*what nav bar changes*/
+    .jumbotron{
 		top: -20px;
 	}
 
     .trianglerec{
-		margin-top:-50px;
+		margin-top:-52px;
 	}
     
+    .what_do_you_do {
+        margin-top: -2px;   
+    }
+ /*end change*/   
     .right{
         float:left;   
+    }
+    
+    .jumbotron p, .jumbotron a {
+        font-size:19px;   
     }
     
     
