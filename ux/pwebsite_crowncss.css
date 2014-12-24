@@ -171,6 +171,21 @@ background-color:#fabd76;
     line-height:200%;
 }
 
+.skip a{
+    text-align:center;
+    font-size:15px;
+}
+
+.features a{
+    color:#db5d58;
+    font-weight:700;
+}
+
+.features a:hover{
+    text-decoration: none;
+    color:#82d3a5;
+}
+
 @media only screen and (max-width:1200px){
 
     
@@ -255,6 +270,8 @@ background-color:#fabd76;
     .personal p{
     line-height:160%;
 }
+    
+
 
     
 }
@@ -293,6 +310,6 @@ background-color:#fabd76;
 
 @media only screen and (min-width:2700px){
     .description{
-        margin-top:30%;   
+        margin-top:20%;   
     }
 }
