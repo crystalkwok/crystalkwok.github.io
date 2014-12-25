@@ -98,8 +98,9 @@ background-color:#1E5754;
 }
 
 .paper_prototypes, .screenshots_final{
-   display:none;
-    padding-top:5%;
+   
+    padding-top:3%;
+    padding-bottom:5%;
 }
 
 .design_user_text{
@@ -157,9 +158,13 @@ background-color:#1E5754;
 }
 
 .first_prototype a{
-    color:#f69591;
+    color:#f4adaa;
     font-size:18px;
     font-weight:700;
+}
+
+.design_user a{
+    color:#db5d58;
 }
 
 .first_prototype a:hover, .final_prototype a:hover{
@@ -170,7 +175,6 @@ background-color:#1E5754;
 .small {
     display:none;
 }
-
 
 
 
@@ -223,7 +227,14 @@ background-color:#1E5754;
         margin-top: -2px;   
     }
  /*end change*/ 
-
+    
+    .firstp_info, .finalp_info{
+    display:none;
+}
+    
+    .jumbotron p, .jumbotron a{
+        font-size:20px;   
+    }
 
 }
 

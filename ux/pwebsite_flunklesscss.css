@@ -28,21 +28,15 @@ body p{
 	font-family:'Montserrat', sans-serif;
 }
 
-.problem_content3 a{
-	color:#3a828b;
+
+.problem_content2 a{
+	color:#82d8e3;
 }
 
-.problem_content3 a:hover{
+.problem_content2 a:hover{
 	text-decoration:none;
 	color:#ecc476;
 }
-
-.problem_content3 .main_ideas_list li{
-    font-size:15px;
-}
-
-
-
 
 #left{
   float:left;  
@@ -61,10 +55,15 @@ body p{
 .description {
 	float:left;
 	color:#fbfcfc;
+	margin-top:-2%;
 }
 
 .description p{
 	font-size:18px;
+}
+
+.description_pictures{	
+	margin-top:-3%;
 }
 
 .jumbotron {
@@ -376,7 +375,7 @@ width:100%;
     }
     
     .jumbotron a{
-        font-side:25px;   
+        font-size:25px;   
     }
     
     
@@ -411,7 +410,7 @@ width:100%;
 	}
 
     .trianglerec{
-		margin-top:-50px;
+		margin-top:-52px;
 	}
 
 	/*end change navbar*/
@@ -475,16 +474,30 @@ width:100%;
    }
     
     .description{
-        margin-top:5%;   
+        margin-top:2%;   
     }
     
     .description_pictures{
-        margin-top:3%;
+        margin-top:1%;
     }
 }
 
 @media only screen and (min-width:1700px){
 
+    
+    .description{
+        margin-top:5%;   
+    }
+    
+    .description_pictures{
+        margin-top:4%;
+    }
+}
+
+@media only screen and (min-width:2000px){
+     .jumbotron{
+       height:90vh;
+   }
     
     .description{
         margin-top:10%;   
@@ -495,26 +508,12 @@ width:100%;
     }
 }
 
-@media only screen and (min-width:2100px){
-     .jumbotron{
-       height:90vh;
-   }
-    
-    .description{
-        margin-top:18%;   
-    }
-    
-    .description_pictures{
-        margin-top:15%;
-    }
-}
-
 @media only screen and (min-width: 2700px){
     .description {
-        margin-top:27%;   
+        margin-top:20%;   
     }
     
     .description_pictures {
-        margin-top:23%;   
+        margin-top:18%;   
     }
 }
