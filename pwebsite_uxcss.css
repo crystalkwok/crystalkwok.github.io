@@ -89,21 +89,21 @@ padding-left:40px;
 
 @media only screen and (min-width:1500px){
     .description{
-       margin-top:15%;    
+       margin-top:10%;    
     }
     
     #logo{
-        margin-top:60%;   
+        margin-top:35%;   
     }
 }
 
 @media only screen and (min-width:1600px){
 	.description{
-		margin-top:20%;
+		margin-top:15%;
 	}
 
 	#logo{
-		margin-top:80%;
+		margin-top:50%;
 	}
 
 	.jumbotron{
@@ -114,22 +114,22 @@ padding-left:40px;
 
 @media only screen and (min-width:1790px){
     #logo{
-        margin-top:90%;   
+        margin-top:75%;   
     }
     
     .description{
-        margin-top:22%;   
+        margin-top:20%;   
     }
     
 }
 
-@media only screen and (min-width:2100px){
+@media only screen and (min-width:2000px){
 	.description{
-		margin-top:30%;
+		margin-top:20%;
 	}
 
 	#logo{
-		margin-top:125%;
+		margin-top:80%;
 	}
 
 	.jumbotron{
@@ -140,7 +140,7 @@ padding-left:40px;
 
 @media only screen and (min-width: 2600px){
     #logo{
-        margin-top:150%;   
+        margin-top:130%;   
     }
 }
 

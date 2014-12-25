@@ -270,21 +270,21 @@ font-size:19px;
 
 @media only screen and (min-width:1500px){
     .art_p{
-       margin-top:15%;    
+       margin-top:10%;    
     }
     
     #logo{
-        margin-top:60%;   
+        margin-top:35%;  
     }
 }
 
 @media only screen and (min-width:1600px){
 	.art_p{
-		margin-top:20%;
+		margin-top:15%;
 	}
     
     #logo{
-        margin-top:80%;   
+        margin-top:50%; 
     }
 
 	.jumbotron{
@@ -297,23 +297,23 @@ font-size:19px;
 
 @media only screen and (min-width:1790px){
     #logo{
-        margin-top:90%;   
+        margin-top:75%;   
     }
     
     .art_p{
-        margin-top:22%;   
+         margin-top:20%;    
     }
 
     
 }
 
-@media only screen and (min-width:2100px){
+@media only screen and (min-width:2000px){
 	.art_p{
-		margin-top:30%;
+		margin-top:20%;
 	}
 
 	#logo{
-		margin-top:125%;
+		margin-top:80%;
 	}
 
 	.jumbotron{
@@ -323,11 +323,11 @@ font-size:19px;
 
 @media only screen and (min-width: 2600px){
     #logo{
-        margin-top:120%;   
+       margin-top:130%;   
     }
     
     .art_p{
-        margin-top:10%;   
+        margin-top:30%;   
     }
 }
 
