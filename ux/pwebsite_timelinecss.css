@@ -37,7 +37,7 @@ hr{
 
 
 .jumbotron {
-	background-color: #64b888;
+	background-color: #85d0c8;
 	position:relative;
 	top:40px;
 	width:100%;
@@ -47,9 +47,9 @@ hr{
 
 .jumbotron p{
 	color:#ffffff;
-    font-weight:300;
     font-size:18px;
     margin-top:10px;
+    font-weight:400;
 }
 
 .description{
@@ -59,7 +59,7 @@ hr{
 
 .jumbotron a{
     font-size:18px;
-    color:#f0d3aa;
+    color:#edd6b6;
 }
 
 .jumbotron a:hover{
@@ -74,7 +74,7 @@ hr{
 	 width: 0;
     height: 0;
     border: solid 60px ;
-    border-color: #64b888 transparent transparent transparent;
+    border-color: #85d0c8 transparent transparent transparent;
         margin-left:45%;
     margin-right:50%;
 }
