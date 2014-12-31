@@ -49,10 +49,6 @@ background-color: #5c595a;
 	background-color:#f3f1ae;
 }
 
-.contact .container {
-	padding-right:8%;
-	padding-left:8%;
-}
 
 .contact p{
 	line-height:200%;
@@ -63,10 +59,7 @@ background-color: #5c595a;
     font-family:'Montserrat', sans-serif;
 }
 
-.content .container{
-    padding-right:7%;
-    padding-left:7%;
-}
+
 /*resume button*/
 .btn{
 	background-color:#82d3a5;
@@ -153,11 +146,7 @@ background-color: #5c595a;
 	margin-left:30px;
 	width:590px;
 	}
-    
-    .content .container {
-        padding-right:2%;
-        padding-left:2%;
-    }
+
 
 }
 
@@ -166,14 +155,8 @@ background-color: #5c595a;
 		height:100%;
 	}
 
-	.self img{
-		width:150%;
-	}
     
-    .contact .container {
-        padding-right:2%;
-        padding-left:2%;
-    }
+
 }
 
 /*@media only screen and (max-width:1020px){
@@ -185,6 +168,10 @@ background-color: #5c595a;
 
 
 @media only screen and (max-width:990px){
+    .self img {
+        width:100%;   
+    }
+    
 	body p{
 		font-size:28px;
 	}
@@ -196,8 +183,6 @@ background-color: #5c595a;
 
 	.jumbotron p{
 		font-size: 28px;
-		width:105%;
-		margin-left:-2%;
 		
 	}
 
@@ -206,10 +191,6 @@ background-color: #5c595a;
 	}
 
 
-
-	.self img{
-		width:100%;
-	}
 /*end jumbotron changes*/
     
     .contact{
@@ -222,9 +203,6 @@ background-color: #5c595a;
 
 /*content changes*/
 
-	.melbourneeducation{
-		float:left;
-	}
 
 	.button button{
 		left:0;
@@ -288,8 +266,6 @@ background-color: #5c595a;
 
 	.jumbotron p{
 		font-size:15px;
-		margin-left:-20px;
-		margin-right:-20px;
 	}
 
 	.button button{
