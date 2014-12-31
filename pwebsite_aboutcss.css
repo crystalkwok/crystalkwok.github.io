@@ -135,6 +135,10 @@ background-color: #5c595a;
      background-color:#494647;
 }
 
+.weird {
+    display:none;
+}
+
 
 
 
@@ -145,7 +149,13 @@ background-color: #5c595a;
 	font-size: 15px;
 	}
 
-
+    .not_weird {
+        display:none;   
+    }
+    
+    .weird {
+        display:inline;   
+    }
 }
 
 @media only screen and (max-width:1150px){
