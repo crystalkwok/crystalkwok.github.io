@@ -178,6 +178,12 @@ background-color:#fabd76;
     display:none;
 }
 
+#why {
+    font-weight:700;
+    letter-spacing: 0.15em;
+    font-size:20px;
+}
+
 #assignments_tests .feature_title, #event_class .feature_title, #process .feature_title{
     background-color: #616161;
 }
