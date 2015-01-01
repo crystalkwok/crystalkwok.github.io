@@ -33,18 +33,25 @@ body p{
 }
 
 .description{
-    margin-top:2%;
+    padding-top:4%;
+    padding-bottom:3%;
+    background-color:#d4d5d7;
+}
+
+.description a {
+    font-weight:700;
+    
 }
 
 
 .jumbotron a{
     font-size:18px;
-    color:#c1cdfc;
+    color:#f0d3aa;
 }
 
 .jumbotron a:hover{
     text-decoration: none;
-    color:#ffffff;
+    color:#c1cdfc;
 }
 
 .triangle {
@@ -88,7 +95,7 @@ background-color:#1E5754;
 }
 
 .first_prototype{
-    margin-top:5%;
+    margin-top:3%;
 }
 
 .first_prototype p{
@@ -145,6 +152,11 @@ iframe {
     letter-spacing:0.15em;
 }
 
+.description a{
+        color:#db5d58;
+    font-weight:700;
+}
+
 .first_prototype a{
     color:#db5d58;
     font-size:20px;
@@ -161,7 +173,7 @@ iframe {
     color:#db5d58;
 }
 
-.first_prototype a:hover, .final_prototype a:hover{
+.first_prototype a:hover, .final_prototype a:hover, .description a:hover{
     color:#82d3a5;
     text-decoration:none;
 }
@@ -174,9 +186,7 @@ iframe {
 
 
 @media only screen and (max-width:1250px){
-    .description{
-        margin-top:-1%;   
-    }
+
     
         .jumbotron p, .jumbotron a{
         font-size:17px;   
@@ -233,23 +243,25 @@ iframe {
 }
 
 @media only screen and (min-width:1790px){
-    .description {
-        margin-top:10%;   
-    }
-    
     	.jumbotron{
 		height:85vh;
 	}
+    
+    .jumbotron img {
+        margin-top:7%;   
+    }
 
     
 }
 
 @media only screen and (min-width:2100px){
-	.description {
-        margin-top:20%;   
-    }
+
     
     	.jumbotron{
 		height:90vh;
 	}
+    
+        .jumbotron img {
+        margin-top:22%;   
+    }
 }

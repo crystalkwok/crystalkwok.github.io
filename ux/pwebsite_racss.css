@@ -18,10 +18,6 @@ body p{
     text-align:center;
 }
 
-.description{
-    margin-left:10%;
-    margin-right:10%;
-}
 
 
 
@@ -49,6 +45,10 @@ body p{
 .jumbotron a:hover{
     text-decoration: none;
     color:#82d3a5;
+}
+
+.jumbotron img {
+    margin-top:1%;
 }
 
 
@@ -222,16 +222,18 @@ margin-left:20%;
         height:85vh;   
     }
     
-        .description{
-        margin-top:10%;
-    }
+
+}
+
+@media only screen and (min-width:1790px){
+    .jumbotron img {
+        margin-top:6%;   
+
 }
 
 
 @media only screen and (min-width:2100px){
-    .description{
-        margin-top:20%;   
-    }
+
     
     .jumbotron {    
         height:90vh;
@@ -239,7 +241,7 @@ margin-left:20%;
 }
 
 @media only screen and (min-width: 2600px){
-    .description {
-        margin-top: 30%;
+    .jumbotron img {
+        margin-top:20%;   
     }
 }

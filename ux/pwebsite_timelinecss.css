@@ -52,9 +52,6 @@ hr{
     font-weight:400;
 }
 
-.description{
-    margin-top:2%;
-}
 
 
 .jumbotron a{
@@ -223,17 +220,8 @@ background-color:#5f605f;
 }
 
 @media only screen and (max-width:1250px){
-    .description{
-        margin-top:-2%;   
-    }
-    
-        .jumbotron p, .jumbotron a{
-        font-size:17px;   
-    }
-    
-        .jumbotron #title {
-        font-size:50px;   
-    }
+
+
 }
 
 @media only screen and (max-width:1200px){
@@ -295,21 +283,20 @@ background-color:#5f605f;
 }
 
 @media only screen and (min-width:1790px){
-    .description {
-        margin-top:12%;   
-    }
-    
+
     	.jumbotron{
 		height:85vh;
 	}
+    
+    .jumbotron img {
+        margin-top:7%;   
+    }
 
     
 }
 
 @media only screen and (min-width:2100px){
-	.description {
-        margin-top:20%;   
-    }
+
     
     	.jumbotron{
 		height:90vh;
@@ -317,7 +304,7 @@ background-color:#5f605f;
 }
 
 @media only screen and (min-width:2700px){
-    .description{
+    .jumbotron img {
         margin-top:25%;   
     }
 }
