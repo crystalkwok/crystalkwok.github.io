@@ -30,11 +30,8 @@ body p{
 }
 
 
-.jumbotron p{
-	color:#e3e4e4;
-    font-weight:300;
-    font-size:20px;
-    margin-top:10px;
+.jumbotron img {
+    margin-top:1%;
 }
 
 .jumbotron a{
@@ -47,9 +44,6 @@ body p{
     color:#82d3a5;
 }
 
-.jumbotron img {
-    margin-top:1%;
-}
 
 
 .triangle {
@@ -166,6 +160,85 @@ margin-left:20%;
     
 }
 
+
+
+@media only screen and (max-width:780px){
+    .title{
+        margin-right:19%;
+        margin-left:19%;
+    }
+}
+
+@media only screen and (min-width:1600px){
+    .jumbotron {
+        height:85vh;   
+    }
+    
+
+}
+
+@media only screen and (min-width:1790px){
+
+}
+
+
+@media only screen and (min-width:2100px){
+
+    
+    .jumbotron {    
+        height:90vh;
+    }
+}
+
+@media only screen and (min-width: 2600px){
+
+    }
+
+    
+    
+    
+    
+
+@media only screen and (max-height: 600px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+    
+    @media only screen and (min-height:700px){
+        .jumbotron img {
+            margin-top:6%;    
+        }
+        
+    }
+    
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:10%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:17%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1280px){
+        .jumbotron img {
+            margin-top:24%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
+
+
+
 @media only screen and (max-width:995px){
     /*what nav bar changes*/
     .jumbotron{
@@ -206,42 +279,18 @@ margin-left:20%;
     #lightbox_normal{
         margin-right:0;
     }
-
-
-}
-
-@media only screen and (max-width:780px){
-    .title{
-        margin-right:19%;
-        margin-left:19%;
+    
+    .jumbotron img {
+        margin-top:0%;   
     }
+
+
 }
 
-@media only screen and (min-width:1600px){
+@media only screen and (max-width:1200px) and (min-width:650px) and (min-width:996px){
     .jumbotron {
-        height:85vh;   
+        height:82vh;   
     }
     
-
-}
-
-@media only screen and (min-width:1790px){
-    .jumbotron img {
-        margin-top:6%;   
-
-}
-
-
-@media only screen and (min-width:2100px){
-
     
-    .jumbotron {    
-        height:90vh;
-    }
-}
-
-@media only screen and (min-width: 2600px){
-    .jumbotron img {
-        margin-top:20%;   
-    }
 }

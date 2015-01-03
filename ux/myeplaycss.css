@@ -197,16 +197,71 @@ iframe {
     }
 }
 
+
+@media only screen and (max-width:1450px){
+    .jumbotron img {
+        margin-top:0%;   
+    }
+}
+
 @media only screen and (max-width:1200px){
 
-    
-    .jumbotron {
-         height:100%;   
-    }
     .disappear {
         display:none;   
     }
 }
+
+@media only screen and (min-width:1790px){
+    	.jumbotron{
+		height:85vh;
+	}
+
+    
+}
+
+@media only screen and (min-width:2100px){
+
+    
+    	.jumbotron{
+		height:90vh;
+	}
+
+}
+
+
+
+@media only screen and (max-height: 630px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+    
+
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:3%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:13%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .jumbotron img {
+            margin-top:20%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:35%;   
+        }
+    }
+
 
 @media only screen and (max-width:995px){
     .large{
@@ -222,6 +277,7 @@ iframe {
 		top: -20px;
         height:100%;
 	}
+
 
     .trianglerec{
 		margin-top:-52px;
@@ -239,29 +295,12 @@ iframe {
     .jumbotron p, .jumbotron a{
         font-size:20px;   
     }
-
-}
-
-@media only screen and (min-width:1790px){
-    	.jumbotron{
-		height:85vh;
-	}
     
     .jumbotron img {
-        margin-top:7%;   
-    }
-
-    
-}
-
-@media only screen and (min-width:2100px){
-
-    
-    	.jumbotron{
-		height:90vh;
-	}
-    
-        .jumbotron img {
-        margin-top:22%;   
+        margin-top:0%;   
     }
 }
+
+
+
+

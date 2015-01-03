@@ -56,12 +56,12 @@ hr{
 
 .jumbotron a{
     font-size:18px;
-    color:#edd6b6;
+    color:#ffffff;
 }
 
 .jumbotron a:hover{
     text-decoration: none;
-    color:#ffffff;
+    color:#edd6b6;
 }
 
 
@@ -225,11 +225,67 @@ background-color:#5f605f;
 }
 
 @media only screen and (max-width:1200px){
-    .jumbotron {
-         height:100%;   
-    }
+
     
 }
+
+
+@media only screen and (min-width:1790px){
+
+    	.jumbotron{
+		height:85vh;
+	}
+}
+
+@media only screen and (min-width:2100px){
+
+    	.jumbotron{
+		height:90vh;
+	}
+}
+
+@media only screen and (min-width:2700px){
+
+}
+
+
+@media only screen and (max-height: 600px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+    
+    @media only screen and (min-height:700px){
+        .jumbotron img {
+            margin-top:6%;    
+        }
+        
+    }
+    
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:7%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:15%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .jumbotron img {
+            margin-top:22%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
 
 @media only screen and (max-width:995px){
     .features p{
@@ -279,33 +335,9 @@ background-color:#5f605f;
         .jumbotron p, .jumbotron a{
         font-size:19px;   
     }
-
-}
-
-@media only screen and (min-width:1790px){
-
-    	.jumbotron{
-		height:85vh;
-	}
     
     .jumbotron img {
-        margin-top:7%;   
+        margin-top:0%;   
     }
 
-    
 }
-
-@media only screen and (min-width:2100px){
-
-    
-    	.jumbotron{
-		height:90vh;
-	}
-}
-
-@media only screen and (min-width:2700px){
-    .jumbotron img {
-        margin-top:25%;   
-    }
-}
-

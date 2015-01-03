@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 body {
 font-family:'Lato', sans-serif;
 }
@@ -7,14 +9,14 @@ body p{
 }
 
 .description a, .jumbotron a{
-	color:#ecc476;
+	color:#82d3a5;
 	text-decoration:none;
     font-size:17px;
 }
 
 .description a:hover, .jumbotron a:hover{
     text-decoration: none;
-    color:#82d3a5;
+    color:#ecc476;
 }
 
 
@@ -24,7 +26,6 @@ body p{
     font-size:16px;
 }
 
-@charset 'UTF-8';
 
 .problem p{
 	font-family:'Montserrat', sans-serif;
@@ -62,6 +63,7 @@ body p{
 	position:relative;
 	top:30px;
 	width:100%;
+    height:82vh;
 }
 
 .jumbotron #title{
@@ -95,6 +97,10 @@ body p{
 	font-size:18px;
     color:#ffffff;
     font-weight:300;
+}
+
+.description img{
+    margin-top:1%;
 }
 
 
@@ -359,7 +365,98 @@ width:100%;
     }
 }
 
+
+
+    
+@media only screen and (min-width:1250px){
+   .jumbotron{
+       height:82vh;
+   }
+    
+}
+
+@media only screen and (min-width:1500px){
+   .jumbotron{
+       height:85vh;
+   }
+
+
+}
+
+@media only screen and (min-width:1700px){
+
+
+}
+
+@media only screen and (min-width:2000px){
+     .jumbotron{
+       height:90vh;
+   }
+
+}
+
+@media only screen and (min-width: 2700px){
+
+}
+
+
+
+@media only screen and (max-height: 600px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+
+@media only screen and (min-height:610px){
+    .jumbotron img {
+        margin-top:6%;   
+    }
+}
+    
+@media only screen and (min-height:700px){
+        .jumbotron img {
+            margin-top:10%;    
+        }
+     
+}
+
+@media only screen and (min-height:700px) and (max-width:990px){
+    .jumbotron img {
+        margin-top:0%;   
+    }
+}
+    
+    @media only screen and (min-height:850px){
+        .jumbotron img {
+            margin-top:11%;   
+        }
+    }
+
+@media only screen and (min-height:1100px){
+        .jumbotron img {
+            margin-top:15%;   
+        }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .jumbotron img {
+            margin-top:22%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
+
+
 @media only screen and (max-width:990px){
+    .jumbotron {
+        height:100%;   
+    }
+    
     
     .problem_content3 img{
       width:150px;   
@@ -458,49 +555,11 @@ width:100%;
         .description {
         margin-top: -2px;   
     }
-
-
-}
-
-    
-@media only screen and (min-width:1250px){
-   .jumbotron{
-       height:82vh;
-   }
-    
-}
-
-@media only screen and (min-width:1500px){
-   .jumbotron{
-       height:85vh;
-   }
-
-    .jumbotron img {
-        margin-top:6%;   
-    }
-
-}
-
-@media only screen and (min-width:1700px){
-.jumbotron img {
-    margin-top:10%;
-}
-
-}
-
-@media only screen and (min-width:2000px){
-     .jumbotron{
-       height:90vh;
-   }
     
     .jumbotron img {
-        margin-top:15%;   
+        margin-top:0%;   
     }
+
 
 }
 
-@media only screen and (min-width: 2700px){
-    .jumbotron img {
-        margin-top: 25%;   
-    }
-}
