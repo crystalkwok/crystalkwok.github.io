@@ -9,22 +9,20 @@ font-family:'Lato', sans-serif;
 /*jumbotron*/
 
 .description{ /*words in jumbotron*/
-position: relative;
-max-width: 100%;
-display: table-cell;
-vertical-align: middle;
-height: 100%;
-    margin-left:-2%;
-margin-top:8%;
+text-align: left;
+margin-top:9%;
 }
 
-.jumbotron p { /*p words in jumbotron*/
+#logo {
+    vertical-align: left;   
+}
+
+.description { /*p words in jumbotron*/
 	font-family:'Montserrat', sans-serif;
 	font-size: 24px;
 	color:#fbfcfc;
-	/*width:650px;*/
-	padding-bottom:60px;
-    line-height: 180%;
+
+    line-height: 200%;
 }
 
 #hello{ /*hello word*/
@@ -36,8 +34,13 @@ margin-top:8%;
 	background-color: #1E5754;
 	position:relative;
 	width:100%;
-	height:82vh;
     top:50px;
+}
+
+@media only screen and (min-height:525px){
+    .jumbotron  {
+        height:82vh;   
+    }
 }
 
 .trianglerec{
@@ -46,14 +49,7 @@ margin-top:8%;
 }
 
 /*the whole section with portfolio*/
-.ux_work {
-padding-top:20px;
-padding-left:40px;
-}
 
-.ux_work img{
-	width:260px;
-}
 
 .ux_work a:hover {
 	width:100%;
@@ -64,21 +60,13 @@ padding-left:40px;
 
 .ux_work p{
 	font-size:16px;
-	width:280px;
 }
 
-.row{
-    display:block;
+.ux_work .row{
+    margin-bottom:5%;
+    margin-top:2%;
 }
 
-/*left sections of ux work*/
-.left, .middle, .right{
-	float:left;
-	width:23%;
-    margin-right:50px;
-    margin-left:50px;
-    margin-bottom: 20px;
-}
 
 /*title of all the separate works*/
 #uxwork_description #title{
@@ -86,25 +74,88 @@ padding-left:40px;
 	font-size:20px;
 }
 
-
-@media only screen and (min-width:1500px){
-    .description{
-       margin-top:10%;    
-    }
-    
-    #logo{
-        margin-top:35%;   
-    }
+.timeline, .myeplay, .rainbowart, .flunkless, .crown {
+    padding:2%;
 }
 
-@media only screen and (min-width:1600px){
-	.description{
-		margin-top:15%;
-	}
 
-	#logo{
-		margin-top:50%;
-	}
+
+ @media only screen and (max-height: 525px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+  
+    @media only screen and (min-height:650px){
+        .description {
+            margin-top:13%;   
+        }
+        
+        .logo {
+            margin-top:5%;   
+        }
+    }
+
+    @media only screen and (min-height:700px){
+        .description {
+            margin-top:13%;
+        }
+        
+        .logo {
+            margin-top:4%;
+        }
+        
+    }
+
+    @media only screen and (min-height:900px){
+        .description {
+            margin-top:22%;
+        }
+        
+        .logo {
+            margin-top:13%; 
+        }
+    }
+    
+
+@media only screen and (min-height:1100px){
+    .description {
+       margin-top:28%;
+    }
+    
+    .logo {
+        margin-top:19%;
+    }
+}
+    
+    
+    @media only screen and (min-height:1300px){
+        .description {
+            margin-top:40%;   
+        }
+        
+        .logo {
+            margin-top:29%;   
+        }
+    }
+
+ @media only screen and (min-height:1600px){
+        .jumbotron img {
+            margin-top:38%;   
+        }
+    }
+
+
+
+
+
+
+@media only screen and (min-width:1500px) and (min-height:525px){
+
+}
+
+@media only screen and (min-width:1600px) and (min-height:525px){
+
 
 	.jumbotron{
 		height:85vh;
@@ -112,25 +163,13 @@ padding-left:40px;
 
 }
 
-@media only screen and (min-width:1790px){
-    #logo{
-        margin-top:75%;   
-    }
-    
-    .description{
-        margin-top:20%;   
-    }
+@media only screen and (min-width:1790px) and (min-height:525px){
+
     
 }
 
-@media only screen and (min-width:2000px){
-	.description{
-		margin-top:20%;
-	}
+@media only screen and (min-width:2000px) and (min-height:525px){
 
-	#logo{
-		margin-top:80%;
-	}
 
 	.jumbotron{
 		height:90vh;
@@ -138,34 +177,18 @@ padding-left:40px;
 }
 
 
-@media only screen and (min-width: 2600px){
-    #logo{
-        margin-top:130%;   
-    }
+@media only screen and (min-width: 2600px) and (min-height:525px){
+    
+    
 }
 
 @media only screen and (max-width:1200px){
-	.left, .middle, .right{
-        margin:30px;
-		width:240px;
-    }
-
-	.ux_work img{
-		width:240px;
-	}
 
 	#hello{
 		font-size: 85px;
 		width:100%;
 	}
-    
-    #logo {
-        margin-top:20%;   
-    }
-    
-    .description{
-        margin-top: 6%;   
-    }
+
     
     #love {
         font-size:20px;   
@@ -175,6 +198,17 @@ padding-left:40px;
 
 /*start change to make for cell phone*/
 @media only screen and (max-width:995px){
+    .project{
+           margin-top:2%;
+        margin-bottom:2%;
+    }
+    
+    .description {
+        padding-top:10%;
+        padding-bottom:15%;
+    }
+    
+    
 	/*changes in jumbotron*/
 
 	.jumbotron{
@@ -183,15 +217,7 @@ padding-left:40px;
 	} /*make the jumbotron long*/
 
 
-	.description p{
-		margin-left: 10%;
-		width: 90%;
-	} /*make description in jumbotron larger*/
 
-
-    .description{
-        padding-top:20%;
-    }
     
     
     #logo{
@@ -217,39 +243,16 @@ padding-left:40px;
      font-size: 37px;   
     } /*make title of each project larger*/
 
-    #uxwork_description{
-		width:115%;
-		font-size:35px;
-	} /*edit project description*/
 
 	#uxwork_note{
-		font-size:20px;
-		width:125%;
+		
 		font-size:30px;
 	} /*edit small notes in each description*/
 
-	 .ux_work{
-		width:100%;
-	} /*the entire projects part*/
 
-    /*change images*/
-    .ux_work img{
-		width:110%;
-		height:110%;
-	} /*images of each of the projects*/
-
-	/*.project1{
-		width:80%;
-		margin:0px;
-		margin-left:10%;
-	} *//*crown and rainbowart project total move*/
-
-
-	/*change size of sections*/
-	.left, .middle, .right{
-		width:80%;
-		margin-left:5%;
-	} /*flunkless project description*/
+    .ux_work p{
+        font-size:30px;   
+    }
 
 
 
@@ -266,9 +269,6 @@ padding-left:40px;
 
 @media only screen and (max-width:670px){
 
-.description p{
-	width:80%;
-}
 
 #love{
 	font-size: 25px;
@@ -338,8 +338,9 @@ padding-left:40px;
 		margin-right:55%;
 	}
 }
-
-
+    
+    
+   
 
 
 

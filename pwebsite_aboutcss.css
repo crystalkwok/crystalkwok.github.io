@@ -10,22 +10,31 @@ background-color: #5c595a;
 	position:relative;
 	top:50px;
 	width:100%;
-	height:82vh;
+}
+
+@media only screen and (min-height:600px){
+    .jumbotron  {
+        height:82vh;   
+    }
 }
 
 
-.jumbotron p {
+.jumbotron p{
 	font-size: 16px;
 	color:#fbfcfc;
 	font-weight:300;
-	margin-top:1%;
     line-height:145%;
 }
 
 .self img{
-	width:320px;
-    margin-top:5%;
+    margin-top:8%;
 }
+
+.description {
+    margin-top:1%;
+}
+
+
 
 .triangle {
 	 width: 0;
@@ -79,8 +88,6 @@ background-color: #5c595a;
 
 /*title of each section*/
 .title{
-	width:230px;
-	height:40px;
 	padding-top:5px;
 	font-weight:700;
 	color:#f4b1aa;
@@ -140,30 +147,92 @@ background-color: #5c595a;
 }
 
 
+@media only screen and (max-height: 550px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+  
+    @media only screen and (min-height:650px){
+        .self img {
+            margin-top:13%;   
+        }
+        
+        .description {
+            margin-top:3%;   
+        }
+    }
+
+    @media only screen and (min-height:770px){
+        .self img{
+            margin-top:22%;
+        }
+        
+        .description {
+            margin-top:6%;
+        }
+        
+    }
+
+    @media only screen and (min-height:850px){
+        .self img {
+            margin-top:35%;   
+        }
+        
+        .description {
+            margin-top:10%;   
+        }
+    }
+
+@media only screen and (min-height:900px){
+        .self img {
+            margin-top:42%;   
+        }
+        
+        .description {
+            margin-top:12%;   
+        }
+    }
+    
+
+@media only screen and (min-height:1200px){
+    .self img {
+            margin-top:83%;   
+        }
+        
+        .description {
+            margin-top:25%;   
+        }
+}
+    
+    
 
 
 
-
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1250px) {
 	.jumbotron p{
 	font-size: 15px;
 	}
+ 
+}
 
-    .not_weird {
-        display:none;   
+@media only screen and (max-width:1200px){
+	.jumbotron {
+		height:100%;
+	}
+
+     .self img {
+        margin-top:5%;
+         width:120%;
+    }
+    
+    .description {
+        margin-top:0%;   
     }
     
     .weird {
         display:inline;   
     }
-}
-
-@media only screen and (max-width:1150px){
-	.jumbotron {
-		height:100%;
-	}
-
-    
 
 }
 
@@ -176,7 +245,8 @@ background-color: #5c595a;
 
 
 @media only screen and (max-width:990px){
-    .self img {
+    
+    .self img{
         width:100%;   
     }
     
@@ -191,12 +261,12 @@ background-color: #5c595a;
 
 	.jumbotron p{
 		font-size: 28px;
-		
 	}
+    
+    .description {
+        margin-top:3%;   
+    }
 
-		.self_description{
-		margin-top:20px;
-	}
 
 
 /*end jumbotron changes*/
@@ -250,6 +320,11 @@ background-color: #5c595a;
     #skills_title{
         font-weight:400;  
     }
+    
+    
+.self img{
+    margin-top:1%;
+}
 
 
 
@@ -261,7 +336,6 @@ background-color: #5c595a;
 
 	.self img{
 		width:100%;
-		left:-5%;
         
 	}
 	.self{
@@ -296,42 +370,22 @@ background-color: #5c595a;
 
 @media only screen and (min-width:1490px){
 
-    .self_description{
-        margin-top:3%;   
-    }
 
-	.self img{
-		width:130%;
-		margin-top:16%;
-	}
 }
 
-@media only screen and (min-width:1600px){
+@media only screen and (min-width:1600px) and (min-height:600px){
     .jumbotron {
         height:85vh;   
     }
 }
 
-@media only screen and (min-width:1790px){
-	.self img{
-		margin-top:0px;
-		margin-top:53%;
-	}
-    
-    .self_description{
-        margin-top:11%;   
-    }
+@media only screen and (min-width:1790px) and (min-height:600px){
+
 
 }
 
-@media only screen and (min-width:2100px){
-	.self img{
-		margin-top:100%;
-	}
+@media only screen and (min-width:2100px) and (min-height:600px){
 
-	.self_description{
-		margin-top:23%;
-	}
 
 	.jumbotron{
 		height:90vh;

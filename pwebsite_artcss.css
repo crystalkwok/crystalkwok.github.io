@@ -9,22 +9,16 @@ font-size:19px;
 
 
 .art_p{ /*div class of words*/
-	position:relative;
-	max-width:100%;
-	display: table-cell;
-	vertical-align: middle;
-	height:100%;
-    margin-left:-2%;
-    margin-top:8%;
-}
 
-.jumbotron p {
-	font-family: 'Montserrat', sans-serif;
+    margin-top:9%;
+    	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	color:#fbfcfc;
-	padding-bottom: 60px;
-    line-height: 190%;
+
+    line-height: 200%;
 }
+
+
 
 /*ART?*/
 #artq{
@@ -34,9 +28,14 @@ font-size:19px;
 .jumbotron { 
 	background-color: #1E5754;
 	position:relative;
-	width:100%;
-	height:82vh;
+    width:100%;
     top:50px;
+}
+
+@media only screen and (min-height:550px){
+    .jumbotron  {
+        height:82vh;   
+    }
 }
 
 .trianglerec{
@@ -54,12 +53,11 @@ font-size:19px;
 /*start intro*/
 .intro{
     background-color:#f3f1ae;
-    width:100%;
+    padding-bottom:4%;
 }
 
 .intro p{
     line-height: 200%;
-    padding:40px;
 }
 
 /*set title of each section*/
@@ -71,7 +69,7 @@ font-size:19px;
 }
 
 .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
-    padding:40px;
+
 }
 /*set image size of each section*/
 /*.concentration img, .other_work img*/
@@ -268,24 +266,79 @@ font-size:19px;
 
 /*end attempt lightbox*/
 
-@media only screen and (min-width:1500px){
-    .art_p{
-       margin-top:10%;    
+
+ @media only screen and (max-height: 550px){
+        .jumbotron {
+            height:100%;   
+        }
+    }
+  
+    @media only screen and (min-height:650px){
+        .art_p {
+            margin-top:13%;   
+        }
+        
+        .logo {
+            margin-top:5%;   
+        }
+    }
+
+    @media only screen and (min-height:700px){
+        .art_p{
+            margin-top:15%;
+        }
+        
+        .logo {
+            margin-top:5%;
+        }
+        
+    }
+
+    @media only screen and (min-height:900px){
+        .art_p{
+            margin-top:22%;
+        }
+        
+        .logo {
+            margin-top:13%; 
+        }
     }
     
-    #logo{
-        margin-top:35%;  
+
+@media only screen and (min-height:1100px){
+    .art_p{
+       margin-top:28%;
+    }
+    
+    .logo {
+        margin-top:19%;
     }
 }
-
-@media only screen and (min-width:1600px){
-	.art_p{
-		margin-top:15%;
-	}
     
-    #logo{
-        margin-top:50%; 
+    
+    @media only screen and (min-height:1300px){
+        .art_p{
+            margin-top:40%;   
+        }
+        
+        .logo {
+            margin-top:29%;   
+        }
     }
+
+ @media only screen and (min-height:1600px){
+
+    }
+
+
+
+
+
+@media only screen and (min-width:1500px) and (min-height:600px){
+
+}
+
+@media only screen and (min-width:1600px) and (min-height:600px){
 
 	.jumbotron{
 		height:85vh;
@@ -295,43 +348,22 @@ font-size:19px;
 
 }
 
-@media only screen and (min-width:1790px){
-    #logo{
-        margin-top:75%;   
-    }
-    
-    .art_p{
-         margin-top:20%;    
-    }
+@media only screen and (min-width:1790px) and (min-height:600px){
 
-    
 }
 
-@media only screen and (min-width:2000px){
-	.art_p{
-		margin-top:20%;
-	}
-
-	#logo{
-		margin-top:80%;
-	}
+@media only screen and (min-width:2000px) and (min-height:600px){
 
 	.jumbotron{
 		height:90vh;
 	}
 }
 
-@media only screen and (min-width: 2600px){
-    #logo{
-       margin-top:130%;   
-    }
-    
-    .art_p{
-        margin-top:30%;   
-    }
+@media only screen and (min-width: 2600px) and (min-height:600px){
+
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1200px) and (min-height:600px){
 
 	#artq{
 		font-size: 85px;
@@ -373,12 +405,10 @@ font-size:19px;
 /*}
 
 @media only screen and (max-width: 950px){*/
-
-	.art_p p{
-        margin-top:23%;  
-		margin-left:10%;
-		width:80%;
-	}
+    .art_p {
+        padding-top:10%;
+        padding-bottom:15%;
+    }
     
     #artq{
         font-size:150px;   
@@ -409,10 +439,6 @@ font-size:19px;
     text-align:center;
     }
 
-	.intro p{
-		width:100%;
-        padding:0px;
-	}
     
     .concentration, .other_work, .typography{
         padding:0px;   
