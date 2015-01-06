@@ -391,6 +391,14 @@ font-size:19px;
     .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
         padding=0px;   
     }
+    
+    .art_p {
+        margin-top:6%;   
+    }
+    
+    .logo {
+        margin-top:0%;   
+    }
 }
 
 
