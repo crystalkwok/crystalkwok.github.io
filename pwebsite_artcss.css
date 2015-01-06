@@ -97,6 +97,10 @@ font-size:19px;
     font-size:17px;
 }
 
+.small {
+    display:none;
+}
+
 
 
 /*attempt lightbox*/
@@ -286,7 +290,7 @@ font-size:19px;
 
     @media only screen and (min-height:700px){
         .art_p{
-            margin-top:15%;
+            margin-top:13%;
         }
         
         .logo {
@@ -372,10 +376,6 @@ font-size:19px;
 	}
 
     
-    #logo{
-        margin-top:20%;   
-    }
-    
     #artnux{
         font-size:20px;   
     }
@@ -385,7 +385,7 @@ font-size:19px;
     }
     
     .jumbotron p{   
-        line-height:150%;
+        line-height:190%;
     }
     
     .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
@@ -402,6 +402,10 @@ font-size:19px;
     
     #logo{
          margin-top:-1px;
+    }
+    
+    .small {
+        display:block;   
     }
 /*}
 

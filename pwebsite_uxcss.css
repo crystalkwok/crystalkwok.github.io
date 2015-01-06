@@ -37,6 +37,10 @@ margin-top:9%;
     top:50px;
 }
 
+.small {
+    display:none;
+}
+
 @media only screen and (min-height:600px){
     .jumbotron  {
         height:82vh;   
@@ -102,7 +106,7 @@ margin-top:9%;
         }
         
         .logo {
-            margin-top:4%;
+            margin-top:5%;
         }
         
     }
@@ -198,6 +202,10 @@ margin-top:9%;
 
 /*start change to make for cell phone*/
 @media only screen and (max-width:995px){
+    .small {
+        display:block;   
+    }
+    
     .project{
            margin-top:2%;
         margin-bottom:2%;
