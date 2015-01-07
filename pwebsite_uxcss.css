@@ -8,10 +8,6 @@ font-family:'Lato', sans-serif;
 
 /*jumbotron*/
 
-.description{ /*words in jumbotron*/
-text-align: left;
-margin-top:9%;
-}
 
 #logo {
     vertical-align: left;   
@@ -23,6 +19,9 @@ margin-top:9%;
 	color:#fbfcfc;
 
     line-height: 200%;
+    
+    text-align: left;
+margin-top:9%;
 }
 
 #hello{ /*hello word*/
@@ -230,6 +229,10 @@ margin-top:9%;
 		height:100%;
 		top:-10px;
 	} /*make the jumbotron long*/
+    
+    .description {
+        margin-top:10%;   
+    }
 
 
 

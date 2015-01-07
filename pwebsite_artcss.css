@@ -448,6 +448,10 @@ font-size:19px;
     #artnux p{
     text-align:center;
     }
+    
+    .art_p{ 
+        margin-top:10%;
+    }
 
     
     .concentration, .other_work, .typography{
