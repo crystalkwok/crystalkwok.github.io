@@ -158,6 +158,10 @@ background-color: #5c595a;
     display:none;
 }
 
+.xsmall {
+    display:none;
+}
+
 
 @media only screen and (max-height: 550px){
         .jumbotron {
@@ -339,7 +343,9 @@ background-color: #5c595a;
 }
 
 
-
+.xsmall {
+    display:inline;
+}
 
 
 }
