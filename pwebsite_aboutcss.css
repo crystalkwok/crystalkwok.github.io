@@ -346,6 +346,10 @@ background-color: #5c595a;
 .xsmall {
     display:inline;
 }
+    
+    .links a{
+        font-size:24px;   
+    }
 
 
 }
@@ -363,6 +367,10 @@ background-color: #5c595a;
 	body p{
 		font-size:15px;
 	}
+    
+    .links a{
+        font-size:15px;   
+    }
 
 	.jumbotron p{
 		font-size:15px;
