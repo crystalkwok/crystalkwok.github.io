@@ -27,6 +27,7 @@
      <link href="../lightbox_gallerycss.css" rel="stylesheet" />
         <link href="../website_navbar.css" rel="stylesheet" />
 		<link href="pwebsite_timelinecss.css" rel="stylesheet" />
+         <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
        
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -75,9 +76,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<ul class="pull-left">
 					<li>CRYSTAL KWOK</li>
 				</ul>
-				<ul class="pull-right">
+				<ul class="pull-right top_gray">
 					<div class="right">
-                        <li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="timeline.html" class="activea">[ Timeline ]</a></li>
+                               <!-- <li><a href="twonote.html">TwoNote</a></li>-->
+                                <li><a href="myeplay.html">MyePlay</a></li>
+                                <li><a href="crown.html">CROWN</a></li>
+                                <li><a href="flunkless.html">FlunkLess</a></li>
+                                <li><a href="rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                        </li>
                         <li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
                         <li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT & CONTACT</a></li>
 					</div>
@@ -85,6 +95,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			</div>
 		</div>
+    
+
         <!--small nav bar-->
     
 		<div class="navbar_dropdown">
@@ -97,7 +109,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</br></br>
 				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
 			</br></br><br>
-				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a> &nbsp;
+                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
+                    <ul class="dropdown_ux">
+                                <li><a href="timeline.html" class="activea">[ Timeline ]</a></li>
+                                <!-- <li><a href="twonote.html">TwoNote</a></li>-->
+                                <li><a href="myeplay.html">MyePlay</a></li>
+                                <li><a href="crown.html">CROWN</a></li>
+                                <li><a href="flunkless.html">FlunkLess</a></li>
+                                <li><a href="rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                </li>
 				<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
 				<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT &amp; CONTACT</a></li>
 				</br>
@@ -112,12 +134,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				$('.icon-menu').click(function(){
 					$('.dropdown').toggle();
+					
 				});
 
 
 				$('.close').click(function(){
 					$('.dropdown').hide();
 				});
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+                
+                 $('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+
 			});
 			$(document).ready(main);
 	
@@ -134,9 +167,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                         
             <div class="row">
-                <div class="col-md-1 col-lg-1"></div>
-                <img src="../images/timeline/timeline.png" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                <div class="col-md-1 col-lg-1"></div>
+                <div class="col-md-3 col-lg-3"></div>
+                <img src="../images/timeline/timeline.png" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-md-3 col-lg-3"></div>
             </div>
                         
 			

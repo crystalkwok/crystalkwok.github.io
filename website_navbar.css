@@ -20,6 +20,14 @@
 
 }
 
+.ux_navbar{
+    display:none;
+}
+
+.fa-chevron-down {
+    color:#000000;
+}
+
 .navbar_dropdown{
 	display:none;
 }
@@ -27,7 +35,30 @@
 .dropdown a{
 	font-size:39px;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+    left:49%;
+}
+
+.dropdown-menu li {
+    letter-spacing:0em;
+    font-size:18px;
+    display:table-row;
+}
+
+.activea {
+    font-weight:700;
+}
+
+.dropdown-menu .activea, .dropdown_ux .activea {
+    font-weight:700;
+}
+
 
 .icon-menu{
 	display:none;
@@ -70,6 +101,17 @@ footer a:hover {
     text-decoration:none;
 }
 
+.dropdown_ux a{
+    letter-spacing: 0em;
+    font-size:27px;
+    text-align:center;
+    color:#606060;
+}
+
+.dropdown_ux {
+    display:none;
+}
+
 
 @media only screen and (min-width:1600px){
      #logo{
@@ -109,6 +151,7 @@ footer a:hover {
 		margin:10px;
 		text-align:center;
         letter-spacing: 0.20em;
+
 	}
 
 	.dropdown ul{
@@ -144,6 +187,10 @@ footer a:hover {
 	.dropdown a{
 		font-size:25px;
 	}
+    
+    .dropdown_ux a{
+        font-size:19px;   
+    }
     
     
     

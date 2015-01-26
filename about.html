@@ -71,23 +71,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
         
-        <!--normal nav bar-->
+  <!--normal nav bar-->
 		<div class="navbar">
 			<div class="container">
 				<ul class="pull-left">
 					<li>CRYSTAL KWOK</li>
 				</ul>
-				<ul class="pull-right">
+				<ul class="pull-right top_gray">
 					<div class="right">
-					<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="about.html"><b>[ ABOUT & CONTACT ]</b></a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ux/timeline.html">Timeline</a></li>
+                                 <!--<li><a href="ux/twonote.html">TwoNote</a></li>-->
+                                <li><a href="ux/myeplay.html">MyePlay</a></li>
+                                <li><a href="ux/crown.html">CROWN</a></li>
+                                <li><a href="ux/flunkless.html">FlunkLess</a></li>
+                                <li><a href="ux/rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                        </li>
+                        <li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="about.html" class="activea">[ ABOUT & CONTACT ]</a></li>
 					</div>
 				</ul>
 
 			</div>
 		</div>
+    
+
         <!--small nav bar-->
+    
 		<div class="navbar_dropdown">
 				
 				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
@@ -97,31 +109,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<ul class="dropdown2">
 			</br></br>
 				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
-			</br></br>
-				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a></li>
+			</br></br><br>
+				<li><a style="text-decoration:none ; color: #000000" href="index.html">UX</a> &nbsp;
+                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
+                    <ul class="dropdown_ux">
+                                <li><a href="ux/timeline.html">Timeline</a></li>
+                                <!--<li><a href="ux/twonote.html">TwoNote</a></li>-->
+                                <li><a href="ux/myeplay.html">MyePlay</a></li>
+                                <li><a href="ux/crown.html">CROWN</a></li>
+                                <li><a href="ux/flunkless.html">FlunkLess</a></li>
+                                <li><a href="ux/rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                </li>
 				<li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="about.html"><b>[ ABOUT &amp; CONTACT ]</b></a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="about.html" class="activea">[ ABOUT &amp; CONTACT ]</a></li>
 				</br>
 			</ul>
 			</div>
 		</div>
 
+
 		<script>
-			var main=function(){
+			$(document).ready(function(){
 	
 
 				$('.icon-menu').click(function(){
 					$('.dropdown').toggle();
+					
 				});
 
 
 				$('.close').click(function(){
 					$('.dropdown').hide();
 				});
-			}
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+                
+                 $('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+
+			});
 			$(document).ready(main);
 	
 		</script>
+
+
 
 <!--start jumbotron -->
 		<div class="jumbotron">
@@ -180,11 +216,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="links row">
         <div class="col-md-1"></div>
-        <a class="col-md-3 col-sm-5 col-xs-5"href="images/resume 4.pdf">Resume (PDF) &nbsp; &nbsp; <i class="fa fa-download fa-2x"></i></a>
+        <a class="col-md-3 col-sm-5 col-xs-5"href="images/resume 4.pdf" target="_blank">Resume (PDF) &nbsp; &nbsp; <i class="fa fa-download fa-2x"></i></a>
        
-        <a class="col-md-4 col-sm-4 col-xs-4"href="http://www.linkedin.com/in/crystalkwok">LinkedIn  &nbsp; &nbsp; <i class="fa fa-linkedin-square fa-2x"></i></a> 
+        <a class="col-md-4 col-sm-4 col-xs-4" href="http://www.linkedin.com/in/crystalkwok" target="_blank">LinkedIn  &nbsp; &nbsp; <i class="fa fa-linkedin-square fa-2x"></i></a> 
         
-        <a class="col-md-3 col-sm-3 col-xs-3"href="http://github.com/crystalkwok">GitHub  &nbsp; &nbsp; <i class="fa fa-github fa-2x"></i></a> 
+        <a class="col-md-3 col-sm-3 col-xs-3"href="http://github.com/crystalkwok" target="_blank">GitHub  &nbsp; &nbsp; <i class="fa fa-github fa-2x"></i></a> 
         <div class="col-md-1"></div>
     
     </div>

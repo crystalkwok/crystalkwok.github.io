@@ -18,6 +18,7 @@
 		<!--css-->
         <link href="website_navbar.css" rel="stylesheet" />
 		<link href="pwebsite_uxcss.css" rel="stylesheet" />
+            <link href="font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 		<!--fonts-->
@@ -64,21 +65,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 
-	<div class="navbar">
-		<div class="container">
+<!--normal nav bar-->
+		<div class="navbar">
+			<div class="container">
 				<ul class="pull-left">
 					<li>CRYSTAL KWOK</li>
 				</ul>
-				<ul class="pull-right">
-					<li><a style="text-decoration:none ; color: #000000" href="index.html"><b>[ UX ]</b></a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="about.html">ABOUT & CONTACT</a></li>
+				<ul class="pull-right top_gray">
+					<div class="right">
+                        <li><a style="text-decoration:none ; color: #000000" href="index.html"  class="activea">[ UX ]</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ux/timeline.html">Timeline</a></li>
+                                <!--<li><a href="ux/twonote.html">TwoNote</a></li>-->
+                                <li><a href="ux/myeplay.html">MyePlay</a></li>
+                                <li><a href="ux/crown.html">CROWN</a></li>
+                                <li><a href="ux/flunkless.html">FlunkLess</a></li>
+                                <li><a href="ux/rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                        </li>
+                        <li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="about.html">ABOUT & CONTACT</a></li>
+					</div>
 				</ul>
 
+			</div>
 		</div>
-	</div>
+    
 
-	<div class="navbar_dropdown">
+        <!--small nav bar-->
+    
+		<div class="navbar_dropdown">
 				
 				<a href="#" style="text-decoration:none ; color: #000000" class="icon-menu menu-left"> <b>&#9776;</b> MENU</a>
 				<a href="#" style="text-decoration:none; color:#000000" class= "icon-menu menu-right">CRYSTAL KWOK</a>
@@ -87,17 +103,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<ul class="dropdown2">
 			</br></br>
 				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
-			</br></br><br><br>
-				<li><a style="text-decoration:none ; color: #000000" href="index.html"><b>[ UX ]</b></a></li>
+			</br></br><br>
+				<li><a style="text-decoration:none ; color: #000000" href="index.html" class="activea">[ UX ]</a> &nbsp;
+                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
+                    <ul class="dropdown_ux">
+                                <li><a href="ux/timeline.html">Timeline</a></li>
+                               <!-- <li><a href="ux/twonote.html">TwoNote</a></li>-->
+                                <li><a href="ux/myeplay.html">MyePlay</a></li>
+                                <li><a href="ux/crown.html">CROWN</a></li>
+                                <li><a href="ux/flunkless.html">FlunkLess</a></li>
+                                <li><a href="ux/rainbow_art.html">Rainbow Art</a></li>
+                            </ul>
+                </li>
 				<li><a style="text-decoration:none ; color: #000000" href="art.html">ART</a></li>
-				<li><a style="text-decoration:none ; color: #000000" href="about.html">ABOUT & CONTACT</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="about.html">ABOUT &amp; CONTACT</a></li>
+				</br>
 			</ul>
-</br>
-		</div>
+			</div>
 		</div>
 
+
 		<script>
-			var main=function(){
+			$(document).ready(function(){
 	
 
 				$('.icon-menu').click(function(){
@@ -109,10 +136,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				$('.close').click(function(){
 					$('.dropdown').hide();
 				});
-			}
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+                
+                 $('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+
+			});
 			$(document).ready(main);
 	
 		</script>
+
 
 	
 		<div class="jumbotron">

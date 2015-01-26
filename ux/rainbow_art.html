@@ -27,6 +27,7 @@
         <link href="../lightbox_gallerycss.css" rel="stylesheet" type="type/css">
         <link href="../website_navbar.css" rel="stylesheet" type="type/css">
 		<link href="pwebsite_racss.css" rel="stylesheet" type="type/css">
+     <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
        
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -75,16 +76,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<ul class="pull-left">
 					<li>CRYSTAL KWOK</li>
 				</ul>
-				<ul class="pull-right">
+				<ul class="pull-right top_gray">
 					<div class="right">
-					<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
-					<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT & CONTACT</a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="timeline.html">Timeline</a></li>
+                                <!-- <li><a href="twonote.html">TwoNote</a></li>-->
+                                <li><a href="myeplay.html">MyePlay</a></li>
+                                <li><a href="crown.html">CROWN</a></li>
+                                <li><a href="flunkless.html">FlunkLess</a></li>
+                                <li><a href="rainbow_art.html" class="activea">[ Rainbow Art ]</a></li>
+                            </ul>
+                        </li>
+                        <li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
+                        <li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT & CONTACT</a></li>
 					</div>
 				</ul>
 
 			</div>
 		</div>
+    
+
         <!--small nav bar-->
     
 		<div class="navbar_dropdown">
@@ -97,7 +109,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</br></br>
 				<li class="pull-left"><a href="#" style="text-decoration:none ; color: #000000" class="close">close</a></li>
 			</br></br><br>
-				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a></li>
+				<li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a> &nbsp;
+                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
+                    <ul class="dropdown_ux">
+                                <li><a href="timeline.html">Timeline</a></li>
+                                <!-- <li><a href="twonote.html">TwoNote</a></li>-->
+                                <li><a href="myeplay.html">MyePlay</a></li>
+                                <li><a href="crown.html">CROWN</a></li>
+                                <li><a href="flunkless.html">FlunkLess</a></li>
+                                <li><a href="rainbow_art.html" class="activea">[ Rainbow Art ]</a></li>
+                            </ul>
+                </li>
 				<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
 				<li><a style="text-decoration:none ; color: #000000" href="../about.html">ABOUT &amp; CONTACT</a></li>
 				</br>
@@ -107,7 +129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 		<script>
-			var main=function(){
+			$(document).ready(function(){
 	
 
 				$('.icon-menu').click(function(){
@@ -119,11 +141,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				$('.close').click(function(){
 					$('.dropdown').hide();
 				});
-			}
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+                
+                 $('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+
+			});
 			$(document).ready(main);
 	
 		</script>
-
 
 	<div class="jumbotron">
 		<div class="container">
@@ -133,9 +164,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
 		
             <div class="row">
-                <div class="col-md-2 col-lg-2"></div>
-                <img src="../images/rainbow art/rainbowart.png" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-lg-2"></div>
+                <div class="col-md-3 col-lg-3"></div>
+                <div class="col-md-6 col-lg-6">
+                <img src="../images/rainbow art/rainbowart.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                    </div>
+                <div class="col-md-3 col-lg-3"></div>
             </div>
 			</div>
 		</div>
@@ -151,7 +184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="container">
             <div class="title"><p>what do you do here?</p></div></br></br>
 <div class="whatido"><p>My main roles at Rainbow Art & Rainbow Canvas are being an assistant art instructor to children and adults, which I have started since June 2010, and being the UX designer.  Rainbow Art is a local art school for children, and Rainbow Canvas offers various single classes where an art instructor will instruct step-by-step on the featured artwork of the night  (similar to Wine & Canvas, but without the wine). I have taught colored pencil, watercolor, markers, and acrylic painting to various students.  </p><br>
-				<p>I recently became the UX designer of Rainbow Art & Rainbow Canvas simply because I asked for more roles in practicing my Adobe Creative Suite skills, but I am also dedicated to making the experience at Rainbow Art and Rainbow Canvas more user-centered and to solve problems presented by the users.  </p><br>
+				<p>I became the designer of Rainbow Art & Rainbow Canvas simply because I asked for more roles in practicing my Adobe Creative Suite skills, but I am also dedicated to making the experience at Rainbow Art and Rainbow Canvas more user-centered and to solve problems presented by the users.  For example, I suggested to the art director to rearrange the layout of the art studio and how the people would be seated and where the instruction would take place, based on my observations of the students and how they learn.</p><br>
 				<p>I have made flyers, designed the Rainbow Canvas logo, started coding the company website, and made sample paintings for Rainbow Canvas.</p>
 				</br></br>
             </div>

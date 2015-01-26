@@ -35,7 +35,7 @@ hr{
 	position:relative;
 	top:40px;
 	width:100%;
-    height:82vh;
+    height:350px;
 }
 
 .jumbotron a{
@@ -198,7 +198,62 @@ background-color:#fabd76;
 }
 
 
-@media only screen and (min-width:1790px){
+@media only screen and (max-width:995px){
+
+
+    
+ .large{
+     display:none;
+ }
+    
+    .small {
+        display:block;   
+    }
+    
+    .picleft, .picright{
+        width:100%;
+        height:100%;
+        float:none;
+    }
+    
+    .col-sm-12, .col-xs-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10{
+        margin:15px;   
+    }
+    
+    .right{
+        float:none;   
+    }
+/*what nav bar changes*/
+    .jumbotron{
+		top: -20px;
+        height:100%;
+	}
+
+    .trianglerec{
+		margin-top:-52px;
+	}
+    
+    .motivation {
+        margin-top: -2px;   
+    }
+ /*end change*/   
+    .jumbotron a{
+        font-size:19px;   
+    }
+
+    
+    .features p {
+        line-height:160%;   
+    }
+    
+    .jumbotron img {
+        margin-top:0%;   
+    }
+
+}
+
+
+/*@media only screen and (min-width:1790px){
 
     	.jumbotron{
 		height:85vh;
@@ -257,56 +312,4 @@ background-color:#fabd76;
         }
     }
 
-@media only screen and (max-width:995px){
-
-
-    
- .large{
-     display:none;
- }
-    
-    .small {
-        display:block;   
-    }
-    
-    .picleft, .picright{
-        width:100%;
-        height:100%;
-        float:none;
-    }
-    
-    .col-sm-12, .col-xs-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10{
-        margin:15px;   
-    }
-    
-    .right{
-        float:none;   
-    }
-/*what nav bar changes*/
-    .jumbotron{
-		top: -20px;
-        height:100%;
-	}
-
-    .trianglerec{
-		margin-top:-52px;
-	}
-    
-    .motivation {
-        margin-top: -2px;   
-    }
- /*end change*/   
-    .jumbotron a{
-        font-size:19px;   
-    }
-
-    
-    .features p {
-        line-height:160%;   
-    }
-    
-    .jumbotron img {
-        margin-top:0%;   
-    }
-
-}
+*/
