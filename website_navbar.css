@@ -42,7 +42,7 @@
   font-size: 16px;
   margin-top: 5px;
   min-width: 105px;
-    left:46%;
+    left:51%;
 }
 
 .dropdown-menu li {
@@ -121,6 +121,10 @@ footer a:hover {
 
 
 @media only screen and (max-width:995px){
+    
+    .jumbotron {
+        height:100%;   
+    }
 /*start changing navbar*/
 	.navbar{
 		display:none;

@@ -41,7 +41,7 @@ hr{
 	position:relative;
 	top:40px;
 	width:100%;
-    height:350px;
+    height:400px;
 }
 
 
@@ -91,6 +91,7 @@ hr{
 
 .motivation{
 background-color:#5f605f;
+    margin-top:-2%;
 }
 
 .motivation p{

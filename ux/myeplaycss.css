@@ -21,7 +21,7 @@ body p{
 	position:relative;
 	top:40px;
 	width:100%;
-    height:350px;
+    height:400px;
 }
 
 
@@ -70,6 +70,7 @@ body p{
 
 .motivation{
 background-color:#1E5754;
+    margin-top:-2%;
 }
 
 .motivation p{
@@ -131,7 +132,7 @@ iframe {
 }
 
 .screenshots_final img, .paper_prototypes img{
-    margin-bottom:1%;
+    margin-bottom:2%;
 }
 
 .design_user p{
@@ -217,6 +218,10 @@ iframe {
     }
  
 @media only screen and (max-width:995px){
+    .jumbotron {
+        height:100%;   
+    }
+    
     .large{
         display:none;   
     }
