@@ -91,10 +91,11 @@ body p{
 
 .description {
     background-color:#606061;
+    margin-top:-2%;
 }
 
 .description p{
-	font-size:18px;
+	font-size:17px;
     color:#ffffff;
     font-weight:300;
 }

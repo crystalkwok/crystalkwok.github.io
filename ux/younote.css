@@ -21,7 +21,7 @@ body p{
 	position:relative;
 	top:40px;
 	width:100%;
-    height:350px;
+    height:400px;
 }
 
 
@@ -59,6 +59,7 @@ body p{
 
 .description{
 background-color:#000000;
+    margin-top:-2%;
 }
 
 .description p{
@@ -83,26 +84,25 @@ background-color:#000000;
 }
 
 #final_prototype_section{
-    font-size:20px;
+    font-size:22px;
     font-weight:700;
     letter-spacing:0.15em;
-    color:#00589c;
+    color:#e47980;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.final_prototype p{
+    line-height:190%;
 }
 
 #section_title{
-    font-size:24px;
+    font-size:26px;
     font-weight:700;
     letter-spacing:0.15em;
     color:#000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.final_prototype img{
-    display:none;
-}
-
-.final_prototype #first_prototype{
-    display:inline;
-}
 
 .final_prototype a{
     color:#db5d58;
@@ -112,6 +112,55 @@ background-color:#000000;
 .final_prototype a:hover{
     color:#82d3a5;
     text-decoration:none;
+}
+
+/*.firstprototype, .thirdprototype {
+    background-color:#e7e9eb;
+}*/
+
+.finalprototype {
+    padding:2%;
+}
+
+#lightbox_normal img{
+    height:130px;
+}
+
+#lightbox_normal .image_title {
+	width: 150px; height: 150px;
+}
+
+.process, .final_prototype {
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
+.final_prototype {
+    margin-bottom:5%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    
+    background-color: #7d7d7d; 
+}
+
+@media only screen and (max-width:995px){
+       /*what nav bar changes*/
+    .jumbotron{
+		top: -20px;
+        height:100%;
+	}
+
+    .trianglerec{
+		margin-top:-52px;
+	}
+    
+        .motivation {
+        margin-top: -2px;   
+    }
+ /*end change*/ 
 }
 
 

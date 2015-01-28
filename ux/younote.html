@@ -4,11 +4,12 @@
     
     <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta property="name" content="Rainbow Art & Rainbow Canvas : Crystal Kwok">
-        <meta property="url" content="http://crystalkwok.github.io/ux/rainbow_art">
+    <meta property="name" content="CROWN : Crystal Kwok">
+        <meta property="url" content="http://crystalkwok.github.io/ux/crown">
         <meta name="author" content="Crystal Kwok">
         <meta name="keywords" content="san diego, los angeles, web design, crystal kwok, ucsd, ux, university of california san diego, crystal, kwok, website, design, interaction design, interaction designer,
-		crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, artwork, rainbow art, rainbow, art, canvas, rainbow canvas, wine, painting">
+		crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, crown, time management, time, timeline, goals, calendar, planner">
+    
 	<!--bootstrap-->
 		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.css">
 		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
@@ -22,14 +23,16 @@
        
         <script type="text/javascript" src="../jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+    
+    <!-- PrefixFree -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 
 	<!--css-->
-        <link href="../lightbox_gallerycss.css" rel="stylesheet" type="type/css">
+     <link href="../lightbox_gallerycss.css" rel="stylesheet" type="type/css">
         <link href="../website_navbar.css" rel="stylesheet" type="type/css">
-		<link href="pwebsite_racss.css" rel="stylesheet" type="type/css">
+    <link href="younote.css" rel="stylesheet" type="type/css">
      <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
-       
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 	<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -41,7 +44,7 @@
 
 		<!--random stuff-->
 		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
-		<title>Rainbow Art & Rainbow Canvas--crystal kwok</title>
+		<title>YouNote--crystal kwok</title>
 
 
 </head>
@@ -57,7 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N57DXK');</script>
 <!-- End Google Tag Manager -->
-    
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -68,7 +71,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-
 
 <!--normal nav bar-->
 		<div class="navbar">
@@ -81,11 +83,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <li><a style="text-decoration:none ; color: #000000" href="../index.html">UX</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="timeline.html">Timeline</a></li>
-                                <li><a href="younote.html">YouNote</a></li>
+                               <li><a href="younote.html" class="activea">[ YouNote ]</a></li>
                                 <li><a href="myeplay.html">MyePlay</a></li>
                                 <li><a href="crown.html">CROWN</a></li>
                                 <li><a href="flunkless.html">FlunkLess</a></li>
-                                <li><a href="rainbow_art.html" class="activea">[ Rainbow Art ]</a></li>
+                                <li><a href="rainbow_art.html">Rainbow Art</a></li>
                             </ul>
                         </li>
                         <li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
@@ -113,11 +115,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
                     <ul class="dropdown_ux">
                                 <li><a href="timeline.html">Timeline</a></li>
-                                <li><a href="younote.html">YouNote</a></li>
+                                <li><a href="younote.html" class="activea">[ YouNote ]</a></li>
                                 <li><a href="myeplay.html">MyePlay</a></li>
                                 <li><a href="crown.html">CROWN</a></li>
                                 <li><a href="flunkless.html">FlunkLess</a></li>
-                                <li><a href="rainbow_art.html" class="activea">[ Rainbow Art ]</a></li>
+                                <li><a href="rainbow_art.html">Rainbow Art</a></li>
                             </ul>
                 </li>
 				<li><a style="text-decoration:none ; color: #000000" href="../art.html">ART</a></li>
@@ -157,25 +159,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 		</script>
 
-	<div class="jumbotron">
-		<div class="container">
-            
-            <div class="row">
-                            <a class="pull-right" href="timeline.html">next project</a>
-                        </div>
-		
-            <div class="row">
-                <div class="col-md-2 col-lg-2"></div>
-                <div class="col-md-8 col-lg-8">
-                    <div class="col-md-1 col-lg-1"></div>
-                <img src="../images/rainbow art/rainbowart.png" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                      <div class="col-md-1 col-lg-1"></div>
-                    </div>
-                <div class="col-md-2 col-lg-2"></div>
-            </div>
-			</div>
-		</div>
 
+<div class="jumbotron">
+		<div class="container">
+		
+					
+                        <div class="row">
+                            <a class="pull-right" href="myeplay.html">next project</a>
+                        </div>
+
+                        <div class="row">
+                <div class="col-md-3 col-lg-3"></div>
+               <div class="col-md-6 col-lg-6">
+                   <div class="col-md-1 col-lg-1"></div>
+                
+                    <img src="../images/kpcb/kpcb.png" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                   <div class="col-md-1 col-lg-1"></div>
+                </div>
+                <div class="col-md-3 col-lg-3"></div>
+            </div>
+                        
+					
+		</div>
+	</div> <!--end jumbotron -->
 
 	<div class="trianglerec">
 				<div class="container">
@@ -183,69 +189,156 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 	</div>
 
-	<div class="what_do_you_do">
-		<div class="container">
-            <div class="title"><p>what do you do here?</p></div></br></br>
-<div class="whatido"><p>My main roles at Rainbow Art & Rainbow Canvas are being an assistant art instructor to children and adults, which I have started since June 2010, and being the UX designer.  Rainbow Art is a local art school for children, and Rainbow Canvas offers various single classes where an art instructor will instruct step-by-step on the featured artwork of the night  (similar to Wine & Canvas, but without the wine). I have taught colored pencil, watercolor, markers, and acrylic painting to various students.  </p><br>
-				<p>I became the designer of Rainbow Art & Rainbow Canvas simply because I asked for more roles in practicing my Adobe Creative Suite skills, but I am also dedicated to making the experience at Rainbow Art and Rainbow Canvas more user-centered and to solve problems presented by the users.  For example, I suggested to the art director to rearrange the layout of the art studio and how the people would be seated and where the instruction would take place, based on my observations of the students and how they learn.</p><br>
-				<p>I have made flyers, designed the Rainbow Canvas logo, started coding the company website, and made sample paintings for Rainbow Canvas.</p>
-				</br></br>
-            </div>
-		</div>
-	</div>
-</br></br>
+<div class="description">
+    <div class="container">
+        <div class="col-md-1 col-lg-1"></div>
+    <p class="col-md-10 col-lg-10 col-sm-12 col-xs-12">People love Coursera for its free high quality education, and Coursera's students, no matter what age, are dedicated learners.  However, I noticed that when I (and others as well) tried to take notes on the online lectures in Coursera, problems came up.  My screen was too small to easily move between a PDF file and a video, and switching between screens and trying to catch (and missing)  what the professor just said caused even more problems.  That's why I decided to create <span>YouNote, a redesign of the note-taking experience on Coursera</span> for the <a href="http://kpcbfellows.com/">KPBC Design Fellowship</a>.  I designed to optimize the note-taking experience by giving faster and easier control of the video and note-taking, without disrupting the note-taking process.</p>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <br><br>
+</div> <!--end description -->
 
-	<div class="pictures">
-		<div class="container">
-            
-            <div id="lightbox_normal">
+
+<div class="process">
+    <div class="container">
+        <br>
+        <p id="section_title">IDEATION  &  THE PROCESS</p>
+            <div class="row">
+                <div class="col-md-1 col-lg-1"></div>
+                <p class="col-md-10 col-lg-10">User Research, Contextual Interviews, Wireframing, Prototyping, Iterative Design</p>
+            </div>
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <img class="col-md-4 col-lg-4" src="../images/kpcb/notebook.jpg">
+ 
+                <div id="lightbox_normal" class="col-md-7 col-lg-7">
                     <ul>
-                        <li><img src="../images/rainbow art/rainbow art help thumbnail.jpg" data-large= "../images/rainbow art/rainbow art help.jpg">
+                        <li><img src="../images/kpcb/user2%20thumbnail.jpg" data-large="../images/kpcb/user2.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Art</h5>
+                                    <h5 class="title">logo sketches</h5>
                                 </div>
                         </li>
-                        <li><img src="../images/rainbow art/rainbow art portfolio seminar thumbnail.png" data-large= "../images/rainbow art/rainbow art portfolio seminar.jpg">
+                        <li><img src="../images/kpcb/user2 thumbnail.jpg" data-large= "../images/kpcb/user2.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Art Portfolio Seminar</h5>
+                                    <h5 class="title">logo showing</h5>
                                 </div>
                         </li>
-                        <li><img src="../images/rainbow%20art/rainbow%20canvas%20thumbnail.jpg" data-large= "../images/rainbow art/rainbow canvas.jpg">
+                        <li><img src="../images/kpcb/user2.2%20thumbnail.jpg" data-large= "../images/kpcb/user2.2.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Canvas (art class)</h5>
+                                    <h5 class="title">storyboard (1)</h5>
                                 </div>
                         </li>
-                        <li><img src="../images/rainbow art/rainbow canvas 2nd hp thumbnail.png" data-large= "../images/rainbow art/rainbow canvas 2nd hp.jpg">
+                        <li><img src="../images/kpcb/user3%20thumbnail.jpg" data-large= "../images/kpcb/user3.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Canvas Logo (Prototype)</h5>
+                                    <h5 class="title">storyboard (2)</h5>
                                 </div>
                         </li>
-                        <li><img src="../images/rainbow art/rainbow canvas logo.jpg" data-large= "../images/rainbow art/rainbow canvas logo.jpg">
+                        <li><img src="../images/kpcb/wireframe1%20thumbnail.jpg" data-large= "../images/kpcb/wireframe1.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Canvas Logo</h5>
+                                    <h5 class="title">storyboard (3)</h5>
                                 </div>
                         </li>
-                        <li><img src="../images/rainbow art/sample1 thumbnail.jpg" data-large= "../images/rainbow art/sample1.jpg">
+                        <li><img src="../images/kpcb/prototype2%20thumbnail.jpg" data-large= "../images/kpcb/prototype2.jpg">
                                 <div class="image_title">
-                                    <h5 class="title">Rainbow Canvas Sample Artwork</h5>
+                                    <h5 class="title">features brainstorming (1)</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/kpcb/prototype3%20thumbnail.jpg" data-large= "../images/kpcb/prototype3.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">features brainstorming (2)</h5>
+                                </div>
+                        </li>
+                         <li><img src="../images/kpcb/prototype4%20thumbnail.jpg" data-large="../images/kpcb/prototype4.jpg">
+                                <div class="image_title">
+                                    <h5 class="title">User flow and features</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/kpcb/worldinmini1.2.png" data-large="../images/kpcb/worldinmini2.2.png">
+                                <div class="image_title">
+                                    <h5 class="title">homescreen (prototype)</h5>
+                                </div>
+                        </li>
+                        <li><img src="../images/kpcb/worldinmini2.1.png" data-large="../images/kpcb/worldinmini1.3.png">
+                                <div class="image_title">
+                                    <h5 class="title">calendar (prototype)</h5>
                                 </div>
                         </li>
 
                     </ul>
-                    </div>
-			
-		</div>
-	</div>
+                </div><!--end lightbox normal-->
+            </div><!--end row-->
+        </div>
+</div><!--end container-->
+</div><!--end process-->
 
 
+<div class="final_prototype">
+    <div class="container">
+    <br>
+<p id="section_title">FINAL PROTOTYPE & DESIGN DECISIONS</p>
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+    <p class="col-md-10 col-lg-10 col-sm-12 col-xs-12">
+    The point of this redesign is because users who used Coursera and took notes with their computers/laptops presented a need for <b>easier and faster control of both video and note-taking, without disrupting the note-taking process</b>.  Without YouNote, users had the constraints of slow movement due to using a mouse or trackpad to switch screens, then control each application, whether it was the video or the place where they took notes.  Also, users often faced the constraints of a small screen, because most would watch on their laptops or computer screens.  Therefore, the features and redesign reflects these user needs to give users of Coursera an easier experience with taking notes while watching a video lecture.  A couple of features include combining both the video and the note-taking into one screen, having bigger buttons and captions, and using keyboard controls, like Ctrl-T for text, and Ctrl-P to pause/play the video.  One of the challenges of this redesign was giving a lot of user control and freedom, such as being able to switch screens, because the users of Coursera are very diverse and have a lot of opinions and preferences on where everything should be, yet being able to maintain simplicity and usability for a faster experience.<br>
+</p>
+            <div class="col-md-1 col-lg-1"></div>
+            </div>
+        </div>
+<br>
+<div class="firstprototype finalprototype">
+    <div class="container">
+<hr>
+    <p id="final_prototype_section" class="col-md-12 col-lg-12">PROTOTYPE 1</p>
+       
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <img src="../images/kpcb/1.1 notes.png" class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="first_prototype">
+          
+        </div>
+    </div>
+</div>
+<div class="secondprototype finalprototype">
+     <div class="container">
+         <hr>
+    <p id="final_prototype_section">PROTOTYPE 2</p>
+         <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+<img src="../images/kpcb/2.1 notes.png" class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="second_prototype">
+          
+         </div>
+    </div>
+</div>
+<div class="thirdprototype finalprototype">
+     <div class="container">
+          <hr>
+     <p id="final_prototype_section">PROTOTYPE 3</p>
+         <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+<img src="../images/kpcb/3.1 notes.png" class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="third_prototype">
+         </div>
+    </div>
+</div>
+    
+<div class="fourthprototype finalprototype">
+     <div class="container">
+         <hr>
+     <p id="final_prototype_section">PROTOTYPE 4</p>
+         <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+<img src="../images/kpcb/4.1 notes.png" class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="fourth_prototype">
+               <div class="col-md-1 col-lg-1"></div>
+         </div>
+    </div>
+</div>
 
+    </div> <!--end final prototype-->
 
 <!-- PrefixFree -->
 <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 
 <script>
-/*Jquery time*/
-$(document).ready(function(){
+
+    $(document).ready(function(){
 	var item, img, title, large_img;
 	var CW, CH, CL, CT, hpadding, vpadding, imgtag;
 	//Flag for preventing multiple image displays
@@ -375,12 +468,12 @@ $(document).ready(function(){
 			lb_loading= false;
 		}
 	}
-})
 
+    });
+
+    $(document).ready(main);
+        
 </script>
-
-</br></br><br><br>
-
 <footer>
     <div class="container">
         <div class="row">
@@ -393,5 +486,5 @@ $(document).ready(function(){
     </div>
 </footer>
 
-	</body>
+</body>
 </html>
