@@ -114,12 +114,17 @@ background-color:#000000;
     text-decoration:none;
 }
 
-/*.firstprototype, .thirdprototype {
+.final_prototype_summary{
     background-color:#e7e9eb;
-}*/
+    padding:2%;
+}
 
 .finalprototype {
     padding:2%;
+}
+
+.firstprototype {
+    padding-top:5px;
 }
 
 #lightbox_normal img{
