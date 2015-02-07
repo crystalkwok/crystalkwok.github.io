@@ -78,7 +78,7 @@ hr{
 
 .trianglerec{
 	left:50%;
-	background-color:#5f605f;
+	background-color:#ffffff;
 }
 
 .left{
@@ -89,16 +89,18 @@ hr{
     float:right;
 }
 
-.motivation{
-background-color:#5f605f;
+.info {
     margin-top:-2%;
 }
 
-.motivation p{
+.motivation{
+background-color:#5f605f;
+
     color:#f6deac;
-    font-size:17px;
-    line-height: 220%;
+    font-size:16px;
+    line-height: 180%;
     font-weight:300;
+    padding:2%;
 }
 
 .motivation a{
@@ -118,7 +120,7 @@ background-color:#5f605f;
 
 
 .ugh img, .design_choices img{
-    margin-top:8%;
+    margin-top:6%;
 }
 
 /*design choices paragraphs (color, size, etc)*/
@@ -155,7 +157,7 @@ background-color:#5f605f;
     color:#ffffff;
 }
 
-.ugh a, .design_choices a, .personal a{
+.ugh a, .design_choices a, .personal a, .design_navbar a{
     color:#e6817d;
     font-weight:400;
 }
@@ -227,6 +229,20 @@ background-color:#5f605f;
         font-size:16px;   
     }
     
+    .motivation {
+        margin-top:-8%;   
+        padding-bottom:6%;
+    }
+    
+    .trianglerec{
+	left:50%;
+	background-color:#5f605f;
+}
+    
+    .ugh {
+        margin-top:2%;   
+    }
+    
     #final_design {
         display:none;   
     }
@@ -261,10 +277,7 @@ background-color:#5f605f;
     .trianglerec{
 		margin-top:-52px;
 	}
-    
-        .motivation {
-        margin-top: -2px;   
-    }
+
  /*end change*/ 
     
         .jumbotron p, .jumbotron a{

@@ -53,18 +53,18 @@ body p{
 
 .trianglerec{
 	left:50%;
-	background-color:#e7e9eb;
+	background-color:#ffffff;
 }
 
 
 .description{
 background-color:#e7e9eb;
-    margin-top:-2%;
+    padding:2%;
 }
 
-.description p{
+.description{
     color:#000000;
-    line-height: 220%;
+    line-height: 200%;
     font-weight:300;
 }
 
@@ -133,13 +133,14 @@ background-color:#e7e9eb;
 	width: 150px; height: 150px;
 }
 
-.process, .final_prototype {
-    margin-top:4%;
-    margin-bottom:4%;
+.process {
+    margin-top:-2%;
 }
+
 
 .final_prototype {
     margin-bottom:5%;
+    margin-top:4%;
 }
 
 hr {
@@ -162,6 +163,11 @@ hr {
     
         .motivation {
         margin-top: -2px;   
+    }
+    
+    .description {
+        margin-top:6%; 
+        padding:3%;
     }
  /*end change*/ 
 }

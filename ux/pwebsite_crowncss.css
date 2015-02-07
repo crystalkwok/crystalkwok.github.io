@@ -8,6 +8,10 @@ body p{
 	font-size:17px;
 }
 
+.container-fluid {
+    margin-top:-2%;
+}
+
 .jumbotron #title{
     font-size:40px;
     /*margin-left:8%;
@@ -62,7 +66,7 @@ hr{
 
 .trianglerec{
 	left:50%;
-	background-color:#e7e9eb;
+	background-color:#ffffff;
 }
 
 .left{
@@ -74,14 +78,15 @@ hr{
 }
 
 .motivation{
-    margin-top:-2%;
 background-color:#e7e9eb;
-}
-
-.motivation p{
     color:#000000;
     font-size:16px;
-    line-height: 220%;
+    line-height: 180%;
+    padding:15px;
+}
+
+.info {
+    margin-top:-2%;
 }
 
 
@@ -106,10 +111,20 @@ background-color:#e7e9eb;
     background-color:#ffffff;
 }
 
-
-.features p{
-    line-height:190%;
+.feature_description {
+    display:none;
 }
+
+.add_goal, .timeline{
+    display:block;
+}
+
+.timeline p {
+    line-height: 180%;
+}
+
+
+
 
 .timeline img{
     margin-bottom:40px;
@@ -138,6 +153,13 @@ background-color:#e7e9eb;
     font-weight:700;
 }
 
+.description p{
+    font-size:16px;
+    line-height: 170%;
+    padding:0px;
+    margin-bottom:5px;
+}
+
 .features h2{
      color:#ffffff;
     padding:8px;
@@ -152,9 +174,6 @@ background-color:#e7e9eb;
     color:#82d3a5;
 }
 
-.feature_description {
-    display:none;
-}
 
 #why {
     font-weight:700;
@@ -224,10 +243,7 @@ background-color:#e7e9eb;
     .trianglerec{
 		margin-top:-52px;
 	}
-    
-    .motivation {
-        margin-top: -2px;   
-    }
+
  /*end change*/   
     .jumbotron a{
         font-size:19px;   
