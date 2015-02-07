@@ -1,11 +1,11 @@
 @charset 'UTF-8';
 
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Karla', sans-serif;
 }
 
 body p{
-	font-size:16px;
+	font-size:17px;
 }
 
 .jumbotron #title{
@@ -35,7 +35,7 @@ body p{
 .description{
     padding-top:4%;
     padding-bottom:3%;
-    background-color:#d4d5d7;
+    background-color:#e7e9eb;
 }
 
 .description a {
@@ -75,7 +75,7 @@ background-color:#1E5754;
 
 .motivation p{
     color:#f6deac;
-    font-size:17px;
+    font-size:16px;
     line-height: 220%;
     font-weight:300;
 }
@@ -92,6 +92,7 @@ background-color:#1E5754;
 .motivation span{
     font-weight:700;
     color:#ffffff;
+    font-size:17px;
 }
 
 .first_prototype{
@@ -122,11 +123,11 @@ iframe {
 .final_prototype {
     padding-top:5%;
     padding-bottom:5%;
-    background-color:#838383;
+    background-color:#e7e9eb;
 }
 
 .final_prototype p{
-    color:#ffffff;
+    color:#000000;
     font-weight:300;
 }
 
@@ -157,17 +158,12 @@ iframe {
     font-weight:700;
 }
 
-.first_prototype a{
+.first_prototype a, .final_prototype a{
     color:#db5d58;
     font-size:20px;
     font-weight:700;
 }
 
-.final_prototype a{
-    color:#f4adaa;
-    font-size:20px;
-    font-weight:700;
-}
 
 .design_user a{
     color:#db5d58;

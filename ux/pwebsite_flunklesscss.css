@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 body {
-font-family:'Lato', sans-serif;
+font-family:'Karla', sans-serif;
 }
 
 body p{
@@ -95,9 +95,9 @@ body p{
 }
 
 .description p{
-	font-size:17px;
+	font-size:16px;
     color:#ffffff;
-    font-weight:300;
+    font-weight:400;
 }
 
 .description img{

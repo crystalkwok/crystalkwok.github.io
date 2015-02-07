@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Karla', sans-serif;
 }
 
 body p{
@@ -53,18 +53,17 @@ body p{
 
 .trianglerec{
 	left:50%;
-	background-color:#000000;
+	background-color:#e7e9eb;
 }
 
 
 .description{
-background-color:#000000;
+background-color:#e7e9eb;
     margin-top:-2%;
 }
 
 .description p{
-    color:#f6deac;
-    font-size:17px;
+    color:#000000;
     line-height: 220%;
     font-weight:300;
 }
@@ -80,7 +79,6 @@ background-color:#000000;
 
 .description span{
     font-weight:700;
-    color:#ffffff;
 }
 
 #final_prototype_section{

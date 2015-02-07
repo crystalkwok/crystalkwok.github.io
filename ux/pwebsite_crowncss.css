@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Karla', sans-serif;
 }
 
 body p{
@@ -40,7 +40,7 @@ hr{
 
 .jumbotron a{
     font-size:18px;
-    color:#f6deac
+    color:#f6deac;
 }
 
 .jumbotron a:hover{
@@ -62,7 +62,7 @@ hr{
 
 .trianglerec{
 	left:50%;
-	background-color:#fabd76;
+	background-color:#e7e9eb;
 }
 
 .left{
@@ -75,7 +75,7 @@ hr{
 
 .motivation{
     margin-top:-2%;
-background-color:#fabd76;
+background-color:#e7e9eb;
 }
 
 .motivation p{
@@ -84,15 +84,6 @@ background-color:#fabd76;
     line-height: 220%;
 }
 
-.motivation a{
-    color:#1E5754;
-    text-decoration:none;
-}
-
-.motivation a:hover{
-    text-decoration:none;
-    color:#ffffff;
-}
 
 #crownlogo{
     width:100%;
@@ -142,7 +133,7 @@ background-color:#fabd76;
     font-size:15px;
 }
 
-.feature_description a, .description a{
+.feature_description a, .description a, .motivation a{
     color:#db5d58;
     font-weight:700;
 }
@@ -156,7 +147,7 @@ background-color:#fabd76;
 
 
 
-.features a:hover{
+.features a:hover, .motivation a:hover{
     text-decoration: none;
     color:#82d3a5;
 }

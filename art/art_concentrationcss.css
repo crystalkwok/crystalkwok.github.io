@@ -9,7 +9,7 @@
 
 
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Karla', sans-serif;
 font-size:15px;
 background-color:#676565;
 }
@@ -53,6 +53,7 @@ body p{
 #back, #other{
     color:#ffffff;
     text-decoration: none;
+    font-size:16px;
 }
 
 /*go to next link*/

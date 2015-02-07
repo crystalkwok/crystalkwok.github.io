@@ -1,11 +1,11 @@
 @charset 'UTF-8';
 
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Karla', sans-serif;
 }
 
 body p{
-	font-size:15px;
+	font-size:17px;
 }
 
 .jumbotron #title{
