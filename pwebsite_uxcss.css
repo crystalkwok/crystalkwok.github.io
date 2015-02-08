@@ -93,7 +93,7 @@ margin-top:9%;
     }
   
     @media only screen and (min-height:650px){
-        .description {
+        .jumbotron p {
             margin-top:13%;   
         }
         
@@ -103,8 +103,8 @@ margin-top:9%;
     }
 
     @media only screen and (min-height:700px){
-        .description {
-            margin-top:13%;
+        .jumbotron p {
+            margin-top:14%;
         }
         
         .logo {
@@ -114,7 +114,7 @@ margin-top:9%;
     }
 
     @media only screen and (min-height:900px){
-        .description {
+        .jumbotron p {
             margin-top:22%;
         }
         
@@ -125,7 +125,7 @@ margin-top:9%;
     
 
 @media only screen and (min-height:1100px){
-    .description {
+    .jumbotron p {
        margin-top:28%;
     }
     
@@ -136,7 +136,7 @@ margin-top:9%;
     
     
     @media only screen and (min-height:1300px){
-        .description {
+        .jumbotron p {
             margin-top:40%;   
         }
         
@@ -200,7 +200,7 @@ margin-top:9%;
         font-size:20px;   
     }
     
-    .description {
+    .jumbotron p {
         margin-top:6%;   
     }
     
@@ -231,7 +231,7 @@ margin-top:9%;
 		top:-10px;
 	} /*make the jumbotron long*/
     
-    .description {
+    .jumbotron p {
         margin-top:10%;
         text-align:center;
     }
@@ -330,7 +330,7 @@ margin-top:9%;
 
 @media only screen and (max-width:500px){
 
-.description{
+.jumbotron p{
 	position: relative;
 	max-width: none;
 	display: block;
