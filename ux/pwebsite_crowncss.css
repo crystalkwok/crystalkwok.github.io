@@ -8,8 +8,10 @@ body p{
 	font-size:17px;
 }
 
-.container-fluid {
+.content {
     margin-top:-2%;
+    padding-left:4%;
+    padding-right:4%;
 }
 
 .jumbotron #title{
@@ -18,7 +20,7 @@ body p{
     margin-right:8%;*/
        letter-spacing: 0.15em;
     color:#ffffff;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Karla', sans-serif;
     text-align:center;
 }
 
@@ -80,7 +82,7 @@ hr{
 .motivation{
 background-color:#e7e9eb;
     color:#000000;
-    font-size:16px;
+    font-size:15px;
     line-height: 180%;
     padding:15px;
 }
@@ -102,9 +104,6 @@ background-color:#e7e9eb;
     font-size:16px;
 }
 
-.feature_title{ 
-    background-color:#2f2f2f;
-}
 
 
 .features {
@@ -161,10 +160,11 @@ background-color:#e7e9eb;
 }
 
 .features h2{
-     color:#ffffff;
+
     padding:8px;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Karla', sans-serif;
      letter-spacing: 0.15em;
+    font-weight:700;
 }
 
 
@@ -181,13 +181,30 @@ background-color:#e7e9eb;
     font-size:20px;
 }
 
-#assignments_tests .feature_title, #event_class .feature_title, #process .feature_title{
-    background-color: #616161;
-}
 
 #goals, #assignments_tests, #todo, #event_class, #timeline, #process, #personal {
     text-decoration:none;
 }
+
+ .minimize, .maximize{
+    height:27px;
+}
+
+.minimize {
+    display:none;
+}
+
+.goals_maximize , .timeline_maximize{
+    display:none;
+}
+
+.goals_minimize , .timeline_minimize{
+    display:inline;
+}
+
+
+
+
 
 
 @media only screen and (max-width:1250px){
@@ -226,10 +243,7 @@ background-color:#e7e9eb;
         height:100%;
         float:none;
     }
-    
-    .col-sm-12, .col-xs-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10{
-        margin:15px;   
-    }
+
     
     .right{
         float:none;   

@@ -130,35 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 
 
-		<script>
-			$(document).ready(function(){
-	
-
-				$('.icon-menu').click(function(){
-					$('.dropdown').toggle();
-					
-				});
-
-
-				$('.close').click(function(){
-					$('.dropdown').hide();
-				});
-                
-          
-  $('.fa_ux_dropdown').click(function() {
-    $('.dropdown-menu').toggle();
-      return false;
-  });
-                
-                 $('.fa_ux_dropdown_small').click(function() {
-    $('.dropdown_ux').toggle();
-  });
-
-			});
-			$(document).ready(main);
-	
-		</script>
-
+		
 
 	<div class="jumbotron">
 		<div class="container">
@@ -232,7 +204,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <p>*prototypes done by <a href="http://www.melindachu.com" target="_blank">Melinda Chu</a></p>
        </div>
-        <div class="design_navbar">
+
+
+     <!--  <div class="design_navbar">
             <div class="container">
             <div class="row">
                 <p class="col-md-3 col-sm-12 col-xs-12">DESIGN CHOICES ::</p>
@@ -243,34 +217,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a href="#" id="final_design" class="col-md-2">FINAL DESIGN</a>
                 </div>
             </div>
-        </div>
+        </div>-->
+<br>
 
 
 <div class="design_choices">
     <div class="container">
+         <p id="final_features" ><span>DESIGN DECISIONS</span></p>
         <div class="row">
-            <div class="color">
+        
+                <div class="color_top">
                     <p class="col-md-6 col-sm-12 col-xs-12"><span id="design_titles">COLORS</span><br>
-                        We played around with the idea of colors and its different psychological effects, such as how it could change how people see their events and time.  Our first color change was the background of the timeline, to make the timeline look interesting, and to place a contrast between the white font and the background (Prototypes 2-4).  We were also interested to see if color could be used to indicate importance and priority.  For example, a warmer and brighter color, like red, would pop out better as opposed to a cool color (Prototype 3), and <a href="../images/timeline/effect%20of%20colors%20on%20emotions.pdf" target="_blank">red could hint at a sense of urgency </a>, unconsciously hinting to the user that it is upcoming and decisions should be made about it soon.  However, we saw that color had no significant effect to the priority and importance of events, and we decided a cleaner and simpler interface made it easier for people to see their events and time.  Therefore, we stuck with two main colors, which were dark blue against a white background for contrast, and a red line for the current time display.  
+                        We played around with the idea of colors and its different psychological effects, such as how it could change how people see their <span id="color_maximize">... &nbsp; <img src="../images/timeline/maximize.png" id="maximize"></span> <span class="color"> events and time.  Our first color change was the background of the timeline, to make the timeline look interesting, and to place a contrast between the white font and the background (Prototypes 2-4).  We were also interested to see if color could be used to indicate importance and priority.  For example, a warmer and brighter color, like red, would pop out better as opposed to a cool color (Prototype 3), and <a href="../images/timeline/effect%20of%20colors%20on%20emotions.pdf" target="_blank">red could hint at a sense of urgency </a>, unconsciously hinting to the user that it is upcoming and decisions should be made about it soon.  However, we saw that color had no significant effect to the priority and importance of events, and we decided a cleaner and simpler interface made it easier for people to see their events and time.  Therefore, we stuck with two main colors, which were dark blue against a white background for contrast, and a red line for the current time display. &nbsp; &nbsp; <span id="color_minimize"><img src="../images/timeline/minimize.png" id="minimize"></span></span>
                     </p>
-            </div> <!--end color-->
+                </div>
+    
             <div class="col-md-1"></div>
-            <div class="size">
+                <div class="size_top">
                     <p class="col-md-5 col-sm-12 col-xs-12"><span id="design_titles">SIZE</span><br>
-                        Our biggest indicator of priority and importance is SIZE-- the size of text and the size of the circle.  We chose to use size (as opposed to something like color, like in Prototype 3) because of its ability to keep a clean and simple interface, while being able to visually pop out more as opposed to smaller sizes.  <a href="../images/timeline/mental%20scaling.pdf" target="_blank">Studies</a> have shown that it is quicker to detect things that are larger.  The importance of the highest priority events popping out is so that they are seen first, and subconsciously indicate to the user that this event is the most important, and attention, time, and decisions must be managed surrounding this event.  
-                    </p>
-            </div> <!--end size-->
+                        Our biggest indicator of priority and importance is SIZE-- the size of text and the size of the circle.  We chose <span id="size_maximize">... &nbsp; <img src="../images/timeline/maximize.png" id="maximize"></span><span class="size"> to use size (as opposed to something like color, like in Prototype 3) because of its ability to keep a clean and simple interface, while being able to visually pop out more as opposed to smaller sizes.  <a href="../images/timeline/mental%20scaling.pdf" target="_blank">Studies</a> have shown that it is quicker to detect things that are larger.  The importance of the highest priority events popping out is so that they are seen first, and subconsciously indicate to the user that this event is the most important, and attention, time, and decisions must be managed surrounding this event.  &nbsp; &nbsp; <span id="size_minimize"><img src="../images/timeline/minimize.png" id="minimize"></span>
+                    </span></p>
+             </div>           
         </div><!--end row-->
    
    
-      
-        <div class="fixed_relative_time">
-             <div class="row">
-            <p class="col-md-6 col-sm-12 col-xs-12"><span id="design_titles">FIXED VS. RELATIVE TIME</span><br>
-            Fixed time is where each hour is represented by a set amount of space, each event takes up a certain amount of space based on the duration, and almost every hour is usually shown.  However, relative time is just the opposite.  Every hour and event may not be represented by a set amount of space, and not every hour may be shown.  The benefits of fixed time is that the amount of space in between each event would be accurately representative of the amount of time in between, and the visualization of the length of the event would be representative of the duration.  However, we noticed the down side of fixed time is that there would often be huge chunks of empty space when there were no events, especially in the middle of the night, or during full days without events.  Also, when people often opened their calendar applications, it would start at a set time, like at 12am or 6am, even if there were no events anywhere around that time, leaving screens empty without any information from the calendar.  The benefits of relative time fixes fixed time's problems, where there would be no empty screens.  In the following examples, even though the an event in the fixed time may be 3.5 hours, it is seen as the same amount of importance and time as one hour events in the relative time.<br>
-            Therefore, we decided upon a hybrid (4th prototype).  We decided that when there were events, it would be FIXED time in order to accurately visualize the duration of the event and the time in between events.  However, if there were 8 or more hours without events, it would be indicated by the vertical zigzag line to indicate a time break.  If there were full days without events, it would be indicated by a block of text that showed the date and the quote "no events". Also, each day will start with the first event.  We also set a maximum of 5 events on the screen at once, to prevent overcrowding and cluttering the events. </p>
+                   <div class="row">
+        <div class="fixed_relative_top">
 
-        
+            <p class="col-md-6 col-sm-12 col-xs-12"><span id="design_titles">FIXED VS. RELATIVE TIME</span><br>
+            Fixed time is where each hour is represented by a set amount of space, each event takes up a certain amount of space based on the <span id="fixed_relative_maximize">... &nbsp; <img src="../images/timeline/maximize.png" id="maximize"></span><span class="fixed_relative_time"> duration, and almost every hour is usually shown.  However, relative time is just the opposite.  Every hour and event may not be represented by a set amount of space, and not every hour may be shown.  The benefits of fixed time is that the amount of space in between each event would be accurately representative of the amount of time in between, and the visualization of the length of the event would be representative of the duration.  However, we noticed the down side of fixed time is that there would often be huge chunks of empty space when there were no events, especially in the middle of the night, or during full days without events.  Also, when people often opened their calendar applications, it would start at a set time, like at 12am or 6am, even if there were no events anywhere around that time, leaving screens empty without any information from the calendar.  The benefits of relative time fixes fixed time's problems, where there would be no empty screens.  In the following examples, even though the an event in the fixed time may be 3.5 hours, it is seen as the same amount of importance and time as one hour events in the relative time.<br>
+                Therefore, we decided upon a hybrid (4th prototype).  We decided that when there were events, it would be FIXED time in order to accurately visualize the duration of the event and the time in between events.  However, if there were 8 or more hours without events, it would be indicated by the vertical zigzag line to indicate a time break.  If there were full days without events, it would be indicated by a block of text that showed the date and the quote "no events". Also, each day will start with the first event.  We also set a maximum of 5 events on the screen at once, to prevent overcrowding and cluttering the events. &nbsp; &nbsp; <span id="fixed_relative_minimize"><img src="../images/timeline/minimize.png" id="minimize"></span></span></p>
+
+            <div class="fixed_relative_time">
                 <div class="row col-md-6 col-sm-12 col-xs-12">
                     <img src="../images/timeline/fixed%20time.png" class="col-md-6 col-sm-6 col-xs-6">
                     <img src="../images/timeline/relative%20time.png" class="col-md-6 col-sm-6 col-xs-6">
@@ -280,62 +258,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <p class="captions col-md-6 col-xs-6 col-sm-6">fixed time</p>
                      <p class="captions col-md-6 col-sm-6 col-xs-6">relative time</p>
                 </div>
-        
-            </div><!--end row-->
-        </div> <!--end fixed and relative time-->
-        
-        
-        
-        
-        
-        
-        <div class="end_time">
-            <div class="row">
-                <p class="col-md-12 col-sm-12 col-xs-12"><span id="design_titles">END TIME</span><br>
-                    When we were looking at our working prototype on a small Android phone, we questioned the importance of the end time.  With the end time, the timeline looked cluttered on the small screen.  Although we agree that having an end time is the most ideal, because most people usually need to know the end time of their events, we decided to not put the end time if the screen was too small.  We decided that the duration of the event would be indicated by a colored tailed extending from the circle of the event on the timeline, which would only give a gist of how long the event is based on how long the tail extended.  <b>At this point, we realized that this may the difference between the timeline and the traditional calendar view, where the calendar view may be better for planning events for exact times, while the timeline is better for "general gists" of the events and their importance throughout the day.</b>  However, if the screen of the device the user was using was big enough, we would put the end time in.  
-                </p>
             </div>
+        </div> <!--end fixed and relative top-->
+        
+        
+        
+        
+        
+        <div class="end_time_top">
+
+                <p class="col-md-offset-1 col-md-5 col-sm-12 col-xs-12"><span id="design_titles">END TIME</span><br>
+                    When we were looking at our working prototype on a small Android phone, we questioned the importance <span id="end_time_maximize">... &nbsp; <img src="../images/timeline/maximize.png" id="maximize"></span><span class="end_time"> of the end time.  With the end time, the timeline looked cluttered on the small screen.  Although we agree that having an end time is the most ideal, because most people usually need to know the end time of their events, we decided to not put the end time if the screen was too small.  We decided that the duration of the event would be indicated by a colored tailed extending from the circle of the event on the timeline, which would only give a gist of how long the event is based on how long the tail extended.  <b>At this point, we realized that this may the difference between the timeline and the traditional calendar view, where the calendar view may be better for planning events for exact times, while the timeline is better for "general gists" of the events and their importance throughout the day.</b>  However, if the screen of the device the user was using was big enough, we would put the end time in.  &nbsp; &nbsp; <span id="end_time_minimize"><img src="../images/timeline/minimize.png" id="minimize"></span> </span>  </p>
+
         </div> <!--end end time-->
         
-        
+                    </div><!--end row-->
     </div><!--end container-->   
 </div> <!--end design choices-->
 
-<script>
-    
-$(document).ready(function(){
-    $('#color').click(function(){
-        $('.color').toggle("slow");
-         return false;
-    });
-                
-    $('#size').click(function(){
-        $('.size').toggle("slow");
-         $('html,body').animate({ scrollTop:$(".size").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#fixed_relative_time').click(function(){
-        $('.fixed_relative_time').toggle("slow");
-        $('html,body').animate({ scrollTop:$(".fixed_relative_time").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#end_time').click(function(){
-        $('.end_time').toggle("slow");
-        $('html,body').animate({ scrollTop:$(".end_time").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#final_design').click(function(){
-        $('html,body').animate({ scrollTop:$(".final_design").offset().top}, 1500);
-        return false;
-    });
-});
 
-$(document).ready(main);
-        
-</script>
 
 
 <div class="final_design container">
@@ -384,9 +325,8 @@ $(document).ready(main);
 
     <div class="row">
         
-            <div class="col-md-2"></div>
         
-            <p class="col-md-12 col-sm-12 col-xs-12" id="final_features">FEATURES</p>
+            <p id="final_features" ><span>FEATURES</span></p> <br>
         <div class="row">
               <div class="col-md-1"></div>   
             <p class="col-md-5 col-sm-12 col-xs-12">
@@ -422,6 +362,100 @@ $(document).ready(main);
 </div>
     
 <footer>
+    <script>
+    
+$(document).ready(function(){
+
+				$('.icon-menu').click(function(){
+					$('.dropdown').toggle();
+					
+				});
+
+
+				$('.close').click(function(){
+					$('.dropdown').hide();
+				});
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+    $('.dropdown-menu').toggle();
+      return false;
+  });
+                
+$('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+
+    
+    $('#color_maximize').click(function(){
+        $('.color').show("slow");
+        $('#color_maximize').hide();
+         $('html,body').animate({ scrollTop:$(".color_top").offset().top}, 1500);
+         return false;
+    });
+    
+    $('#color_minimize').click(function() {
+        $('.color').hide("slow");
+        $('#color_maximize').show();
+         $('html,body').animate({ scrollTop:$(".color_top").offset().top}, 1500);
+        return false;
+    });
+                
+    $('#size_maximize').click(function(){
+        $('.size').show("slow");
+         $('#size_maximize').hide();
+        $('html,body').animate({ scrollTop:$(".size_top").offset().top}, 1500);
+        return false;
+    });
+    
+        $('#size_minimize').click(function() {
+        $('.size').hide("slow");
+        $('#size_maximize').show();
+            $('html,body').animate({ scrollTop:$(".size_top").offset().top}, 1500);
+        return false;
+    });
+    
+    $('#fixed_relative_maximize').click(function(){
+        $('.fixed_relative_time').show("slow");
+        $('#fixed_relative_maximize').hide();
+        $('.fixed_relative_top').addClass('row');
+        $('.end_time_top p').removeClass('col-md-offset-1');
+         $('html,body').animate({ scrollTop:$(".fixed_relative_top").offset().top}, 1500);
+         return false;
+    });
+    
+    $('#fixed_relative_minimize').click(function() {
+        $('.fixed_relative_time').hide("slow");
+        $('#fixed_relative_maximize').show();
+        $('.fixed_relative_top').removeClass('row');
+        $('html,body').animate({ scrollTop:$(".fixed_relative_top").offset().top}, 1500);
+        return false;
+    });
+    
+    $('#end_time_maximize').click(function(){
+        $('.end_time').show("slow");
+        $('#end_time_maximize').hide();
+        $('.end_time_top').addClass('row');
+        $('.end_time_top p').removeClass('col-md-5 col-md-offset-1').addClass('col-md-12');
+         $('html,body').animate({ scrollTop:$(".end_time_top").offset().top}, 1500);
+         return false;
+    });
+    
+    $('#end_time_minimize').click(function() {
+        $('.end_time').hide("slow");
+        $('#end_time_maximize').show();
+         $('.end_time_top').removeClass('row');
+        $('.end_time_top p').removeClass('col-md-12').addClass('col-md-5 col-md-offset-1');
+        $('html,body').animate({ scrollTop:$(".end_time_top").offset().top}, 1500);
+        return false;
+    });
+    
+});
+
+$(document).ready(main);
+        
+</script>
+    
     <div class="container">
         <div class="row">
 <div class="col-md-1 col-sm-1 col-xs-1"></div>

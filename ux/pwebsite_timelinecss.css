@@ -126,7 +126,8 @@ background-color:#5f605f;
 /*design choices paragraphs (color, size, etc)*/
 .design_choices p{
     margin-top:4%;
-    line-height: 180%;
+    line-height: 170%;
+    font-size:16px;
 }
 
 /*display none of the descriptions at first*/
@@ -134,7 +135,7 @@ background-color:#5f605f;
     display:none;
 }
 
-/*options of design choices margins to get more space*/
+/*options of design choices margins to get more space
 .design_navbar{
     margin-top:8%;
     margin-bottom:5%;
@@ -149,13 +150,13 @@ background-color:#5f605f;
     font-weight:700;
 }
 
-/*options of design choices align*/
+/*options of design choices align
 .design_navbar p{
     text-align:left;
     font-weight:400;
     font-size:18px;
     color:#ffffff;
-}
+}*/
 
 .ugh a, .design_choices a, .personal a, .design_navbar a{
     color:#e6817d;
@@ -184,13 +185,7 @@ background-color:#5f605f;
     margin-top:1%;
 }
 
-#final_features{
-    font-size:32px;
-    font-weight:800;
-    letter-spacing: 0.17em;
-    color:#5d5fa1;
-    text-align:center;
-}
+
 
 .personal {
     margin-top:4%;
@@ -222,6 +217,24 @@ background-color:#5f605f;
     font-size:18px;
 }
 
+#maximize, #minimize{
+    height:25px;
+    margin:0px;
+}
+
+#final_features{
+    font-size:32px;
+    font-weight:800;
+    letter-spacing: 0.17em;
+    color:#5d5fa1;
+    text-align:center;
+}
+
+#final_features span {
+          background-color:#d9dadb;
+    padding:10px;
+}
+
 
 
 @media only screen and (max-width:995px){
@@ -236,7 +249,6 @@ background-color:#5f605f;
     
     .trianglerec{
 	left:50%;
-	background-color:#5f605f;
 }
     
     .ugh {
@@ -275,13 +287,23 @@ background-color:#5f605f;
 	}
 
     .trianglerec{
-		margin-top:-52px;
+		margin-top:-60px;
 	}
+    
+    .triangle {
+        margin-left:40%;   
+    }
 
  /*end change*/ 
     
         .jumbotron p, .jumbotron a{
         font-size:19px;   
+    }
+    
+    .personal {
+        padding:0px;  
+        padding-top:3%;
+        padding-bottom:3%;
     }
 
 

@@ -128,38 +128,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</div>
 
-
-		<script>
-			$(document).ready(function(){
-	
-
-				$('.icon-menu').click(function(){
-					$('.dropdown').toggle();
-					
-				});
-
-
-				$('.close').click(function(){
-					$('.dropdown').hide();
-				});
-                
-          
-  $('.fa_ux_dropdown').click(function() {
-       
-    $('.dropdown-menu').toggle();
-      return false;
-     
-  });
-                
-                 $('.fa_ux_dropdown_small').click(function() {
-    $('.dropdown_ux').toggle();
-  });
-
-			});
-			$(document).ready(main);
-	
-		</script>
-
 	<div class="jumbotron">
 		<div class="container">
 		
@@ -185,7 +153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 
 
-<div class="container-fluid">
+<div class="container-fluid content">
 <div class="row">
     
     
@@ -231,7 +199,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div> 
         <br>-->
 
-        <a href="#" id="goals"><div class="feature_title"><h2>GOALS</h2></div></a>
+    <div class="feature_title"><h2>GOALS &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize goals_minimize"><img src="../images/crown/maximize.png" class="maximize goals_maximize"></a></h2></div>
                
             
             <!--for large screens-->
@@ -279,7 +247,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         
              
-        <a href="#" id="assignments_tests"><div class="feature_title"><h2>ASSIGNMENTS &amp; TESTS</h2></div></a> <!--assignments and tests-->
+    <div class="feature_title"><h2>ASSIGNMENTS & TESTS &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize assignment_test_minimize"><img src="../images/crown/maximize.png" class="maximize assignment_test_maximize"></a></h2></div> <!--assignments and tests-->
+    
                         <div class="assignments_tests feature_description">
                             <hr>
                             <img src="../images/crown/features-addassignment.png" class="col-md-8 col-sm-12 col-xs-12">
@@ -295,7 +264,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div> <!--end add assignment and tests-->
         
         
-         <a href="#" id="todo"><div class="feature_title"><h2>TO - DO LIST</h2></div></a> <!--to do list-->
+    <div class="feature_title"><h2>TO - DO LIST &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize to_do_minimize"><img src="../images/crown/maximize.png" class="maximize to_do_maximize"></a></h2></div><!--to do list-->
                         <div class="todo_list feature_description">
                             <hr>
                             <img src="../images/crown/features-addtodo.png" class="col-md-8 col-sm-12 col-xs-12">
@@ -312,7 +281,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         
 
-        <a href="#" id="event_class"><div class="feature_title"><h2>EVENT &amp; CLASS</h2></div></a>
+        <div class="feature_title"><h2>EVENT & CLASS &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize event_class_minimize"><img src="../images/crown/maximize.png" class="maximize event_class_maximize"></a></h2></div>
+    
                 <div class="add_event feature_description">
                 <hr>
                 <div class="row">
@@ -333,7 +303,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         
 
-               <a href="#" id="timeline"><div class="feature_title"><h2>TIMELINE</h2></div></a>
+                      <div class="feature_title"><h2>TIMELINE &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize timeline_minimize"><img src="../images/crown/maximize.png" class="maximize timeline_maximize"></a></h2></div>
+    
                  <div class="timeline feature_description">
                 <hr>
                 <div class="row">
@@ -359,7 +330,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         
         
-        <a href="#" id="process"><div class="feature_title"><h2>THE PROCESS</h2></div></a>
+        <div class="feature_title"><h2>THE PROCESS &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize process_minimize"><img src="../images/crown/maximize.png" class="maximize process_maximize"></a></h2></div>
         
          <div class="the_process feature_description">
                 <hr>
@@ -454,7 +425,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         
         
-        <a href="#" id="personal"><div class="feature_title"><h2>PERSONAL CONTRIBUTION &amp; GROWTH</h2></div></a>
+               <div class="feature_title"><h2>PERSONAL CONTRIBUTION & GROWTH &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize personal_minimize"><img src="../images/crown/maximize.png" class="maximize personal_maximize"></a></h2></div>
         <div class="personal feature_description">
                 <hr>
                 <div class="row">
@@ -465,62 +436,149 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <br><br><br>
         
-        <script>
-    
-$(document).ready(function(){
-    $('#goals').click(function(){
-        $('.add_goal').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#goals").offset().top}, 1500);
-         return false;
-    });
-                
-    $('#assignments_tests').click(function(){
-        $('.assignments_tests').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#assignments_tests").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#todo').click(function(){
-        $('.todo_list').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#todo").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#event_class').click(function(){
-        $('.add_event').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#event_class").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#timeline').click(function(){
-        $('.timeline').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#timeline").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#process').click(function(){
-        $('.the_process').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#process").offset().top}, 1500);
-        return false;
-    });
-    
-    $('#personal').click(function(){
-        $('.personal').toggle("slow");
-        $('html,body').animate({ scrollTop:$("#personal").offset().top}, 1500);
-        return false;
-    });
-});
-
-$(document).ready(main);
         
-</script>
         
 
 </div> <!--end features-->
 </div> <!--end row-->
 </div><!--end container-->
 
-<!-- PrefixFree -->
+
+
+<footer>
+    
+    <script>
+    
+$(document).ready(function(){
+    
+    				$('.icon-menu').click(function(){
+					$('.dropdown').toggle();
+					
+				});
+
+
+				$('.close').click(function(){
+					$('.dropdown').hide();
+				});
+                
+          
+  $('.fa_ux_dropdown').click(function() {
+       
+    $('.dropdown-menu').toggle();
+      return false;
+     
+  });
+                
+                 $('.fa_ux_dropdown_small').click(function() {
+    $('.dropdown_ux').toggle();
+  });
+    
+        $('.goals_maximize').click(function(){
+        $('.add_goal').show("slow");
+        $('.goals_maximize').hide();
+        $('.goals_minimize').show();
+         return false;
+    });
+    
+     $('.goals_minimize').click(function() {
+        $('.add_goal').hide("slow");
+        $('.goals_maximize').show();
+         $('.goals_minimize').hide();
+        return false;
+    });
+    
+            $('.assignment_test_maximize').click(function(){
+        $('.assignments_tests').show("slow");
+        $('.assignment_test_maximize').hide();
+        $('.assignment_test_minimize').show();
+         return false;
+    });
+    
+     $('.assignment_test_minimize').click(function() {
+        $('.assignments_tests').hide("slow");
+        $('.assignment_test_maximize').show();
+         $('.assignment_test_minimize').hide();
+        return false;
+    });
+    
+         $('.to_do_maximize').click(function(){
+        $('.todo_list').show("slow");
+        $('.to_do_maximize').hide();
+        $('.to_do_minimize').show();
+         return false;
+    });
+    
+     $('.to_do_minimize').click(function() {
+        $('.todo_list').hide("slow");
+        $('.to_do_maximize').show();
+         $('.to_do_minimize').hide();
+        return false;
+    });
+    
+             $('.event_class_maximize').click(function(){
+        $('.add_event').show("slow");
+        $('.event_class_maximize').hide();
+        $('.event_class_minimize').show();
+         return false;
+    });
+    
+     $('.event_class_minimize').click(function() {
+        $('.add_event').hide("slow");
+        $('.event_class_maximize').show();
+         $('.event_class_minimize').hide();
+        return false;
+    });
+    
+                 $('.timeline_maximize').click(function(){
+        $('.timeline').show("slow");
+        $('.timeline_maximize').hide();
+        $('.timeline_minimize').show();
+         return false;
+    });
+    
+     $('.timeline_minimize').click(function() {
+        $('.timeline').hide("slow");
+        $('.timeline_maximize').show();
+         $('.timeline_minimize').hide();
+        return false;
+    });
+    
+                $('.process_maximize').click(function(){
+        $('.the_process').show("slow");
+        $('.process_maximize').hide();
+        $('.process_minimize').show();
+         return false;
+    });
+    
+     $('.process_minimize').click(function() {
+        $('.the_process').hide("slow");
+        $('.process_maximize').show();
+         $('.process_minimize').hide();
+        return false;
+    });
+    
+                    $('.personal_maximize').click(function(){
+        $('.personal').show("slow");
+        $('.personal_maximize').hide();
+        $('.personal_minimize').show();
+         return false;
+    });
+    
+     $('.personal_minimize').click(function() {
+        $('.personal').hide("slow");
+        $('.personal_maximize').show();
+         $('.personal_minimize').hide();
+        return false;
+    });
+    
+
+});
+
+$(document).ready(main);
+        
+</script>
+    
+    <!-- PrefixFree -->
 <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 
 <script>
@@ -658,8 +716,8 @@ $(document).ready(function(){
 })
 
 </script>
-
-<footer>
+    
+    
     <div class="container">
         <div class="row">
 <div class="col-md-1 col-sm-1 col-xs-1"></div>
