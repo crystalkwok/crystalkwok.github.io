@@ -37,12 +37,9 @@ background-color: #5c595a;
 
 
 .triangle {
-	 width: 0;
-    height: 0;
-    border: solid 60px ;
+
     border-color: #1E5754 transparent transparent transparent;
-    margin-left:45%;
-    margin-right:50%;
+
 }
 
 
@@ -359,6 +356,15 @@ background-color: #5c595a;
     .links a{
         font-size:24px;   
     }
+    
+    .contact p {
+        line-height:160%;   
+    }
+    
+    #karla {
+        font-size:17px;   
+    }
+
 
 
 }
@@ -401,6 +407,8 @@ background-color: #5c595a;
     .title{
         font-size:25px;   
     }
+    
+
 }
 
 @media only screen and (min-width:1490px){

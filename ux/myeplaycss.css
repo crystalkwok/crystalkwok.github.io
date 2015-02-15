@@ -228,6 +228,9 @@ iframe {
     /*what nav bar changes*/
     .jumbotron{
 		top: -20px;
+        height:100%;
+        padding-left:0px;
+        padding-right:0px;
 	}
 
 
@@ -236,9 +239,15 @@ iframe {
 	}
     
     .motivation {
-        margin-top: -2px;   
+        margin-top: -10%;   
     }
+
  /*end change*/ 
+    
+    .motivation p, .description p{
+        font-size:15px;
+        line-height:170%;
+    }
     
     .firstp_info, .finalp_info{
     display:none;
@@ -251,7 +260,20 @@ iframe {
     /*.jumbotron img {
         margin-top:0%;   
     }*/
+    
+    iframe {
+        height:100%;
+        width:100%;
+
+    }
 }
+
+ @media only screen and (max-width:450px){
+	.triangle{
+		margin:0;
+		margin-left:30%;
+		margin-right:55%;
+	}
 
 /*@media only screen and (max-width:1450px){
     .jumbotron img {

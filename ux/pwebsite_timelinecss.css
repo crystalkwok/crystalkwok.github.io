@@ -68,12 +68,7 @@ hr{
 
 
 .triangle {
-	 width: 0;
-    height: 0;
-    border: solid 60px ;
     border-color: #85d0c8 transparent transparent transparent;
-        margin-left:45%;
-    margin-right:50%;
 }
 
 .trianglerec{
@@ -119,10 +114,6 @@ background-color:#5f605f;
 }
 
 
-.ugh img, .design_choices img{
-    margin-top:6%;
-}
-
 /*design choices paragraphs (color, size, etc)*/
 .design_choices p{
     margin-top:4%;
@@ -166,6 +157,10 @@ background-color:#5f605f;
 .ugh a:hover, .design_choices a:hover, .personal a:hover{
     color:#82d3a5;
     text-decoration: none;
+}
+
+.ugh p, .ugh a {
+    font-size: 15px;
 }
 
 #design_titles{
@@ -289,6 +284,8 @@ background-color:#5f605f;
     .jumbotron{
 		top: -20px;
         height:100%;
+                padding-left:0px;
+        padding-right:0px;
 	}
 
     .trianglerec{
@@ -310,8 +307,47 @@ background-color:#5f605f;
         padding-top:3%;
         padding-bottom:3%;
     }
+    
+
+    .info {
+        margin:3%; 
+        margin-top:-5%;
+    }
+    
+    .motivation {
+        font-size:15px;   
+    }
+    
+    .design_choices p {
+        line-height:150%;
+        font-size:14px;
+    }
+    
+    #design_titles {
+        font-size:18px;   
+    }
+    
+    ul, li {
+        margin:1%;   
+    }
+    
+    .features li {
+        font-size:15px;   
+    }
+    
+    .personal p {
+        font-size: 15px;   
+    }
 
 
+}
+
+@media only screen and (max-width:450px){
+	.triangle{
+		margin:0;
+		margin-left:30%;
+		margin-right:55%;
+	}
 }
 
 /*@media only screen and (max-width:1250px){

@@ -81,7 +81,6 @@ background-color:#c8c6c6;
 	color:#3b786a;
 	margin:auto;
     font-size:35px;
-    font-family:'Montserrat', sans-serif;
     text-align:center;
 }
 
@@ -177,6 +176,8 @@ margin-left:20%;
     .jumbotron{
 		top: -20px;
         height:100%;
+        padding-left:0px;
+        padding-right:0px;
 	}
 
     .trianglerec{
@@ -206,8 +207,17 @@ margin-left:20%;
     }
     
     .title{
-        margin-right:23%;
-        margin-left:23%;
+        margin-right:10%;
+        margin-left:10%;
+    }
+    
+    .title p{
+        font-size:25px;   
+    }
+    
+    .whatido p{
+        font-size:15px;
+        line-height:160%;
     }
     
     #lightbox_normal{
@@ -219,6 +229,14 @@ margin-left:20%;
     }
 
 
+}
+
+@media only screen and (max-width:450px){
+	.triangle{
+		margin:0;
+		margin-left:30%;
+		margin-right:55%;
+	}
 }
 
 /*@media only screen and (max-width:1200px) and (min-width:650px) and (min-width:996px){

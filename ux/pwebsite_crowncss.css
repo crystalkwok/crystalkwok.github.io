@@ -252,6 +252,8 @@ background-color:#e7e9eb;
     .jumbotron{
 		top: -20px;
         height:100%;
+                padding-left:0px;
+        padding-right:0px;
 	}
 
     .trianglerec{
@@ -271,7 +273,23 @@ background-color:#e7e9eb;
     .jumbotron img {
         margin-top:0%;   
     }
+    
+    .info {
+        margin-top:-10%;   
+    }
+    
+    .motivation {
+        line-height:160%;   
+    }
 
+}
+
+@media only screen and (max-width:450px){
+	.triangle{
+		margin:0;
+		margin-left:30%;
+		margin-right:55%;
+	}
 }
 
 

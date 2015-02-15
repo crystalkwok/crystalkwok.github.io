@@ -53,6 +53,12 @@ font-size:19px;
 	left:50%;
 }
 
+.triangle {
+
+    border-color: #1E5754 transparent transparent transparent;
+
+}
+
 
 
 /*start intro*/
@@ -471,6 +477,30 @@ font-size:19px;
 	.other_work img{
 		height:110px;
 	}
+    
+    .typography img {
+        margin:0px;
+        padding:0px;
+        height:auto;
+    }
+    
+    .jumbotron p{
+        line-height: 150%;   
+    }
+    
+    .intro p{
+        line-height:150%;
+    }
+    
+    .info_slide, .infot_slide {
+        font-size:15px;   
+        line-height:160%;
+    }
+    
+    .jumbotron p {
+        padding:0px;
+        padding-top:2%;
+    }
 
 
 }

@@ -18,6 +18,7 @@ body p{
     font-weight: 300;
 }
 
+
 /*everything but nav bar*/
 .rest{
 	position:relative;
@@ -126,6 +127,11 @@ body p{
     
     #back{
         font-size:16px;   
+    }
+    
+    .intro p {
+        font-size:15px;
+        line-height:170%;
     }
 
 
