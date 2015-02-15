@@ -213,8 +213,13 @@ background-color:#5f605f;
     margin-bottom:8%;
 }
 
-.features p{
+.features li:before {
+        color:#5d5fa1;
+}
+
+.features li{
     font-size:18px;
+
 }
 
 #maximize, #minimize{
