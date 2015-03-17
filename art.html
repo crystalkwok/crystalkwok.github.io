@@ -475,10 +475,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</br></br></br>
 
 
-<script>
-			var main=function(){
-	
-
+<footer>
+    <div class="container">
+        <div class="row">
+<div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <p class="col-md-3 col-sm-11 col-xs-11"> 
+                created by <a href="../index.html">Crystal Kwok</a><br>
+                 &copy; 2014
+            </p>
+        </div>
+    </div>
+    
+        <script>
+    $(document).ready(function(){
+            $('.view').click(function() {
+         $('html,body').animate({ scrollTop:$(".concentration").offset().top}, 800);
+        return false;
+    });
+        
+        
 				$('#more_info').click(function(){
 					$('.info_slide').toggle("slow");
 				});
@@ -486,15 +501,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $('#more_infot').click(function(){
 					$('.infot_slide').toggle("slow");
 				});
-			}
-			$(document).ready(main);
-	
-</script>
+        });
 
-
-
-
-<!-- PrefixFree -->
+        $(document).ready(main);
+    </script>
+    
+    <!-- PrefixFree -->
 <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
                 </script>
 
@@ -633,27 +645,6 @@ $(document).ready(function(){
 })
 
 </script>
-<footer>
-    <div class="container">
-        <div class="row">
-<div class="col-md-1 col-sm-1 col-xs-1"></div>
-            <p class="col-md-3 col-sm-11 col-xs-11"> 
-                created by <a href="../index.html">Crystal Kwok</a><br>
-                 &copy; 2014
-            </p>
-        </div>
-    </div>
-    
-        <script>
-    $(document).ready(function(){
-            $('.view').click(function() {
-         $('html,body').animate({ scrollTop:$(".concentration").offset().top}, 800);
-        return false;
-    });
-        });
-
-        $(document).ready(main);
-    </script>
 </footer>
 	</body>
 </html>
