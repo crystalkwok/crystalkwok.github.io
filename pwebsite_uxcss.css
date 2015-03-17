@@ -37,7 +37,11 @@ margin-top:9%;
     top:50px;
 }
 
-.btn, .btn:visited{
+.viewa {
+    margin-top:5%;
+}
+
+.view, .view:visited{
       background-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -46,19 +50,23 @@ margin-top:9%;
     vertical-align: center;
     text-align: center;
     letter-spacing:2px;
-    padding:11px;
+    padding:12px;
     margin-top:5%;
     font-size:17px;
     text-decoration: none;
 }
 
 
-.btn:hover{
+.view:hover{
 	color:#3a3a3a;
     background-color:#ffffff;
       border: none;
     font-weight:400;
     text-decoration: none;
+}
+
+.viewa a {
+    text-decoration:none;
 }
 
 
@@ -253,7 +261,7 @@ margin-top:9%;
         margin-bottom:2%;
     }
     
-    .btn {
+    .view {
         font-size: 35px; 
         padding:20px;
     }
