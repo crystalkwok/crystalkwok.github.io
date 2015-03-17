@@ -1,4 +1,4 @@
-  #CRYSTAL KWOK
+CRYSTAL KWOK
 
 website portfolio for user experience design and research
 
