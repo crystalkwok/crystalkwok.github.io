@@ -170,8 +170,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				
                     <div class="col-md-2 col-sm-1 col-xs-1"></div>
 				</div>
+
+                <div class="row">
+                    <div style="margin: 0 auto; text-align: center">
+                    <a href="#" class="btn">VIEW MY WORK</a>
+                    </div>
+                </div>
 			</div>
 		</div>  <!--end jumbotron-->
+
+
 		<div class="trianglerec">
 			<div class="container">
 					<div class="triangle"></div>
@@ -205,29 +213,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
                     
-                </div>
-
-                
-                 <div class="younote project col-md-4 col-sm-12 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <a href="ux/younote.html"><img src="images/kpcb%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                             <p id="uxwork_description"><span id="title"><b>YOUNOTE</b></span><br>redesign of the note-taking experience on Coursera</p>
-					   
-                            </div>
-                    </div>
-
-                </div>  
-                    
-                
-         
-                               
-            </div> <!--end row-->
-                    
-                    
-                    
-            <div class="row">
-                
+                </div> 
+                       
                 <div class="myeplay project col-md-4 col-sm-12 col-xs-12">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <a href="ux/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
@@ -237,8 +224,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     
                 </div>
+                               
+            </div> <!--end row-->
+                    
+                    
+                    
+            <div class="row">
 
-  <div class="crown  project col-md-4 col-sm-12 col-xs-12">
+
+                <div class="crown  project col-md-4 col-sm-12 col-xs-12">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <a href="ux/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -247,6 +241,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
                     
+                </div> 
+                
+                <div class="younote project col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="ux/younote.html"><img src="images/kpcb%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                             <p id="uxwork_description"><span id="title"><b>YOUNOTE</b></span><br>redesign of the note-taking experience on Coursera</p>
+					   
+                            </div>
+                    </div>
+
                 </div> 
 			
                  <div class="flunkless  project col-md-4 col-sm-12 col-xs-12">
@@ -320,6 +325,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
         </div>
     </div>
+    
+    <script>
+    $(document).ready(function(){
+            $('.btn').click(function() {
+         $('html,body').animate({ scrollTop:$(".ux_work .container").offset().top}, 800);
+        return false;
+    });
+        });
+
+        $(document).ready(main);
+    </script>
 </footer>
 	</body>
 </html>

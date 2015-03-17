@@ -15,11 +15,33 @@ font-size:19px;
 	font-size: 24px;
 	color:#fbfcfc;
 
-    line-height: 200%;
+    line-height: 160%;
 }
 
 .jumbotron p {
     font-size:24px;
+}
+
+.btn{
+      background-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  border: 2px solid #c1c2c2;
+  color: #c1c2c2;
+    vertical-align: center;
+    text-align: center;
+    letter-spacing:2px;
+    padding:11px;
+    margin-top:5%;
+    font-size:17px;
+}
+
+
+.btn:hover{
+	color:#3a3a3a;
+    background-color:#ffffff;
+      border: none;
+    font-weight:400;
 }
 
 
@@ -418,6 +440,11 @@ font-size:19px;
 		height:100%;
 		top:-20px;
 	}
+    
+    .btn {
+        font-size: 35px; 
+        padding:20px;
+    }
     
     #logo{
          margin-top:-1px;
