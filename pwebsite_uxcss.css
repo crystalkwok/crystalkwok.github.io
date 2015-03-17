@@ -37,7 +37,7 @@ margin-top:9%;
     top:50px;
 }
 
-.btn{
+.btn, .btn:visited{
       background-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -49,6 +49,7 @@ margin-top:9%;
     padding:11px;
     margin-top:5%;
     font-size:17px;
+    text-decoration: none;
 }
 
 
