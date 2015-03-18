@@ -1,7 +1,8 @@
+
+
 body {
 font-family:'Karla', sans-serif;
 font-size:18px;
-background-color: #5c595a;
 }
 
 /*change jumbotron*/
@@ -65,6 +66,22 @@ background-color: #5c595a;
     font-family:'Montserrat', sans-serif;
 }
 
+.content p{
+    font-size:17px;
+}
+
+.content {
+    margin-top:7%;
+}
+
+.links {
+    margin-left:5%;
+}
+
+#instagramtext {
+    font-size:15px;
+}
+
 
 /*resume button*/
 /*.btn{
@@ -83,81 +100,29 @@ background-color: #5c595a;
 	left:40%;
 }*/
 
-.links a{
-    color:#82d3a5;
-    text-decoration:none;
-    text-align: center;
-}
-
-.links a:hover {
-    text-decoration:none;
-    color:#f3f1ae;
-}
-
-/*title of each section*/
-.title{
-	padding-top:5px;
-	font-weight:700;
-	color:#f4b1aa;
-    font-family:'Montserrat', sans-serif;
-    font-size:35px;
-}
-
-/*title of each experience*/
-#experience_title{
-	font-size:22px;
-    font-weight:500;
-        letter-spacing: 0.15em;
-}
-
-#skills_title{
-    font-weight:500;
-        letter-spacing: 0.15em;  
-    font-family:'Karla', sans-serif;
-    
-}
-
-/*for projects*/
-#experience_title a{
+.links a, #instagramtext a{
     text-decoration: none;
-    color:#82d3a5;
+    color:#74bd93;
+}
+#instagramtext a {
     font-weight:700;
 }
 
-#experience_title a:hover{
-    color:#f3f1ae;
+.links a:hover, #instagramtext a:hover{
+    color:#f29fa1;
+    text-decoration:none;
 }
 
-/*part of resume that is not a title*/
-.meatcontent p{
-	line-height:180%;
-	font-weight:200;
-	color:#ffffff;
-    font-family:'Lato', sans-serif;
-}
-
-#karla {
-    font-family:'Karla', sans-serif;
-    font-size:21px;
-}
 
 /*part of the resume that shoud be really small O.O*/
 .description{
 	font-size:16px;
 }
 
-/*change colors for each section*/
-.resume {
-	background-color:#494647;
+.content p {
+    line-height: 160%;
 }
 
-.skills{
- background-color:#494647;
-}
-
-.activities {
-     background-color:#494647;
-}
 
 .weird {
     display:none;
@@ -166,6 +131,55 @@ background-color: #5c595a;
 .xsmall {
     display:none;
 }
+
+#instafeed {
+			width:100%;
+			margin-left: 10px;
+			margin-bottom:-35px;
+			background-color:#ffffff;
+			
+		}
+		#instafeed img{
+		 width: 230px;
+        height:230px;
+		 /*margin-left: -30px;*/
+		 padding: 7px;
+		 margin-bottom: 20px;
+		 position:relative;
+        
+		}
+	#instafeed a {
+	
+	display:inline-block;
+	position:relative;
+      }
+
+#instafeed .likes {
+  background:rgba(0,0,0, 0.8);
+  font-family:'Karla';
+  width: 220px;
+  height: 220px;
+  font-size:0.7em;
+  position:absolute;
+  color:#ffffff;
+  right:12px;
+  top:7px;
+  left:4px;
+  opacity:0;
+  text-align:center;
+  line-height:220px;
+  -webkit-font-smoothing:antialiased;
+  -webkit-transition: opacity 100ms ease;
+	-moz-transition: opacity 100ms ease;
+	-o-transition: opacity 100ms ease;
+	-ms-transition: opacity 100ms ease;
+	transition: opacity 100ms ease;
+}
+
+#instafeed a:hover .likes {
+  opacity:1;
+}
+
 
 
 @media only screen and (max-height: 550px){
