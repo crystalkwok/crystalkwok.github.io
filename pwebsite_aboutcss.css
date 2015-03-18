@@ -71,7 +71,11 @@ font-size:18px;
 }
 
 .content {
-    margin-top:7%;
+    margin-bottom:10%;
+}
+
+.one, .two {
+    margin-top:6%;
 }
 
 .links {
@@ -128,7 +132,7 @@ font-size:18px;
     display:none;
 }
 
-.xsmall {
+.small {
     display:none;
 }
 
@@ -281,6 +285,23 @@ font-size:18px;
 
 @media only screen and (max-width:990px){
     
+		#instafeed img{
+		 width: 150px;
+        height:150px;
+        
+		}
+
+    
+    
+#instafeed .likes {
+
+  width: 160px;
+  height: 160px;
+
+}
+
+
+    
     .self img{
         width:100%;   
     }
@@ -363,9 +384,13 @@ font-size:18px;
 }
 
 
-.xsmall {
+.small {
     display:inline;
 }
+    
+    .large {
+        display:none;   
+    }
     
     .links a{
         font-size:24px;   
