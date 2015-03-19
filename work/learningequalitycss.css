@@ -54,3 +54,24 @@ body p{
     margin-top:2%;
     margin-bottom:2%;
 }
+
+@media only screen and (max-width:995px){
+
+    /*what nav bar changes*/
+    .jumbotron{
+		top: -20px;
+        height:100%;
+                padding-left:0px;
+        padding-right:0px;
+	}
+
+    .trianglerec{
+		margin-top:-60px;
+	}
+    
+    .triangle {
+        margin-left:40%;   
+    }
+
+ /*end change*/ 
+}
