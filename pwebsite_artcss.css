@@ -470,7 +470,7 @@ font-size:19px;
 
     
     #artq{
-        font-size:150px;   
+        font-size:90px;   
     }
 
 /*}
@@ -491,7 +491,7 @@ font-size:19px;
 	}
 
 	#artnux{
-		font-size:40px;
+		font-size:26px;
 	}
     
     #artnux p{
@@ -529,10 +529,11 @@ font-size:19px;
     
     .intro p{
         line-height:150%;
+        font-size:18px;
     }
     
     .info_slide, .infot_slide {
-        font-size:15px;   
+        font-size:16px;   
         line-height:160%;
     }
     
@@ -547,12 +548,12 @@ font-size:19px;
 @media only screen and (max-width: 670px){
 
 	#artq{
-		font-size:140px;
+		font-size:90px;
         text-align: center;
 	}
 
 	#artnux{
-		font-size:25px;
+		font-size:20px;
 	}
     
     body p{
@@ -563,6 +564,10 @@ font-size:19px;
     #isaiah{
         height:80%;
         width:80%;
+    }
+    
+    .intro p{
+        font-size:16px;   
     }
 
 

@@ -317,7 +317,7 @@ font-size:18px;
 	}
 
 	.jumbotron p{
-		font-size: 28px;
+		font-size: 18px;
 	}
     
     .description {
@@ -403,6 +403,10 @@ font-size:18px;
     
     #karla {
         font-size:17px;   
+    }
+    
+    .content p {
+        font-size:15px;   
     }
 
 

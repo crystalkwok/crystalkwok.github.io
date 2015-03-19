@@ -108,8 +108,6 @@ html, body {
 
 footer {
     background-color:#000000;
-    
-    margin-top:5%;
 }
 
 footer p{
@@ -220,6 +218,12 @@ footer a:hover {
 
     }
 
+}
+
+@media only screen and (max-width: 670px){
+    .triangle {
+        margin-left:40%;   
+    }
 }
 
 @media only screen and (max-width:600px){
