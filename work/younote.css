@@ -150,6 +150,12 @@ hr {
     background-color: #7d7d7d; 
 }
 
+@media only screen and (max-width:1250px){
+        .jumbotron img {
+        margin-top:5%;   
+    }
+}
+
 @media only screen and (max-width:995px){
        /*what nav bar changes*/
     .jumbotron{
