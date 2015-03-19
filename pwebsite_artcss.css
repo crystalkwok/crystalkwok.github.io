@@ -24,6 +24,7 @@ font-size:19px;
 
 .viewa {
     margin-top:5%;
+    margin-bottom:4%;
 }
 
 .view, .view:visited, .view:active{
@@ -452,8 +453,8 @@ font-size:19px;
 	}
     
     .view {
-        font-size: 30px; 
-        padding:20px;
+        margin-top:10%;
+        margin-bottom:10%;
     }
     
     #logo{
@@ -507,13 +508,14 @@ font-size:19px;
         padding:0px;   
     }
 
-	.concentration img{
-		height:150px;
-	}
-
-	.other_work img{
+	.other_work img, .concentration img{
 		height:110px;
 	}
+    
+    #concentration_lightbox .image_title, #other_work_lightbox .image_title{
+        height:130px;
+        width:130px;
+    }
     
     .typography img {
         margin:0px;
@@ -556,11 +558,6 @@ font-size:19px;
     body p{
         font-size:18px;   
     }
-
-
-	.concentration img{
-		height:135px;
-	}
 
     
     #isaiah{

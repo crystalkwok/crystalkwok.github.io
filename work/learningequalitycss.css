@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+body {
+font-family: 'Karla', sans-serif;
+}
+
+body p{
+	font-size:17px;
+}
+
+.jumbotron {
+	background-color: #0e3049;
+	position:relative;
+	top:40px;
+	width:100%;
+    height:400px;
+}
+
+
+.jumbotron p{
+	color:#ffffff;
+    font-size:18px;
+    margin-top:10px;
+    font-weight:400;
+}
+
+
+
+.jumbotron a{
+    font-size:18px;
+    color:#ffffff;
+}
+
+.jumbotron a:hover{
+    text-decoration: none;
+    color:#edd6b6;
+}
+
+
+.triangle {
+    border-color: #0e3049 transparent transparent transparent;
+}
+
+.trianglerec{
+	left:50%;
+	background-color:#ffffff;
+}
+
+.info {
+    margin-bottom:3%;
+}
+
+.prototypes img {
+    margin-top:2%;
+    margin-bottom:2%;
+}

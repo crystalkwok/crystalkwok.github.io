@@ -163,6 +163,10 @@ background-color:#5f605f;
     font-size: 15px;
 }
 
+.info{
+    margin-bottom:5%;
+}
+
 #design_titles{
     font-weight:700;
     letter-spacing: 0.15em;
