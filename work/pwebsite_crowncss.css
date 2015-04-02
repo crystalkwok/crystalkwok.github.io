@@ -114,11 +114,12 @@ background-color:#e7e9eb;
     display:none;
 }
 
-.add_goal, .timeline{
+.add_goal, .timeline, .problem{
     display:block;
 }
 
-.timeline p {
+
+.timeline p , .problem p{
     line-height: 180%;
 }
 

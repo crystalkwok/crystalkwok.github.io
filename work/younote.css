@@ -86,7 +86,7 @@ background-color:#e7e9eb;
     font-weight:700;
     letter-spacing:0.15em;
     color:#e47980;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .final_prototype p{
@@ -98,7 +98,7 @@ background-color:#e7e9eb;
     font-weight:700;
     letter-spacing:0.15em;
     color:#000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -134,7 +134,7 @@ background-color:#e7e9eb;
 }
 
 .process {
-    margin-top:-2%;
+    margin-top:2%;
 }
 
 
@@ -148,6 +148,22 @@ hr {
     height: 2px;
     
     background-color: #7d7d7d; 
+}
+
+.answer {
+    background-color: #5f605f;
+    padding:3%;
+}
+
+.answer p{
+    color:#d3d2d5;
+    line-height: 160%;
+}
+
+.answer h3 {
+    text-align: center;
+    color:#ffffff;
+    line-height: 160%;
 }
 
 @media only screen and (max-width:1250px){
