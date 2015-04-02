@@ -5,7 +5,7 @@ font-family: 'Karla', sans-serif;
 }
 
 body p{
-	font-size:17px;
+	font-size:16px;
 }
 
 .jumbotron #title{
@@ -88,6 +88,16 @@ hr{
     margin-top:-2%;
 }
 
+.info h3 {
+
+    font-weight:700;
+    	letter-spacing: 0.15em;
+}
+
+.info p {
+    line-height: 160%;
+}
+
 .motivation{
 background-color:#5f605f;
 
@@ -109,8 +119,12 @@ background-color:#5f605f;
 
 .motivation span{
     color:#ffffff;
-    font-size:18px;
     font-weight:700;
+    text-align: center;
+}
+
+.motivation h2 {
+    text-align: center;
 }
 
 
@@ -119,6 +133,12 @@ background-color:#5f605f;
     margin-top:4%;
     line-height: 170%;
     font-size:16px;
+}
+
+.design_choices h2 {
+ font-weight:700;
+letter-spacing: 0.15em;
+    text-align: center;
 }
 
 /*display none of the descriptions at first*/
@@ -167,6 +187,22 @@ background-color:#5f605f;
     margin-bottom:5%;
 }
 
+.process h3{
+
+    font-weight:700;
+    letter-spacing: 0.15em;
+    line-height: 160%;
+    text-align: center;
+}
+
+.process p {
+    line-height: 160%;
+}
+
+.process {
+    margin-top:5%;   
+}
+
 #design_titles{
     font-weight:700;
     letter-spacing: 0.15em;
@@ -196,7 +232,7 @@ background-color:#5f605f;
     color:#ffffff;
     font-weight:300;
     line-height:190%;
-    font-size:17px;
+    font-size:16px;
 }
 
 .personal #design_titles{
@@ -237,6 +273,16 @@ background-color:#5f605f;
 #final_features span {
           background-color:#d9dadb;
     padding:10px;
+}
+
+#lightbox_normal img {
+    height:150px;
+    width:150px;
+}
+
+#lightbox_normal {
+    margin-top:5%;
+    margin-bottom:5%;
 }
 
 
