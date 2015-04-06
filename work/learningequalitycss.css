@@ -50,6 +50,17 @@ body p{
     margin-bottom:3%;
 }
 
+.info a {
+    text-decoration:none;
+    font-weight:800;
+    color:#349781;
+}
+
+.info a:hover {
+    text-decoration:none;
+    color:#a6a8a8;
+}
+
 .prototypes img {
     margin-top:2%;
     margin-bottom:2%;
@@ -59,13 +70,36 @@ footer {
     margin-top:5%;
 }
 
-h3 {
+h2 {
     font-weight: 700;
     letter-spacing: 0.15em;
 }
 
 .wireframes img {
     margin-bottom:2%;
+}
+
+#lightbox_normal img{
+    height:150px;
+}
+
+#title span {
+    background-color:#5f605f;
+    padding:15px;
+}
+
+#title {
+    letter-spacing: 0.17em;
+    color:#ffffff;
+    text-align: center;
+}
+
+#description {
+    text-align:center;
+}
+
+.process, .prototypes {
+    margin-top:3%;
 }
 
 @media only screen and (max-width:995px){
