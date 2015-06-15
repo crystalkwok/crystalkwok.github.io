@@ -1,138 +1,90 @@
 @charset 'UTF-8';
 
-body {
-font-family: 'Karla', sans-serif;
+
+
+.body{
+    position:relative;
+    top:40px;
+    padding-right:3%;
+    padding-top:3%;
+
 }
 
-body p{
-	font-size:16px;
+.rest {
+    padding: 1.8em 2em;
 }
 
-.jumbotron #title{
-    font-size:40px;
-    /*margin-left:8%;
-    margin-right:8%;*/
-       letter-spacing: 0.15em;
-    color:#ffffff;
-    font-family:'Montserrat', sans-serif;
-    text-align:center;
+.rest hr {
+    border-top:1px solid #999999;
+    margin-left:3em;
+    margin-right:3em;
 }
 
-
-#catchphrase{
-    text-align: center;
+.name {
+    letter-spacing:0.15em;
     font-weight:700;
-    color:#ffffff;
 }
 
-hr{
+
+.motivation hr {
+    margin-left:1em;
+    margin-right:1em;
+}
+
+.motivation{
     color:#000000;
+    font-weight:300;
+    background-color:#f0f3fc;
+    padding-right:2%;
+    padding-left:2%;
+    padding-bottom:2%;
 }
 
-/*.description{
-    margin-left:10%;
-    margin-right:10%;
-}*/
-
-
-
-.jumbotron {
-	background-color: #85d0c8;
-	position:relative;
-	top:40px;
-	width:100%;
-    height:400px;
+.motivation p{
+    padding-top:1%;
+    padding-right:2%;
+    padding-left:2%;
+    padding-bottom:1%;
 }
 
-
-.jumbotron p{
-	color:#ffffff;
-    font-size:18px;
-    margin-top:10px;
+.motivation a{
+        color:#e6817d;
     font-weight:400;
 }
 
 
 
-.jumbotron a{
-    font-size:18px;
-    color:#ffffff;
-}
-
-.jumbotron a:hover{
-    text-decoration: none;
-    color:#edd6b6;
-}
-
-
-
-
-.triangle {
-    border-color: #85d0c8 transparent transparent transparent;
-}
-
-.trianglerec{
-	left:50%;
-	background-color:#ffffff;
-}
-
-.left{
-    float:left;   
-}
-
-.right{
-    float:right;
-}
-
-.info {
-    margin-top:-2%;
-}
-
-.info h3 {
-
-    font-weight:700;
-    	letter-spacing: 0.15em;
-}
-
-.info p {
-    line-height: 160%;
-}
-
-.motivation{
-background-color:#5f605f;
-
-    color:#f6deac;
-    font-size:16px;
-    line-height: 180%;
-    font-weight:300;
-    padding:2%;
-}
-
-.motivation a{
-    color:#1E5754;
-}
-
 .motivation a:hover{
-    text-decoration:none;
-    color:#ffffff;
+    color:#82d3a5;
+    text-decoration: none;
 }
 
 .motivation span{
-    color:#ffffff;
-    font-weight:700;
+    color:#000000;
+    font-weight:500;
     text-align: center;
 }
 
-.motivation h2 {
-    text-align: center;
+b {
+    font-weight:500;
 }
+
+
+.problem_solution {
+    margin-top:2%;
+    padding-bottom:4%;
+}
+
+.size span {
+    font-weight:600;
+    font-style:italic;
+}
+
 
 
 /*design choices paragraphs (color, size, etc)*/
 .design_choices p{
-    margin-top:4%;
-    line-height: 170%;
-    font-size:16px;
+    margin-top:1.2em;
 }
 
 .design_choices h2 {
@@ -142,32 +94,10 @@ letter-spacing: 0.15em;
 }
 
 /*display none of the descriptions at first*/
-.color, .size, .fixed_relative_time, .end_time {
+.fixed_relative_time, .end_time {
     display:none;
 }
 
-/*options of design choices margins to get more space
-.design_navbar{
-    margin-top:8%;
-    margin-bottom:5%;
-    padding:12px;
-    padding-top:18px;
-    background-color:#454545;
-}
-
-.design_navbar a{
-    font-size: 18px;
-    text-align:center;
-    font-weight:700;
-}
-
-/*options of design choices align
-.design_navbar p{
-    text-align:left;
-    font-weight:400;
-    font-size:18px;
-    color:#ffffff;
-}*/
 
 .ugh a, .design_choices a, .personal a, .design_navbar a{
     color:#e6817d;
@@ -179,28 +109,23 @@ letter-spacing: 0.15em;
     text-decoration: none;
 }
 
-.ugh p, .ugh a {
-    font-size: 15px;
-}
+
 
 .info{
     margin-bottom:5%;
 }
 
-.process h3{
-
-    font-weight:700;
-    letter-spacing: 0.15em;
-    line-height: 160%;
-    text-align: center;
-}
 
 .process p {
     line-height: 160%;
 }
 
-.process {
-    margin-top:5%;   
+.process, .design_choices{
+    margin-top:4%;   
+}
+
+.design_choices {
+    margin-bottom:4%;
 }
 
 #design_titles{
@@ -209,6 +134,7 @@ letter-spacing: 0.15em;
     font-size:20px;
 }
 
+/*fixed and relative time*/
 .captions{
     font-size:18px;
     font-weight:700;
@@ -221,24 +147,6 @@ letter-spacing: 0.15em;
 }
 
 
-
-.personal {
-    margin-top:4%;
-    background-color:#454545;
-    padding:50px;
-}
-
-.personal p{
-    color:#ffffff;
-    font-weight:300;
-    line-height:190%;
-    font-size:16px;
-}
-
-.personal #design_titles{
-    color:#64b888;
-}
-
 .small {
     display:none;
 }
@@ -249,13 +157,9 @@ letter-spacing: 0.15em;
 }
 
 .features li:before {
-        color:#5d5fa1;
+    color:#5d5fa1;
 }
 
-.features li{
-    font-size:18px;
-
-}
 
 #maximize, #minimize{
     height:25px;
@@ -263,11 +167,9 @@ letter-spacing: 0.15em;
 }
 
 #final_features{
-    font-size:32px;
-    font-weight:800;
-    letter-spacing: 0.17em;
-    color:#5d5fa1;
-    text-align:center;
+ font-weight:700;
+letter-spacing: 0.15em;
+    text-align: center;
 }
 
 #final_features span {
@@ -276,8 +178,13 @@ letter-spacing: 0.15em;
 }
 
 #lightbox_normal img {
-    height:150px;
-    width:150px;
+    height:120px;
+    width:120px;
+}
+
+#lightbox_normal .image_title {
+    width:140px;
+    height:140px;
 }
 
 #lightbox_normal {
@@ -288,19 +195,18 @@ letter-spacing: 0.15em;
 
 
 @media only screen and (max-width:995px){
+    .rest {
+        padding-top:0;   
+    }
+    
+    .problem_solution {
+        margin-top:4%;   
+    }
+    
     .features p{
         font-size:16px;   
     }
-    
-    .motivation {
-        margin-top:-8%;   
-        padding-bottom:6%;
-    }
-    
-    .trianglerec{
-	left:50%;
-}
-    
+  
     .ugh {
         margin-top:2%;   
     }
@@ -320,150 +226,15 @@ letter-spacing: 0.15em;
     .large{
         display:none;   
     }
-    
-    .features {
-        margin-top:5%;
-        margin-bottom:1%;
-    }
-    
-    .captions {
-        font-size:22px;    
-    }
-    
-    /*what nav bar changes*/
-    .jumbotron{
-		top: -20px;
-        height:100%;
-                padding-left:0px;
-        padding-right:0px;
-	}
 
-    .trianglerec{
-		margin-top:-60px;
-	}
-    
-    .triangle {
-        margin-left:40%;   
-    }
-
- /*end change*/ 
-    
-        .jumbotron p, .jumbotron a{
-        font-size:19px;   
-    }
-    
-    .personal {
-        padding:0px;  
-        padding-top:3%;
-        padding-bottom:3%;
-    }
-    
-
-    .info {
-        margin:3%; 
-        margin-top:-5%;
-    }
-    
-    .motivation {
-        font-size:15px;   
-    }
-    
-    .design_choices p {
-        line-height:150%;
-        font-size:14px;
-    }
-    
-    #design_titles {
-        font-size:18px;   
-    }
-    
-    ul, li {
-        margin:1%;   
-    }
-    
-    .features li {
-        font-size:15px;   
-    }
-    
-    .personal p {
-        font-size: 15px;   
-    }
 
 
 }
 
-@media only screen and (max-width:450px){
-	.triangle{
-		margin:0;
-		margin-left:30%;
-		margin-right:55%;
-	}
-}
 
-/*@media only screen and (max-width:1250px){
-
-
-}
-
-@media only screen and (max-width:1200px){
-
-    
-}
-
-
-@media only screen and (min-width:1790px){
-
-    	.jumbotron{
-		height:85vh;
-	}
-}
-
-@media only screen and (min-width:2100px){
-
-    	.jumbotron{
-		height:90vh;
-	}
-}
-
-@media only screen and (min-width:2700px){
-
-}
-
-
-@media only screen and (max-height: 600px){
-        .jumbotron {
-            height:100%;   
-        }
+@media only screen and (min-width:1430px){
+    * {
+        font-size:1.018em;   
     }
-    
-    @media only screen and (min-height:700px){
-        .jumbotron img {
-            margin-top:4%;    
-        }
-        
-    }
-    
-    @media only screen and (min-height:850px){
-        .jumbotron img {
-            margin-top:7%;   
-        }
-    }
-
-@media only screen and (min-height:1100px){
-        .jumbotron img {
-            margin-top:15%;   
-        }
 }
-    
-    
-    @media only screen and (min-height:1300px){
-        .jumbotron img {
-            margin-top:22%;   
-        }
-    }
 
- @media only screen and (min-height:1600px){
-        .jumbotron img {
-            margin-top:38%;   
-        }
-    }*/

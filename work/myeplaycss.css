@@ -1,97 +1,14 @@
-@charset 'UTF-8';
-
-body {
-font-family: 'Karla', sans-serif;
+.right-side {
+    padding-left:3%;
+    padding-right:3%;
 }
 
-body p{
-	font-size:16px;
+.right{
+    float:right;
 }
 
-.jumbotron #title{
-    font-size:40px;
-       letter-spacing: 0.15em;
-    color:#ffffff;
-    font-family:'Montserrat', sans-serif;
-    text-align:center;
-}
-
-.jumbotron {
-	background-color: #000000;
-	position:relative;
-	top:40px;
-	width:100%;
-    height:400px;
-}
-
-
-.jumbotron p{
-	color:#f0d3aa;
-    font-weight:300;
-    font-size:18px;
-    margin-top:10px;
-}
-
-.description{
-    padding-top:4%;
-    padding-bottom:3%;
-}
-
-.description a {
-    font-weight:700;
-    
-}
-
-
-.jumbotron a{
-    font-size:18px;
-    color:#f0d3aa;
-}
-
-.jumbotron a:hover{
-    text-decoration: none;
-    color:#c1cdfc;
-}
-
-.triangle {
-	 width: 0;
-    height: 0;
-    border: solid 60px ;
-    border-color: #000000 transparent transparent transparent;
-        margin-left:45%;
-    margin-right:50%;
-}
-
-.trianglerec{
-	left:50%;
-	background-color:#1E5754;
-}
-
-.motivation{
-background-color:#1E5754;
-    margin-top:-2%;
-}
-
-.motivation p{
-    color:#f6deac;
-    font-size:16px;
-    line-height: 220%;
-    font-weight:300;
-}
-
-.motivation a{
-    color:#c1cdfc;
-}
-
-.motivation a:hover{
-    text-decoration:none;
-    color:#ffffff;
-}
-
-.motivation span{
-    font-weight:700;
-    color:#ffffff;
-    font-size:17px;
+.left {
+    float:left;
 }
 
 .first_prototype{
@@ -100,7 +17,6 @@ background-color:#1E5754;
 
 .first_prototype p{
     color:#000000;
-    font-size:15px;
 }
 
 .video {
@@ -119,16 +35,25 @@ iframe {
     margin-top:4%;
 }
 
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .final_prototype {
     padding-top:5%;
     padding-bottom:5%;
-    background-color:#e7e9eb;
 }
 
-.final_prototype p{
-    color:#000000;
-    font-weight:300;
-}
 
 .screenshots_final img, .paper_prototypes img{
     margin-bottom:2%;
@@ -139,7 +64,7 @@ iframe {
 }
 
 .video p, .final_prototype p{
-    line-height:170%;
+    line-height:160%;
 }
 
 
@@ -157,16 +82,10 @@ iframe {
     font-weight:700;
 }
 
-.first_prototype a, .final_prototype a{
-    color:#db5d58;
-    font-size:20px;
-    font-weight:700;
-}
-
-
-.design_user a{
+.first_prototype a, .final_prototype a, .design_user a{
     color:#db5d58;
 }
+
 
 .first_prototype a:hover, .final_prototype a:hover, .description a:hover{
     color:#82d3a5;
@@ -178,23 +97,6 @@ iframe {
 }
 
 
-
-
-@media only screen and (max-width:1250px){
-
-    
-        .jumbotron p, .jumbotron a{
-        font-size:17px;   
-    }
-    
-        .jumbotron #title {
-        font-size:50px;   
-    }
-}
-
-
-
-
 @media only screen and (max-width:1200px){
 
     .disappear {
@@ -204,17 +106,8 @@ iframe {
 
 
 
-
-@media only screen and (max-height: 630px){
-        .jumbotron {
-            height:100%;   
-        }
-    }
- 
 @media only screen and (max-width:995px){
-    .jumbotron {
-        height:100%;   
-    }
+
     
     .large{
         display:none;   
@@ -224,27 +117,9 @@ iframe {
         display:block;   
     }
     
-    /*what nav bar changes*/
-    .jumbotron{
-		top: -20px;
-        height:100%;
-        padding-left:0px;
-        padding-right:0px;
-	}
 
-
-    .trianglerec{
-		margin-top:-52px;
-	}
-    
-    .motivation {
-        margin-top: -10%;   
-    }
-
- /*end change*/ 
     
     .motivation p, .description p{
-        font-size:15px;
         line-height:170%;
     }
     
@@ -266,62 +141,6 @@ iframe {
 
     }
 }
-
- @media only screen and (max-width:450px){
-	.triangle{
-		margin:0;
-		margin-left:30%;
-		margin-right:55%;
-	}
-
-/*@media only screen and (max-width:1450px){
-    .jumbotron img {
-        margin-top:1%;   
-    }
-}
-
-@media only screen and (min-width:1790px){
-    	.jumbotron{
-		height:85vh;
-	}
-
-    
-}
-
-@media only screen and (min-width:2100px){
-
-    
-    	.jumbotron{
-		height:90vh;
-	}
-
-}  
-
-    @media only screen and (min-height:850px){
-        .jumbotron img {
-            margin-top:6%;   
-        }
-    }
-
-@media only screen and (min-height:1100px){
-        .jumbotron img {
-            margin-top:13%;   
-        }
-}
-    
-    
-    @media only screen and (min-height:1300px){
-        .jumbotron img {
-            margin-top:20%;   
-        }
-    }
-
- @media only screen and (min-height:1600px){
-        .jumbotron img {
-            margin-top:35%;   
-        }
-    }
-*/
 
 
 
