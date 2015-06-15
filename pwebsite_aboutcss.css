@@ -1,38 +1,27 @@
-
-
-body {
-font-family:'Karla', sans-serif;
-font-size:18px;
+.jumbotron p{
+	font-size:0.98em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    color:#000000;
+	font-weight:300;
+    line-height:125%;
 }
 
 /*change jumbotron*/
 .jumbotron{
-	background-color: #1E5754;
-	position:relative;
-	top:50px;
+	background-color: #ffffff;
+    margin-top:1%;
+    margin-bottom:0;
 	width:100%;
-}
-
-@media only screen and (min-height:600px){
-    .jumbotron  {
-        height:82vh;   
-    }
+    height:100%;
+    padding-top:2em;
+    padding-bottom:2em;
 }
 
 
-.jumbotron p{
-	font-size: 15px;
-	color:#e6e7e7;
-	font-weight:200;
-    line-height:145%;
-}
-
-.jumbotron span {
-    color:#ffffff;
-}
 
 .self img{
-    margin-top:6%;
+    margin-top:2%;
 }
 
 .description {
@@ -41,23 +30,13 @@ font-size:18px;
 
 
 
-.triangle {
 
-    border-color: #1E5754 transparent transparent transparent;
-
-}
-
-
-.trianglerec{
-	left:50%;
-	background-color:#f3f1ae;
-}
 /*end jumbotron and triangle changes*/
 
-/*contact yellow part*/
 .contact {
-	margin:auto;
-	background-color:#f3f1ae;
+	background-color:#f0f3fc;
+    padding-top:3%;
+    padding-bottom:3%;
 }
 
 
@@ -65,14 +44,6 @@ font-size:18px;
 	line-height:200%;
 }
 
-
-#contact_m{
-    font-family:'Montserrat', sans-serif;
-}
-
-.content p{
-    font-size:17px;
-}
 
 .content {
     margin-bottom:10%;
@@ -129,6 +100,7 @@ font-size:18px;
 
 .content p {
     line-height: 160%;
+    font-size:1.04em;
 }
 
 
@@ -189,75 +161,8 @@ font-size:18px;
 }
 
 
-
-@media only screen and (max-height: 550px){
-        .jumbotron {
-            height:100%;   
-        }
-    }
-  
-    @media only screen and (min-height:650px){
-        .self img {
-            margin-top:13%;   
-        }
-        
-        .description {
-            margin-top:3%;   
-        }
-    }
-
-    @media only screen and (min-height:770px){
-        .self img{
-            margin-top:22%;
-        }
-        
-        .description {
-            margin-top:6%;
-        }
-        
-    }
-
-    @media only screen and (min-height:850px){
-        .self img {
-            margin-top:35%;   
-        }
-        
-        .description {
-            margin-top:10%;   
-        }
-    }
-
-@media only screen and (min-height:900px){
-        .self img {
-            margin-top:42%;   
-        }
-        
-        .description {
-            margin-top:12%;   
-        }
-    }
-    
-
-@media only screen and (min-height:1200px){
-    .self img {
-            margin-top:83%;   
-        }
-        
-        .description {
-            margin-top:25%;   
-        }
-}
     
     
-
-
-
-@media only screen and (max-width:1250px) {
-	.jumbotron p{
-	font-size: 15px;
-	}
- 
-}
 
 @media only screen and (max-width:1200px){
 	.jumbotron {
@@ -265,7 +170,6 @@ font-size:18px;
 	}
 
      .self img {
-        margin-top:5%;
          width:120%;
     }
     
@@ -276,18 +180,27 @@ font-size:18px;
     .weird {
         display:inline;   
     }
+    
+    #instafeed img {
+        width:180px;
+        height:180px;
+    }
+    
+    #instafeed .likes{
+        width:170px;
+        height:170px;
+        line-height:170px;
+    }
+    
+    .jumbotron p {
+        font-size:0.9em;   
+    }
 
 }
 
-/*@media only screen and (max-width:1020px){
-	.self img{
-		width:150%;
-	}
-}*/
 
 
-
-@media only screen and (max-width:990px){
+@media only screen and (max-width:995px){
     
 		#instafeed img{
 		 width: 150px;
@@ -310,22 +223,20 @@ font-size:18px;
     .self img{
         width:100%;   
     }
-    
-	body p{
-		font-size:28px;
-	}
+
 /*change jumbotron*/
 	.jumbotron{
 		height:100%;
 		top:-20px;
-	}
-
-	.jumbotron p{
-		font-size: 18px;
+        padding:0.5em;
 	}
     
-    .description {
-        margin-top:3%;   
+
+
+    .jumbotron p {
+        margin-top:3%;  
+        font-size:1.05em;
+        line-height:170%;
     }
 
 
@@ -335,10 +246,6 @@ font-size:18px;
     .contact{
         margin-top:-3px;   
     }
-    
-    	.trianglerec{
-		margin-top:-52px;
-	}
 
 /*content changes*/
 
@@ -348,45 +255,6 @@ font-size:18px;
 	}
 /*content changes ends*/
 
-#experience_title{
-	font-size: 30px;
-}
-    
-    .title{
-        font-size:45px;   
-    }
-
-
-/*}
-
-@media only screen and (max-width: 740px){*/
-
-
-/*end roll down menu & triangle changes*/
-
-/*font sizes for content, button, and description*/
-	.description{
-		font-size:20px;
-	}
-
-
-	.btn{
-		font-size:28px;
-	}
-
-	.relevant_courses .title{
-		width:800px;
-	}
-    
-    #skills_title{
-        font-family:'Karla', sans-serif;
-        font-weight:400;  
-    }
-    
-    
-.self img{
-    margin-top:1%;
-}
 
 
 .small {
@@ -405,14 +273,9 @@ font-size:18px;
         line-height:160%;   
     }
     
-    #karla {
-        font-size:17px;   
+    .content p{
+        font-size:1.2em;   
     }
-    
-    .content p {
-        font-size:15px;   
-    }
-
 
 
 }
@@ -425,62 +288,22 @@ font-size:18px;
 	}
 	.self{
 		width:100%;
-	}
-
-	body p{
-		font-size:15px;
-	}
-    
-    .links a{
-        font-size:15px;   
-    }
-
-	.jumbotron p{
-		font-size:15px;
-	}
-
-	.button button{
-		font-size:15px;
-		left:0;
-	}
-
-	.description{
-		font-size:13px;
-	}
-    
-    #experience_title{
-        font-size:20px;   
     }
     
-    .title{
-        font-size:25px;   
-    }
-    
-
-}
-
-@media only screen and (min-width:1490px){
 
 
 }
 
-@media only screen and (min-width:1600px) and (min-height:600px){
-    .jumbotron {
-        height:85vh;   
+@media only screen and (min-width:1430px){
+    .description {
+        font-size:1.019em;   
     }
 }
 
-@media only screen and (min-width:1790px) and (min-height:600px){
-
-
-}
-
-@media only screen and (min-width:2100px) and (min-height:600px){
-
-
-	.jumbotron{
-		height:90vh;
-	}
+@media only screen and (min-width:2000px){
+    .description{
+        font-size:1.038em;   
+    }
 }
 
 

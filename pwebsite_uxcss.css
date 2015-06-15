@@ -97,10 +97,15 @@ margin-top:9%;
 
 .story p {
     text-align: center;
-    background-color: #f0f3fc;
-    padding:1.5%;
-    font-size:1.5em;
+
+
+}
+
+.story span {
+background-color: #f0f3fc; 
+    font-size:1.25em;
     font-weight:400;
+        padding:1.5%;
 }
 
 .ux_work {
@@ -156,11 +161,11 @@ margin-top:9%;
     }
     
     .headline {
-        margin-top:3%;   
+        margin-top:2%;   
     }   
     
     .viewa {
-        margin-top: 3%;
+        margin-top: 2%;
         margin-bottom:0;
     }
 }
