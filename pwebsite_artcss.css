@@ -1,115 +1,12 @@
-/*jumbotron & triangle delegated*/
-
-body {
-font-family:  'Karla', sans-serif;
-font-size:19px;
+.artwork{
+    padding-left:3em;
+    padding-right:3em;
 }
 
-/*logo picture*/
-
-
-.art_p{ /*div class of words*/
-
-    margin-top:9%;
-    	font-family: 'Karla', sans-serif;
-	font-size: 24px;
-	color:#fbfcfc;
-
-    line-height: 160%;
-}
-
-.jumbotron p {
-    font-size:24px;
-}
-
-.viewa {
-    margin-top:5%;
-    margin-bottom:4%;
-}
-
-.view, .view:visited, .view:active{
-      background-color: transparent;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  border: 2px solid #c1c2c2;
-  color: #c1c2c2;
-    vertical-align: center;
-    text-align: center;
-    letter-spacing:2px;
-    padding:12px;
-    margin-top:10%;
-    font-size:17px;
-    text-decoration: none;
-}
-
-
-.view:hover{
-	color:#3a3a3a;
-    background-color:#ffffff;
-      border: none;
-    font-weight:400;
-    text-decoration: none;
-}
-
-.viewa a {
-    text-decoration: none;   
-}
-
-
-
-/*ART?*/
-#artq{
-    font-size:100px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.jumbotron { 
-	background-color: #1E5754;
-	position:relative;
-    width:100%;
-    top:50px;
-}
-
-@media only screen and (min-height:550px){
-    .jumbotron  {
-        height:82vh;   
-    }
-}
-
-.trianglerec{
-	left:50%;
-	background-color:#f3f1ae;
-}
-
-/*the whole jumbotron and triangle*/
-.triangle_rectangle {
-	left:50%;
-}
-
-.triangle {
-
-    border-color: #1E5754 transparent transparent transparent;
-
-}
-
-
-
-/*start intro*/
-.intro{
-    background-color:#f3f1ae;
-    padding-bottom:4%;
-}
-
-.intro p{
-    line-height: 200%;
-}
-
-/*set title of each section*/
 #title{
-    font-family:'Karla', sans-serif;
-    font-size: 35px; 
-    font-weight:700; 
-    color:#ac746e; 
+    font-size: 2.5em; 
+    font-weight:500; 
+    color:#9b9c9c; 
 }
 
 .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
@@ -126,12 +23,12 @@ font-size:19px;
 
 #more, #more_info, #more_infot{
     text-decoration: none;
-    color: #606060;
-    font-family:'Montserrat', sans-serif;
+    color: #e6817d;
+    font-weight:400;
 }
 
 #more:hover, #more_info:hover, #more_infot:hover{
-    color:#ac746e;
+    color:#82d3a5;
     cursor: pointer;
 }
 
@@ -145,30 +42,6 @@ font-size:19px;
     display:none;
 }
 
-
-
-/*attempt lightbox*/
-
-/*#lightbox {
-	margin: 10px auto;
-	width: 520px; 
-	border-bottom: 1px solid #ccc;
-}*/
-
-/*#lightbox h1 {
-	text-transform: uppercase;
-	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0;
-	color: white;
-	font-size: 24px;
-	background: rgba(255, 255, 255, 0.1);
-	border-left: 2px solid rgba(255, 255, 255, 0.65);
-	border-right: 2px solid rgba(255, 255, 255, 0.65);
-}
-#lightbox ul {
-	overflow: hidden;
-}
 /*Image styles*/
 #concentration_lightbox ul li, #other_work_lightbox ul li, #typography_lightbox ul li {
 	float: left;
@@ -312,195 +185,24 @@ font-size:19px;
 	font-weight: bold;
 }
 
-/*end attempt lightbox*/
 
 
- @media only screen and (max-height: 550px){
-        .jumbotron {
-            height:100%;   
-        }
-    }
-  
-    @media only screen and (min-height:650px){
-        .art_p {
-            margin-top:13%;   
-        }
-        
-        .logo {
-            margin-top:5%;   
-        }
-
-    }
-
-    @media only screen and (min-height:700px){
-        .art_p{
-            margin-top:13%;
-        }
-        
-        .logo {
-            margin-top:5%;
-        }
-        
-    }
-
-    @media only screen and (min-height:900px){
-        .art_p{
-            margin-top:22%;
-        }
-        
-        .logo {
-            margin-top:13%; 
-        }
-    }
-    
-
-@media only screen and (min-height:1100px){
-    .art_p{
-       margin-top:28%;
-    }
-    
-    .logo {
-        margin-top:19%;
-    }
-}
-    
-    
-    @media only screen and (min-height:1300px){
-        .art_p{
-            margin-top:40%;   
-        }
-        
-        .logo {
-            margin-top:29%;   
-        }
-    }
-
- @media only screen and (min-height:1600px){
-
-    }
-
-
-
-
-
-@media only screen and (min-width:1500px) and (min-height:600px){
-
-}
-
-@media only screen and (min-width:1600px) and (min-height:600px){
-
-	.jumbotron{
-		height:85vh;
-	}
-    
-    
-
-}
-
-@media only screen and (min-width:1790px) and (min-height:600px){
-
-}
-
-@media only screen and (min-width:2000px) and (min-height:600px){
-
-	.jumbotron{
-		height:90vh;
-	}
-}
-
-@media only screen and (min-width: 2600px) and (min-height:600px){
-
-}
 
 @media only screen and (max-width:1200px) and (min-height:600px){
 
-	#artq{
-		font-size: 85px;
-		width:100%;
-	}
 
     
-    #artnux{
-        font-size:20px;   
-    }
-    
-    .art_p{
-        margin-bottom:1%;
-    }
-    
-    .jumbotron p{   
-        line-height:190%;
-    }
-    
     .concentration, .other_work, .typography, #concentration_lightbox, #other_work_lightbox, #typography_lightbox{
-        padding=0px;   
+        padding:0;   
     }
-    
-    .art_p {
-        margin-top:6%;   
-    }
-    
-    .logo {
-        margin-top:0%;   
-    }
+
 }
 
 
 @media only screen and (max-width:995px){
-	.jumbotron{
-		height:100%;
-		top:-20px;
-	}
-    
-    .view {
-        margin-top:10%;
-        margin-bottom:10%;
-    }
-    
-    #logo{
-         margin-top:-1px;
-    }
-    
+
     .small {
         display:block;   
-    }
-/*}
-
-@media only screen and (max-width: 950px){*/
-
-    
-    #artq{
-        font-size:90px;   
-    }
-
-/*}
-
-@media only screen and (max-width: 770px){*/
-/*start changing nav bar*/
-	
-    /*end nav bar changes*/
-
-    /*change triangle to suit navbar*/
-    
-    body p{
-        font-size:25px;   
-    }
-    
-	.trianglerec{
-		margin-top:-52px;
-	}
-
-	#artnux{
-		font-size:26px;
-	}
-    
-    #artnux p{
-    text-align:center;
-    }
-    
-    .art_p{ 
-        margin-top:10%;
-        text-align:center;
     }
 
     
@@ -522,10 +224,7 @@ font-size:19px;
         padding:0px;
         height:auto;
     }
-    
-    .jumbotron p{
-        line-height: 150%;   
-    }
+
     
     .intro p{
         line-height:150%;
@@ -537,53 +236,19 @@ font-size:19px;
         line-height:160%;
     }
     
-    .jumbotron p {
-        padding:0px;
-        padding-top:2%;
-    }
-
 
 }
 
 @media only screen and (max-width: 670px){
 
-	#artq{
-		font-size:90px;
-        text-align: center;
-	}
-
-	#artnux{
-		font-size:20px;
-	}
-    
-    body p{
-        font-size:18px;   
-    }
 
     
     #isaiah{
         height:80%;
         width:80%;
     }
-    
-    .intro p{
-        font-size:16px;   
-    }
+
 
 
 }
 
-@media only screen and (max-width:450px){
-	#artq{
-		font-size:90px;
-		width:100%;
-		height:100%;
-		text-align: center;
-	}
-
-	.triangle{
-		margin:0;
-		margin-left:30%;
-		margin-right:55%;
-	}
-}

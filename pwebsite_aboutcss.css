@@ -24,10 +24,6 @@
     margin-top:2%;
 }
 
-.description {
-    margin-top:1%;
-}
-
 
 
 
@@ -171,6 +167,7 @@
 
      .self img {
          width:120%;
+         margin-top:7%;
     }
     
     .description {
