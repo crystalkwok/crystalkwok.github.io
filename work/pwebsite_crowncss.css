@@ -33,6 +33,19 @@ hr{
     padding-left:3%;
 }
 
+.features a{
+        color:#e6817d;
+    font-weight:400;
+}
+
+
+
+.features a:hover{
+    color:#82d3a5;
+    text-decoration: none;
+}
+
+
 .feature_description {
     display:none;
 }
