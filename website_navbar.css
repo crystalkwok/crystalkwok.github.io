@@ -363,7 +363,13 @@ b {
 
 @media only screen and (min-width:2000px){
     *{
-        font-size:1.038em;   
+        font-size:1.037em;   
+    }
+}
+
+@media only screen and (max-width:995px){
+    .motivation {
+        margin-top:-6%; 
     }
 }
 

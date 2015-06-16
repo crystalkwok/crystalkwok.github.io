@@ -15,6 +15,10 @@
 /*set image size of each section*/
 /*.concentration img, .other_work img*/
 
+.concentration{
+    margin-top:3%;
+}
+
 
 .typography img{
     height:200px;

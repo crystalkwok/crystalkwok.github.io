@@ -20,6 +20,19 @@
     padding-bottom:2%;
 }
 
+.right-side a{
+        color:#e6817d;
+    font-weight:400;
+    text-decoration: none;
+}
+
+
+
+.right-side a:hover{
+    color:#82d3a5;
+    text-decoration: none;
+}
+
 .intropics img{
     margin-top:2%;
 }

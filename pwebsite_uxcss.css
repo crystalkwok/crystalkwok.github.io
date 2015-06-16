@@ -42,12 +42,12 @@ margin-top:9%;
     font-style:italic;
 }
 
-.headline i {
-    color: #e6817d;  
+.headline a {
+    color: #f1a19e;  
     text-decoration: none;
 }
 
-.headline i:hover {
+.headline a:hover {
         color:#82d3a5;
     text-decoration: none;
 }

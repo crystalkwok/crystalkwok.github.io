@@ -226,15 +226,14 @@ letter-spacing: 0.15em;
     .large{
         display:none;   
     }
-
-
-
-}
-
-
-@media only screen and (min-width:1430px){
-    * {
-        font-size:1.018em;   
+    
+    .motivation {
+        margin-top:0;   
     }
+
+
+
 }
+
+
 
