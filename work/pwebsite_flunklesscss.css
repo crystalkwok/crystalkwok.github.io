@@ -15,6 +15,11 @@
 .line{
 	float:left;
 }*/
+
+.problem {
+    padding:3%;
+}
+
 .right-side {
     padding-right:2%;
     padding-bottom:2%;
