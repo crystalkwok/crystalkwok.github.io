@@ -139,11 +139,16 @@ iframe {
         margin-top:0%;   
     }*/
     
-    iframe {
+   iframe {
         height:100%;
         width:100%;
+        margin-bottom:2%;
 
     }
+    
+     .videoWrapper{
+        margin-bottom:3%;   
+     }
 }
 
 

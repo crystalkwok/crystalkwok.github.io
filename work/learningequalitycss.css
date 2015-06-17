@@ -73,24 +73,14 @@ footer {
     text-decoration: none;
 }
 
+.prototypes img{
+    border: 2px solid #d8d8d8;
+}
+
 
 @media only screen and (max-width:995px){
 
-    /*what nav bar changes*/
-    .jumbotron{
-		top: -20px;
-        height:100%;
-                padding-left:0px;
-        padding-right:0px;
-	}
-
-    .trianglerec{
-		margin-top:-60px;
-	}
-    
-    .triangle {
-        margin-left:40%;   
+    .parallelResearchP {
+        margin-top:2%;   
     }
-
- /*end change*/ 
 }
