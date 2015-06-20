@@ -285,7 +285,7 @@ background-color: #f0f3fc;
 	.jumbotron{
 		height:100%;
 		position:relative;
-        top:-5px;
+        top:-15px;
 	} /*make the jumbotron long*/
     
     .description {
