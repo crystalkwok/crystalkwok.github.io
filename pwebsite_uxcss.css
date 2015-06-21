@@ -286,10 +286,13 @@ background-color: #f0f3fc;
 		height:100%;
 		position:relative;
         top:-15px;
+	background: url(images/timeline%20background%20cover%20small.png) no-repeat center center;
+         opacity: 70%;
+    background-size:cover;
 	} /*make the jumbotron long*/
     
     .description {
-        margin-top:10%;
+        margin-top:15%;
         text-align:center;
         line-height:150%;
     }
@@ -297,10 +300,7 @@ background-color: #f0f3fc;
     #hello {
         text-align: center;   
     }
-
-
-
-    
+  
     
     #logo{
         margin-top:-1%;
@@ -310,6 +310,8 @@ background-color: #f0f3fc;
 	#love{
         line-height:150%;
 	}
+    
+    
     
 }
     
