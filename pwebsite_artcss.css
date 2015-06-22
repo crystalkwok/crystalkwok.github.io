@@ -1,3 +1,8 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+
 .right-side{
     padding-left:3em;
     padding-right:3em;
