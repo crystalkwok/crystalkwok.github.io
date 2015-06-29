@@ -73,16 +73,11 @@
         padding:0px;   
     }
 
-	.other_work img, .concentration img{
+	.other_work img, .concentration img, .typography img{
 		height:110px;
+        padding:2%;
 	}
 
-    
-    .typography img {
-        margin:0px;
-        padding:0px;
-        height:auto;
-    }
 
     
     .intro p{
@@ -93,6 +88,10 @@
     .info_slide, .infot_slide {
         font-size:16px;   
         line-height:160%;
+    }
+    
+    .right-side {
+        padding:0;   
     }
     
 
