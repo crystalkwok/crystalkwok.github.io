@@ -38,6 +38,16 @@
 		<!--random stuff-->
 		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
 		<title>Design Lab--crystal kwok</title>
+    
+                <!-- fancyBox-->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="../fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+        <script type="text/javascript" src="../fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
 
 </head>
@@ -64,6 +74,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
+    
+<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
+	});       
+    
+</script>
+    
+    
+
 
 
 <!--normal nav bar-->
@@ -225,26 +260,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="row">
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/home2.1.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/home2.1.png" title="starting interface">
+                <img src="../images/designlab/home2.1.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
             </div>
-             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/6.2.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/6.2.png" title="training interface">
+                <img src="../images/designlab/6.2.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/3%20with%20background.png" title="starting interface">
+                    <img src="../images/designlab/3%20with%20background.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/4.2.png" title="starting interface">
+                    <img src="../images/designlab/4.2.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/3%20with%20background.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/5.png" title="starting interface">
+                    <img src="../images/designlab/5.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/4.2.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/5.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="../images/designlab/rachel%202.png" class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/designlab/rachel%202.png" title="starting interface">
+                    <img src="../images/designlab/rachel%202.png" alt="" / class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                </a>
             </div>
         </div>
         

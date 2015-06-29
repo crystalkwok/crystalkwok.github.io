@@ -16,11 +16,10 @@ footer {
 
 .wireframes img {
     margin-bottom:2%;
+    height:150px;
+    padding:1%;
 }
 
-#lightbox_normal img{
-    height:150px;
-}
 
 #title {
     text-align: center;
