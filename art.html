@@ -33,14 +33,21 @@
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="galleria/galleria-1.4.2.min.js"></script>
-        <script src="galleria/galleria-1.4.2.js"></script>
         <script src="jquery/jquery.min.js"></script>
 		<script src="jquery/jquery-1.11.1.min.js"></script>
-        
-                            <!-- PrefixFree -->
-                    <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+
         <!--for the image galleries-->
+        
+        <!-- fancyBox-->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+         <script type="text/javascript" src="fancyBox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+        <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
         
        
         
@@ -66,6 +73,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('create', 'UA-58103450-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+        
+        <script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 </script>
 <!--normal nav bar-->
 		<div class="navbar">
@@ -170,8 +183,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <hr>
     
     <p><h4><span>What does fine art have to do with user experience?</span></h4></p>
-    <p>My fine art skills that I have acquired over the years do attribute to user experience design, but mostly the <i>aesthetics</i> part.  These skills have come in handy when drawing prototypes, understanding contrast and color, and making decisions about visual design in terms of shapes and everything else.  I personally just wanted to show my artwork because I've never had a chance to show all my artwork all in one place, and I think this is a big and important part of my journey.
-                            <br><br> On this page will be thumbnails of all my artwork, and if you click on a thumbnail, a lightbox gallery will show up.  Below, if you click on the links regarding galleries on each section, you will be redirected to separate pages where you can view better full screen galleries.  Enjoy! :)</p>
+    <p>My fine art skills that I have acquired over the years do attribute to user experience design, but mostly the <i>aesthetics</i> part.  These skills have come in handy when drawing prototypes, understanding contrast and color, and making decisions about visual design in terms of shapes and everything else.  I personally just wanted to show my artwork because I've never had a chance to show all my artwork all in one place, and I think this is a big and important part of my journey.</p>
     
 </div> <!--end motivation-->
     
@@ -182,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		      <div class="concentration">
 			
   
-<p><span id="title">concentration</span>  &nbsp; &nbsp;| &nbsp; &nbsp; <span class="small"><br></span><a id="more_info">[ info ]</a>&nbsp; &nbsp; <a href="art/concentration.html" id="more" target="_blank">[ gallery ]</a></p>
+<p><span id="title">concentration</span>  &nbsp; &nbsp;| &nbsp; &nbsp; <span class="small"><br></span><a id="more_info">[ info ]</a><!--&nbsp; &nbsp; <a href="art/concentration.html" id="more" target="_blank">[ gallery ]</a>--></p>
 
 <p class="info_slide">
     <br>
@@ -193,59 +205,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--attempt lightbox-->
 
 <div class="row">
-<div id="concentration_lightbox" class="col-md-12 col-sm-12 col-xs-12">
-	<ul>
-		<li>
-			<img src="artwork/concentration/ct1.jpg" data-large="artwork/concentration/cb1.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Mirrors</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/concentration/ct2.jpg" data-large="artwork/concentration/cb2.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed concentration)</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/concentration/ct3.jpg" data-large="artwork/concentration/cb3.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Breath and Birth</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/concentration/ct4.jpg" data-large="artwork/concentration/cb4.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed concentration)</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/concentration/ct5.jpg" data-large="artwork/concentration/cb5.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Dancing is like dreaming with your feet</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/concentration/ct6.jpg" data-large="artwork/concentration/cb6.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed concentration)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/concentration/ct7.jpg" data-large="artwork/concentration/cb7.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed concentration)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/concentration/ct8.jpg" data-large="artwork/concentration/cb8.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed concentration)</h5>
-			</div>
-		</li>
-	</ul>
+<div class="concentrationImg col-md-offset-1 col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+    
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb1.jpg" title="Mirrors">
+        <img src="artwork/concentration/ct1.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb2.jpg" title="(unnamed concentration)">
+        <img src="artwork/concentration/ct2.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb3.jpg" title="Breadth and Birth">
+        <img src="artwork/concentration/ct3.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb4.jpg" title="(unnamed concentration)">
+        <img src="artwork/concentration/ct4.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb5.jpg" title="Dancing is like Dreaming with your Feet">
+        <img src="artwork/concentration/ct5.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb6.jpg" title="The Flow">
+        <img src="artwork/concentration/ct6.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb7.jpg" title="(unnamed concentration)">
+        <img src="artwork/concentration/ct7.jpg" alt="" />
+    </a>
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="artwork/concentration/cb8.jpg" title="(unnamed concentration)">
+        <img src="artwork/concentration/ct8.jpg" alt="" />
+    </a>
 </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-1 col-lg-1"></div>
 </div>
 
 <!--end attempt lightbox-->
@@ -257,112 +244,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			<div class="other_work">
 
-            <p><span id="title">other work</span> &nbsp; &nbsp;| &nbsp; &nbsp;<span class="small"><br></span><a href="art/other.html" id="more" target="_blank">[ gallery ]</a> </p>
+            <p><span id="title">other work</span> <!--&nbsp; &nbsp;| &nbsp; &nbsp;<span class="small"><br></span><a href="art/other.html" id="more" target="_blank">[ gallery ]</a>--> </p>
             
 
 			
   <div class="row">                 
-    <div id="other_work_lightbox" class="col-md-12 col-sm-12 col-xs-12">
-	<ul>
-		<li>
-			<img src="artwork/other work/ot1.jpg" data-large="artwork/other work/ob1.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Oriental Push Pins</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/other work/ot2.jpg" data-large="artwork/other work/ob2.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Nebula</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/other work/ot3.jpg" data-large="artwork/other work/ob3.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Self-Portrait</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/other work/ot4.jpg" data-large="artwork/other work/ob4.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Self-Portrait</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/other work/ot5.jpg" data-large="artwork/other work/ob5.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Sichuan Earthquake</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/other work/ot6.jpg" data-large="artwork/other work/ob6.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot7.jpg" data-large="artwork/other work/ob7.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Contour</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot8.jpg" data-large="artwork/other work/ob8.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot9.jpg" data-large="artwork/other work/ob9.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot10.jpg" data-large="artwork/other work/ob10.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot11.jpg" data-large="artwork/other work/ob11.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(grayscale with watercolor)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot12.jpg" data-large="artwork/other work/ob12.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot13.jpg" data-large="artwork/other work/ob13.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Poppies</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot14.jpg" data-large="artwork/other work/ob14.jpg"/>
-			<div class="image_title">
-				<h5 class="title">(unnamed)</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot15.jpg" data-large="artwork/other work/ob15.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Sunset</h5>
-			</div>
-		</li>
-        <li>
-			<img src="artwork/other work/ot16.jpg" data-large="artwork/other work/ob16.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Still Life- Colored Pencils</h5>
-			</div>
-		</li>
-	</ul>
+    <div class="otherWorkImg col-md-12 col-sm-12 col-xs-12">
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob1.jpg" title="Oriental Push Pins">
+            <img src="artwork/other work/ot1.jpg" alt="" />
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob2.jpg" title="Nebula">
+            <img src="artwork/other work/ot2.jpg" alt="" />
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob3.jpg" title="Self-Portrait (charcoal)">
+            <img src="artwork/other work/ot3.jpg" alt="" />
+        </a>       
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob4.jpg" title="Self-Portrait">
+            <img src="artwork/other work/ot4.jpg" alt="" />
+        </a>         
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob5.jpg" title="Sichuan Earthquake">
+            <img src="artwork/other work/ot5.jpg" alt="" />
+        </a> 
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob6.jpg" title="(unnamed)">
+            <img src="artwork/other work/ot6.jpg" alt="" />
+        </a> 
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob7.jpg" title="Contour">
+            <img src="artwork/other work/ot7.jpg" alt="" />
+        </a>        
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob8.jpg" title="Defining Beauty">
+            <img src="artwork/other work/ot8.jpg" alt="" />
+        </a> 
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob9.jpg" title="Textured Lily">
+            <img src="artwork/other work/ot9.jpg" alt="" />
+        </a> 
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob10.jpg" title="Spiritual Levels">
+            <img src="artwork/other work/ot10.jpg" alt="" />
+        </a>        
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob11.jpg" title="(grayscale with watercolor)">
+            <img src="artwork/other work/ot11.jpg" alt="" />
+        </a>   
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob12.jpg" title="Celestial Observatory">
+            <img src="artwork/other work/ot12.jpg" alt="" />
+        </a>   
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob13.jpg" title="Poppies">
+            <img src="artwork/other work/ot13.jpg" alt="" />
+        </a>                
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob14.jpg" title="Prayer">
+            <img src="artwork/other work/ot14.jpg" alt="" />
+        </a>         
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob15.jpg" title="Sunset">
+            <img src="artwork/other work/ot15.jpg" alt="" />
+        </a>  
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="artwork/other work/ob16.jpg" title="(unnamed colored pencil still life)">
+            <img src="artwork/other work/ot16.jpg" alt="" />
+        </a>  
+
 </div>
-      <div class="col-md-1"></div>
 </div><!--end row-->
 
 </div><!--end other work-->
@@ -377,21 +314,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         i am obsessed with great and creative typography!  I usually do them by hand, and some of them have been drawn onto cups (which is why some of them may have a slight curve at the edges.)  Here are some of my work where I've played around with fonts and layouts just for fun.  Feel free to click on the thumbnail for a lightbox gallery.</p>
 				
 <div class="row">
-<div id="typography_lightbox" class="col-md-12 col-sm-12 col-xs-12">
-	<ul>
-		<li>
-			<img src="artwork/typography/isaiaht.jpg" data-large="artwork/typography/isaiahb.jpg" class="col-sm-12 col-xs-12"/>
-			<div class="image_title">
-				<h5 class="title">Isaiah 40</h5>
-			</div>
-		</li>
-		<li>
-			<img src="artwork/typography/switchfoott.jpg" data-large="artwork/typography/switchfootb.jpg"/>
-			<div class="image_title">
-				<h5 class="title">Switchfoot</h5>
-			</div>
-		</li>
-	</ul>
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery3" href="artwork/typography/isaiahb.jpg" title="Isaiah">
+            <img src="artwork/typography/isaiahb.jpg" alt="" />
+    </a>  
+    <a class="fancybox-thumb" rel="fancybox-thumb gallery3" href="artwork/typography/switchfootb.jpg" title="typography">
+            <img src="artwork/typography/switchfootb.jpg" alt="" />
+    </a> 
+    
 </div>
     <div class="col-md-1"></div>
     </div>
@@ -436,143 +366,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         $(document).ready(main);
     </script>
     
-    <!-- PrefixFree -->
-<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
-                </script>
+   
 
 <script>
-/*Jquery time*/
-$(document).ready(function(){
-	var item, img, title, large_img;
-	var CW, CH, CL, CT, hpadding, vpadding, imgtag;
-	//Flag for preventing multiple image displays
-	var lb_loading = false;
-	var doc = $(document);
-	
-	$("#concentration_lightbox li, #other_work_lightbox li, #typography_lightbox li").click(function(){
-		if(lb_loading) return false;
-		lb_loading= true;
-		
-		item = $(this);
-		img = item.find("img");
-		title = item.find(".title").html();
-		
-		//Remove active class from previously clicked LI
-		$("#concentration_lightbox li.active, #other_work_lightbox li.active, #typography_lightbox li.active").removeClass("active");
-		//Mark the clicked LI as active for later use
-		item.addClass("active");
-		
-		//The large image
-		large_img = new Image();
-		//Use data-large or the src itself if large image url is not available
-		large_img.src = img.attr("data-large") ? img.attr("data-large") : img.attr("src");
-		
-		//Adding additional HTML - only if it hasn't been added before
-		if($(".lb_backdrop").length < 1)
-		{
-			var lb_backdrop = '<div class="lb_backdrop"></div>';
-			var lb_canvas = '<div class="lb_canvas"></div>';
-			var lb_previous = '<span class="lb_previous"><</span>';
-			var lb_title = '<span class="lb_title"></span>';
-			var lb_next = '<span class="lb_next">></span>';
-			var lb_controls = '<div class="lb_controls">'+lb_previous+lb_title+lb_next+'</div>';
-			var total_html = lb_backdrop+lb_canvas+lb_controls;
-			
-			$(total_html).appendTo("body");
-		}
-		//Fade in lightbox elements if they are hidden due to a previous exit
-		if($(".lb_backdrop:visible").length == 0)
-		{
-			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeIn("slow");
-		}
-		
-		//Display preloader till the large image loads and make the previous image translucent so that the loader in the BG is visible
-		if(!large_img.complete) 
-			$(".lb_canvas").addClass("loading").children().css("opacity", "0.5")
-		
-		//Disabling left/right controls on first/last items
-		if(item.prev().length == 0)
-			$(".lb_previous").addClass("inactive");
-		else
-			$(".lb_previous").removeClass("inactive");
-		if(item.next().length == 0)
-			$(".lb_next").addClass("inactive");
-		else
-			$(".lb_next").removeClass("inactive");
-		
-		//Centering .lb_canvas
-		CW = $(".lb_canvas").outerWidth();
-		CH = $(".lb_canvas").outerHeight();
-		//top and left coordinates
-		CL = ($(window).width() - CW)/2;
-		CT = ($(window).height() - CH)/2;
-		$(".lb_canvas").css({top: CT, left: CL});
-		
-		//Inserting the large image into .lb_canvas once it's loaded
-		$(large_img).load(function(){
-			//Recentering .lb_canvas with new dimensions
-			CW = large_img.width;
-			CH = large_img.height;
-			//.lb_canvas padding to be added to image width/height to get the total dimensions
-			hpadding = parseInt($(".lb_canvas").css("paddingLeft")) + parseInt($(".lb_canvas").css("paddingRight"));
-			vpadding = parseInt($(".lb_canvas").css("paddingTop")) + parseInt($(".lb_canvas").css("paddingBottom"));
-			CL = ($(window).width() - CW - hpadding)/2;
-			CT = ($(window).height() - CH - vpadding)/2;
-			
-			//Animating .lb_canvas to new dimentions and position
-			$(".lb_canvas").html("").animate({width: CW, height: CH, top: CT, left: CL}, 500, function(){
-				//Inserting the image but keeping it hidden
-				imgtag = '<img src="'+large_img.src+'" style="opacity: 0;" />';
-				$(".lb_canvas").html(imgtag);
-				$(".lb_canvas img").fadeTo("slow", 1);
-				//Displaying the image title
-				$(".lb_title").html(title);
-				
-				lb_loading= false;
-				$(".lb_canvas").removeClass("loading");
-			})
-		})
-	})
-	
-	//Click based navigation
-	doc.on("click", ".lb_previous", function(){ navigate(-1) });
-	doc.on("click", ".lb_next", function(){ navigate(1) });
-	doc.on("click", ".lb_backdrop", function(){ navigate(0) });
-	
-	//Keyboard based navigation
-	doc.keyup(function(e){
-		//Keyboard navigation should work only if lightbox is active which means backdrop is visible.
-		if($(".lb_backdrop:visible").length == 1)
-		{
-			//Left
-			if(e.keyCode == "37") navigate(-1);
-			//Right
-			else if(e.keyCode == "39") navigate(1);
-			//Esc
-			else if(e.keyCode == "27") navigate(0);
+$(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
 		}
 	});
-	
-	//Navigation function
-	function navigate(direction)
-	{
-		if(direction == -1) // left
-			$("#concentration_lightbox li.active, #other_work_lightbox li.active, #typography_lightbox li.active").prev().trigger("click");
-		else if(direction == 1) //right
-			$("#concentration_lightbox li.active, #other_work_lightbox li.active, #typography_lightbox li.active").next().trigger("click");
-		else if(direction == 0) //exit
-		{
-			$("#concentration_lightbox li.active, #other_work_lightbox li.active, #typography_lightbox li.active").removeClass("active");
-			$(".lb_canvas").removeClass("loading");
-			//Fade out the lightbox elements
-			$(".lb_backdrop, .lb_canvas, .lb_controls").fadeOut("slow", function(){
-				//empty canvas and title
-				$(".lb_canvas, .lb_title").html("");
-			})
-			lb_loading= false;
-		}
-	}
-})
+});
+
 
 </script>
 </footer>
