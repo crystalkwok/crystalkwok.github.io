@@ -19,7 +19,7 @@
     margin-bottom:2%;
 }
 
-.interface img {
+.interfaceFinal img {
     border: 2px solid #d8d8d8;
 }
 
@@ -40,6 +40,20 @@
 
 .interface a{
     font-weight:700;
+}
+
+.interfaceProcess img{
+    padding:0.5em;
+}
+
+.interfaceProcess h3, .interfaceFinal h3 {
+    color:#969696;
+    letter-spacing: 0.15em;
+}
+
+.interfaceProcess {
+    background-color:#eae8e8;
+    padding:1em;
 }
 
 @media only screen and (max-width:995px){
