@@ -34,6 +34,16 @@
 
 	<!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+                <!-- fancyBox-->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="../fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+        <script type="text/javascript" src="../fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
 		<!--random stuff-->
 		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
@@ -63,6 +73,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('create', 'UA-58103450-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+    
+<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
+	});       
+    
 </script>
 
 <!--normal nav bar-->
@@ -177,94 +209,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          <div class="the_process feature_description">
                 <hr>
              <div class="row">
-                <div id="lightbox_normal">
-                    <ul>
-                        <li><img src="../images/crown/process/1%20melinda%20crown%20sketch%20thumbnail.jpg" data-large= "../images/crown/process/1%20melinda%20crown%20sketch.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">logo sketches</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/2a%20logo%20showing%20thumbnail.jpg" data-large= "../images/crown/process/2a logo showing.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">logo showing</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/2%20storyboard1%20thumbnail.jpg" data-large= "../images/crown/process/2%20storyboard1.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">storyboard (1)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/3%20storyboard2%20thumbnail.jpg" data-large= "../images/crown/process/3%20storyboard2.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">storyboard (2)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/4%20storyboard3%20thumbnail.jpg" data-large= "../images/crown/process/4%20storyboard3.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">storyboard (3)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/5%20features_brainstorm%20thumbnail.jpg" data-large= "../images/crown/process/5%20features_brainstorm.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">features brainstorming (1)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/6%20features_brainstorm2%20thumbnail.jpg" data-large= "../images/crown/process/6%20features_brainstorm2.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">features brainstorming (2)</h5>
-                                </div>
-                        </li>
-                         <li><img src="../images/crown/process/7%20user_flow%20thumbnail.jpg" data-large="../images/crown/process/7%20user_flow.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">User flow and features</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/8%20prototype_homescreen%20thumbnail.jpg" data-large="../images/crown/process/8%20prototype_homescreen.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">homescreen (prototype)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/9%20prototype_calendarview%20thumbnail.jpg" data-large="../images/crown/process/9%20prototype_calendarview.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">calendar (prototype)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/10%20prototype_addevent%20thumbnail.jpg" data-large="../images/crown/process/10%20prototype_addevent.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">add event (prototype)</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/10a%20original%20timeline%20thumbnail.jpg" data-large="../images/crown/process/10a original timeline.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">original timeline idea</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/11%20prototype_timelineviews%20thumbnail.jpg" data-large="../images/crown/process/11%20prototype_timelineviews.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">brainstorming timeline features</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/12%20prototype_timeline%20thumbnail.jpg" data-large="../images/crown/process/12%20prototype_timeline.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">brainstorming timeline features</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/13%20group%20picture%20thumbnail.jpg" data-large="../images/crown/process/13%20group%20picture.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">crown group!</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/crown/process/14%20silly%20group%20picture%20thumbnail.jpg" data-large="../images/crown/process/14%20silly%20group%20picture.JPG">
-                                <div class="image_title">
-                                    <h5 class="title">silly picture!</h5>
-                                </div>
-                        </li>
+                 <div class="row">
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/1%20melinda%20crown%20sketch.jpg" title="logo sketches">
+                        <img src="../images/crown/process/1%20melinda%20crown%20sketch%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a>
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/2a logo showing.JPG" title="logo showing">
+                        <img src="../images/crown/process/2a%20logo%20showing%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a>
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/2%20storyboard1.jpg" title="storyboard (1)">
+                        <img src="../images/crown/process/2%20storyboard1%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a>  
+ 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/3%20storyboard2.jpg" title="storyboard (2)">
+                        <img src="../images/crown/process/3%20storyboard2%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                 </div>
+             <div class="row">
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/4%20storyboard3.jpg" title="storyboard (3)">
+                        <img src="../images/crown/process/4%20storyboard3%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/5%20features_brainstorm.JPG" title="features brainstorming (1)">
+                        <img src="../images/crown/process/5%20features_brainstorm%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/6%20features_brainstorm2.JPG" title="features brainstorming (2)">
+                        <img src="../images/crown/process/6%20features_brainstorm2%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/7%20user_flow.JPG" title="user flow and features">
+                        <img src="../images/crown/process/7%20user_flow%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                 </div>
+                 <div class="row">
+           
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/8%20prototype_homescreen.JPG" title="homescreen (wireframe)">
+                        <img src="../images/crown/process/8%20prototype_homescreen%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/9%20prototype_calendarview.JPG" title="calendar (prototype)">
+                        <img src="../images/crown/process/9%20prototype_calendarview%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/10%20prototype_addevent.JPG" title="add event (prototype)">
+                        <img src="../images/crown/process/10%20prototype_addevent%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/10a original timeline.jpg" title="original timeline idea">
+                        <img src="../images/crown/process/10a%20original%20timeline%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                 </div>
+                <div class="row">
+                     
+               
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/11%20prototype_timelineviews.JPG" title="brainstorming timeline features">
+                        <img src="../images/crown/process/11%20prototype_timelineviews%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/12%20prototype_timeline.JPG" title="brainstorming timeline features">
+                        <img src="../images/crown/process/12%20prototype_timeline%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/13%20group%20picture.JPG" title="crown group!">
+                        <img src="../images/crown/process/13%20group%20picture%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/crown/process/14%20silly%20group%20picture.JPG" title="silly picture!">
+                        <img src="../images/crown/process/14%20silly%20group%20picture%20thumbnail.jpg" alt="" class="col-md-3 col-lg-3 col-sm-3 col-xs-3"/>
+                    </a> 
+                    
+                 </div>
+           
 
+            </div><!--end row-->
+                       
 
-                    </ul>
-                    </div> <!--end lightbox normal-->
-             </div>
-        </div>
+        </div><!--end the process-->
 
     <div class="feature_title"><h2>GOALS &nbsp; <a href="#"><img src="../images/crown/minimize.png" class="minimize goals_minimize"><img src="../images/crown/maximize.png" class="maximize goals_maximize"></a></h2></div>
                

@@ -70,17 +70,6 @@ hr{
     display:none;
 }
 
-/*.jumbotron img {
-    margin-top:8%;
-}*/
-
-#lightbox_normal img{
-    height:180px;
-}
-
-#lightbox_normal .image_title {
-	width: 200px; height: 200px;
-}
 
 
 .skip a{
@@ -130,6 +119,10 @@ hr{
 
 .goals_minimize , .timeline_minimize, .personal_minimize{
     display:inline;
+}
+
+.the_process img{
+    padding:1em;
 }
 
 

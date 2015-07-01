@@ -121,7 +121,13 @@ letter-spacing: 0.15em;
 }
 
 .process, .design_choices{
-    margin-top:4%;   
+    margin-top:4%; 
+    margin-right:0.5em;
+    margin-left:0.5em;
+}
+
+.process img {
+    padding:1em;
 }
 
 .design_choices {
@@ -177,20 +183,6 @@ letter-spacing: 0.15em;
     padding:10px;
 }
 
-#lightbox_normal img {
-    height:120px;
-    width:120px;
-}
-
-#lightbox_normal .image_title {
-    width:140px;
-    height:140px;
-}
-
-#lightbox_normal {
-    margin-top:5%;
-    margin-bottom:5%;
-}
 
 
 

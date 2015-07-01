@@ -38,6 +38,17 @@
 		<!--random stuff-->
 		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
 		<title>Timeline--crystal kwok</title>
+    
+                   <!-- fancyBox-->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="../fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+        <script type="text/javascript" src="../fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
 
 
 </head>
@@ -63,6 +74,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('create', 'UA-58103450-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+    
+<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
+	});       
+    
 </script>
 
 
@@ -197,59 +230,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <hr>
 
 <div class="process">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-    <h2 id="final_features">THE PROCESS</h2>
-    <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-lg-10">We conducted <b>user research</b> by testing the differences between the traditional calendar and Timeline by using various use case scenarios, and created <b>low fidelity and high fidelity prototypes</b>.</p>
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <h2 id="final_features">THE PROCESS</h2>
+        <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-lg-10">We conducted <b>user research</b> by testing the differences between the traditional calendar and Timeline by using various use case scenarios, and created <b>low fidelity and high fidelity prototypes</b>.</p>
+        </div>
     </div>
     
-                    <div id="lightbox_normal" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <ul>
-                        <li><img src="../images/timeline/process/user%20research%20thumbnail.png" data-large= "../images/timeline/process/user%20research.png">
-                                <div class="image_title">
-                                    <h5 class="title">user testing</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/timeline/process/wireframe1%20thumbnail.png" data-large= "../images/timeline/process/wireframe1.png">
-                                <div class="image_title">
-                                    <h5 class="title">first wireframe</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/timeline/process/prototype%202.1%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%202.1.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/timeline/process/prototype%202.2%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%202.2.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-        
-                        <li><img src="../images/timeline/process/prototype%202.3.2%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%202.3.2.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/timeline/process/prototype%20with%20end%20times%201%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%20with%20end%20times%201.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-                         <li><img src="../images/timeline/process/prototype%20with%20end%20times%202%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%20with%20end%20times%202.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-                        <li><img src="../images/timeline/process/prototype%20with%20end%20times%203%20thumbnail.jpg" data-large= "../images/timeline/process/prototype%20with%20end%20times%203.jpg">
-                                <div class="image_title">
-                                    <h5 class="title">lo-fi prototype</h5>
-                                </div>
-                        </li>
-                        
+    <div class="row">
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/user%20research.png" title="user research">
+            <img src="../images/timeline/process/user%20research%20thumbnail.png" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/wireframe1.jpg" title="first wireframe">
+            <img src="../images/timeline/process/wireframe1%20thumbnail.png" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%202.1.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%202.1%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>   
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%202.2.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%202.2%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%202.3.2.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%202.3.2%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>  
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%20with%20end%20times%201.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%20with%20end%20times%201%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%20with%20end%20times%202.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%20with%20end%20times%202%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a> 
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/timeline/process/prototype%20with%20end%20times%203.jpg" title="lo-fi prototype">
+            <img src="../images/timeline/process/prototype%20with%20end%20times%203%20thumbnail.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>        
+    
+    </div>
 
 
-                    </ul>
-                    </div> <!--end lightbox normal-->
 <hr>
 
 </div><!--end process-->
