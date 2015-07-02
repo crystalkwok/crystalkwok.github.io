@@ -22,14 +22,14 @@
 }
 
 .concentrationImg img, .otherWorkImg img {
-    padding:1%;
+    padding:1em;
+    margin-bottom:-1%;
 }
 
-
-.typography img{
-    height:200px;
-    margin:40px;
+.lastRowConc {
+    padding:0;
 }
+
 
 #more, #more_info, #more_infot{
     text-decoration: none;
@@ -73,10 +73,10 @@
         padding:0px;   
     }
 
-	.other_work img, .concentration img, .typography img{
+	/*.other_work img, .concentration img, .typography img{
 		height:110px;
         padding:2%;
-	}
+	}*/
 
 
     

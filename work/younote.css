@@ -35,12 +35,16 @@
     padding-top:5px;
 }
 
-#lightbox_normal img{
+/*#lightbox_normal img{
     height:130px;
 }
 
 #lightbox_normal .image_title {
 	width: 150px; height: 150px;
+}*/
+
+.process img {
+    margin-bottom:1em;
 }
 
 
