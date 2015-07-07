@@ -38,6 +38,16 @@
 		<!--random stuff-->
 		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
 		<title>MustAske--crystal kwok</title>
+    
+     <!-- fancyBox-->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="../fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+        <script type="text/javascript" src="../fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
 
 </head>
@@ -63,6 +73,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('create', 'UA-58103450-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
+	});       
+    
 </script>
 
 
@@ -192,6 +224,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="right-side col-md-9 col-lg-9 col-sm-12 col-xs-12">
 <div class="row">
     <div class="titles">
+        <h2>THE PROCESS</h2><br>
+    </div>
+   <div class="processPictures row">
+       <div class="col-md-2 col-lg-2"></div>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/mustaske/wireframe1.jpg" title="initial sketches">
+            <img src="../images/mustaske/wireframe1t.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/mustaske/wireframe2.jpg" title="initial sketches">
+            <img src="../images/mustaske/wireframe2t.jpg" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/mustaske/owner%20professor%20persona.png" title="personas">
+            <img src="../images/mustaske/owner%20professor%20persona%20thumbnail.png" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/mustaske/audience%20student%20persona.png" title="personas">
+            <img src="../images/mustaske/audience%20student%20persona%20thumbnail.png" alt="" class="col-md-2 col-lg-2 col-sm-3 col-xs-3"/>
+        </a>
+    </div>
+</div>    
+    
+    <div class="row">    
+    <hr>
+</div>
+    
+<div class="row">
+    <div class="titles">
         <h2>MUSTASKE DEVELOPMENT AND INTRODUCTION</h2>
     </div>
    <div class="videoWrapper col-md-offset-1 col-lg-offset-1 col-lgl10 col-md-10 col-sm-12">
@@ -199,14 +256,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
     </div><!--end videoWrapper-->
 </div>
+    
+
 <div class="row">    
     <hr>
 </div>
     
 <div class="hidden-sm hidden-xs screenshots">
     <div class="titles row">
-        <h2 class="col-md-6">PROFESSOR VIEW</h2>
-        <h2 cass="col-md-6">STUDENT VIEW</h2>
+        <h2 class="col-md-6">PROFESSOR FLOW/VIEW</h2>
+        <h2 cass="col-md-6">STUDENT FLOW/VIEW</h2>
     </div>
     <div class="row">
         <h4 class="col-md-12">creating a room or entering an existing room</h4>
@@ -238,7 +297,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="hidden-md hidden-lg screenshots">
     <!--professor view-->
     <div class="titles row">
-        <h2 class="col-md-6">PROFESSOR VIEW</h2>
+        <h2 class="col-md-6">PROFESSOR FLOW/VIEW</h2>
     </div>
     <div class="row">
         <h4 class="col-md-12 col-sm-12 col-xs-12">creating a room</h4>
@@ -264,7 +323,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <!--student view-->
     <div class="titles row">
-        <h2 class="col-md-6">STUDENT VIEW</h2>
+        <h2 class="col-md-6">STUDENT FLOW/VIEW</h2>
     </div>
     <div class="row">
         <h4 class="col-md-12 col-sm-12 col-xs-12">entering an existing room</h4>
