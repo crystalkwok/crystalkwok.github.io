@@ -50,7 +50,7 @@ hr{
     display:none;
 }
 
-.add_goal, .timeline, .personal{
+.add_goal, .timeline, .personal, .need_solution{
     display:block;
 }
 

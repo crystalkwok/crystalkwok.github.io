@@ -71,8 +71,17 @@ footer {
     text-decoration: none;
 }
 
-.prototypes img{
+.first .prototypes img{
     border: 2px solid #d8d8d8;
+}
+
+.gray {
+    background-color:gainsboro;
+    padding:1em;
+}
+
+.white {
+    padding:1em;
 }
 
 
