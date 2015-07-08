@@ -36,12 +36,6 @@ html, body {
     margin-top:0.3em;
 }
 
-.navbar a {
-    color:#c1c2c2;
-    text-decoration: none;
-    font-size:0.85em;
-    letter-spacing: 0.03em;
-}
 
 .name {
     padding-left:0;
@@ -283,6 +277,14 @@ footer a:hover {
 	font-size:1em;
     font-family: 'Roboto', sans-serif;
     font-weight:300;
+}
+
+
+.navbar a {
+    color:#c1c2c2;
+    text-decoration: none;
+    font-size:0.85em;
+    letter-spacing: 0.03em;
 }
 
 .body{
