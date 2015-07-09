@@ -283,8 +283,8 @@ footer a:hover {
 .navbar a {
     color:#c1c2c2;
     text-decoration: none;
-    font-size:0.85em;
-    letter-spacing: 0.03em;
+    font-size:0.9em;
+    letter-spacing: 0.1em;
 }
 
 .body{
@@ -360,6 +360,10 @@ b {
 
 .left {
     float:left;
+}
+
+.titles h2, .titles h3 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 

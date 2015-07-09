@@ -3,9 +3,8 @@
      line-height:150%;
  }
 
-.titles h2{
+.titles h3, .titles h2{
     text-align: center;
-    letter-spacing: 0.15em;
     font-weight:700;
 }
 
@@ -50,5 +49,31 @@
 }
 
 .processPictures {
-    margin-bottom:3%;
+    padding:1.5em;
+    margin-bottom:2em;
+
 }
+
+.processPictures img {
+        padding-left:0.5em;
+    padding-right:0.5em;
+    margin-bottom:0.7em;
+}
+
+.description {
+    font-size:1.3em;
+}
+
+.section hr {
+ margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;   
+}
+
+.process {
+    margin-bottom:1em;
+    padding-right:2em;
+    padding-left:2em;
+}
+
