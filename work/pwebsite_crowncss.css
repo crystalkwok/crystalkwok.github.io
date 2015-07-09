@@ -113,11 +113,11 @@ hr{
     display:none;
 }
 
-.goals_maximize , .timeline_maximize, .personal_maximize{
+.goals_maximize , .timeline_maximize, .personal_maximize, .ns_maximize{
     display:none;
 }
 
-.goals_minimize , .timeline_minimize, .personal_minimize{
+.goals_minimize , .timeline_minimize, .personal_minimize, .ns_minimize{
     display:inline;
 }
 

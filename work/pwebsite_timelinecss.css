@@ -75,8 +75,7 @@ b {
     padding-bottom:4%;
 }
 
-.size span {
-    font-weight:600;
+.size b {
     font-style:italic;
 }
 
@@ -87,11 +86,6 @@ b {
     margin-top:1.2em;
 }
 
-.design_choices h2 {
- font-weight:700;
-letter-spacing: 0.15em;
-    text-align: center;
-}
 
 /*display none of the descriptions at first*/
 .fixed_relative_time, .end_time {
@@ -120,11 +114,6 @@ letter-spacing: 0.15em;
     line-height: 160%;
 }
 
-.process, .design_choices{
-    margin-top:4%; 
-    margin-right:0.5em;
-    margin-left:0.5em;
-}
 
 .process img {
     padding:1em;
@@ -138,6 +127,7 @@ letter-spacing: 0.15em;
     font-weight:700;
     letter-spacing: 0.15em;
     font-size:20px;
+    color:#706e6e;
 }
 
 /*fixed and relative time*/
@@ -172,18 +162,10 @@ letter-spacing: 0.15em;
     margin:0px;
 }
 
-#final_features{
- font-weight:700;
-letter-spacing: 0.15em;
-    text-align: center;
+
+.process, .design_choices, .ugh, .features{
+    padding:1.5em;
 }
-
-#final_features span {
-          background-color:#d9dadb;
-    padding:10px;
-}
-
-
 
 
 @media only screen and (max-width:995px){

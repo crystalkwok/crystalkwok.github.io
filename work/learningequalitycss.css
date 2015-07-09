@@ -20,16 +20,6 @@ footer {
 }
 
 
-#title {
-    text-align: center;
-}
-
-
-
-#title span {
-    letter-spacing: 0.17em;
-    font-weight:700;
-}
 
 #description {
     text-align:center;
@@ -55,8 +45,8 @@ footer {
 }
 
 .prototypes {
-    margin-top:4%;
-    margin-bottom:3%;
+    margin-top:5em;
+    margin-bottom:3em;
 }
 
 .right-side a{
@@ -82,6 +72,10 @@ footer {
 
 .white {
     padding:1em;
+}
+
+.first {
+    margin-top:4%;
 }
 
 

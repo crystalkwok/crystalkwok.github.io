@@ -42,6 +42,23 @@ html, body {
 }
 
 
+
+
+*{
+	font-size:1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+
+
+.navbar a {
+    color:#c1c2c2;
+    text-decoration: none;
+    font-size:0.9em;
+    letter-spacing: 0.1em;
+}
+
+
 .ux_navbar{
     display:none;
 }
@@ -68,9 +85,12 @@ html, body {
 }
 
 .dropdown-menu li {
-    letter-spacing:0em;
-    font-size:18px;
+
     display:table-row;
+}
+
+.dropdown-menu a{
+    letter-spacing:0em;
 }
 
 
@@ -146,6 +166,112 @@ footer a:hover {
 .dropdown_ux {
     display:none;
 }
+
+
+
+
+
+.body{
+    position:relative;
+    top:40px;
+    padding-right:3%;
+    padding-top:3%;
+
+}
+
+.rest {
+    padding: 1.8em 2em;
+}
+
+.rest hr {
+    border-top:1px solid #999999;
+    margin-left:3em;
+    margin-right:3em;
+}
+
+.name {
+    letter-spacing:0.15em;
+    font-weight:700;
+}
+
+
+.motivation hr {
+    margin-left:1em;
+    margin-right:1em;
+}
+
+.motivation{
+    color:#000000;
+    font-weight:300;
+    background-color:#f0f3fc;
+    padding-right:2%;
+    padding-left:2%;
+    padding-bottom:2%;
+    margin-top:1em;
+}
+
+.motivation p{
+    padding-top:1%;
+    padding-right:2%;
+    padding-left:2%;
+    padding-bottom:1%;
+}
+
+.motivation a{
+        color:#e6817d;
+    font-weight:400;
+}
+
+
+
+.motivation a:hover{
+    color:#82d3a5;
+    text-decoration: none;
+}
+
+.motivation span{
+    color:#000000;
+    font-weight:500;
+    text-align: center;
+}
+
+b {
+    font-weight:500;
+}
+
+.right{
+    float:right;
+}
+
+.left {
+    float:left;
+}
+
+.titles h2, .titles h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+}
+
+.title h2, .title h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+}
+
+.titles, .title {
+    margin-bottom:1.3em;
+}
+
+.description_title {
+    font-size:1.25em;
+    font-weight:400;
+    
+}
+
+.right-side {
+    padding:1.5em;
+}
+
+
 
 
 
@@ -268,103 +394,6 @@ footer a:hover {
 /*what*/
 
 
-
-
-
-
-
-*{
-	font-size:1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight:300;
-}
-
-
-.navbar a {
-    color:#c1c2c2;
-    text-decoration: none;
-    font-size:0.9em;
-    letter-spacing: 0.1em;
-}
-
-.body{
-    position:relative;
-    top:40px;
-    padding-right:3%;
-    padding-top:3%;
-
-}
-
-.rest {
-    padding: 1.8em 2em;
-}
-
-.rest hr {
-    border-top:1px solid #999999;
-    margin-left:3em;
-    margin-right:3em;
-}
-
-.name {
-    letter-spacing:0.15em;
-    font-weight:700;
-}
-
-
-.motivation hr {
-    margin-left:1em;
-    margin-right:1em;
-}
-
-.motivation{
-    color:#000000;
-    font-weight:300;
-    background-color:#f0f3fc;
-    padding-right:2%;
-    padding-left:2%;
-    padding-bottom:2%;
-}
-
-.motivation p{
-    padding-top:1%;
-    padding-right:2%;
-    padding-left:2%;
-    padding-bottom:1%;
-}
-
-.motivation a{
-        color:#e6817d;
-    font-weight:400;
-}
-
-
-
-.motivation a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-.motivation span{
-    color:#000000;
-    font-weight:500;
-    text-align: center;
-}
-
-b {
-    font-weight:500;
-}
-
-.right{
-    float:right;
-}
-
-.left {
-    float:left;
-}
-
-.titles h2, .titles h3 {
-    font-family: 'Open Sans', sans-serif;
-}
 
 
 

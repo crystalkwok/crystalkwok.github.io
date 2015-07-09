@@ -22,13 +22,16 @@
     font-weight:700;
     letter-spacing:0.15em;
     color:#000000;
-    font-family: 'Lato', sans-serif;
 }
 
 
 
 .finalprototype, .process{
     padding:2%;
+}
+
+.process {
+    padding-top:0;
 }
 
 .firstprototype {

@@ -1,9 +1,5 @@
 @charset 'UTF-8';
 
-.right-side h2 {
-    font-weight:700;
-    letter-spacing: 0.15em;
-}
 
 .right-side {
     padding-right:4%;
@@ -56,6 +52,9 @@
     padding:1em;
 }
 
+/*.body {
+    padding-bottom:1em;
+}*/
 @media only screen and (max-width:995px){
     .interface img {
         margin-top:1%;
