@@ -1,8 +1,3 @@
-.right-side {
-    padding-left:3%;
-    padding-right:3%;
-}
-
 .right{
     float:right;
 }
@@ -11,23 +6,9 @@
     float:left;
 }
 
-.first_prototype{
-    margin-top:3%;
-}
-
 
 .video {
     margin-bottom:2%;
-}
-
-.paper_prototypes, .screenshots_final{
-   
-    padding-top:3%;
-    padding-bottom:5%;
-}
-
-.screenshots_final {
-    margin-top:1%;
 }
 
 
@@ -50,10 +31,6 @@ iframe {
 	height: 100%;
 }
 
-.final_prototype, .need_solution {
-    padding-top:5%;
-    padding-bottom:5%;
-}
 
 
 .screenshots_final img, .paper_prototypes img{
@@ -67,9 +44,6 @@ iframe {
 .video p, .final_prototype p{
     line-height:160%;
 }
-
-
-
 
 .description a{
         color:#db5d58;

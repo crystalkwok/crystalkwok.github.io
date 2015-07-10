@@ -1,104 +1,10 @@
 @charset 'UTF-8';
 
-
-
-.content {
-    margin-top:-2%;
-    padding-left:4%;
-    padding-right:4%;
-}
-
-
-hr{
-    color:#000000;
-    font-weight:500;
-}
-
-
-
-.info {
-    margin-top:-2%;
-}
-
-
-.features p, .features li{
-    color:#000000;
-}
-
-
-
 .features {
     background-color:#ffffff;
-        padding-right:3%;
-    padding-left:3%;
-}
-
-.features a{
-        color:#e6817d;
-    font-weight:400;
 }
 
 
-
-.features a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-
-.feature_description {
-    display:none;
-}
-
-.add_goal, .timeline, .personal, .need_solution{
-    display:block;
-}
-
-
-.timeline p , .problem p{
-    line-height: 180%;
-}
-
-
-
-
-.timeline img{
-    margin-bottom:40px;
-}
-
-.small {
-    display:none;
-}
-
-
-
-.skip a{
-    text-align:center;
-}
-
-.feature_description a, .description a, .motivation a{
-    color:#db5d58;
-}
-
-.description p{
-    line-height: 160%;
-    padding:0px;
-    margin-bottom:5px;
-}
-
-.features h2{
-
-    padding:8px;
-     letter-spacing: 0.15em;
-    font-weight:700;
-}
-
-
-
-.features a:hover, .motivation a:hover{
-    text-decoration: none;
-    color:#82d3a5;
-}
 
 
 #goals, #assignments_tests, #todo, #event_class, #timeline, #process, #personal {
@@ -106,28 +12,20 @@ hr{
 }
 
  .minimize, .maximize{
-    height:27px;
+    height:1.3em;
 }
 
-.minimize {
+.maximize{
     display:none;
-}
-
-.goals_maximize , .timeline_maximize, .personal_maximize, .ns_maximize{
-    display:none;
-}
-
-.goals_minimize , .timeline_minimize, .personal_minimize, .ns_minimize{
-    display:inline;
 }
 
 .the_process img{
-    padding:1em;
+    padding:0.5em;
 }
 
 
 
-@media only screen and (max-width:700px){
+/*@media only screen and (max-width:700px){
     #lightbox_normal img{
         height:150px;
     }   
@@ -139,7 +37,7 @@ hr{
 
     
 
-}
+}*/
 
 
 @media only screen and (max-width:995px){
@@ -154,27 +52,5 @@ hr{
         display:block;   
     }
     
-    .picleft, .picright{
-        width:100%;
-        height:100%;
-        float:none;
-    }
-
-    
-    .right{
-        float:none;   
-    }
-
-
-    
-    .features p {
-        line-height:160%;   
-    }
-
-    .info {
-        margin-top:-10%;   
-    }
-    
-
 }
 

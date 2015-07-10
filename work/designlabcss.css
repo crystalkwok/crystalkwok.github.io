@@ -1,19 +1,11 @@
 @charset 'UTF-8';
 
 
-.right-side {
-    padding-right:4%;
-    padding-left:4%;
-}
-
 .poster img {
     border: 2px solid #d8d8d8;
     padding:2%;
 }
 
-.poster {
-    margin-bottom:2%;
-}
 
 .interfaceFinal img {
     border: 2px solid #d8d8d8;

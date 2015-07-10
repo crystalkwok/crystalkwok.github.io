@@ -1,53 +1,23 @@
 @charset 'UTF-8';
 
-.motivation p{
-    line-height:170%;
-}
 
 .prototypes img {
-    margin-top:2%;
-    margin-bottom:2%;
+    padding:1em;
 }
 
-footer {
-    margin-top:5%;
-}
 
 
 .wireframes img {
-    margin-bottom:2%;
-    padding:1%;
+padding:0.5em;
 }
 
 
-
-#description {
-    text-align:center;
-}
-
-.right-side {
-    padding-right:3%;
-    padding-left:3%;
-}
-
-.process, .userResearch{
-    margin-bottom:5%;
-    
-}
-
-.userResearch, .future{
-    margin-top:4.5%;
-}
 
 .userResearch img {
     margin-top:2em;
     margin-bottom:1em;
 }
 
-.prototypes {
-    margin-top:5em;
-    margin-bottom:3em;
-}
 
 .right-side a{
         color:#e6817d;
@@ -85,9 +55,6 @@ footer {
     border: 2px solid #e8e7e7;
 }
 
-.first {
-    margin-top:4%;
-}
 
 
 @media only screen and (max-width:995px){

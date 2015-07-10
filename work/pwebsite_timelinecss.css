@@ -14,11 +14,6 @@
     padding: 1.8em 2em;
 }
 
-.rest hr {
-    border-top:1px solid #999999;
-    margin-left:3em;
-    margin-right:3em;
-}
 
 .name {
     letter-spacing:0.15em;
@@ -26,31 +21,6 @@
 }
 
 
-.motivation hr {
-    margin-left:1em;
-    margin-right:1em;
-}
-
-.motivation{
-    color:#000000;
-    font-weight:300;
-    background-color:#f0f3fc;
-    padding-right:2%;
-    padding-left:2%;
-    padding-bottom:2%;
-}
-
-.motivation p{
-    padding-top:1%;
-    padding-right:2%;
-    padding-left:2%;
-    padding-bottom:1%;
-}
-
-.motivation a{
-        color:#e6817d;
-    font-weight:400;
-}
 
 
 
@@ -69,11 +39,6 @@ b {
     font-weight:500;
 }
 
-
-.problem_solution {
-    margin-top:2%;
-    padding-bottom:4%;
-}
 
 .size b {
     font-style:italic;
@@ -116,12 +81,9 @@ b {
 
 
 .process img {
-    padding:1em;
+    padding:0.5em;
 }
 
-.design_choices {
-    margin-bottom:4%;
-}
 
 #design_titles{
     font-weight:700;
@@ -147,10 +109,6 @@ b {
     display:none;
 }
 
-.features {
-    margin-top:5%;
-    margin-bottom:8%;
-}
 
 .features li:before {
     color:#5d5fa1;
@@ -162,10 +120,10 @@ b {
     margin:0px;
 }
 
-
-.process, .design_choices, .ugh, .features, .need_solution{
-    padding:1.5em;
+.problem_solution {
+    margin-top:1.5em;
 }
+
 
 
 @media only screen and (max-width:995px){

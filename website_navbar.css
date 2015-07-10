@@ -212,7 +212,7 @@ footer a:hover {
     padding-right:2%;
     padding-left:2%;
     padding-bottom:2%;
-    margin-top:0.5em;
+    margin-top:0.7em;
 }
 
 .motivation p{
@@ -275,8 +275,35 @@ b {
 }
 
 .right-side {
-    padding:1.5em;
+    padding-top: 1.5em;
+    padding-bottom:1.5em;
+    padding-right:4.3em;
+    padding-left:4.3em;
+    
 }
+
+.section {
+    padding-bottom:4em;
+    padding-top:2.2em;
+}
+
+.first_section {
+    padding-top:0;
+    padding-bottom:3.5em;
+}
+
+.motivation a, .right-side a{
+        color:#e6817d;
+    font-weight:400;
+}
+
+
+
+.motivation a:hover, .right-side a:hover{
+    color:#82d3a5;
+    text-decoration: none;
+}
+
 
 
 
@@ -362,6 +389,10 @@ b {
         color:#ffffff;
 
     }
+    
+    .motivation {
+        margin-top:-1.8em;   
+    }
 
 }
 
@@ -388,13 +419,13 @@ b {
     
 }
 
-@media only screen and (max-width:450px){
+/*@media only screen and (max-width:450px){
 	.triangle{
 		margin:0;
 		margin-left:30%;
 		margin-right:55%;
 	}
-}
+}*/
 
 
 
@@ -416,9 +447,4 @@ b {
     }
 }
 
-@media only screen and (max-width:995px){
-    .motivation {
-        margin-top:-6%; 
-    }
-}
 

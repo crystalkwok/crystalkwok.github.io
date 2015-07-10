@@ -16,37 +16,14 @@
 	float:left;
 }*/
 
-.problem {
-    padding:3%;
-}
 
-.right-side {
-    padding-right:2%;
-    padding-bottom:2%;
-}
-
-.right-side a{
-        color:#e6817d;
-    font-weight:400;
-    text-decoration: none;
-}
-
-
-
-
-
-.right-side a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
 
 .intropics img{
-    margin-top:2%;
+    padding:0.5em;
 }
 
 .finalprototypepics img{
-    margin-top:1%;
-    margin-bottom:2%;
+    padding:0.7em;
 }
 
 .finalprototypepics {
@@ -65,15 +42,8 @@ width:100%;
     margin-left:-20px;
 }
 
-.content{
-	padding:1% 4%;
-}
 
 .process img {
-    margin-bottom:1em;
-}
-
-.process {
     margin-bottom:1em;
 }
 

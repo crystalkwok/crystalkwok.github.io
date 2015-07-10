@@ -1,42 +1,10 @@
 @charset 'UTF-8';
 
-.right-side {
-    padding-left:2%;
-    padding-right:2%;
-}
-
-#final_prototype_section{
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:0.15em;
-    color:#e47980;
-    font-family: 'Lato', sans-serif;
-}
 
 .final_prototype p{
     line-height:190%;
 }
 
-#section_title{
-    font-size:26px;
-    font-weight:700;
-    letter-spacing:0.15em;
-    color:#000000;
-}
-
-
-
-.finalprototype, .process{
-    padding:2%;
-}
-
-.process {
-    padding-top:0;
-}
-
-.firstprototype {
-    padding-top:5px;
-}
 
 /*#lightbox_normal img{
     height:130px;
@@ -48,13 +16,6 @@
 
 .process img {
     margin-bottom:1em;
-}
-
-
-
-.final_prototype {
-    margin-bottom:5%;
-    margin-top:4%;
 }
 
 
