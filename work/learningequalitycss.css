@@ -62,4 +62,11 @@ padding:0.5em;
     .parallelResearchP {
         margin-top:2%;   
     }
+    
+    .gray h4, .white h4 {
+    font-weight:400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top:2em;
+    color:#838282;
+}
 }
