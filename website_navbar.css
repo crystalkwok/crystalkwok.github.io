@@ -73,15 +73,20 @@ html, body {
 
 .dropdown a{
 	font-size:39px;
-    font-family: 'Karla', sans-serif;
     text-decoration: none;
 }
 
 .dropdown-menu {
-  font-size: 16px;
   margin-top: 5px;
   min-width: 105px;
-    left:60%;
+    left:61%;
+
+}
+
+.dropdown-menu>li>a {
+        font-family:'Roboto', sans-serif;
+    font-weight:300;
+    
 }
 
 .dropdown-menu li {
@@ -207,7 +212,7 @@ footer a:hover {
     padding-right:2%;
     padding-left:2%;
     padding-bottom:2%;
-    margin-top:1em;
+    margin-top:0.5em;
 }
 
 .motivation p{
@@ -247,12 +252,12 @@ b {
     float:left;
 }
 
-.titles h2, .titles h3 {
+.titles h2, .titles h3, .titles h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight:700;
 }
 
-.title h2, .title h3 {
+.title h2, .title h3, .titles h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight:700;
 }
@@ -264,7 +269,9 @@ b {
 .description_title {
     font-size:1.25em;
     font-weight:400;
-    
+    font-family:'Open Sans', sans-serif;
+    font-style: italic;
+    color:#989898;
 }
 
 .right-side {

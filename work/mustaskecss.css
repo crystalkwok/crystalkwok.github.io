@@ -75,3 +75,14 @@
     padding-left:2em;
 }
 
+.right-side a{
+    color:#db5d58;
+    font-weight:400;
+}
+
+
+.right-side a:hover{
+    color:#82d3a5;
+    text-decoration:none;
+}
+

@@ -15,9 +15,6 @@
     margin-top:3%;
 }
 
-.first_prototype p{
-    color:#000000;
-}
 
 .video {
     margin-bottom:2%;
@@ -53,7 +50,7 @@ iframe {
 	height: 100%;
 }
 
-.final_prototype {
+.final_prototype, .need_solution {
     padding-top:5%;
     padding-bottom:5%;
 }
@@ -73,13 +70,6 @@ iframe {
 
 
 
-
-
-#section_title{
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:0.15em;
-}
 
 .description a{
         color:#db5d58;
