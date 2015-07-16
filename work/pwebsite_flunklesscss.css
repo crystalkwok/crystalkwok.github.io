@@ -52,6 +52,11 @@ width:100%;
     font-size:1.1em;
 }
 
+#problem {
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+}
+
 
 @media only screen and (max-width:1200px){
 	.problem_content3 img{
