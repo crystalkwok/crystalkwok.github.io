@@ -271,6 +271,10 @@ background-color: #f0f3fc;
     #hello {
         line-height:100%;   
     }
+    
+    .jumbotron p{
+        text-align: center;   
+    }
 
     
     .project{
@@ -279,8 +283,8 @@ background-color: #f0f3fc;
     }
 
     .view {
-        margin-top:10%;
-        margin-bottom:10%;
+        margin-top:0.3em;
+        margin-bottom:0.3em;
     }
     
     
@@ -297,15 +301,9 @@ background-color: #f0f3fc;
     
     .description {
         margin-top:15%;
-        text-align:center;
         line-height:150%;
     }
-    
-    #hello {
-        text-align: center;   
-    }
-  
-    
+
     #logo{
         margin-top:-1%;
     }
