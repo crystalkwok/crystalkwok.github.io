@@ -38,7 +38,7 @@ margin-top:9%;
 
 .headline {
     text-align:center;
-    margin-top:2%;
+    margin-top:4%;
     font-style:italic;
 }
 
@@ -52,8 +52,12 @@ margin-top:9%;
     text-decoration: none;
 }
 
+.headline p{
+    font-size: 1.5em;
+}
+
 #hello{ /*hello word*/
-	font-size:60px;
+	font-size:45px;
 	font-weight:700;
 }
 
@@ -62,8 +66,8 @@ margin-top:9%;
       background-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  border: 2px solid #c1c2c2;
-    border-radius: 100px 100px 100px 100px;
+  /*border: 2px solid #c1c2c2;
+    border-radius: 100px 100px 100px 100px;*/
     display:inline-block;
   color: #c1c2c2;
     vertical-align: center;
@@ -80,9 +84,9 @@ margin-top:9%;
 
 
 .view:hover{
-	color:#3a3a3a;
-    background-color:#ffffff;
-      border: none;
+	color:#ffffff;
+   /* background-color:#ffffff;
+      border: none;*/
     font-weight:400;
     text-decoration: none;
 }
