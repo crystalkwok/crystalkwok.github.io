@@ -15,7 +15,7 @@ html, body {
 	background-color: #3a3a3a;
 	top:0;
 	width:100%;
-	height:4.3em;
+	height:4.4em;
 	z-index:10;
     padding-top:7px;
 }
@@ -36,6 +36,28 @@ html, body {
     margin-top:0.5em;
 }
 
+.navbar .description {
+    font-weight:300;
+    letter-spacing: 0.1em;
+    font-size:1em;
+}
+
+.navbar .name {
+    font-weight:500;
+    font-size:1.2em;
+}
+
+.leftside li {
+    padding-right:0px;
+    padding-left:10px;
+}
+
+
+.navbar img {
+    width:43px;   
+    margin-top:-6px;
+}
+
 
 .name {
     padding-left:0;
@@ -43,6 +65,13 @@ html, body {
 
 
 
+.navbar .activea {
+    border-bottom:4px solid #ffffff !important;
+    color:#ffffff;
+    padding-bottom:20px;
+    margin-top:1em;
+    font-weight:400;
+}
 
 *{
 	font-size:1em;
@@ -72,7 +101,7 @@ html, body {
 }
 
 .dropdown a{
-	font-size:39px;
+	font-size:2em;
     text-decoration: none;
 }
 
@@ -99,13 +128,7 @@ html, body {
 }
 
 
-.navbar .activea {
-    border-bottom:4px solid #ffffff !important;
-    color:#ffffff;
-    padding-bottom:16px;
-    margin-top:1em;
-    font-weight:400;
-}
+
 
 .dropdown-menu .activea {
     border-top:0px;
@@ -122,7 +145,7 @@ html, body {
 
 .icon-menu{
 	display:none;
-	font-size:39px;
+	font-size:30px;
     font-family: 'Karla', sans-serif;
 }
 
@@ -163,7 +186,7 @@ footer a:hover {
 
 .dropdown_ux a{
     letter-spacing: 0em;
-    font-size:27px;
+    font-size:1.35em;
     text-align:center;
     color:#606060;
 }
@@ -185,7 +208,7 @@ footer a:hover {
 }
 
 .rest {
-    padding: 1.8em 2em;
+    padding: 2em 2em;
 }
 
 .rest hr {
@@ -327,12 +350,39 @@ b {
 		display:none;
 	}
     
+        .navbar_description {
+        font-size:15px;
+        letter-spacing: 0.1em;
+    }
+    
+    .left {
+        padding:0 0;   
+    }
+    
+    
+    .left .top{
+        margin-bottom:-5px;
+        margin-top:3px;
+        padding:0 0;
+    }
+    
+    .left .bottom {
+        margin-top:-6px;  
+        margin-bottom:5px;
+        padding:0 0;
+    }
+    
+    .smallLogo {
+        padding:.5em .5em;
+    }
+    
 
 
 	.icon-menu{
 		display:block;
 		height:100%;
         letter-spacing: 0.10em;
+        font-size:25px;
 	}
 
 
@@ -401,6 +451,28 @@ b {
 
 }
 
+@media only screen and (max-width:768px){
+        .icon-menu {
+        font-size:18px;   
+    }
+    
+    .navbar_description {
+        font-size:12px;   
+    }
+    
+    .left .top{
+        margin-bottom:-3px;
+        margin-top:4px;
+        padding:0 0;
+    }
+    
+    .left .bottom {
+        margin-top:-2px;  
+        margin-bottom:5px;
+        padding:0 0;
+    }
+}
+
 @media only screen and (max-width: 670px){
     .triangle {
         margin-left:40%;   
@@ -413,29 +485,42 @@ b {
 	}
 
 	.dropdown a{
-		font-size:25px;
+		font-size:1.3em;
 	}
     
     .dropdown_ux a{
-        font-size:22px;   
+        font-size:1.15em;   
     }
     
     
     
 }
 
-/*@media only screen and (max-width:450px){
-	.triangle{
-		margin:0;
-		margin-left:30%;
-		margin-right:55%;
-	}
-}*/
-
-
-
-/*what*/
-
+@media only screen and (max-width:557px){
+        .smallLogo {
+        height:2.7em;
+        width:2.7em;
+        padding-top:4px;
+        padding-left:4px;
+    }
+    
+    .left .top, .left .bottom {
+        margin-left:3px;
+    }
+    
+    .menuBar {
+        width:25%;   
+        padding:0 0;
+    }
+    
+        .icon-menu {
+        font-size:13px;   
+    }
+    
+    .navbar_description {
+        font-size:9px;   
+    }
+}
 
 
 

@@ -14,7 +14,7 @@
 
 		<!--css-->
         <link href="website_navbar.css" rel="stylesheet" />
-		<link href="pwebsite_uxcss.css" rel="stylesheet" />
+		<link href="indexcss.css" rel="stylesheet" />
             <link href="font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
 
 		<!--fonts-->
@@ -63,8 +63,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--normal nav bar-->
 		<div class="navbar">
 			<div class="container">
-				<ul class="pull-left">
-					<li>CRYSTAL KWOK</li>
+				<ul class="pull-left leftside">
+                    <img src="images/incasedorisscrewsup.png">
+					<li class="name">CRYSTAL KWOK</li>
+                    <li class="description">user experience design & research</li>
 				</ul>
 				<ul class="pull-right top_gray">
 					<div class="right">
@@ -77,7 +79,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li><a href="work/crown.html" >CROWN</a></li>
                                 <li><a href="work/flunkless.html">FlunkLess</a></li>
                                 <li><a href="work/mustaske.html">MustAske</a></li>
-                                <li><a href="work/younote.html">YouNote</a></li>
                                 <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
                       <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
                             </ul>
@@ -88,21 +89,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</ul>
 
 			</div>
-		</div>
+		</div><!--end navbar-->
     
 
         <!--small nav bar-->
     
 		<div class="navbar_dropdown">
-				
-				<a href="#"  class="icon-menu menu-left"><i class="fa fa-bars fa-1"></i> MENU</a>
-				<a href="#" class= "icon-menu menu-right">CRYSTAL KWOK</a>
+            <div class="container">
+            <div class="row">
+                
+                    <img src="images/incasedorisscrewsup.png" class="col-sm-1 col-xs-1 smallLogo">
+               
+                <div class="left col-sm-7 col-xs-7">
+                    <a href="#" class= "icon-menu menu-left top col-sm-12 col-xs-12">CRYSTAL KWOK</a>
+                    <a href="#" class="icon-menu menu-left bottom col-sm-12 col-xs-12"><span class="navbar_description">user experience design & research</span></a>
+                </div>
+                <div class="col-sm-4 col-xs-3 menuBar">
+                    <a href="#"  class="icon-menu menu-right"><i class="fa fa-bars fa-1"></i> MENU</a>
+                </div>
+            </div><!--end row-->
+            </div><!--end container-->
 			
 			<div class="dropdown">
 			<ul class="dropdown2">
-			</br></br>
-				<li class="pull-left"><a href="#"  class="close">close</a></li>
-			</br></br><br>
+			
+				<!--<li class="pull-left"><a href="#"  class="close">close</a></li>
+			</br></br>-->
 				<li><a href="index.html" class="activea">work</a> &nbsp;
                     | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
                     <ul class="dropdown_ux">
@@ -113,7 +125,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li><a href="work/crown.html" >CROWN</a></li>
                                 <li><a href="work/flunkless.html">FlunkLess</a></li>
                                 <li><a href="work/mustaske.html">MustAske</a></li>
-                                <li><a href="work/younote.html">YouNote</a></li>
                                 <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
                       <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
 
@@ -124,7 +135,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</br>
 			</ul>
 			</div>
-		</div>
+		</div><!--end navbar dropdown-->
 
 
 		<script>
@@ -157,99 +168,167 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 		</script>
 
+        <!--<div class="container story">
+            <div class="row">
+                <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 col-lg-12">designing for cognitive change</p>
+            </div>
+        </div>-->
 
-	
-		<div class="jumbotron">
-			<div class="container">
-				<div class="row">
-                    <div class="col-md-2 col-sm-2 col-xs-1"></div>
-					<div class="logo col-md-3 col-sm-8 col-xs-10">
-					   <img id="logo" src="images/incasedorisscrewsup.png" class="col-md-10 col-sm-12 col-xs-12">
-					</div>
-				
-			     
-				<p class="hidden-sm hidden-xs description col-md-6 col-sm-10 col-xs-10">
-                    <span id ="hello">CRYSTAL KWOK</span><br>
-                    user experience + interaction <br>design &amp; research</br>
-					</p>
-				
-                    <div class="col-md-2"></div>
-                
-				</div><!--end row-->
-                <div class="description hidden-md hidden-lg row">
-                    <p class="col-sm-12 col-xs-12" id="hello">CRYSTAL KWOK</p><p class="col-sm-12 col-xs-12">user experience + interaction design & research</p>
-                </div>
-                <br>
-                <div class="headline row">
-                    <a href="work/timeline.html"><p>how can we view what's important in our lives? &nbsp; <i class="fa fa-arrow-circle-right"></i></a></p>
-
-                </div>
-                <br>
-                <div class="row viewa">
-                    <div style="margin: 0 auto; text-align: center">
-                    <a href="#" class="view"><i class="fa fa-angle-down"></i></a>
-                    </div>
-                </div>
-                <br>
-			</div>
-		</div>  <!--end jumbotron-->
-
-
-		<!--<div class="trianglerec">
-			<div class="container">
-					<div class="triangle"></div>
-			</div>
-		</div>-->
+<div class="container">
+    <div class="row jumbotronimage">
+        <a href="work/timeline.html"><img src="images/original%20nexus%205.2.png" class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12 noPadding"></a>
+    </div>
+</div>
         
-        <div class="row story">
 
-            <p class="col-md-12 col-sm-12 col-xs-12 col-lg-12"><span>designing for cognitive change and emotional engagement through redefining common experiences</span></p>
-        </div>
 
 
 		<div class="ux_work">
 			<div class="container">
-                <div class="row currentpics">
-                    <div class="col-md-6 col-sm-12 col-xs-12 project">
-                            <div class="row">
-                                <a href="work/designlab.html"><img src="images/designlab.jpg" class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12"></a>
-                                <div class="col-md-1"></div>
-                            </div>
+                <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12 noPadding">
+                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 noPadding paddingRight">
+                        <div>
+                      <!--  <p class="col-md-12 noPadding section_title">experience</p>-->
+                            <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 currentJobDescription">Currently designing the experience and flow for the people involved in logistics at <span id="title">CASESTACK</span></p>
+                       <a href="https://ww2.casestack.com/" target="_blank">
+                           <img src="images/casestack2.png" class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                        </a>
+                      </div>
                         
-                        <div class="row">
-                         <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">I currently conduct Human-Computer Interaction research at the <a href="http://designlab.ucsd.edu/" target="_blank">Design Lab</a> with <a href="http://pages.ucsd.edu/~cmhicks/" target="_blank">Dr. Catherine Hicks</a> and <a href="http://vineetp13.github.io/" target="_blank">Vineet Pandey</a>, with the lab headed by <a href="http://www.jnd.org/" target="_blank">Don Norman</a>, <a href="http://hci.ucsd.edu/hollan/" target="_blank">Jim Hollan</a>, and <a href="http://d.ucsd.edu/srk/" target="_blank">Scott Klemmer</a>.  We are currently exploring how to improve peer feedback, with <a href="https://www.peerstudio.org/" target="_blank">PeerStudio</a> (with Stanford) and <a href="https://www.oppia.org/"  target="_blank">Oppia</a> (with Google affiliates).</p>  <br> </div>
-                    </div><!--end col 6-->
-                    
-                    
-                    <div class="col-md-6 col-sm-12 col-xs-12 project">
+                        <div class="oppia">
+                            <a href="https://www.oppia.org/" target="_blank">
+                                <img src="images/oppia.png" class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-offset-2 col-sm-8 col-xs-12">
+                            </a>
+                            <p class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-offset-1 col-sm-10 col-xs-12 oppiaDescription"><span class="previousExperience">Currently contributing to the design efforts with a <a href="http://techcrunch.com/2014/02/26/meet-oppia-googles-new-open-source-project-that-lets-anyone-create-an-interactive-learning-experience/" target="_blank">Google Open Source project</a></span></p>
                         
-                        <div class="row">
-                            <a href="work/learningequality.html"><img src="images/learninequality.png" class= "col-md-offset-1 col-md-10 col-sm-12 col-xs-12"></a>
-                            <div class="col-md-1"></div>
                         </div>
-                        
-                         <div class="row">
-                             <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">I am also a user experience design intern at <a href="https://learningequality.org/" target="_blank">Learning Equality</a>, where I am currently designing the experience and interface of teachers curating content for universal access to high quality education. </p><br>
-                        <div class="col-md-1"></div>
-                        </div>
-                    </div> <!--end col 6-->
-                </div>
-                
-                <hr>
-				<div class="row">
 
                     
-                <div class="timeline project col-md-4 col-sm-12 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <a href="work/timeline.html"><img src="images/timeline.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                             <p id="uxwork_description"><span id="title"><b>TIMELINE</b></span> <br>mobile app that visualizes people's personal events based on priority in a vertical timeline view</p>
-					           <p id="uxwork_note"><i>ux/ui design & user research<br>research with Professor Jim Hollan</i></p>
+                    </div>
+                    <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 noPadding">
+                        <a href="work/designlab.html"><img src="images/designlab.jpg" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 noPadding previousExperience">
+                            <span id="title">
+                                <a href="http://designlab.ucsd.edu/" target="_blank"><b>DESIGN LAB</b></a>
+                            </span><br>Human-Computer Interaction research on peer feedback,
+                        with <a href="http://pages.ucsd.edu/~cmhicks/" target="_blank">Catherine Hicks</a> and <a href="http://vineetp13.github.io/" target="_blank">Vineet Pandey</a>, with the lab headed by <a href="http://www.jnd.org/" target="_blank">Don Norman</a>, <a href="http://hci.ucsd.edu/hollan/" target="_blank">Jim Hollan</a>, and <a href="http://d.ucsd.edu/srk/" target="_blank">Scott Klemmer</a></p>
+                        
+                        
+                        <a href="work/learningequality.html"><img src="images/learninequality.png" class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding learningEquality"></a>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 noPadding previousExperience">
+                            <span id="title">
+                                <a href="https://learningequality.org/" target="_blank"><b>LEARNING EQUALITY</b></a>
+                            </span>
+                        <br>previously designed the content curation experience</p>
+                    
+                    </div>
+                </div>
+                </div><!--end roww-->
+                
+                <hr>
+            <div class="hidden-lg hidden-md col-sm-12 col-xs-12 noPaddingSmall">
+
+                    
+                <div class="timeline project col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <a href="work/timeline.html"><img src="images/timeline.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                             <p id="uxwork_description"><span id="title">TIMELINE</span> <br><span class="previousExperience">visualizing people's personal events based on priority</span></p>
+					           <p class="previousExperience"><i>ux/ui design & user research with Jim Hollan</i></p>
                             </div>
                     </div>
        
 
+                </div><!--end timeline-->
+
+                       
+                <div class="myeplay project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>MYEPLAY</b></span> &nbsp;<br><span class="previousExperience">eye-tracking based entertainment suite for patients with Locked-In Syndrome</span></p>
+                            <p class="previousExperience"><i>ux/ui/interaction design</i></p>
+                        </div>
+                    </div>
+                    
                 </div>
+                    
+                    <div class="crown project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>CROWN</b></span> &nbsp;<br><span class="previousExperience">goal-based time management website</span></p>
+						<p class="previousExperience"><i>ux/ui design & front-end development<br>top design chosen by instructors</i></p>
+                        </div>
+                    </div>
+                    
+                </div> 
+                               
+
+                    
+                    
+      
+
+
+			
+                 <div class="flunkless  project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/flunkless.html"><img src="images/classroom.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>FLUNKLESS</b></span><br><span class="previousExperience">web-based synchronous communication during lecture with students and professors</span></p>
+						<p class="previousExperience"><i>user research<br>top design chosen by instructors</i></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="mustaske project col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <a href="work/mustaske.html"><img src="images/mustaske.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                             <p id="uxwork_description"><span id="title"><b>MUSTASKE</b></span><br><span class="previousExperience">live chat application that uses voting of questions and polls to facilitate in class lectures</span></p>
+                                <p class="previousExperience"><i>ux/ui design, front-end development</i></p>
+					   
+                            </div>
+                    </div>
+
+                </div> 
+                
+                  <div class="programming project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="https://github.com/crystalkwok" target="_blank"><img src="images/programming%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>PROGRAMMING PROJECTS</b></span> &nbsp;<br><span class="previousExperience">Connect Four, Huffman Coding, Six Degrees of Kevin Bacon, etc.</span></p>
+						<p class="previousExperience"><i>back-end development : Java, C, C++</i></p>
+                        </div>
+                    </div>
+                    
+                </div> 
+
+			
+
+				
+                               
+                
+            </div>    <!--end sm and xs-->
+                
+            <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 hidden-xs hidden-sm noPadding">
+				<div class="row">
+
+                    
+                <div class="timeline project col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <a href="work/timeline.html"><img src="images/timeline.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                             <p id="uxwork_description"><span id="title">TIMELINE</span> <br><span class="previousExperience">visualizing people's personal events based on priority</span></p>
+					           <p class="previousExperience"><i>ux/ui design & user research with Jim Hollan</i></p>
+                            </div>
+                    </div>
+       
+
+                </div><!--end timeline-->
                     
                   <!--  <div class="fle project col-md-4 col-sm-12 col-xs-12">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -262,23 +341,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                 </div> -->
                        
-                <div class="myeplay project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>MYEPLAY</b></span> &nbsp;<br>eye-tracking based entertainment suite for patients with Locked-In Syndrome</p>
-                            <p id="uxwork_note"><i>ux/ui/interaction design</i></p>
+                <div class="myeplay project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>MYEPLAY</b></span> &nbsp;<br><span class="previousExperience">eye-tracking based entertainment suite for patients with Locked-In Syndrome</span></p>
+                            <p class="previousExperience"><i>ux/ui/interaction design</i></p>
                         </div>
                     </div>
                     
                 </div>
                     
-                    <div class="crown  project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>CROWN</b></span> &nbsp;<br>goal-based time management website</p>
-						<p id="uxwork_note"><i>ux/ui design & front-end development<br>top design chosen by instructors</i></p>
+                    <div class="crown project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>CROWN</b></span> &nbsp;<br><span class="previousExperience">goal-based time management website</span></p>
+						<p class="previousExperience"><i>ux/ui design & front-end development<br>top design chosen by instructors</i></p>
                         </div>
                     </div>
                     
@@ -292,12 +371,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 			
-                 <div class="flunkless  project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/flunkless.html"><img src="images/classroom.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>FLUNKLESS</b></span><br>web-based synchronous communication between professors, TAs, and students during lecture</p>
-						<p id="uxwork_note"><i>user research<br>top design chosen by instructors</i></p>
+                 <div class="flunkless  project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="work/flunkless.html"><img src="images/classroom.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>FLUNKLESS</b></span><br><span class="previousExperience">web-based synchronous communication during lecture with students and professors</span></p>
+						<p class="previousExperience"><i>user research<br>top design chosen by instructors</i></p>
                         </div>
                     </div>
                     
@@ -313,12 +392,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                 </div> -->
                 
-                <div class="mustaske project col-md-4 col-sm-12 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <a href="work/mustaske.html"><img src="images/mustaske.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                             <p id="uxwork_description"><span id="title"><b>MUSTASKE</b></span><br>live chat application that uses voting of questions and polls to facilitate in class lectures</p>
-                                <p id="uxwork_note"><i>ux/ui design, front-end development</i></p>
+                <div class="mustaske project col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <a href="work/mustaske.html"><img src="images/mustaske.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                             <p id="uxwork_description"><span id="title"><b>MUSTASKE</b></span><br><span class="previousExperience">live chat application that uses voting of questions and polls to facilitate in class lectures</span></p>
+                                <p class="previousExperience"><i>ux/ui design, front-end development</i></p>
 					   
                             </div>
                     </div>
@@ -326,16 +405,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div> 
                 
                 
-                <div class="younote project col-md-4 col-sm-12 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <a href="work/younote.html"><img src="images/kpcb%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
+         <!--       <div class="younote project col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <a href="work/younote.html"><img src="images/kpcb%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
                              <p id="uxwork_description"><span id="title"><b>YOUNOTE</b></span><br>redesign of the note-taking experience on Coursera</p>
                                 <p id="uxwork_note"><i>ux/ui design & user research</i></p>
 					   
                             </div>
                     </div>
 
+                </div> -->
+                
+                  <div class="programming project col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                        <a href="https://github.com/crystalkwok" target="_blank"><img src="images/programming%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <p id="uxwork_description"><span id="title"><b>PROGRAMMING PROJECTS</b></span> &nbsp;<br><span class="previousExperience">Connect Four, Huffman Coding, Six Degrees of Kevin Bacon, etc.</span></p>
+						<p class="previousExperience"><i>back-end development : Java, C, C++</i></p>
+                        </div>
+                    </div>
+                    
                 </div> 
 
 			
@@ -351,16 +441,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
 
 
-  <div class="programming project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="https://github.com/crystalkwok" target="_blank"><img src="images/programming%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>PROGRAMMING PROJECTS</b></span> &nbsp;<br>Connect Four, Huffman Coding, Six Degrees of Kevin Bacon, etc.</p>
-						<p id="uxwork_note"><i>back-end development : Java, C, C++</i></p>
-                        </div>
-                    </div>
-                    
-                </div> 
+
                       
              <!--         <div class="rainbowart  project col-md-4 col-sm-12 col-xs-12">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -380,8 +461,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 
 				</div><!--end row-->
-			</div>
-		</div>
+            </div><!--end col-md-10-->
+			</div><!--end container-->
+		</div><!--end ux work-->
 
 <footer>
     <div class="container">
