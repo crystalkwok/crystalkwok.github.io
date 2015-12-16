@@ -3,161 +3,160 @@
 /*jumbotron & triangle delegated*/
 
 * {
-font-family:'Roboto', sans-serif;
-    font-weight:300;
-}
-
-.ux_work a {
-    text-decoration:none;
-    color:#e6817d;
-}
-
-.ux_work a:hover {
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-/*the whole section with portfolio*/
-
-
-.ux_work a:hover, .jumbotronimage a:hover {
-	width:100%;
-	height:100%;
-	opacity:0.6;
-}
-
-
-.ux_work .row{
-    margin-bottom:2%;
-    margin-top:1%;
-}
-
-
-/*title of all the separate works*/
-#title{
-	letter-spacing: 0.15em;
-	font-size:1.3em;
-    font-weight:500;
-    color:#5E676C;
-}
-
-.timeline, .myeplay, .rainbowart, .flunkless, .crown, .younote, .teachat, .fle, .programming, .mustaske{
-    padding:1em;
-}
-
-
-
-/*start change to make for cell phone*/
-@media only screen and (max-width:995px){
-    
-    .project{
-           margin-top:2%;
-        margin-bottom:2%;
-    }
-    
+font-family:'Open Sans', sans-serif;
+    font-weight:400;
 }
 
 
 /*start new*/
 
 
-.jumbotronimage img{
-    margin-top:6.7em;
+.top{
+    margin-top:12em;
 }
 
-.noPadding {
+.top p {
+    text-align: center;
+}
+
+.role{
+    letter-spacing: .01em;
+    font-size:15px;
+    
+}
+
+
+
+.name {
+    font-size:23px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:0.06em;
+}
+
+.description {
+    font-size:14px;
+    letter-spacing: .01em;
+    font-weight:400;
+    line-height: 170%;
+    margin-top:6em;
+    color:#444;
+    margin-bottom:0;
+}
+
+
+.ux_work2 {
+    margin-bottom:8em;
+    margin-top:6em;
+}
+
+.ux_work2 .container{
+    padding-left:3em;
+    padding-right:3em;
+}
+
+.ux_work2 .col-md-3 {
     padding:0 0;
 }
 
-.section_title {
-    font-weight:600;
-    letter-spacing: 0.2em;
-    font-size:2em;
+.inspiration {
+    background-color:#ececec;
+    height:100%;
 }
 
-.currentJobDescription, .descriptionTitle{
-    color:#5E676C;
-    font-weight: 400;
-    font-size:1.13em;
-    letter-spacing: 0.09em;
+.imageContainers, .squareImages {
+    padding:0 0;   
 }
 
-.descriptionTitle {
-    font-weight:600;
+.imageContainers {
+    position:relative;
 }
 
-.previousExperience {
-    color:#A0A0A0;
-    font-weight:300;
-    letter-spacing: 0.08em;
-    font-size:0.95em;
+.squareImages {
+    opacity:.7;  
+    position:relative;
+}
+
+.title {
+    position:absolute;
+    top:88%;
+    bottom:0px;
+    width:100%;
+    color:#fff;
+    left:7%;
+}
+
+.dark {
+    color:#444;
 }
 
 
-.oppia img{
-    margin-top:2em;
+.overlay {
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-color:rgba(0,0,0, .7);
+    display:none;
 }
 
-.learningEquality {
-    margin-top:1.5em;
+.description1 {
+    color:#ececec;
+    font-weight:400;
+    position:absolute;
+    text-align:center;
+    display:none;
+    font-size:15px;
+    margin:7%;
 }
 
-.oppiaDescription {
-    margin-top:.5em;
+.imageContainers:hover .description1 {
+    display:block;
+    top:34%;
+    transition: bottom 1s ease;
+    transition: display 1s ease;
 }
 
-.oppia, .oppiaDescription {
-    padding-right:10px;
+.imageContainers:hover .title {
+    display:none;
 }
 
-.paddingRight {
-    padding-right:20px;
+.imageContainers:hover .overlay {
+    display:block;
 }
 
-.ux_work {
-    margin-top:1.5em;
+.imageContainers:hover .squareImages {
+    transform: scale(1.1);
+    transition:transform .3s;
 }
+
+.imageContainers {
+    overflow:hidden;
+    position:relative;
+}
+
+
+
+
+
 
 
 
 @media only screen and (max-width:995px){
-    .jumbotronimage img{
-        margin-top:1.6em;   
-    }
-    
-    .oppia img {
-        margin-top:2em;   
-    }
-    
-    .noPaddingSmall {
-        padding:0 0;   
-    }
-    
-    .timeline, .myeplay, .crown, .flunkless, .mustaske, .programming {
-        padding:5px 3px;   
-    }
+ 
     
 
 }
 
 
 @media only screen and (max-width:768px){
-    .noPadding {
-        padding:0 0.5em;   
-    }
-    
-    .jumbotronimage img {
-        padding:0 1.5em;   
-    }
+   
     
 
 }
 
 @media only screen and (max-width:495px){
-    
-        .oppia img {
-        margin-top:0.5em;   
-    }
+
 
 }
 

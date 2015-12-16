@@ -22,17 +22,18 @@
         <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
 		<!--what is this lol-->
-		<link rel="Shortcut Icon" type="image/jpg" href="images/icon2.png"/>
+		<link rel="Shortcut Icon" type="image/jpg" href="images/logo%20square.png"/>
 		<title>crystal kwok</title>
 
 		<!--jquery-->
 		<script src="jquery/jquery.min.js"></script>
 		<script src="jquery-1.11.1.min.js"></script>
+        <script src="navbar.js"></script>
 	
 
 	</head>
@@ -61,12 +62,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <!--normal nav bar-->
-		<div class="navbar">
+		<div class="navbar bigger">
 			<div class="container">
 				<ul class="pull-left leftside">
-                    <img src="images/incasedorisscrewsup.png">
-					<li class="name">CRYSTAL KWOK</li>
-                    <li class="description">user experience design & research</li>
+                    <img src="images/logo%20gray.png">
+					<li id="navbar_name">Crystal Kwok</li>
 				</ul>
 				<ul class="pull-right top_gray">
 					<div class="right">
@@ -138,35 +138,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div><!--end navbar dropdown-->
 
 
-		<script>
-			$(document).ready(function(){
-	
-
-				$('.icon-menu').click(function(){
-					$('.dropdown').toggle();
-					
-				});
-                
-
-
-				$('.close').click(function(){
-					$('.dropdown').hide();
-				});
-                
-          
-  $('.fa_ux_dropdown').click(function() {
-    $('.dropdown-menu').toggle();
-      return false;
-  });
-                
-                 $('.fa_ux_dropdown_small').click(function() {
-    $('.dropdown_ux').toggle();
-  });
-
-			});
-			$(document).ready(main);
-	
-		</script>
+		
 
         <!--<div class="container story">
             <div class="row">
@@ -174,296 +146,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>-->
 
+<div class="container top">
+    <p class="name">CRYSTAL KWOK</p>
+    <p class="role">user experience designer & researcher</p>
+</div>
+
 <div class="container">
-    <div class="row jumbotronimage">
-        <a href="work/timeline.html"><img src="images/original%20nexus%205.2.png" class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12 noPadding"></a>
+    <p class="col-md-offset-3 col-md-6 description"><strong>Currently a Product Designer at CaseStack.</strong>  Also contributing to the design efforts at Oppia.  Previously a Human-Computer Interaction Research Assistant at the Design Lab with Cat Hicks and Vineet Pandey, headed by Don Norman, Scott Klemmer, Jim Hollan.  Stay curious and question everything.</p>
+</div>
+
+
+<div class="ux_work2">
+    <div class="container">
+        <div class="row">
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/designlab.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/designlab_square.jpg">
+                <div class="overlay"></div>
+                <p class="title dark">Design Lab</p>
+                <p class="description1">how can students in online learning communities give better peer feedback?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/learningequality.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/child.jpg">
+                <div class="overlay"></div>
+                <p class="title">Learning Equality</p>
+                <p class="description1">how can people in third world countries receive an education without internet?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/timeline.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/timeline_square.jpg">
+                <div class="overlay"></div>
+                <p class="title">Timeline</p>
+                <p class="description1">how can we view what's important in our lives?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/myeplay.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/eyes.jpg">
+                <div class="overlay"></div>
+                <p class="title">MyePlay</p>
+                <p class="description1">how can locked-in syndrome patients who are physically paralyzed socially interact with their loved ones?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/crown.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/crown_square.jpg">
+                <div class="overlay"></div>
+                <p class="title dark">CROWN</p>
+                <p class="description1">how can students be more effective with their time to achieve their goals?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/flunkless.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/classroom_square.jpg">
+                <div class="overlay"></div>
+                <p class="title">FlunkLess</p>
+                <p class="description1">how can professors engage and facilitate better communication with over a hundred students in a college lecture?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="work/mustaske.html">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/mustaske_square.jpg">
+                <div class="overlay"></div>
+                <p class="title dark">MustAske</p>
+                <p class="description1">how can communication be facilitated between an audience to one presenter?</p>
+            </a>
+            <a class="imageContainers col-md-3 col-lg-3 col-sm-4 col-xs-6" href="http://github.com/crystalkwok" target="_blank">
+                <img class="squareImages col-md-12 col-lg-12 col-sm-12 col-xs-12" src="images/square/programming_square.jpg">
+                <div class="overlay"></div>
+                <p class="title">Programming</p>
+                <p class="description1">Connect Four, Huffman Coding, Six Degress of Kevin Bacon, etc. in Java, C, C++</p>
+            </a>
+        </div>
+
     </div>
 </div>
-        
 
 
-
-		<div class="ux_work">
-			<div class="container">
-                <div class="row">
-                <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12 noPadding">
-                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 noPadding paddingRight">
-                        <div>
-                      <!--  <p class="col-md-12 noPadding section_title">experience</p>-->
-                            <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 currentJobDescription">Currently designing the experience and flow for the people involved in logistics at <span id="title">CASESTACK</span></p>
-                       <a href="https://ww2.casestack.com/" target="_blank">
-                           <img src="images/casestack2.png" class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-                        </a>
-                      </div>
-                        
-                        <div class="oppia">
-                            <a href="https://www.oppia.org/" target="_blank">
-                                <img src="images/oppia.png" class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-offset-2 col-sm-8 col-xs-12">
-                            </a>
-                            <p class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-offset-1 col-sm-10 col-xs-12 oppiaDescription"><span class="previousExperience">Currently contributing to the design efforts with a <a href="http://techcrunch.com/2014/02/26/meet-oppia-googles-new-open-source-project-that-lets-anyone-create-an-interactive-learning-experience/" target="_blank">Google Open Source project</a></span></p>
-                        
-                        </div>
-
-                    
-                    </div>
-                    <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 noPadding">
-                        <a href="work/designlab.html"><img src="images/designlab.jpg" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 noPadding previousExperience">
-                            <span id="title">
-                                <a href="http://designlab.ucsd.edu/" target="_blank"><b>DESIGN LAB</b></a>
-                            </span><br>Human-Computer Interaction research on peer feedback,
-                        with <a href="http://pages.ucsd.edu/~cmhicks/" target="_blank">Catherine Hicks</a> and <a href="http://vineetp13.github.io/" target="_blank">Vineet Pandey</a>, with the lab headed by <a href="http://www.jnd.org/" target="_blank">Don Norman</a>, <a href="http://hci.ucsd.edu/hollan/" target="_blank">Jim Hollan</a>, and <a href="http://d.ucsd.edu/srk/" target="_blank">Scott Klemmer</a></p>
-                        
-                        
-                        <a href="work/learningequality.html"><img src="images/learninequality.png" class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding learningEquality"></a>
-                        <p class="col-md-12 col-lg-12 col-sm-12 col-xs-12 noPadding previousExperience">
-                            <span id="title">
-                                <a href="https://learningequality.org/" target="_blank"><b>LEARNING EQUALITY</b></a>
-                            </span>
-                        <br>previously designed the content curation experience</p>
-                    
-                    </div>
-                </div>
-                </div><!--end roww-->
-                
-                <hr>
-            <div class="hidden-lg hidden-md col-sm-12 col-xs-12 noPaddingSmall">
-
-                    
-                <div class="timeline project col-md-4 col-sm-6 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <a href="work/timeline.html"><img src="images/timeline.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                             <p id="uxwork_description"><span id="title">TIMELINE</span> <br><span class="previousExperience">visualizing people's personal events based on priority</span></p>
-					           <p class="previousExperience"><i>ux/ui design & user research with Jim Hollan</i></p>
-                            </div>
-                    </div>
-       
-
-                </div><!--end timeline-->
-
-                       
-                <div class="myeplay project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>MYEPLAY</b></span> &nbsp;<br><span class="previousExperience">eye-tracking based entertainment suite for patients with Locked-In Syndrome</span></p>
-                            <p class="previousExperience"><i>ux/ui/interaction design</i></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                    
-                    <div class="crown project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>CROWN</b></span> &nbsp;<br><span class="previousExperience">goal-based time management website</span></p>
-						<p class="previousExperience"><i>ux/ui design & front-end development<br>top design chosen by instructors</i></p>
-                        </div>
-                    </div>
-                    
-                </div> 
-                               
-
-                    
-                    
-      
-
-
-			
-                 <div class="flunkless  project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/flunkless.html"><img src="images/classroom.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>FLUNKLESS</b></span><br><span class="previousExperience">web-based synchronous communication during lecture with students and professors</span></p>
-						<p class="previousExperience"><i>user research<br>top design chosen by instructors</i></p>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                
-                <div class="mustaske project col-md-4 col-sm-6 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <a href="work/mustaske.html"><img src="images/mustaske.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                             <p id="uxwork_description"><span id="title"><b>MUSTASKE</b></span><br><span class="previousExperience">live chat application that uses voting of questions and polls to facilitate in class lectures</span></p>
-                                <p class="previousExperience"><i>ux/ui design, front-end development</i></p>
-					   
-                            </div>
-                    </div>
-
-                </div> 
-                
-                  <div class="programming project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="https://github.com/crystalkwok" target="_blank"><img src="images/programming%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>PROGRAMMING PROJECTS</b></span> &nbsp;<br><span class="previousExperience">Connect Four, Huffman Coding, Six Degrees of Kevin Bacon, etc.</span></p>
-						<p class="previousExperience"><i>back-end development : Java, C, C++</i></p>
-                        </div>
-                    </div>
-                    
-                </div> 
-
-			
-
-				
-                               
-                
-            </div>    <!--end sm and xs-->
-                
-            <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 hidden-xs hidden-sm noPadding">
-				<div class="row">
-
-                    
-                <div class="timeline project col-md-4 col-sm-6 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <a href="work/timeline.html"><img src="images/timeline.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                             <p id="uxwork_description"><span id="title">TIMELINE</span> <br><span class="previousExperience">visualizing people's personal events based on priority</span></p>
-					           <p class="previousExperience"><i>ux/ui design & user research with Jim Hollan</i></p>
-                            </div>
-                    </div>
-       
-
-                </div><!--end timeline-->
-                    
-                  <!--  <div class="fle project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/learningequality.html"><img src="images/learninequality.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>LEARNING EQUALITY</b> &nbsp; </span><br><i>(in progress)</i> <br>currently designing the experience and interface of teachers curating content for universal access to high quality education</p>
-						
-                        </div>
-                    </div>
-                    
-                </div> -->
-                       
-                <div class="myeplay project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/myeplay.html"><img src="images/myeplay.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>MYEPLAY</b></span> &nbsp;<br><span class="previousExperience">eye-tracking based entertainment suite for patients with Locked-In Syndrome</span></p>
-                            <p class="previousExperience"><i>ux/ui/interaction design</i></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                    
-                    <div class="crown project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/crown.html"><img src="images/crown.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>CROWN</b></span> &nbsp;<br><span class="previousExperience">goal-based time management website</span></p>
-						<p class="previousExperience"><i>ux/ui design & front-end development<br>top design chosen by instructors</i></p>
-                        </div>
-                    </div>
-                    
-                </div> 
-                               
-            </div> <!--end row-->
-                    
-                    
-                    
-            <div class="row">
-
-
-			
-                 <div class="flunkless  project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="work/flunkless.html"><img src="images/classroom.jpg" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>FLUNKLESS</b></span><br><span class="previousExperience">web-based synchronous communication during lecture with students and professors</span></p>
-						<p class="previousExperience"><i>user research<br>top design chosen by instructors</i></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-           <!--     <div class="teachat  project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/teachat.html"><img src="images/teachat.png" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>TEACHAT</b></span> &nbsp; <i>(in progress)</i><br>mobile app facilitating serendipitous meetups between strangers</p>
-                        </div>
-                    </div>
-                    
-                </div> -->
-                
-                <div class="mustaske project col-md-4 col-sm-6 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <a href="work/mustaske.html"><img src="images/mustaske.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                             <p id="uxwork_description"><span id="title"><b>MUSTASKE</b></span><br><span class="previousExperience">live chat application that uses voting of questions and polls to facilitate in class lectures</span></p>
-                                <p class="previousExperience"><i>ux/ui design, front-end development</i></p>
-					   
-                            </div>
-                    </div>
-
-                </div> 
-                
-                
-         <!--       <div class="younote project col-md-4 col-sm-12 col-xs-12">
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <a href="work/younote.html"><img src="images/kpcb%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                            <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                             <p id="uxwork_description"><span id="title"><b>YOUNOTE</b></span><br>redesign of the note-taking experience on Coursera</p>
-                                <p id="uxwork_note"><i>ux/ui design & user research</i></p>
-					   
-                            </div>
-                    </div>
-
-                </div> -->
-                
-                  <div class="programming project col-md-4 col-sm-6 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                        <a href="https://github.com/crystalkwok" target="_blank"><img src="images/programming%20title.png" class="title_image col-md-12 col-sm-12 col-xs-12 noPadding"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12 noPadding">
-                            <p id="uxwork_description"><span id="title"><b>PROGRAMMING PROJECTS</b></span> &nbsp;<br><span class="previousExperience">Connect Four, Huffman Coding, Six Degrees of Kevin Bacon, etc.</span></p>
-						<p class="previousExperience"><i>back-end development : Java, C, C++</i></p>
-                        </div>
-                    </div>
-                    
-                </div> 
-
-			
-
-				</div><!--end row-->
-                
-                  <div class="row">
-                      
-                      
-
-                      
-                                      
-                
-
-
-
-                      
-             <!--         <div class="rainbowart  project col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <a href="work/rainbow_art.html"><img src="images/rainbow canvas2.jpg" class="title_image col-md-12 col-sm-12 col-xs-12"></a>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p id="uxwork_description"><span id="title"><b>RAINBOW ART &amp; RAINBOW CANVAS</b></span> &nbsp; <i>(current)</i><br>designer & assistant art instructor for local art school</p>
-                        </div>
-                    </div>
-                    
-                </div>-->
-
-			
-                
-
-
-
-			
-
-				</div><!--end row-->
-            </div><!--end col-md-10-->
-			</div><!--end container-->
-		</div><!--end ux work-->
 
 <footer>
     <div class="container">
@@ -483,6 +232,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         return false;
     });
         });
+
+    var img = document.getElementById('help'); 
+    var height = img.clientHeight;
+    $('.inspiration').css('height', height);
 
         $(document).ready(main);
     </script>
