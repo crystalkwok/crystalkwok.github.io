@@ -1,22 +1,8 @@
 @charset 'UTF-8';
 
-
-
-/*.circle{
-	border-radius:50%;
-	background-color:#000000;
-	height:40px;
-	width:40px;
-	position:relative;
-	right:18px;
-	top:10px;
+.right-side p:not(.description_title) {
+    font-size:13px;
 }
-
-.line{
-	float:left;
-}*/
-
-
 
 .intropics img{
     padding:0.5em;
@@ -55,49 +41,6 @@ width:100%;
 #problem {
     margin-top:1.5em;
     margin-bottom:1.5em;
-}
-
-
-@media only screen and (max-width:1200px){
-	.problem_content3 img{
-		width:110px;
-	}
-
-    
-    #left{
-        height:175px;
-    }
-    
-    #right{
-        height:175px;   
-    }
-    
-    #vision_pp_lightbox .image_title{
-    width: 110px; height: 110px;
-    }
-}
-
-
-
-
-@media only screen and (max-width:990px){
-
-    
-    #left{
-        height:300px;   
-    }
-    
-    #right{
-        height:300px;   
-    }
-
-
-    .line{
-        display:none;   
-    }
-    
-
-
 }
 
 

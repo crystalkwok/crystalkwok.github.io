@@ -8,7 +8,7 @@
 
 
 .interfaceFinal img {
-    border: 2px solid #d8d8d8;
+    border: 1px solid #d8d8d8;
 }
 
 .interface .row {
@@ -16,18 +16,8 @@
     margin-bottom:2%;
 }
 
-.right-side a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-.right-side a{
-        color:#e6817d;
-    font-weight:400;
-}
-
 .interface a{
-    font-weight:700;
+    font-weight:600;
 }
 
 .interfaceProcess img{
@@ -35,13 +25,20 @@
 }
 
 .interfaceProcess h3, .interfaceFinal h3 {
-    color:#969696;
+    color:#444;
+    font-size:18px;
+    font-weight:500;
 }
 
 .interfaceProcess {
-    background-color:#f4f7f9;
+    background-color:#f8f8f8;
     padding:1em;
 }
+
+.poster p:not(.description_title) {
+    font-size:13px;
+}
+
 
 /*.body {
     padding-bottom:1em;

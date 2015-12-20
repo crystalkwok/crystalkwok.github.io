@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-          <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta property="name" content="Crystal Kwok's UX Portfolio">
         <meta property="url" content="http://crystalkwok.github.io">
         <meta name="author" content="Crystal Kwok">
+
+         <script src="jquery/jquery-1.11.3.min.js"></script>
+          <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         
 		<!--bootstrap-->
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+		
 
 		<!--css-->
         <link href="website_navbar.css" rel="stylesheet" />
 		<link href="indexcss.css" rel="stylesheet" />
-            <link href="font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
 
 		<!--fonts-->
-		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
+		<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+             <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 
 		<!--what is this lol-->
 		<link rel="Shortcut Icon" type="image/jpg" href="images/logo%20square.png"/>
 		<title>crystal kwok</title>
 
 		<!--jquery-->
-		<script src="jquery/jquery.min.js"></script>
-		<script src="jquery-1.11.1.min.js"></script>
+
         <script src="navbar.js"></script>
 	
 
@@ -62,15 +67,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <!--normal nav bar-->
-		<div class="navbar bigger">
+	   <div class="navbar bigger hidden-xs">
 			<div class="container">
-				<ul class="pull-left leftside">
-                    <img src="images/logo%20gray.png">
-					<li id="navbar_name">Crystal Kwok</li>
+				<ul class="pull-left">
+                    <a href="index.html"><img src="images/logo%20gray.jpg"></a>
+					<!--<li id="navbar_name">Crystal Kwok</li>-->
 				</ul>
-				<ul class="pull-right top_gray">
-					<div class="right">
-                        <li><a href="index.html"  class="activea">work</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+				<ul class="pull-right">
+                        <li class="navbar_options">
+                            <a href="index.html"  class="activea">work</a> | <a href="#"><i class="fa fa-angle-down ux_dropdown_big"></i></a>
+                        <!--<span class="hover_nav"></span>-->
                             <ul class="dropdown-menu">
                                 <li><a href="work/designlab.html">Design Lab</a></li>
                                 <li><a href="work/learningequality.html">Learning Equality</a></li>
@@ -80,12 +86,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li><a href="work/flunkless.html">FlunkLess</a></li>
                                 <li><a href="work/mustaske.html">MustAske</a></li>
                                 <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
-                      <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
                             </ul>
                         </li>
-                        <li><a href="art.html">art</a></li>
-                        <li><a href="about.html">about & contact</a></li>
-					</div>
+                        <li class="navbar_options">
+                                <a href="art.html">art</a>
+                                <span class="hover_nav"></span>
+                        </li>
+                        <li class="navbar_options">
+                            <a href="about.html">about & contact</a>
+                                <span class="hover_nav"></span>
+                        </li>
 				</ul>
 
 			</div>
@@ -94,57 +104,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!--small nav bar-->
     
-		<div class="navbar_dropdown">
+		<div class="navbar_small hidden-lg hidden-md hidden-sm">
             <div class="container">
-            <div class="row">
-                
-                    <img src="images/incasedorisscrewsup.png" class="col-sm-1 col-xs-1 smallLogo">
-               
-                <div class="left col-sm-7 col-xs-7">
-                    <a href="#" class= "icon-menu menu-left top col-sm-12 col-xs-12">CRYSTAL KWOK</a>
-                    <a href="#" class="icon-menu menu-left bottom col-sm-12 col-xs-12"><span class="navbar_description">user experience design & research</span></a>
-                </div>
-                <div class="col-sm-4 col-xs-3 menuBar">
-                    <a href="#"  class="icon-menu menu-right"><i class="fa fa-bars fa-1"></i> MENU</a>
-                </div>
-            </div><!--end row-->
-            </div><!--end container-->
-			
-			<div class="dropdown">
-			<ul class="dropdown2">
-			
-				<!--<li class="pull-left"><a href="#"  class="close">close</a></li>
-			</br></br>-->
-				<li><a href="index.html" class="activea">work</a> &nbsp;
-                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
-                    <ul class="dropdown_ux">
-                               <li><a href="work/designlab.html">Design Lab</a></li>
-                                <li><a href="work/learningequality.html">Learning Equality</a></li>
-                                <li><a href="work/timeline.html">Timeline</a></li>
-                                  <li><a href="work/myeplay.html">MyePlay</a></li>
-                                <li><a href="work/crown.html" >CROWN</a></li>
-                                <li><a href="work/flunkless.html">FlunkLess</a></li>
-                                <li><a href="work/mustaske.html">MustAske</a></li>
-                                <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
-                      <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
+                <div class="row">
+                <img src="images/logo%20gray.jpg" class="smallLogo">
 
-                            </ul>
-                </li>
-				<li><a href="art.html">art</a></li>
-				<li><a href="about.html">about &amp; contact</a></li>
-				</br>
-			</ul>
-			</div>
-		</div><!--end navbar dropdown-->
+                <ul class="navbar_small_list">
+                    
+                    <li>
+                        <a href="index.html" id="activeb">work</a> | <i class="fa fa-angle-down fa_ux_dropdown" id="fa_ux"></i>
+                    </li>
+                    <li> 
+                        <a href="art.html">art</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about</a>
+                    </li>
+                    
+                </ul>
+                <ul class="ux_dropdown_small">
+                    <div class="ux_dropdown_small_relative">
+                        <i class="fa fa-times" id="close_ux"></i>
+                            <li><a href="work/designlab.html">Design Lab</a></li>
+                            <li><a href="work/learningequality.html">Learning Equality</a></li>
+                            <li><a href="work/timeline.html">Timeline</a></li>
+                            <li><a href="work/myeplay.html">MyePlay</a></li>
+                            <li><a href="work/crown.html">CROWN</a></li>
+                            <li><a href="work/flunkless.html">FlunkLess</a></li>
+                            <li><a href="work/mustaske.html">MustAske</a></li>
+                            <li><a href="http://github.com/crystalkwok">Programming</a></li>
+                    </div>
+                 </ul>
+
+                </div>
+            </div>
+			
+
+		</div><!--end navbar_small-->
 
 
 		
 
-        <!--<div class="container story">
-            <div class="row">
-                <p class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 col-lg-12">designing for cognitive change</p>
-            </div>
-        </div>-->
 
 <div class="container top">
     <p class="name">CRYSTAL KWOK</p>
@@ -152,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <div class="container">
-    <p class="col-md-offset-3 col-md-6 description"><strong>Currently a Product Designer at CaseStack.</strong>  Also contributing to the design efforts at Oppia.  Previously a Human-Computer Interaction Research Assistant at the Design Lab with Cat Hicks and Vineet Pandey, headed by Don Norman, Scott Klemmer, Jim Hollan.  Stay curious and question everything.</p>
+    <p class="col-md-offset-3 col-md-6 description"><strong>Currently a Product Designer at CaseStack.</strong>  Also contributing to the design efforts at <a href="https://www.oppia.org/" target="_blank">Oppia</a>.  Previously a Human-Computer Interaction Research Assistant at the <a href="http://designlab.ucsd.edu/" target="_blank">Design Lab</a> with <a href="http://pages.ucsd.edu/~cmhicks/" target="_blank">Cat Hicks</a> and <a href="http://vineetp13.github.io/" target="_blank">Vineet Pandey</a>, headed by <a href="http://www.jnd.org/" target="_blank">Don Norman</a>, <a href="http://d.ucsd.edu/srk/" target="_blank">Scott Klemmer</a>, <a href="hci.ucsd.edu/hollan/" target="_blank">Jim Hollan</a>.  Stay curious and question everything.</p>
 </div>
 
 
@@ -220,25 +220,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="col-md-1 col-sm-1 col-xs-1"></div>
             <p class="col-md-3 col-sm-11 col-xs-11"> 
                 created by <a href="index.html">Crystal Kwok</a><br>
-                 &copy; 2015
+                 &copy; 2016
             </p>
         </div>
     </div>
-    
-    <script>
-    $(document).ready(function(){
-            $('.view').click(function() {
-         $('html,body').animate({ scrollTop:$(".ux_work .container").offset().top}, 300);
-        return false;
-    });
-        });
 
-    var img = document.getElementById('help'); 
-    var height = img.clientHeight;
-    $('.inspiration').css('height', height);
 
-        $(document).ready(main);
-    </script>
 </footer>
 	</body>
 </html>

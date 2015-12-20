@@ -1,17 +1,8 @@
 @charset 'UTF-8';
- .motivation p{
-     line-height:150%;
- }
-
 
 .screenshots img {
     margin-top:2%;
     margin-bottom:2%;
-}
-
-#viewspic{
-    padding-right:15px;
-    padding-left:15px;
 }
 
 .videoWrapper {
@@ -39,26 +30,8 @@
 }
 
 
-.section1 hr {
- margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;   
-}
-
-
-.right-side a{
-    color:#db5d58;
-    font-weight:400;
-}
-
-
-.right-side a:hover{
-    color:#82d3a5;
-    text-decoration:none;
-}
-
-.screenshots {
-    padding-top:2.6em;
+.process p {
+  font-size:13px;
+  line-height: 160%;
 }
 

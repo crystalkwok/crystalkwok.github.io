@@ -1,96 +1,19 @@
 @charset 'UTF-8';
 
 
-
-.body{
-    position:relative;
-    top:40px;
-    padding-right:3%;
-    padding-top:3%;
-
+.section p, .section li {
+    font-size:13px;
 }
-
-.rest {
-    padding: 1.8em 2em;
-}
-
-
-.name {
-    letter-spacing:0.15em;
-    font-weight:700;
-}
-
-
-
-
-
-.motivation a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-.motivation span{
-    color:#000000;
-    font-weight:500;
-    text-align: center;
-}
-
-b {
-    font-weight:500;
-}
-
-
-.size b {
-    font-style:italic;
-}
-
-
-
-/*design choices paragraphs (color, size, etc)*/
-.design_choices p{
-    margin-top:1.2em;
-}
-
-
-/*display none of the descriptions at first*/
-.fixed_relative_time, .end_time {
-    display:none;
-}
-
-
-.ugh a, .design_choices a, .personal a, .design_navbar a{
-    color:#e6817d;
-    font-weight:400;
-}
-
-.ugh a:hover, .design_choices a:hover, .personal a:hover{
-    color:#82d3a5;
-    text-decoration: none;
-}
-
-
-
-.info{
-    margin-bottom:5%;
-}
-
 
 .process p {
     line-height: 160%;
-}
 
+}
 
 .process img {
     padding:0.5em;
 }
 
-
-#design_titles{
-    font-weight:700;
-    letter-spacing: 0.15em;
-    font-size:20px;
-    color:#706e6e;
-}
 
 /*fixed and relative time*/
 .captions{
@@ -100,69 +23,19 @@ b {
     margin-top:1%;
 }
 
-.final_design img{
-    margin-top:1%;
-}
-
-
 .small {
     display:none;
 }
 
 
-.features li:before {
-    color:#5d5fa1;
-}
-
-
-#maximize, #minimize{
-    height:25px;
-    margin:0px;
-}
-
-.problem_solution {
-    margin-top:1.5em;
-}
-
 
 
 @media only screen and (max-width:995px){
-    .rest {
-        padding-top:0;   
-    }
-    
-    .problem_solution {
-        margin-top:4%;   
-    }
-    
-    .features p{
-        font-size:16px;   
-    }
+
   
     .ugh {
         margin-top:2%;   
     }
-    
-    #final_design {
-        display:none;   
-    }
-    
-    #final_features{
-        text-align:left;   
-    }
-    
-    .small {
-        display:block;   
-    }
-    
-    .large{
-        display:none;   
-    }
-    
-    .motivation {
-        margin-top:0;   
-    }
-
 
 
 }

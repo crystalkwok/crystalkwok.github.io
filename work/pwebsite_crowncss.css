@@ -1,29 +1,19 @@
 @charset 'UTF-8';
 
-.features {
-    background-color:#ffffff;
-}
 
-
-
-
-#goals, #assignments_tests, #todo, #event_class, #timeline, #process, #personal {
-    text-decoration:none;
-}
-
- .minimize, .maximize{
-    height:1.3em;
-}
-
-.maximize{
-    display:none;
-}
 
 .the_process img{
     padding:0.5em;
 }
 
+.rest p:not(.description_title), .rest li{
+    font-size:13px;
+    line-height: 170%;
+}
 
+.motivation p{
+    line-height: 160% !important;
+}
 
 /*@media only screen and (max-width:700px){
     #lightbox_normal img{
@@ -40,17 +30,14 @@
 }*/
 
 
-@media only screen and (max-width:995px){
-
-
-    
- .large{
-     display:none;
- }
-    
-    .small {
-        display:block;   
-    }
-    
+/*#goals, #assignments_tests, #todo, #event_class, #timeline, #process, #personal {
+    text-decoration:none;
 }
 
+ .minimize, .maximize{
+    height:1.3em;
+}
+
+.maximize{
+    display:none;
+}*/ 

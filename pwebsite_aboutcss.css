@@ -1,22 +1,24 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    font-weight:300;
+.body{
+    margin-top:130px;
 }
 
+
+
 .jumbotron p{
-	font-size:0.98em;
-    font-family: 'Roboto', sans-serif;
-    font-weight:300;
-    color:#000000;
-	font-weight:300;
-    line-height:125%;
+	font-size:13px;
+    color:#444;
+    line-height:131%;
+    font-weight:400;
+}
+
+.jumbotron b {
+    font-weight:600;
 }
 
 /*change jumbotron*/
 .jumbotron{
 	background-color: #ffffff;
-    margin-top:2em;
-    margin-bottom:0;
+    margin-bottom:65px;
 	width:100%;
     height:100%;
     padding-top:2em;
@@ -35,7 +37,7 @@
 /*end jumbotron and triangle changes*/
 
 .contact {
-	background-color:#f0f3fc;
+	background-color:#f8f8f8;
     padding-top:3%;
     padding-bottom:3%;
 }
@@ -43,54 +45,41 @@
 
 .contact p{
 	line-height:200%;
-    font-size:1.2em;
+    font-size:14px;
 }
 
 
 .content {
-    margin-bottom:10%;
+    margin-bottom:100px;
+    margin-top:100px;
 }
 
-.one, .two {
-    margin-top:6%;
+.content p {
+    color:#444;
 }
+
+
 
 .links {
     margin-left:5%;
 }
 
 #instagramtext {
-    font-size:15px;
+    font-size:14px;
 }
 
-
-/*resume button*/
-/*.btn{
-	background-color:#82d3a5;
-	color:#575757;
-	position:relative;
-}
-
-.btn:hover{
-	color:#ffffff;
-}
-
-.button button{
-	position:relative;
-	right:50%;
-	left:40%;
-}*/
 
 .links a, #instagramtext a{
     text-decoration: none;
-    color:#74bd93;
+    color:#c1c2c2;
 }
+
 #instagramtext a {
     font-weight:700;
 }
 
 .links a:hover, #instagramtext a:hover{
-    color:#f29fa1;
+    color:#000;
     text-decoration:none;
 }
 
@@ -102,7 +91,6 @@
 
 .content p {
     line-height: 160%;
-    font-size:1.04em;
 }
 
 
@@ -110,9 +98,6 @@
     display:none;
 }
 
-.small {
-    display:none;
-}
 
 #instafeed {
 			width:100%;
@@ -162,14 +147,15 @@
   opacity:1;
 }
 
+p{
+  font-size:13px;
+}
+
 
     
     
 
 @media only screen and (max-width:1200px){
-	.jumbotron {
-		height:100%;
-	}
 
      .self img {
          width:120%;
@@ -195,11 +181,6 @@
         line-height:170px;
     }
     
-    .jumbotron p {
-        font-size:0.9em; 
-        margin-top:1em;
-        line-height:130%;
-    }
 
 }
 
@@ -223,6 +204,10 @@
 
 }
 
+.one {
+    margin-top:4em;
+}
+
 
     
     .self img{
@@ -231,8 +216,6 @@
 
 /*change jumbotron*/
 	.jumbotron{
-		height:100%;
-		top:-20px;
         padding:0.5em;
         margin-top:0;
 	}
@@ -241,57 +224,32 @@
 
     .jumbotron p {
         margin-top:3%;  
-        font-size:1.05em;
         line-height:170%;
     }
-    
 
-
-
-/*end jumbotron changes*/
-    
-    .contact{
-        margin-top:-3px;   
-    }
-
-/*content changes*/
-
-
-	.button button{
-		left:0;
-	}
-/*content changes ends*/
-
-
-
-.small {
-    display:inline;
-}
-    
-    .large {
-        display:none;   
-    }
-    
     .links a{
-        font-size:24px;   
+        font-size:18px;   
     }
     
     .contact p {
         line-height:160%;   
     }
-    
-    .content p{
-        font-size:1.2em;   
-    }
 
+
+    
 
 }
+
+@media only screen and (max-width:768px){
+    .body {
+        margin-top:40px;
+    }
+    }
 
 @media only screen and (max-width:500px){
 
 	.self img{
-		width:100%;
-        
+		width:100%; 
 	}
 	.self{
 		width:100%;
@@ -299,22 +257,6 @@
     
 
 
-}
-
-@media only screen and (min-width:1430px){
-    .description {
-        font-size:1.019em;   
-    }
-    
-    .self img {
-        margin-top:2.5em;   
-    }
-}
-
-@media only screen and (min-width:2000px){
-    .description{
-        font-size:1.038em;   
-    }
 }
 
 

@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta name="viewport" content="width=device-width">
-    <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta property="name" content="MyePlay : Crystal Kwok">
-        <meta property="url" content="http://crystalkwok.github.io/ux/myeplay">
+        <meta property="name" content="About Crystal Kwok">
+        <meta property="url" content="http://crystalkwok.github.io/about">
         <meta name="author" content="Crystal Kwok">
         <meta name="keywords" content="san diego, los angeles, web design, crystal kwok, ucsd, ux, university of california san diego, crystal, kwok, website, design, interaction design, interaction designer,
-		crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, myeplay, eye, tracker, eyetracker, entertainment, pong, youtube, lis, locked-in">
-    
-	<!--bootstrap-->
-		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.css">
-		<link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.min.css">
-    
-    <!--jquery-->
-		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-       
-        <script type="text/javascript" src="../jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+        crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, research, research assistant, serences, rainbow art, rainbow canvas, rainbow, art, artwork, admin, administrative assistant">
+        
 
-	<!--css-->
+         <script src="../jquery/jquery-1.11.3.min.js"></script>
+          <script src="../jquery/jquery.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        
+        <!--bootstrap-->
+        <link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.min.css">
+        
+
+        <!--css-->
         <link href="../website_navbar.css" rel="stylesheet" />
-		<link href="myeplaycss.css" rel="stylesheet" />
-    <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
-       
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link href="myeplaycss.css" rel="stylesheet" />
+        <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
 
-	<!--fonts-->
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-
-		<!--random stuff-->
-		<link rel="Shortcut Icon" type="image/jpg" href="../images/icon2.png"/>
-		<title>MyePlay--crystal kwok</title>
+        <!--what is this lol-->
+        <link rel="Shortcut Icon" type="image/jpg" href="../images/logo%20square.png"/>
 
 
-</head>
+        <script src="../navbar.js"></script>
+
+        <title>MyePlay--crystal kwok</title>
+
+    </head>
+
 
 <body>
     
@@ -55,7 +52,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N57DXK');</script>
 <!-- End Google Tag Manager -->
-
     
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -67,116 +63,146 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
+    
+<script>
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+
+    $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+            title   : {
+                type: 'outside'
+            },
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+
+    });       
+    
+</script>
+    
+    
+
+
 
 <!--normal nav bar-->
-		<div class="navbar">
-			<div class="container">
-				<ul class="pull-left leftside">
-                    <img src="../images/incasedorisscrewsup.png">
-					<li class="name">CRYSTAL KWOK</li>
-                    <li class="description">user experience design & research</li>
-				</ul>
-				<ul class="pull-right top_gray">
-					<div class="right">
-                        <li><a href="../index.html">work</a> | <a href="#"><i class="fa fa-chevron-down fa_ux_dropdown"></i></a>
+       <div class="navbar bigger hidden-xs">
+            <div class="container">
+                <ul class="pull-left">
+                    <a href="../index.html"><img src="../images/logo%20gray.jpg"></a>
+                    <!--<li id="navbar_name">Crystal Kwok</li>-->
+                </ul>
+                <ul class="pull-right">
+                        <li class="relative">
+                            <span class="navbar_options">
+                            <a href="../index.html">work</a>
+                            <span class="hover_nav"></span></span> 
+
+                            | <a href="#"><i class="fa fa-angle-down ux_dropdown_big"></i></a>
+                            
                             <ul class="dropdown-menu">
-                                <li><a href="designlab.html">Design Lab</a></li>
+                                <li><a href="designlab.html" >Design Lab</a></li>
                                 <li><a href="learningequality.html">Learning Equality</a></li>
-                                <li><a href="timeline.html" >Timeline</a></li>
-                                  <li><a href="myeplay.html" class="activeb">MyePlay</a></li>
+                                <li><a href="timeline.html">Timeline</a></li>
+                                  <li><a href="myeplay.html" class="activea">MyePlay</a></li>
                                 <li><a href="crown.html" >CROWN</a></li>
                                 <li><a href="flunkless.html">FlunkLess</a></li>
                                 <li><a href="mustaske.html">MustAske</a></li>
                                 <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
-                      <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
                             </ul>
                         </li>
-                        <li><a href="../art.html">art</a></li>
-                        <li><a href="../about.html">about & contact</a></li>
-					</div>
-				</ul>
+                        <li class="navbar_options">
+                                <a href="../art.html">art</a>
+                                <span class="hover_nav"></span>
+                        </li>
+                        <li class="navbar_options">
+                            <a href="../about.html">about & contact</a>
+                                <span class="hover_nav"></span>
+                        </li>
+                </ul>
 
-			</div>
-		</div><!--end navbar-->
+            </div>
+        </div><!--end navbar-->
     
 
         <!--small nav bar-->
     
-		<div class="navbar_dropdown">
+        <div class="navbar_small hidden-lg hidden-md hidden-sm">
             <div class="container">
-            <div class="row">
-                
-                    <img src="../images/incasedorisscrewsup.png" class="col-sm-1 col-xs-1 smallLogo">
-               
-                <div class="left col-sm-7 col-xs-7">
-                    <a href="#" class= "icon-menu menu-left top col-sm-12 col-xs-12">CRYSTAL KWOK</a>
-                    <a href="#" class="icon-menu menu-left bottom col-sm-12 col-xs-12"><span class="navbar_description">user experience design & research</span></a>
+                <div class="row">
+                <img src="../images/logo%20gray.jpg" class="smallLogo">
+
+                <ul class="navbar_small_list">
+                    
+                    <li>
+                        <a href="../index.html">work</a> | <i class="fa fa-angle-down fa_ux_dropdown" id="fa_ux"></i>
+                    </li>
+                    <li> 
+                        <a href="../art.html">art</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">about</a>
+                    </li>
+                    
+                </ul>
+                <ul class="ux_dropdown_small">
+                    <div class="ux_dropdown_small_relative">
+                        <i class="fa fa-times" id="close_ux"></i>
+                            <li><a href="designlab.html">Design Lab</a></li>
+                            <li><a href="learningequality.html">Learning Equality</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="myeplay.html" id="activeb">MyePlay</a></li>
+                            <li><a href="crown.html">CROWN</a></li>
+                            <li><a href="flunkless.html">FlunkLess</a></li>
+                            <li><a href="mustaske.html">MustAske</a></li>
+                            <li><a href="http://github.com/crystalkwok">Programming</a></li>
+                    </div>
+                 </ul>
+
                 </div>
-                <div class="col-sm-4 col-xs-3 menuBar">
-                    <a href="#"  class="icon-menu menu-right"><i class="fa fa-bars fa-1"></i> MENU</a>
-                </div>
-            </div><!--end row-->
-            </div><!--end container-->
-			
-			<div class="dropdown">
-			<ul class="dropdown2">
-			
-				<!--<li class="pull-left"><a href="#"  class="close">close</a></li>
-			</br></br>-->
-				<li><a href="../index.html">work</a> &nbsp;
-                    | <a href="#">&nbsp;<i class="fa fa-chevron-down fa_ux_dropdown_small"></i> </a>
-                    <ul class="dropdown_ux">
-                               <li><a href="designlab.html" >Design Lab</a></li>
-                                <li><a href="learningequality.html">Learning Equality</a></li>
-                                <li><a href="timeline.html">Timeline</a></li>
-                                  <li><a href="myeplay.html" class="activeb">[ MyePlay ]</a></li>
-                                <li><a href="crown.html" >CROWN</a></li>
-                                <li><a href="flunkless.html">FlunkLess</a></li>
-                                <li><a href="mustaske.html">MustAske</a></li>
-                                <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
-                      <!--          <li><a href="work/rainbow_art.html">Rainbow Art</a></li>-->
+            </div>
+            
 
-                            </ul>
-                </li>
-				<li><a href="../art.html">art</a></li>
-				<li><a href="../about.html">about &amp; contact</a></li>
-				</br>
-			</ul>
-			</div>
-		</div><!--end navbar dropdown-->
+        </div><!--end navbar_small-->
 
-
-<div class="body"></div>
-<div class="rest container-fluid">
+<div class="container">
+    <div class="body">
+        <div class="row">
+            <p class="name">MYEPLAY</p>
+             <p class="page_description col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12">how can we help facilitate a better sense of life and social interaction for those with locked-in syndrome?</p>
+        </div>
+    </div>
+<div class="rest">
 <div class="row">
 <div class="motivation col-md-3 col-lg-3 col-sm-12 col-xs-12">
-    <h2 class="name">MYEPLAY</h2>
-    <hr>
-    <p>Meet <a href="http://www.bobveillette.com/" target="_blank">Bob Veillette</a>: a man who has Locked-in Syndrome (LIS) which leaves him completely paralyzed except for his eyes. <i>How can we help facilitate a better sense of life and social interaction for those with LIS?</i></p>
+    <p>Meet <a href="http://www.bobveillette.com/" target="_blank">Bob Veillette</a>: a man who has Locked-in Syndrome (LIS) which leaves him completely paralyzed except for his eyes.</p>
     
-    <p><h4><span>MyePlay is an eye-tracking based entertainment suite which includes games, which can be played as one or two player, and a media player.</span></h4></p>
+    <h4>MyePlay is an eye-tracking based entertainment suite which includes games, which can be played as one or two player, and a media player.</h4>
    <p> Loved ones usually only have a one-way communication with people with LIS.  LIS patients also have communicated that they feel trapped in a limiting body, because they can still hear and be cognizant of the world around them, and their ability to think has not been damaged.  Our main goals for MyePlay are for Bob's life to be enriched by relieving his boredom when he is alone, socially interacting with his loved ones, and enlightening his mind through videos.  
     </p>
+ 
+    <hr>
     
-    <p>
+     <p>DURATION: September 2014 - December 2014</p>
+    <p>ROLE: UX / UI / Interaction Designer</p>
+
+    <p>TOOLS: Adobe Creative Suite, Wireframing, Prototyping, User Stories/ Scenarios, NodeJS, HTML/CSS</p>
+
+
+    <p>COLLABORATORS: Alex Yang, Andrew Wang, Danny Zhang, Kane Chong, Luke Kim, Sam Suen, Sean Burke, Pavan Kumar</p>
+   <p>DELIVERABLES: <a href="http://myeplay.herokuapp.com" target="_blank">Website</a>&nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://github.com/hawaiianchimp/MyePlay" target="_blank">GitHub</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/design%20information.pdf" target="_blank">Design : Detailed Description</a>  &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/user%20story.pdf">User Story</a>  &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/final%20presentation.pdf" target="_blank">Final Presentation</a></p>
+
+    
+    <hr>
+    
+        <p>
         Designing for people with LIS has been a completely new experience, considering that the interactions with the technology would be very specialized and limited, especially with Bob's limited action of vertical eye movements only and the limitation of a cheaper eyetracker. Having the chance to design for our users has <b>created new possibilities for interfaces, user experiences, interactions, and even new discoveries to what is intuitive specifically to these users.  This project opened up new possibilities to rethink already existing functions and purposes of the different parts of the people's bodies </b>, because people with LIS must learn to use their eyes for more purposes than people without LIS usually need to.   
     </p>
-
-    
-    <hr>
-    
-     <p class="col-md-12 col-sm-12 col-xs-12"><span style="font-weight:400">DURATION</span>: September 2014 - December 2014</p>
-    <p class="col-md-12 col-sm-12 col-xs-12"><span style="font-weight:400">ROLE</span>: UX / UI / Interaction Designer</p>
-
-    <p class="col-md-12 col-sm-12 col-xs-12"><span style="font-weight:400">TOOLS</span>: Adobe Creative Suite, Wireframing, Prototyping, User Stories/ Scenarios, NodeJS, HTML/CSS</p>
-
-
-    <p class="col-md-12 col-sm-12 col-xs-12"><span style="font-weight:400">COLLABORATORS</span>: Alex Yang, Andrew Wang, Danny Zhang, Kane Chong, Luke Kim, Sam Suen, Sean Burke, Pavan Kumar</p>
-   <p class="col-md-12 col-sm-12 col-xs-12"><span style="font-weight:400">DELIVERABLES</span>: <a href="http://myeplay.herokuapp.com" target="_blank">Website</a>&nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://github.com/hawaiianchimp/MyePlay" target="_blank">GitHub</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/design%20information.pdf" target="_blank">Design : Detailed Description</a>  &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/user%20story.pdf">User Story</a>  &nbsp;&nbsp; | &nbsp;&nbsp; <a href="../images/myeplay/final%20presentation.pdf" target="_blank">Final Presentation</a></p>
-
-    
-    <hr>
-    
     
 </div><!--end motivation-->
 
@@ -281,8 +307,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="titles">
                 <h3>Final Working Prototype</h3>
             </div>
-                <a href="#" id="finalp_info" class="small">[ more info ]</a>
-                <br><span class="finalp_info"> After extensive testing with the EyeTribe (the eye tracker we were using), we decided to only have a vertical spiral design, because it would only show one option at once, preventing errors that could easily be made by the system with multiple options available at once.  This demo is of our final design and project, and <a href="../images/myeplay/design%20information.pdf" target="_blank"><span style="font-size:17px">here</span></a> is a complete detailed description of our designs and the reasoning behind all the design choices.</span> </p>
+                <a href="#" id="finalp_info" class="hidden-lg hidden-md">[ more info ]</a>
+                <p><span class="finalp_info"> After extensive testing with the EyeTribe (the eye tracker we were using), we decided to only have a vertical spiral design, because it would only show one option at once, preventing errors that could easily be made by the system with multiple options available at once.  This demo is of our final design and project, and <a href="../images/myeplay/design%20information.pdf" target="_blank"><span style="font-size:17px">here</span></a> is a complete detailed description of our designs and the reasoning behind all the design choices.</span> </p>
         </div>
         <div class="col-md-1 col-lg-1 disappear"></div>
         <div class="col-md-5 col-sm-12 col-xs-12">
@@ -317,6 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div><!--end row-->
 
 </div><!--end rest container fluid-->
+</div>
 
 
 
@@ -324,28 +351,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <footer>
     <script>
 			$(document).ready(function(){
-	
 
-				$('.icon-menu').click(function(){
-					$('.dropdown').toggle();
-					
-				});
-
-
-				$('.close').click(function(){
-					$('.dropdown').hide();
-				});
-                
-          
-  $('.fa_ux_dropdown').click(function() {
-    $('.dropdown-menu').toggle();
-      return false;
-  });
-                
-                 $('.fa_ux_dropdown_small').click(function() {
-    $('.dropdown_ux').toggle();
-  });
-                
 
         $('#paper_prototypes').click(function(){
             $('.paper_prototypes').toggle("slow");
