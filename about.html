@@ -35,6 +35,9 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 
+                <!--jquery-->
+        <script type="text/javascript" src="instafeed/instafeed.min.js"></script>
+
         <!--what is this lol-->
         <link rel="Shortcut Icon" type="image/jpg" href="images/logo%20square.png"/>
 
@@ -321,29 +324,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     
     <script type="text/javascript">
-					var feed = new Instafeed({
-					get: 'user',
-					      userId: 289945956,
-					      accessToken: '289945956.eed8e7c.140ac6ec1d5046509dc467969b288fc6',
-					      limit: 8,
-					      link: 'true',
-					      resolution: 'low_resolution',
+                    var feed = new Instafeed({
+                    get: 'user',
+                          userId: 289945956,
+                          accessToken: '289945956.eed8e7c.140ac6ec1d5046509dc467969b288fc6',
+                          limit: 8,
+                          link: 'true',
+                          resolution: 'low_resolution',
                          useHttp: true,
-					after: function () {
-					  var images = $("#instafeed").find('a');
-					  $.each(images, function(index, image) {
-					    var delay = (index * 75) + 'ms';
-					    $(image).css('-webkit-animation-delay', delay);
-					    $(image).css('-moz-animation-delay', delay);
-					    $(image).css('-ms-animation-delay', delay);
-					    $(image).css('-o-animation-delay', delay);
-					    $(image).css('animation-delay', delay);
-					    $(image).addClass('animated flipInX');
-					  });
-					},
-					template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
-				      });
-				      feed.run();
+                    after: function () {
+                      var images = $("#instafeed").find('a');
+                      $.each(images, function(index, image) {
+                        var delay = (index * 75) + 'ms';
+                        $(image).css('-webkit-animation-delay', delay);
+                        $(image).css('-moz-animation-delay', delay);
+                        $(image).css('-ms-animation-delay', delay);
+                        $(image).css('-o-animation-delay', delay);
+                        $(image).css('animation-delay', delay);
+                        $(image).addClass('animated flipInX');
+                      });
+                    },
+                    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
+                      });
+                      feed.run();
 </script>
 </footer>
 
