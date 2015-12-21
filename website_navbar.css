@@ -548,25 +548,6 @@ b {
 }
 
 
-
-
-@media only screen and (max-width:600px){
-	.icon-menu{
-		font-size:20px;
-	}
-
-	.dropdown a{
-		font-size:1.3em;
-	}
-    
-    .dropdown_ux a{
-        font-size:1.15em;   
-    }
-    
-    
-    
-}
-
 @media only screen and (max-width:557px){
 
     
@@ -590,21 +571,6 @@ b {
 
 b {
     font-weight:600;
-}
-
-
-
-
-@media only screen and (min-width:1430px){
-    * {
-        font-size:1.019em;   
-    }
-}
-
-@media only screen and (min-width:2000px){
-    *{
-        font-size:1.037em;   
-    }
 }
 
 
