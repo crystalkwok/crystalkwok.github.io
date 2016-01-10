@@ -410,6 +410,44 @@ b {
     padding-bottom:0;
 }
 
+.back_to_work {
+    margin-top:2em;
+    margin-bottom:7em;
+    text-align:center;
+}
+
+.back_to_work a:hover line, .back_to_work a:hover polyline{
+    stroke:#999;
+}
+
+.back_to_work a:hover span {
+    color:#999;
+}
+
+.back_to_work a {
+    text-align:center;
+    margin-left:-10%;
+    margin-right:auto;
+}
+
+.back_to_work svg {
+    height:25px;
+    width:25px;
+     stroke:#6aa1d6;
+}
+
+.back_to_work line, .back_to_work polyline{
+    stroke:#6aa1d6;
+    stroke-width:5;
+}
+
+.back_to_work span {
+    position:absolute;
+    margin-top:3px;
+    font-family:'Montserrat', sans-serif;
+    font-style:italic;
+}
+
 
 
 
@@ -540,6 +578,10 @@ b {
     .title {
         top:80%;
 
+    }
+
+    .back_to_work a {
+        margin-left:-22%;
     }
 
 }

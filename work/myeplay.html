@@ -63,29 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-    
-<script>
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
 
-    $(".fancybox-thumb").fancybox({
-        prevEffect  : 'none',
-        nextEffect  : 'none',
-        helpers : {
-            title   : {
-                type: 'outside'
-            },
-            thumbs  : {
-                width   : 50,
-                height  : 50
-            }
-        }
-    });
-
-    });       
-    
-</script>
-    
     
 
 
@@ -249,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <p class="description_title">Literature Review <a href="../images/myeplay/papers/week1tu%20smith%20locked-in%20syndrome.pdf" target="_blank">[1]</a> <a href="../images/myeplay/papers/week2%20duchowski.pdf" target="_blank">[2]</a> <a href="../images/myeplay/papers/week2%20roda%20&%20thomas.pdf" target="_blank">[3]</a> <a href="../images/myeplay/papers/week2%20zhai.pdf" target="_blank">[4]</a>, Wireframing, High Fidelity Prototyping, <a href="../images/myeplay/user%20story.pdf" target="_blank">User Story</a></p>
                 </div>
                      <a href="#" id="firstp_info">[ more info ]</a>
-                    <p><span class="firstp_info">I created a demo video using Adobe Illustrator that highlights the UI and interactions to show our investors at the Moxie Center.  For my <a href="../images/myeplay/design%20information.pdf">design</a>, I chose to make it a vertical spiral to suit Bob, to make it intuitive that this menu was a continuous cycle and can be accessed through up and down movements, and to make only one option available at a time to avoid errors that can be made by the system.  We feel privileged to have designed something to improve and <a href="../images/myeplay/user%20story.pdf" target="_blank">enrich Bob's life</a>, and to have redefined the <a href="../images/myeplay/roda%20and%20thomas.pdf" target="_blank">eye's purpose and function</a> as not just a passive way to indicate attention, but as an active decision maker.  </span></p>
+                    <p class="firstp_info">I created a demo video using Adobe Illustrator that highlights the UI and interactions to show our investors at the Moxie Center.  For my <a href="../images/myeplay/design%20information.pdf">design</a>, I chose to make it a vertical spiral to suit Bob, to make it intuitive that this menu was a continuous cycle and can be accessed through up and down movements, and to make only one option available at a time to avoid errors that can be made by the system.  We feel privileged to have designed something to improve and <a href="../images/myeplay/user%20story.pdf" target="_blank">enrich Bob's life</a>, and to have redefined the <a href="../images/myeplay/roda%20and%20thomas.pdf" target="_blank">eye's purpose and function</a> as not just a passive way to indicate attention, but as an active decision maker. </p>
                 
                
             </div>
@@ -308,7 +286,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h3>Final Working Prototype</h3>
             </div>
                 <a href="#" id="finalp_info" class="hidden-lg hidden-md">[ more info ]</a>
-                <p><span class="finalp_info"> After extensive testing with the EyeTribe (the eye tracker we were using), we decided to only have a vertical spiral design, because it would only show one option at once, preventing errors that could easily be made by the system with multiple options available at once.  This demo is of our final design and project, and <a href="../images/myeplay/design%20information.pdf" target="_blank">here</a> is a complete detailed description of our designs and the reasoning behind all the design choices.</span> </p>
+                <p class="finalp_info"> After extensive testing with the EyeTribe (the eye tracker we were using), we decided to only have a vertical spiral design, because it would only show one option at once, preventing errors that could easily be made by the system with multiple options available at once.  This demo is of our final design and project, and <a href="../images/myeplay/design%20information.pdf" target="_blank">here</a> is a complete detailed description of our designs and the reasoning behind all the design choices.</p>
         </div>
         <div class="col-md-1 col-lg-1 disappear"></div>
         <div class="col-md-5 col-sm-12 col-xs-12">
@@ -342,7 +320,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 </div><!--end row-->
 
-</div><!--end rest container fluid-->
+</div><!--end rest-->
+
+    <div class="back_to_work row">
+        <a href="../index.html"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
+        <line fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="118" y1="73" x2="27" y2="73"/>
+        <polyline fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" points="51.107,47.751 
+            26,72.216 26,72.786 50.786,97.251 "/>
+        </svg>
+         <span>&nbsp; back to work</span></a>
+
+    </div>
 </div>
 
 
@@ -350,35 +339,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <footer>
     <script>
-			$(document).ready(function(){
+	$(document).ready(function(){
 
-
-        $('#paper_prototypes').click(function(){
-            $('.paper_prototypes').toggle("slow");
-            $('html,body').animate({ scrollTop:$(".video iframe").offset().top}, 1500);
-             return false;
-        });
-
-        $('#paper_prototypes2').click(function(){
-            $('.paper_prototypes').toggle("slow");
-            $('html,body').animate({ scrollTop:$(".video iframe").offset().top}, 1500);
-             return false;
-        });
-        
-         $('#screenshots_final').click(function(){
-            $('.screenshots_final').toggle("slow");
-            $('html,body').animate({ scrollTop:$(".final_prototype iframe").offset().top}, 1500);
-             return false;
-        });
-
+    
 
          $('#firstp_info').click(function(){
-            $('.firstp_info').toggle("slow");
+            console.log("what");
+            $('.firstp_info').toggle();
              return false;
         });
 
         $('#finalp_info').click(function(){
-            $('.finalp_info').toggle("slow");
+            $('.finalp_info').toggle();
              return false;
         });
         
