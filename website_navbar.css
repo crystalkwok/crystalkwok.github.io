@@ -413,7 +413,10 @@ b {
 .back_to_work {
     margin-top:2em;
     margin-bottom:7em;
-    text-align:center;
+}
+
+.back_to_work div {
+    text-align: center;
 }
 
 .back_to_work a:hover line, .back_to_work a:hover polyline{
