@@ -9,6 +9,16 @@ html, body {
     overflow-x: hidden !important;
 }
 
+.step_title {
+    font-style: italic;
+    color:#cccccc;
+    font-size:13px;
+}
+
+.step_class {
+    margin:30px 0 20px 0;
+}
+
 /*big nav bar*/
 
 .navbar {
@@ -365,6 +375,8 @@ b {
 .titles /*, .title */{
     margin-bottom:1.3em;
 }
+
+
 
 .description_title {
     font-size:15px;
