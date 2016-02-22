@@ -9,6 +9,10 @@
 padding:0.5em;
 }
 
+.step_description.approach{
+    padding:0 20px;
+}
+
 .userResearch img {
     margin-top:2em;
     margin-bottom:1em;
