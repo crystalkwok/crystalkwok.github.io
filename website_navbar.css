@@ -9,10 +9,14 @@ html, body {
     overflow-x: hidden !important;
 }
 
-.step_title {
-    font-style: italic;
+.step_title span {
+    text-transform: uppercase;
     color:#cccccc;
     font-size:13px;
+    border-top:2px solid #f1f1f1;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding:5px 7px;
 }
 
 .step_class {
