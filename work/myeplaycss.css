@@ -38,6 +38,10 @@ iframe {
     font-size:13px;
 }
 
+.paper_prototypes .step_description{
+    margin-bottom:21px;
+}
+
 
 
 @media only screen and (max-width:1200px){
@@ -52,9 +56,9 @@ iframe {
 
 @media only screen and (max-width:995px){
 
-    .firstp_info, .finalp_info{
+/*    .firstp_info, .finalp_info{
     display:none;
-}
+}*/
     
     
    iframe {

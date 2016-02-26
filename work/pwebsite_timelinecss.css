@@ -27,6 +27,15 @@
     display:none;
 }
 
+.problem_solution .step_class{
+    margin:0 0;
+    margin-top:7px;
+}
+
+.step_title span {
+    border:none;
+}
+
 
 
 

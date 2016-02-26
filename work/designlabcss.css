@@ -1,12 +1,15 @@
 @charset 'UTF-8';
 
 
-.poster img {
+.poster{
     border: 2px solid #e8e8e8;
     padding:2%;
     margin-left:4.2%;
 }
 
+.peer_feedback_challenge {
+    padding:0px 20px;
+}
 
 .interfaceFinal img {
     border: 1px solid #d8d8d8;
@@ -36,7 +39,7 @@
     padding:1em;
 }
 
-.poster p:not(.description_title) {
+.poster2 p:not(.description_title) {
     font-size:13px;
 }
 
