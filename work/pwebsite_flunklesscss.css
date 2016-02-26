@@ -21,13 +21,9 @@
     font-size:1.2em;
 }
 
-
-#affinity{
-height:100%;
-width:100%;
-    margin-left:-20px;
+.affinity_photo {
+    margin-top:21px;
 }
-
 
 .process img {
     margin-bottom:1em;
@@ -38,9 +34,16 @@ width:100%;
     font-size:1.1em;
 }
 
-#problem {
-    margin-top:1.5em;
-    margin-bottom:1.5em;
+
+.first_section h4 {
+    line-height: 150%;
+    font-weight:30px;
+    margin-top:7%;
+    margin-bottom:7%;
+}
+
+.first_section .step_class {
+    margin-bottom:0;
 }
 
 
