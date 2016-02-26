@@ -163,14 +163,14 @@ html, body {
     width: 100%;
     background: #c1c2c2;
     opacity: 0;
-    top:2.5em;            
-    transition: height .1s linear, opacity .25s linear, top .5s ease;
+    top:2.5em;         
+    transition: height .3s linear, opacity .3s linear, top .5s ease;
 }
 
 .navbar_options:hover .hover_nav{
     height:4px;
     opacity:1.0; 
-    top:2.45em;   
+    /*top:2.45em;   */
 }
 
 
