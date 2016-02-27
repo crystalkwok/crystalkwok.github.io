@@ -42,13 +42,9 @@ iframe {
     margin-bottom:21px;
 }
 
-
-
-@media only screen and (max-width:1200px){
-
-    .disappear {
-        display:none;   
-    }
+.first_prototype .hidden-xs .description_title {
+    text-align:left;
+    margin-top:40px;
 }
 
 

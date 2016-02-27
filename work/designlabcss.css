@@ -4,7 +4,10 @@
 .poster{
     border: 2px solid #e8e8e8;
     padding:2%;
-    margin-left:4.2%;
+}
+
+.poster_comment {
+    padding-left:5%;
 }
 
 .peer_feedback_challenge {
