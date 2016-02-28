@@ -32,12 +32,14 @@
     margin-top:7px;
 }
 
-.step_title span {
-    border:none;
-}
 
 .ugh {
     margin-top:20px;
+}
+
+.section {
+    padding-top:3em;
+    padding-bottom:3em;
 }
 
 

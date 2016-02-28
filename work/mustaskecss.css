@@ -43,9 +43,6 @@
     margin-top:7px;
 }
 
-.step_title span {
-    border:none;
-}
 
 .mustaske_titles {
   text-align:left;
@@ -53,8 +50,20 @@
 
 .mustaske_titles h3 {
   text-align:left;
-  font-weight:500;
-  font-size:18px;
+  font-weight:300;
+  font-size:17px;
+  color:#8c8c8c;
+  margin-left:4.2%;
+}
+
+.section {
+    padding-top:3em;
+    padding-bottom:3em;
+}
+
+.outcome.section {
+  padding-top:6em;
+  padding-bottom:4em;
 }
 
 
