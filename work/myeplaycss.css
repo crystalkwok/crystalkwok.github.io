@@ -44,7 +44,10 @@ iframe {
 
 .first_prototype .hidden-xs .description_title {
     text-align:left;
-    margin-top:40px;
+}
+
+.small_pictures {
+    margin-top:20px;
 }
 
 
