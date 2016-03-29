@@ -15,6 +15,21 @@
     line-height: 160% !important;
 }
 
+.challenge.step_class {
+    margin: 0 0 90px 0;
+    margin-top: 7px;
+}
+
+#challengep{
+    font-size:15px;
+    font-weight:600;
+}
+
+.section {
+    padding-top:4em;
+    padding-bottom:6em;
+}
+
 /*@media only screen and (max-width:700px){
     #lightbox_normal img{
         height:150px;
