@@ -29,14 +29,6 @@ iframe {
     margin-bottom:2%;
 }
 
-.design_user p{
-    line-height:200%;
-}
-
-.video p:not(.description_title), .final_prototype p{
-    line-height:160%;
-    font-size:13px;
-}
 
 .paper_prototypes .step_description{
     margin-bottom:21px;

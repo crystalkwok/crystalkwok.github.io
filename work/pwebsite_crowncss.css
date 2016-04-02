@@ -6,14 +6,11 @@
     padding:0.5em;
 }
 
-.rest p:not(.description_title), .rest li{
+.rest li{
     font-size:13px;
     line-height: 170%;
 }
 
-.motivation p{
-    line-height: 160% !important;
-}
 
 .challenge.step_class {
     margin: 0 0 90px 0;

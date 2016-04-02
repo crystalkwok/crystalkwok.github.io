@@ -23,9 +23,6 @@
     font-weight:600;
 }
 
-.interface p:not(.step_title){
-    font-size:13px;
-}
 
 .interfaceProcess img{
     padding:0.5em;
@@ -40,10 +37,6 @@
 .interfaceProcess {
     background-color:#f8f8f8;
     padding:1em;
-}
-
-.poster2 p:not(.description_title) {
-    font-size:13px;
 }
 
 .process_images {
