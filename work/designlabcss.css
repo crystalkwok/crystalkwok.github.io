@@ -8,6 +8,7 @@
 
 .poster_comment {
     padding-left:5%;
+    font-weight:300;
 }
 
 .peer_feedback_challenge {
@@ -50,6 +51,14 @@
 
 .poster_comment {
     margin-left:4%;
+}
+
+.deep_surface_features {
+    margin:35px 0 30px 0;
+}
+
+.outcome.first .subtitle_description {
+    margin:35px 0 35px 0;
 }
 
 

@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 * {
     font-family:'Open Sans', sans-serif;
-    font-weight:400;
+    font-size:13px;
+    font-weight:300;
 }
 
 
@@ -10,6 +11,15 @@ html, body {
     overflow-x: hidden !important;
 }
 
+.step_class li {
+    font-weight:300;
+    color:#7b8994;
+}
+
+.section li {
+    font-weight:300;
+    color:#7b8994;
+}
 
 .split {
     fill:#50728E;
@@ -28,7 +38,7 @@ html, body {
     letter-spacing: 3px;
     font-weight: 700;
     padding:5px 0;
-    margin:0 17px 20px 17px;
+    margin:0 17px 20px 0px;
 }
 
 .step_title span {
@@ -44,22 +54,64 @@ html, body {
 }
 
 
-
-
 .step_class .step_description {
     padding:0;
     margin-top:8px;
 }
 
 .step_description {
-    line-height:190%;
+    line-height:180%;
     font-size:13px;
+    font-weight:300;
+    padding:0;
+    color:#7b8994;
 }
 
 .step_class:last-child {
     margin-bottom:40px;
 }
 
+.subtitle {
+    font-weight:500;
+    font-size:25px;
+}
+
+.subtitle_description{
+    font-weight:300;
+    font-size:19px;
+    margin-bottom:20px;
+    color:#000;
+    line-height:145%;
+}
+/*color:#50728E;*/
+
+.subtitle_list {
+    font-weight:600;
+    font-size:14px;
+    /*color:#3e68b5;*/
+    color:#50728E;
+    margin-bottom:13px;
+}
+
+.subtitle_subdescription {
+    font-size:13px;
+    line-height: 160%;
+    font-weight:300;
+    color:#7b8994;
+}
+
+
+
+.summary {
+    padding:0;
+    margin-top:50px;
+}
+
+.summary_section{
+    margin-top:30px;
+
+    padding-left:0;
+}
 
 
 /*big nav bar*/
@@ -76,11 +128,12 @@ html, body {
 .navbar a {
     text-decoration: none;
     color:#c1c2c2;
+    font-weight:400;
 }
 
 .navbar li{
 	display:inline;
-	font-size:14px;
+	font-size:13px;
 	margin-right:20px;
     margin-left:20px;
     margin-top:1em;
@@ -336,6 +389,7 @@ footer a:hover {
 .page_description, .role{
     letter-spacing: .01em;
     font-size:15px;
+    font-weight:400;
 }
 
 
@@ -379,6 +433,7 @@ footer a:hover {
     line-height:160%;
     font-size:13px;
     padding:0 0;
+    font-weight:300;
 }
 
 .motivation a{
@@ -411,10 +466,16 @@ b {
 }
 
 .titles h2, .titles h3, .titles h4 {
-    font-weight:500;
-    font-size:20px;
+    font-weight:600;
+    font-size:16px;
     text-align:center;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.titles a {
+    font-size:15px;
 }
 
 .titles /*, .title */{
@@ -426,7 +487,7 @@ b {
 .description_title {
     font-size:15px;
     font-weight:500;
-    color:#989898;
+    color:#bbbbbb;
     text-align:center;
 }
 

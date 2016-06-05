@@ -18,10 +18,6 @@ padding:0.5em;
     margin-bottom:1em;
 }
 
-.prototypes p:not(.description_title), .wireframes p:not(.description_title), .userResearch p:not(.description_title),
-.userResearch li, .prototypes li, .wireframes li{
-    font-size:13px;
-}
 
 .first .prototypes img, .gray img, .white img{
     border: 2px solid #e8e7e7;
@@ -45,6 +41,14 @@ padding:0.5em;
 
 .prototypes {
     margin-top:40px;
+}
+
+.curation_styles {
+    margin-top:19px;
+}
+
+.insights {
+    margin-top:30px;
 }
 
 
