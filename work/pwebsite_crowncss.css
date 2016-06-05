@@ -22,6 +22,10 @@
     padding-bottom:6em;
 }
 
+.summary_section_small {
+    margin-top:40px;
+}
+
 /*@media only screen and (max-width:700px){
     #lightbox_normal img{
         height:150px;
