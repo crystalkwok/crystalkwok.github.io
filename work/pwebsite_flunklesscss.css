@@ -1,8 +1,5 @@
 @charset 'UTF-8';
 
-.right-side p:not(.description_title) {
-    font-size:13px;
-}
 
 .intropics img{
     padding:0.5em;
@@ -14,6 +11,14 @@
 
 .finalprototypepics {
     margin-top:2%;
+}
+
+.subtitle_description .bold {
+    font-weight:600;
+    font-size:19px;
+    margin-bottom:20px;
+    color:#000;
+    line-height:145%;
 }
 
 #content5_title {
@@ -42,4 +47,7 @@
     margin-bottom:7%;
 }
 
+.process-left-side {
+    padding:0;
+}
 
