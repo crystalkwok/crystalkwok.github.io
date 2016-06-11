@@ -83,6 +83,10 @@ html, body {
     color:#000;
     line-height:145%;
 }
+
+.subtitle_description a, .subtitle_description i {
+    font-size:19px;
+}
 /*color:#50728E;*/
 
 .subtitle_list {
