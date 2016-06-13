@@ -6,11 +6,6 @@
     padding:2%;
 }
 
-.poster_comment {
-    padding-left:5%;
-    font-weight:300;
-}
-
 .peer_feedback_challenge {
     padding:0px 20px;
     margin-bottom:20px;
@@ -46,12 +41,13 @@
     margin-bottom:30px;
 }
 
-.invisionapp {
-    margin-top:20%;
+.process_images img {
+    width:100%;
+    padding-bottom:15px;
 }
 
-.poster_comment {
-    margin-left:4%;
+.invisionapp {
+    margin-top:20%;
 }
 
 .deep_surface_features {

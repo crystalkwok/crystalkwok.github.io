@@ -11,11 +11,6 @@ html, body {
     overflow-x: hidden !important;
 }
 
-.step_class li {
-    font-weight:300;
-    color:#7b8994;
-}
-
 .section li {
     font-weight:300;
     color:#7b8994;
@@ -32,29 +27,21 @@ html, body {
 
 .step_title{
     text-transform: uppercase;
-    color:#ffffff;
+    color:#000;
     font-size:13px;
-    border-bottom:1px solid #e2e2e2;
-    letter-spacing: 3px;
-    font-weight: 700;
+    letter-spacing: 5px;
     padding:5px 0;
-    margin:0 17px 20px 0px;
+    margin-bottom:25px;
 }
 
 .step_title span {
-    /*border-bottom:3px solid #e2e2e2;*/
+    /*border-bottom:1px solid #e2e2e2;*/
     padding-bottom:4px;
-    font-weight:700;
-    padding:5px 20px;
-    background-color:#dddddd;
+    font-weight:800;
+    font-size:16px;
 }
 
-.step_class {
-    margin:50px 0 90px 0;
-}
-
-
-.step_class .step_description {
+.step_description {
     padding:0;
     margin-top:8px;
 }
@@ -67,9 +54,6 @@ html, body {
     color:#7b8994;
 }
 
-.step_class:last-child {
-    margin-bottom:40px;
-}
 
 .subtitle {
     font-weight:500;
@@ -365,6 +349,9 @@ footer p{
 footer a {
     color:#6aa1d6;
     text-decoration:none;
+    font-size:15px;
+    font-weight:400;
+    cursor:pointer;
 }
 
 footer a:hover {
@@ -378,6 +365,7 @@ footer a:hover {
 
 .body, .top{
     margin-top:169px;
+    margin-bottom:87px;
 }
 
 .body p, .top p{
@@ -398,7 +386,6 @@ footer a:hover {
 
 
 .rest {
-    margin-top:87px;
     margin-bottom:20px;
 }
 
@@ -419,38 +406,32 @@ footer a:hover {
 }
 
 
-.motivation hr {
-    margin-left:1em;
-    margin-right:1em;
-    color:#c1c2c2;
-}
-
-.motivation{
+.motivation, .end-note{
     color:#000000;
-    background-color:#f8f8f8;
+    background-color:#fafafa;
     padding:30px;
-    margin-bottom:70px;
 }
 
-.motivation p{
+.motivation p, .end-note p{
     line-height:160%;
     font-size:13px;
     padding:0 0;
     font-weight:300;
 }
 
-.motivation a{
+.motivation a, .end-note a, .section a{
     color:#6aa1d6;
     text-decoration: none;
+    font-weight:400;
 }
 
-.motivation a:hover{
+.motivation a:hover, .end-note a:hover, .section a:hover{
     color:#999;
     text-decoration: none;
 }
 
 
-.motivation h4 {
+.motivation h4, .end-note h4{
     font-size:15px;
     font-weight:600;
 }
@@ -470,15 +451,17 @@ b {
 
 .titles h2, .titles h3, .titles h4 {
     font-weight:600;
-    font-size:16px;
+    font-size:18px;
     text-align:center;
     font-family:'Open Sans', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
+    margin-bottom:20px;
+    margin-top:20px;
 }
 
 .titles a {
-    font-size:16px;
+    font-size:18px;
 }
 
 .titles /*, .title */{
@@ -490,8 +473,10 @@ b {
 .description_title {
     font-size:15px;
     font-weight:500;
-    color:#bbbbbb;
+    color:#cccccc;
     text-align:center;
+    margin-top:5px;
+    margin-bottom:20px;
 }
 
 .right-side {
@@ -506,17 +491,12 @@ b {
 }
 
 .section {
-    padding-bottom:4em;
+    padding-bottom:6em;
     padding-top:6em;
 }
 
 .section.first_section {
-    padding-top:0;
-}
-
-.motivation a, .right-side a{
-        color:#6aa1d6;
-    font-weight:400;
+    padding-top:15px;
 }
 
 
@@ -532,10 +512,6 @@ b {
     padding-bottom:0;
 }
 
-.back_to_work {
-    margin-top:2em;
-    margin-bottom:7em;
-}
 
 .back_to_work div {
     text-align: center;
@@ -574,7 +550,25 @@ b {
 }
 
 
+.challenge {
+    background-color:#51687c;
+    padding-top:30px;
+    padding-bottom:30px;
+}
 
+.challenge p {
+}
+
+.challenge h3 {
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+}
+
+.challenge a {
+    color:#9abddc;
+    font-weight:600;
+}
 
 
 
@@ -688,9 +682,6 @@ b {
         margin-top:47px;
     }
 
-    .motivation {
-        margin-bottom:47px;
-    }
 
     .ux_work2 {
         margin-top:47em;
