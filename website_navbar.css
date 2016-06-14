@@ -110,6 +110,7 @@ html, body {
 	width:100%;
 	z-index:10;
     padding-top:7px;
+    transition:all .3s ease;
 }
 
 .navbar a {
@@ -147,25 +148,32 @@ html, body {
 
 .bigger{
     height:95px;
-    transition: all .2s;
+    transition: all .3s ease;
+    background-color:transparent;
 }
 
 .bigger img {
     width:50px;
     margin-top:.5em;
     transition: all .2s;
+    border:2px solid #fff;
 }
 
 .bigger .pull-right {
      margin-top:2em;
     transition: all .2s;
+
 }
 
 .bigger #navbar_name {
     top:-55px;
     transition:all .2s;
+
 }
 
+.bigger .navbar a {
+    color:#fff;
+}
 
 
 .shrink {
@@ -242,6 +250,10 @@ html, body {
     height:4px;
     opacity:1.0; 
     /*top:2.45em;   */
+}
+
+.navbar_options:hover {
+    cursor: pointer;
 }
 
 
@@ -364,12 +376,13 @@ footer a:hover {
 
 
 .body, .top{
-    margin-top:169px;
-    margin-bottom:87px;
+    padding-top:157px;
+    padding-bottom:105px;
 }
 
 .body p, .top p{
     text-align: center;
+    color:#fff;
 }
 
 .body i {
@@ -464,7 +477,7 @@ b {
     font-size:18px;
 }
 
-.titles /*, .title */{
+/*.titles , .title */{
     margin-bottom:1.3em;
 }
 
@@ -496,7 +509,7 @@ b {
 }
 
 .section.first_section {
-    padding-top:15px;
+    padding-top:30px;
 }
 
 
