@@ -17,7 +17,7 @@ html, body {
 }
 
 .split {
-    fill:#50728E;
+    fill:#51687c;
     height:30px;
     display:block;
     margin-right:auto;
@@ -115,8 +115,15 @@ html, body {
 
 .navbar a {
     text-decoration: none;
-    color:#c1c2c2;
     font-weight:400;
+}
+
+.navbar.bigger a {
+    color:#fff;
+}
+
+.navbar.shrink a {
+    color:#c1c2c2;
 }
 
 .navbar li{
@@ -131,7 +138,7 @@ html, body {
     font-weight:400;
 }
 
-.navbar .activea {
+.navbar #activea {
     border-bottom:4px solid #000 !important;
     color:#000;
     font-weight:400;
@@ -215,7 +222,7 @@ html, body {
     display:table-row;
 }
 
-.dropdown-menu>li>a {
+.navbar .dropdown-menu>li>a {
     color:#999;
     letter-spacing:0em;
 }
@@ -240,10 +247,19 @@ html, body {
     height:0;
     display: block;
     width: 100%;
-    background: #c1c2c2;
     opacity: 0;
     top:2.5em;         
     transition: height .3s linear, opacity .3s linear, top .5s ease;
+}
+
+.navbar.bigger .hover_nav {
+    background:#fff;
+
+}
+
+.navbar.shrink .hover_nav {
+    background:#c1c2c2;
+
 }
 
 .navbar_options:hover .hover_nav{
@@ -380,9 +396,15 @@ footer a:hover {
     padding-bottom:105px;
 }
 
-.body p, .top p{
+
+.body p{
     text-align: center;
     color:#fff;
+}
+
+.top p {
+    text-align:center;
+    color:#000;
 }
 
 .body i {
@@ -519,7 +541,7 @@ b {
     text-decoration: none;
 }
 
-.dropdown-menu .activea {
+.dropdown-menu #activea {
     border-left:3px solid #000;
     border-bottom:0px !important;
     padding-bottom:0;
