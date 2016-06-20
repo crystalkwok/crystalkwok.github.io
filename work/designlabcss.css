@@ -8,17 +8,6 @@
     position:relative;
 }
 
-.overlay {
-    position:absolute;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;
-    background-color:#334d60;
-    opacity:0;
-}
-
-
 .poster{
     border: 2px solid #e8e8e8;
     padding:2%;
