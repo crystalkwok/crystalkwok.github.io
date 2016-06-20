@@ -281,6 +281,7 @@ html, body {
     display:inline;
     color:#c1c2c2;
     text-decoration: none;
+    font-weight:400;
 }
 
 .navbar_small a:hover {
@@ -396,6 +397,10 @@ footer a:hover {
 .body, .top{
     padding-top:157px;
     padding-bottom:105px;
+}
+
+.top {
+    padding-bottom:100px;
 }
 
 
@@ -726,6 +731,15 @@ b {
      .top, .body{
         margin-top:20px;
     }  
+
+    .top {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .body {
+        padding-top:105px;
+    }
 
     .description, .rest {
         margin-top:47px;
