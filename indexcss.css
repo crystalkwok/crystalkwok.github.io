@@ -124,7 +124,7 @@ font-family:'Open Sans', sans-serif;
     position:relative;
 }
 
-.navbar.bigger a {
+.navbar.bigger a, .bigger .ux_dropdown_big {
     color:#c1c2c2;
 }
 
