@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+.body {
+    background: url(../images/fle/background-photo.jpg) no-repeat center bottom;
+    background-size:cover;
+    background-attachment:fixed;
+    width:100%;
+    position:relative;
+}
+
 
 .prototypes img {
     padding:1em;
@@ -7,10 +15,6 @@
 
 .wireframes img {
 padding:0.5em;
-}
-
-.step_description.approach{
-    padding:0 20px;
 }
 
 .userResearch img {
@@ -41,10 +45,6 @@ padding:0.5em;
 
 .prototypes {
     margin-top:40px;
-}
-
-.curation_styles {
-    margin-top:19px;
 }
 
 .insights {
