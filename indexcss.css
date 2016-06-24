@@ -124,6 +124,16 @@ font-family:'Open Sans', sans-serif;
     color:#c1c2c2;
 }
 
+.navbar.bigger .hover_nav {
+    background:#c1c2c2;
+
+}
+
+.navbar.bigger {
+    background-color:#fff;
+}
+
+
 
 
 
