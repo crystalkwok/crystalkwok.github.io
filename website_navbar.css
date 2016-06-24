@@ -69,6 +69,11 @@ html, body {
 .subtitle_description a, .subtitle_description i {
     font-size:19px;
 }
+
+.subtitle_description b {
+    font-size:19px;
+    font-weight:600;
+}
 /*color:#50728E;*/
 
 .subtitle_list {
@@ -425,6 +430,11 @@ footer a:hover {
     font-weight:400;
 }
 
+.page_description {
+    padding-left:15px;
+    padding-right:15px;
+}
+
 
 
 .rest {
@@ -504,6 +514,9 @@ b {
     text-transform: uppercase;
     margin-bottom:20px;
     margin-top:20px;
+    line-height:130%;
+    padding-right:15px;
+    padding-left:15px;
 }
 
 .titles a {
@@ -600,15 +613,20 @@ b {
     background-color:#51687c;
     padding-top:30px;
     padding-bottom:30px;
+    padding-right:15px;
+    padding-left:15px;
 }
 
 .challenge p {
+    padding-right:15px;
+    padding-left:15px;
 }
 
 .challenge h3 {
     color:#ffffff;
     font-size:18px;
     font-weight:600;
+    line-height:130%;
 }
 
 .challenge a {
