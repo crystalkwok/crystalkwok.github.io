@@ -1,12 +1,13 @@
+.body {
+    background: url(../images/myeplay/background-photo.jpg) no-repeat center bottom;
+    background-size:cover;
+    background-attachment:fixed;
+    width:100%;
+    position:relative;
+}
 
 .video {
     margin-bottom:2%;
-}
-
-
-iframe {
-    margin-bottom:4%;
-    margin-top:4%;
 }
 
 .videoWrapper {
