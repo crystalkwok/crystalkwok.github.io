@@ -16,17 +16,20 @@ html, body {
     color:#7b8994;
 }
 
-.split {
+.split svg{
     fill:#51687c;
     height:30px;
     display:block;
     margin-right:auto;
     margin-left:auto;
+    text-align:center;
 }
 
+
+
 .step_class{
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 
 .step_title{
@@ -41,7 +44,7 @@ html, body {
     /*border-bottom:1px solid #e2e2e2;*/
     padding-bottom:4px;
     font-weight:800;
-    font-size:16px;
+    font-size:19px;
 }
 
 .step_description {
@@ -441,10 +444,16 @@ footer a:hover {
     margin-bottom:20px;
 }
 
-.rest hr {
-    border-top:1px solid #c1c2c2;
-    margin-left:3em;
-    margin-right:3em;
+.section hr {
+    border-top:1px solid #ddd;
+    margin-left:5em;
+    margin-right:5em;
+}
+
+.split hr {
+    margin-right:0;
+    margin-left:0;
+    border-top:1px solid #6aa1d6;
 }
 
 /*page title*/
@@ -469,6 +478,10 @@ footer a:hover {
     line-height:160%;
     font-size:13px;
     font-weight:300;
+}
+
+.end-note p{
+    line-height:200%;
 }
 
 .motivation a, .end-note a, .section a{
