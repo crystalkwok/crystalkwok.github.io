@@ -259,7 +259,7 @@ html, body {
     width: 100%;
     opacity: 0;
     top:2.5em;         
-    transition: height .3s linear, opacity .3s linear, top .5s ease;
+    transition: height .2s linear, opacity .2s linear, top .2s ease;
 }
 
 .navbar.bigger .hover_nav {
@@ -408,7 +408,7 @@ footer a:hover {
 }
 
 .top {
-    padding-bottom:100px;
+    padding-bottom:80px;
 }
 
 
