@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+.body {
+    background: url(../images/flunkless/background-photo.jpg) no-repeat center bottom;
+    background-size:cover;
+    background-attachment:fixed;
+    width:100%;
+    position:relative;
+}
+
 
 .intropics img{
     padding:0.5em;
@@ -47,11 +55,7 @@
     margin-bottom:7%;
 }
 
-.process-left-side {
-    padding:0;
-}
-
-.problem_content3 {
+.problem_3 {
     padding:0;
 }
 
