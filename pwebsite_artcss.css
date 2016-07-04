@@ -7,6 +7,12 @@
 #title{
     font-size: 19px;
     color:#444; 
+    font-weight:500;
+}
+
+.motivation {
+    padding-left:30px;
+    padding-right:30px;
 }
 
 /*set image size of each section*/
@@ -14,7 +20,7 @@
 
 
 
-.concentrationImg img, .otherWorkImg img {
+.concentrationImg img, .otherWorkImg img, .typography img {
     padding:1em;
     margin-bottom:-1%;
 }
@@ -41,33 +47,16 @@
     font-size:13px;
 }
 
-
-
-
-
-@media only screen and (max-width:1200px) and (min-height:600px){
-
+.step_class:nth-child(1){
+    margin-top:0;
 }
 
 
+.step_class:nth-last-child(1){
+    margin-bottom:60px;
+}
+
 @media only screen and (max-width:995px){
-
-    
-    .concentration, .other_work, .typography{
-        padding:0px;   
-    }
-
-	/*.other_work img, .concentration img, .typography img{
-		height:110px;
-        padding:2%;
-	}*/
-
-
-    
-    .intro p{
-        line-height:150%;
-        font-size:18px;
-    }
     
     .info_slide, .infot_slide {
         font-size:16px;   
@@ -75,15 +64,14 @@
     }
     
     .right-side {
-        padding:0;   
+        padding:0;  
+        margin-top:40px; 
     }
     
 
 }
 
 @media only screen and (max-width: 670px){
-
-
     
     #isaiah{
         height:80%;

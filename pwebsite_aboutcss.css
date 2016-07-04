@@ -1,14 +1,8 @@
-.body{
-    margin-top:130px;
-}
-
-
-
 .jumbotron p{
-	font-size:13px;
+	font-size:12.75px;
     color:#444;
     line-height:131%;
-    font-weight:400;
+    font-weight:300;
 }
 
 .jumbotron b {
@@ -18,40 +12,34 @@
 /*change jumbotron*/
 .jumbotron{
 	background-color: #ffffff;
-    margin-bottom:65px;
+  margin-bottom:0px;
 	width:100%;
-    height:100%;
-    padding-top:2em;
-    padding-bottom:2em;
+  height:100%;
+  margin-top:70px;
+  padding-left:0;
+  padding-right:0;
+
 }
-
-
-
-.self img{
-    margin-top:2%;
-}
-
-
 
 
 /*end jumbotron and triangle changes*/
 
 .contact {
-	background-color:#f8f8f8;
-    padding-top:3%;
-    padding-bottom:3%;
+  background-color:#f8f8f8;
+  padding-top:3%;
+  padding-bottom:3%;
 }
 
-
 .contact p{
-	line-height:200%;
-    font-size:14px;
+  line-height:200%;
+  font-size:14px;
+  font-weight:400;
 }
 
 
 .content {
-    margin-bottom:100px;
-    margin-top:100px;
+    margin-bottom:70px;
+    margin-top:70px;
 }
 
 .content p {
@@ -59,14 +47,9 @@
 }
 
 
-
-.links {
-    margin-left:5%;
-}
-
 .links a, #instagramtext a{
     text-decoration: none;
-    color:#c1c2c2;
+    color:#6aa1d6;
 }
 
 #instagramtext a {
@@ -74,15 +57,10 @@
 }
 
 .links a:hover, #instagramtext a:hover{
-    color:#000;
+    color:#999;
     text-decoration:none;
 }
-
-
 /*part of the resume that shoud be really small O.O*/
-.description{
-	font-size:16px;
-}
 
 .content p {
     line-height: 160%;
@@ -95,26 +73,24 @@
 
 
 #instafeed {
-			width:100%;
-			margin-left: 10px;
-			margin-bottom:-35px;
-			background-color:#ffffff;
-			
-		}
-		#instafeed img{
-		 width: 230px;
-        height:230px;
-		 /*margin-left: -30px;*/
-		 padding: 7px;
-		 margin-bottom: 20px;
-		 position:relative;
-        
-		}
-	#instafeed a {
-	
-	display:inline-block;
-	position:relative;
-      }
+  width:100%;
+  background-color:#ffffff;
+  margin-left:-5px;
+}
+
+#instafeed img{
+  width: 230px;
+  height:230px;
+  /*margin-left: -30px;*/
+  padding: 7px;
+  margin-bottom: 20px;
+  position:relative;
+}
+
+#instafeed a {
+  display:inline-block;
+  position:relative;
+}
 
 #instafeed .likes {
   background:rgba(0,0,0, 0.8);
@@ -133,22 +109,17 @@
   line-height:220px;
   -webkit-font-smoothing:antialiased;
   -webkit-transition: opacity 100ms ease;
-	-moz-transition: opacity 100ms ease;
-	-o-transition: opacity 100ms ease;
-	-ms-transition: opacity 100ms ease;
-	transition: opacity 100ms ease;
+  -moz-transition: opacity 100ms ease;
+  -o-transition: opacity 100ms ease;
+  -ms-transition: opacity 100ms ease;
+  transition: opacity 100ms ease;
 }
 
 #instafeed a:hover .likes {
   opacity:1;
 }
 
-p{
-  font-size:13px;
-}
 
-
-    
     
 
 @media only screen and (max-width:1200px){
@@ -192,20 +163,16 @@ p{
 
     
     
-#instafeed .likes {
+    #instafeed .likes {
+      width: 140px;
+      height: 140px;
+      line-height:140px;
+    }
 
-  width: 140px;
-  height: 140px;
-    line-height:140px;
+    .one {
+        margin-top:4em;
+    }
 
-}
-
-.one {
-    margin-top:4em;
-}
-
-
-    
     .self img{
         width:100%;   
     }
@@ -213,10 +180,8 @@ p{
 /*change jumbotron*/
 	.jumbotron{
         padding:0.5em;
-        margin-top:0;
+        margin-top:100px;
 	}
-    
-
 
     .jumbotron p {
         margin-top:3%;  
@@ -224,37 +189,24 @@ p{
     }
 
     .links a{
-        font-size:18px;   
+        font-size:17px;   
     }
     
     .contact p {
         line-height:160%;   
     }
 
-
-    
-
+    .content {
+      margin-top:50px;
+    }
 }
 
-@media only screen and (max-width:768px){
-    .body {
+@media only screen and (max-width:767px){
+
+    .jumbotron{
+        padding:0.5em;
         margin-top:40px;
-    }
-    }
-
-@media only screen and (max-width:500px){
-
-	.self img{
-		width:100%; 
-	}
-	.self{
-		width:100%;
-    }
-    
-
+  }
 
 }
-
-
-
 

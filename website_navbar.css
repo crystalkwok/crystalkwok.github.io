@@ -316,6 +316,24 @@ html, body {
     padding:0 10px;
 }
 
+
+
+
+.white.navbar.bigger a, .bigger .ux_dropdown_big {
+    color:#c1c2c2;
+}
+
+.white.navbar.bigger .hover_nav {
+    background:#c1c2c2;
+
+}
+
+.white.navbar.bigger {
+    background-color:#fff;
+}
+
+
+
 .ux_dropdown_small_relative{
     position:relative;
         padding:35px 35px;
