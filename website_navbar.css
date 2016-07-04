@@ -323,6 +323,10 @@ html, body {
     color:#c1c2c2;
 }
 
+.white .dropdown-menu>li>a:hover, .white .ux_dropdown_small a:hover{
+    color:#000;
+}
+
 .white.navbar.bigger .hover_nav {
     background:#c1c2c2;
 
