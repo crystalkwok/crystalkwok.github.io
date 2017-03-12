@@ -62,7 +62,22 @@
 }
 
 .feature_descriptions {
-    padding-left:28px;
+    border:1px solid #e2e2e2;
+    margin-left:5%;
+    background-color:#fafafa;
+}
+
+.feature_descriptions .col-md-6:first-child {
+    border-right:1px solid #e2e2e2;
+}
+
+.feature_descriptions .col-md-6 {
+    padding:28px;
+}
+
+.feature_descriptions .subtitle_list {
+    border-bottom:1px solid #e2e2e2;
+    margin-bottom:14px;
 }
 
 .quotes {
