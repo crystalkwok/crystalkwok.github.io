@@ -5,24 +5,71 @@
     font-weight:300;
 }
 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding:0;
+}
+
 
 html, body {
     width:auto !important;
     overflow-x: hidden !important;
 }
 
-.section li {
-    font-weight:300;
-    color:#7b8994;
+li, a, p{
+    letter-spacing: .5px;
 }
 
-.split svg{
-    fill:#51687c;
-    height:30px;
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
-    text-align:center;
+.section li {
+    font-weight:300;
+    color:#000;
+    line-height:28px;
+    font-size:14px;
+}
+
+.section ul {
+    padding-left:20px;
+}
+
+.section p {
+    margin-bottom:35px;
+}
+
+.section p:last-child {
+    margin-bottom:0;
+}
+
+.section:nth-child(even){
+    background-color:#f6f6f6;
+}
+
+.section .row:nth-child(even){
+    margin-top:49px;
+}
+
+.content {
+    padding: 119px 133px;
+}
+
+.thirds-section {
+    padding:0 10px;
+}
+
+.thirds-section:first-of-type {
+    padding-left:0;
+}
+
+.thirds-section:last-of-type {
+    padding-right:0;
+}
+
+.subsection.subtitle_list {
+    margin-bottom:7px;
+    margin-left:21px;
+}
+
+.subsection ~ .background {
+    background-color:#fff;
+    padding:28px;
 }
 
 
@@ -32,27 +79,27 @@ html, body {
     margin-bottom:30px;
 }
 
-.step_title{
+p.step_title{
     text-transform: uppercase;
-    color:#000;
-    font-size:13px;
-    letter-spacing: 5px;
-    margin-bottom:25px;
+    color:#72A7B5;
+    letter-spacing: 3px;
+    border-left:4px solid #72A7B5;
+    padding-left:21px;
+    margin-bottom:42px;
 }
 
 .step_title span {
     /*border-bottom:1px solid #e2e2e2;*/
     padding-bottom:4px;
-    font-weight:800;
-    font-size:18px;
+    font-weight:700;
+    font-size:14px;
 }
 
 .step_description {
-    line-height:180%;
+    line-height:21px;
     font-size:13px;
     font-weight:300;
-    color:#7b8994;
-    margin-top:8px;
+    color:#999;
 }
 
 
@@ -62,11 +109,10 @@ html, body {
 }
 
 .subtitle_description{
-    font-weight:300;
-    font-size:19px;
-    margin-bottom:20px;
+    font-weight:400;
+    font-size:21px;
     color:#000;
-    line-height:145%;
+    line-height:28px;
 }
 
 .subtitle_description a, .subtitle_description i {
@@ -74,17 +120,21 @@ html, body {
 }
 
 .subtitle_description b {
-    font-size:19px;
-    font-weight:600;
+    font-size:21px;
+    font-weight:700;
 }
 /*color:#50728E;*/
 
 .subtitle_list {
     font-weight:600;
-    font-size:14px;
+    font-size:12px;
     /*color:#3e68b5;*/
-    color:#50728E;
-    margin-bottom:13px;
+    color:#51687c;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    padding-left:2px;
+    padding-bottom:7px;
+
 }
 
 .subtitle_subdescription {
@@ -139,7 +189,6 @@ html, body {
     margin-left:20px;
     margin-top:1em;
 	text-decoration:none;
-    letter-spacing: 0.03em;
     color:#c1c2c2;
     font-weight:400;
 }
@@ -192,6 +241,8 @@ html, body {
 .shrink {
     height:56px;
     transition:all .2s;
+    border-radius:0;
+    border-bottom:1px solid #e2e2e2;
 }
 
 .shrink img {
@@ -234,7 +285,6 @@ html, body {
 
 .navbar .dropdown-menu>li>a {
     color:#999;
-    letter-spacing:0em;
 }
 
 
@@ -425,8 +475,8 @@ footer a:hover {
 
 
 .body, .top{
-    padding-top:155px;
-    padding-bottom:110px;
+    padding-top:164px;
+    padding-bottom:119px;
 }
 
 .top {
@@ -481,7 +531,7 @@ footer a:hover {
 /*page title*/
 
 .name {
-    font-size: 23px;
+    font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.06em;
     text-align: center;
@@ -510,6 +560,7 @@ footer a:hover {
     color:#6aa1d6;
     text-decoration: none;
     font-weight:400;
+    letter-spacing:.5px;
 }
 
 .motivation a:hover, .end-note a:hover, .section a:hover{
@@ -587,16 +638,6 @@ b {
     margin-left:-3px;
     margin-right:-3px;
 }
-
-.section {
-    padding-bottom:6em;
-    padding-top:6em;
-}
-
-.section.first_section {
-    padding-top:40px;
-}
-
 
 
 .motivation a:hover, .right-side a:hover{
@@ -828,6 +869,8 @@ b {
 }
 
 
+
+
 @media only screen and (max-width:557px){
 
     
@@ -844,6 +887,16 @@ b {
 
 b {
     font-weight:600;
+}
+
+
+.split svg{
+    fill:#51687c;
+    height:30px;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
 }
 
 
