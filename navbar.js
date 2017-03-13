@@ -11,6 +11,16 @@ var divs = $('.body .overlay'),
       } else {
         $('.navbar').removeClass('shrink').addClass('bigger');
       }
+        
+        var target = $(".section:first-of-type").offset().top;
+    if ($(document).scrollTop() >= target) {
+        $('.side-nav').addClass('fix');
+    }
+        else {
+        $('.side-nav').removeClass('fix');
+      }
+        
+
 
         var st = $(this).scrollTop();
 
