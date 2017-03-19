@@ -41,7 +41,7 @@
 }
 
 @media only screen and (max-width:995px){
-    .peer_feedback_challenge, .thirds-section, .feature_descriptions  {
+    .peer_feedback_challenge, .thirds-section, .feature_descriptions, .method-description  {
         margin-top:35px;
     }
 

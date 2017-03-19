@@ -100,6 +100,7 @@ li, a, p{
 
 .side-nav>.nav>li>a:hover {
     background-color:transparent;
+    color:#000;
 }
 
 .side-nav>.nav>li.active>a {
@@ -114,6 +115,10 @@ li, a, p{
 
 .section.introduction {
     background-color:#f6f6f6;
+}
+
+.section.introduction .content {
+    padding:77px;
 }
 
 .section.introduction .description {
@@ -257,6 +262,10 @@ p.step_title{
     transition:all .3s ease;
 }
 
+.navbar .pull-left {
+    padding-left:28px;
+}
+
 .navbar a {
     text-decoration: none;
     font-weight:400;
@@ -312,7 +321,8 @@ p.step_title{
 .bigger .pull-right {
      margin-top:2em;
     transition: all .2s;
-
+    padding-right:28px;
+    transition:all .2s ease;
 }
 
 .bigger #navbar_name {
@@ -342,7 +352,8 @@ p.step_title{
 
 .shrink .pull-right {
     margin-top:.7em;
-    transition:all .2s;
+    transition:all .2s ease;
+    padding-right:28px;
 }
 
 .shrink #navbar_name {
