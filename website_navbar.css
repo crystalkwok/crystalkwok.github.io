@@ -17,11 +17,14 @@
 html, body {
     width:auto !important;
     overflow-x: hidden !important;
+    position:relative;
 }
 
 li, a, p{
     letter-spacing: .5px;
 }
+
+
 
 .relative {
     position:relative;
@@ -29,8 +32,8 @@ li, a, p{
 
 .side-nav {
     position:absolute;
-    top:84px;
-    width:152px;
+    top:105px;
+    width:134px;
 }
 
 
@@ -38,18 +41,18 @@ li, a, p{
     position:fixed;
 }
 
-.side-nav p.active {
+.side-nav li.active {
     font-weight:600;
-    border-right:3px solid #72A7B5;
+    border-right:3px solid #6BB2BA;
+    color:#000;
+    transition:all .1s ease;
 }
 
-.side-nav .subtitle_list {
-    padding:0;
-    margin-bottom:28px;
-}
+
+
 
 .inner-content {
-    margin-left:236px;
+    margin-left:217px;
     width:78%;
 }
 
@@ -66,6 +69,10 @@ li, a, p{
     padding-left:20px;
 }
 
+.side-nav ul {
+    padding:0;
+}
+
 .section p {
     margin-bottom:35px;
 }
@@ -74,12 +81,52 @@ li, a, p{
     margin-bottom:0;
 }
 
-.side-nav p{
-    margin-bottom:10px;
+.side-nav>.nav>li>a{
+    color:#999;
+    font-weight:400;
+    padding:0;
+    display:inline;
+    width:100%;
+}
+
+.side-nav>.nav>li {
+    line-height:21px;
+    margin-bottom:7px;
+}
+
+.side-nav>.nav>li:hover {
+    background-color:transparent;
+}
+
+.side-nav>.nav>li>a:hover {
+    background-color:transparent;
+}
+
+.side-nav>.nav>li.active>a {
+    font-weight:600;
+    color:#000;
+    transition:all .1s ease;
 }
 
 .section:nth-child(even){
     background-color:#f6f6f6;
+}
+
+.section.introduction {
+    background-color:#f6f6f6;
+}
+
+.section.introduction .description {
+    border-right:1px solid #ccc;
+    padding-right:4%;
+}
+
+.section.introduction .deliverables {
+    margin-left:4%;
+}
+
+.section.introduction p{
+    margin-bottom:14px;
 }
 
 .section .row:nth-child(even){
@@ -121,17 +168,19 @@ li, a, p{
 
 p.step_title{
     text-transform: uppercase;
-    color:#72A7B5;
-    letter-spacing: 3px;
-    margin-bottom:70px;
+    color:#6BB2BA;
+    letter-spacing: 2px;
+    margin-bottom:63px;
 }
+/*72A7B5*/
 
 .step_title span {
-    border-bottom:2px solid #cccccc;
-    border-top:2px solid #cccccc;
-    padding:14px 14px;
+
+    border-top:2px solid #6BB2BA;
+    padding-top:14px;
     font-weight:700;
-    font-size:12px;
+    font-size:13px;
+    padding-right:42px;
 }
 
 .step_description {
@@ -236,7 +285,7 @@ p.step_title{
     border-bottom:4px solid #000 !important;
     color:#000;
     font-weight:400;
-    padding-bottom:15px;
+    padding-bottom:16px;
 }
 
 
@@ -249,7 +298,7 @@ p.step_title{
 
 .bigger{
     height:95px;
-    transition: all .3s ease;
+    transition: all .2s ease;
     background-color:transparent;
 }
 
@@ -314,7 +363,7 @@ p.step_title{
 
   min-width: 105px;
     border-radius:0;
-    border:1px #ececec solid;
+    border:1px #e2e2e2 solid;
     margin:20px 0;
     -webkit-box-shadow:0 0 0;
 }
@@ -348,7 +397,7 @@ p.step_title{
     display: block;
     width: 100%;
     opacity: 0;
-    top:2.5em;         
+    top:34px;         
     transition: height .2s linear, opacity .2s linear, top .2s ease;
 }
 
@@ -365,7 +414,6 @@ p.step_title{
 .navbar_options:hover .hover_nav{
     height:4px;
     opacity:1.0; 
-    /*top:2.45em;   */
 }
 
 .navbar_options:hover {
@@ -461,6 +509,8 @@ p.step_title{
 
 .relative{
     position:relative;
+    overflow-y:auto;
+    height:100%;
 }
 
 #close_ux {
@@ -480,7 +530,8 @@ p.step_title{
     padding:1em 1em;
 }
 
-#activeb{   font-weight:700;
+#activeb{   
+    font-weight:700;
     color:#000;
     text-decoration: none;
 }
@@ -686,9 +737,10 @@ b {
 }
 
 .dropdown-menu #activea {
-    border-left:3px solid #000;
+    border-left:3px solid #6BB2BA;
     border-bottom:0px !important;
     padding-bottom:0;
+    font-weight:600;
 }
 
 
@@ -783,6 +835,18 @@ b {
 
 
 @media only screen and (max-width:995px){
+
+    .content {
+        padding:98px 63px;
+    }
+
+    .container {
+        margin:0;
+    }
+
+    .thirds-section {
+        padding:0;
+    }
     
     .jumbotron {
         height:100%;   
@@ -866,6 +930,24 @@ b {
 }
 
 @media only screen and (max-width:768px){
+    .inner-content {
+        width:100%;
+        margin-left:0;
+    }
+
+    .content {
+        padding:70px 48px;
+    }
+
+    .section.introduction .description {
+        border:none;
+        padding:0;
+    }
+
+    .section.introduction .deliverables {
+        margin:0;
+    }
+
      .top, .body{
         margin-top:20px;
     }  
@@ -879,9 +961,6 @@ b {
         padding-top:105px;
     }
 
-    .description, .rest {
-        margin-top:47px;
-    }
 
 
     .ux_work2 {
