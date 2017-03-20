@@ -24,6 +24,10 @@ li, a, p{
     letter-spacing: .5px;
 }
 
+.square_display img {
+    padding:7px;
+}
+
 
 
 .relative {
@@ -53,7 +57,7 @@ li, a, p{
 
 .inner-content {
     margin-left:217px;
-    width:78%;
+    width:calc(100% - 217px);
 }
 
 
@@ -228,6 +232,12 @@ p.step_title{
     padding-left:2px;
     padding-bottom:7px;
 
+}
+
+.subtitle_title {
+    font-weight:400;
+    color:#000;
+    size:14px;
 }
 
 .subtitle_subdescription {
@@ -848,15 +858,16 @@ b {
 @media only screen and (max-width:995px){
 
     .content {
-        padding:98px 63px;
+        padding:98px 48px;
     }
 
-    .container {
-        margin:0;
-    }
 
     .thirds-section {
         padding:0;
+    }
+
+    .section.introduction .content {
+        padding:77px 48px;
     }
     
     .jumbotron {
