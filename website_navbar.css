@@ -24,6 +24,15 @@ li, a, p{
     letter-spacing: .5px;
 }
 
+.first-row {
+    position:relative;
+}
+
+.second-row {
+    position:relative;
+    margin-top:35px;
+}
+
 .square_display img {
     padding:7px;
 }
