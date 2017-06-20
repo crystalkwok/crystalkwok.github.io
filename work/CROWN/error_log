@@ -1,6 +1,0 @@
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  file(./calendar/lib/events.js): failed to open stream: No such file or directory in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 3
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  file_get_contents(./calendar/lib/events.js): failed to open stream: No such file or directory in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 5
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  array_values() expects parameter 1 to be array, boolean given in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 9
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  implode(): Argument must be an array in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 11
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  file_put_contents(./calendar/lib/events.js): failed to open stream: No such file or directory in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 11
-[04-Sep-2014 22:42:56 UTC] PHP Warning:  file_put_contents(./calendar/lib/events.js): failed to open stream: No such file or directory in /home/orchidme/public_html/main/calendar/lib/addEvent.php on line 12

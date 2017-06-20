@@ -60,6 +60,10 @@
     font-size:21px;
 }
 
+.square_display.wireframe {
+    margin-top:63px;
+}
+
 @media only screen and (max-width:995px){
     .peer_feedback_challenge, .final_prototype_needs_solutions{
         margin-top:35px;
