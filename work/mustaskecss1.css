@@ -7,3 +7,8 @@
     width:100%;
     position:relative;
 }
+.emphasis {
+	font-weight:600;
+	color:#6BB2BA;
+	font-size: 21px;
+}
