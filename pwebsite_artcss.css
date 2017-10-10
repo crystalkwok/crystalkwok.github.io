@@ -18,6 +18,10 @@
 /*set image size of each section*/
 /*.concentration img, .other_work img*/
 
+.other_work {
+    margin-top:35px;
+}
+
 
 
 .concentrationImg img, .otherWorkImg img, .typography img {

@@ -2,22 +2,19 @@
 <html>
 <head>
          <meta name="viewport" content="width=device-width">
-        <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta property="name" content="About Crystal Kwok">
-        <meta property="url" content="http://crystalkwok.github.io/about">
         <meta name="author" content="Crystal Kwok">
         <meta name="keywords" content="san diego, los angeles, web design, crystal kwok, ucsd, ux, university of california san diego, crystal, kwok, website, design, interaction design, interaction designer,
         crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, research, research assistant, serences, rainbow art, rainbow canvas, rainbow, art, artwork, admin, administrative assistant">
         
 
-         <script src="../jquery/jquery-1.11.3.min.js"></script>
-          <script src="../jquery/jquery.min.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
+         <script src="../jquery-3.2.0/jquery-3.2.0.min.js"></script>
+        <script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
         
         <!--bootstrap-->
-        <link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap-theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-theme.min.css">
         
 
         <!--css-->
@@ -26,10 +23,14 @@
         <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
 
         <!--fonts-->
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
    
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+        <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+             <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 
         <!--what is this lol-->
         <link rel="Shortcut Icon" type="image/jpg" href="../images/logo%20square.png"/>
@@ -42,20 +43,16 @@
         <!--for the image galleries-->
                 <!-- fancyBox-->
         
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        
         <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
          <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
         <link rel="stylesheet" href="../fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen">
         <script type="text/javascript" src="../fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
-       
-        
     </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".side-nav" data-offset='200'>
     
     <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N57DXK"
@@ -77,116 +74,88 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-    
-<script>
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
 
-    $(".fancybox-thumb").fancybox({
-        prevEffect  : 'none',
-        nextEffect  : 'none',
-        helpers : {
-            title   : {
-                type: 'outside'
-            },
-            thumbs  : {
-                width   : 50,
-                height  : 50
-            }
-        }
-    });
-
-    });       
-    
-</script>
-    
     
 
 
 
 <!--normal nav bar-->
-       <div class="navbar bigger hidden-xs">
-            <div class="container">
-                <ul class="pull-left">
-                    <a href="../index.html"><img src="../images/logo%20gray.jpg"></a>
-                    <!--<li id="navbar_name">Crystal Kwok</li>-->
-                </ul>
-                <ul class="pull-right">
-                        <li class="relative">
-                            <span class="navbar_options">
-                            <a href="../index.html">work</a>
-                            <span class="hover_nav"></span></span> 
+   <div class="navbar bigger hidden-xs">
+        <div class="container">
+            <ul class="pull-left">
+                <a href="../index.html"><img src="../images/logo%20gray.jpg"></a>
+                <!--<li id="navbar_name">Crystal Kwok</li>-->
+            </ul>
+            <ul class="pull-right">
+                    <li class="relative">
+                        <span class="navbar_options">
+                        <a href="../index.html">work</a>
+                        <span class="hover_nav"></span></span> 
 
-                            | <a href="#"><i class="fa fa-angle-down ux_dropdown_big"></i></a>
-                            
-                            <ul class="dropdown-menu">
-                                <li><a href="casestack.html" id="activea">CaseStack</a></li>
-                                <li><a href="designlab.html">Design Lab</a></li>
-                                <li><a href="timeline.html">Timeline</a></li>
-                                <li><a href="learningequality.html">Learning Equality</a></li>
-                                
-                                  <li><a href="myeplay.html">MyePlay</a></li>
-                                <li><a href="crown.html" >CROWN</a></li>
-                                <li><a href="flunkless.html">FlunkLess</a></li>
-                                <li><a href="mustaske.html">MustAske</a></li>
-                                <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar_options">
-                                <a href="../art.html">art</a>
-                                <span class="hover_nav"></span>
-                        </li>
-                        <li class="navbar_options">
-                            <a href="../about.html">about & contact</a>
-                                <span class="hover_nav"></span>
-                        </li>
-                </ul>
-
-            </div>
-        </div><!--end navbar-->
-    
-
-        <!--small nav bar-->
-    
-        <div class="navbar_small hidden-lg hidden-md hidden-sm">
-            <div class="container">
-                <div class="row">
-                <img src="../images/logo%20gray.jpg" class="smallLogo">
-
-                <ul class="navbar_small_list">
-                    
-                    <li>
-                        <a href="../index.html">work</a> | <i class="fa fa-angle-down fa_ux_dropdown" id="fa_ux"></i>
-                    </li>
-                    <li> 
-                        <a href="../art.html">art</a>
-                    </li>
-                    <li>
-                        <a href="../about.html">about</a>
-                    </li>
-                    
-                </ul>
-                <ul class="ux_dropdown_small">
-                    <div class="ux_dropdown_small_relative">
-                        <i class="fa fa-times" id="close_ux"></i>
-                            <li><a href="casestack.html" id="activeb">CaseStack</a></li>
-                            <li><a href="designlab.html">Design Lab</a></li>
+                        | <a href="#"><i class="fa fa-angle-down ux_dropdown_big"></i></a>
+                        
+                        <ul class="dropdown-menu">  
+                            <li><a href="casestack.html" id="activea">CaseStack</a></li>
+                            <li><a href="designlab.html" >Design Lab</a></li>
                             <li><a href="timeline.html">Timeline</a></li>
-                            <li><a href="learningequality.html">Learning Equality</a></li>
                             
-                            <li><a href="myeplay.html">MyePlay</a></li>
-                            <li><a href="crown.html">CROWN</a></li>
-                            <li><a href="flunkless.html">FlunkLess</a></li>
+                              <li><a href="myeplay.html">MyePlay</a></li>
                             <li><a href="mustaske.html">MustAske</a></li>
-                            <li><a href="http://github.com/crystalkwok">Programming</a></li>
-                    </div>
-                 </ul>
+                            <li><a href="https://github.com/crystalkwok" target="_blank">Programming</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar_options">
+                            <a href="../art.html">art</a>
+                            <span class="hover_nav"></span>
+                    </li>
+                    <li class="navbar_options">
+                        <a href="../about.html">about & contact</a>
+                            <span class="hover_nav"></span>
+                    </li>
+            </ul>
 
+        </div>
+    </div><!--end navbar-->
+
+
+    <!--small nav bar-->
+
+    <div class="navbar_small hidden-lg hidden-md hidden-sm">
+        <div class="container">
+            <div class="row">
+            <img src="../images/logo%20gray.jpg" class="smallLogo">
+
+            <ul class="navbar_small_list">
+                
+                <li>
+                    <a href="../index.html">work</a> | <i class="fa fa-angle-down fa_ux_dropdown" id="fa_ux"></i>
+                </li>
+                <li> 
+                    <a href="../art.html">art</a>
+                </li>
+                <li>
+                    <a href="../about.html">about</a>
+                </li>
+                
+            </ul>
+            <ul class="ux_dropdown_small">
+                <div class="ux_dropdown_small_relative">
+                    <i class="fa fa-times" id="close_ux"></i>
+                        <li><a href="casestack.html" id="activeb">CaseStack</a></li>
+                        <li><a href="designlab.html">Design Lab</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        
+                        <li><a href="myeplay.html">MyePlay</a></li>
+                        <li><a href="mustaske.html">MustAske</a></li>
+                        <li><a href="http://github.com/crystalkwok">Programming</a></li>
                 </div>
-            </div>
-            
+             </ul>
 
-        </div><!--end navbar_small-->
+            </div>
+        </div>
+        
+
+    </div><!--end navbar_small-->
 
     <div class="body">
         <div class="overlay"></div>
@@ -198,59 +167,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
 
-   <div class="motivation">
-
-        <div class="container">
+    <div class="section introduction">
+        <div class="container content">
             <div class="row">
 
-                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+                    <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
 
-                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                        <p><span class="motivation_title">DURATION:</span> Aug 2015 - Pres</p>
-                        <p><span class="motivation_title">ROLE:</span> Product Designer (UX)</p>
-
-                        <p><span class="motivation_title">TOOLS:</span> Contextual Inquiry, Ethnographic Studies, Adobe Creative Suite, Storyboarding, Wireframing, Prototyping</p>
-                    </div>
-
-                    <div class="col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 col-sm-12 col-xs-12">
-                        <p>I am currently a product designer (focusing on UX) with CaseStack, a logistics solutions company.  I am involved in all parts of the design, including researching with observations and interviews, wireframing with Balsamiq, designing with Photoshop and Illustrator, and prototyping with InvisionApp and HTML/CSS/JS.  Personally, I'll be doing some inspired illustrations from logistics!  Our team also serves as the product owner for CSIL, the new internal site we have been tasked to redesign. I'll be posting some of our accomplishments from our time here, as well as some of our wireframes, designs, and results when I get the chance.</p>
+                        <p class="step_description">I am currently a product designer (focusing on UX) with CaseStack, a logistics solutions company. I am involved in all parts of the design, including researching with observations and interviews, wireframing and designing with Sketch, prototyping with InvisionApp, and occassionally working on the HTML/CSS. Personally, I'll be doing some inspired illustrations from logistics! Our team also serves as the product owner for CSIL, the new internal site we have been tasked to redesign.
+                        </p>
 
                     </div>
 
-                </div>
-
+                    
             </div>
-
-        </div><!--end container-->
-
-    </div><!--end motivation-->
-
-    <div class="container">
-
-        <div class="section row">
-            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
-                <p class="col-md-12">Will be updated soon!  :)</p>
-            </div>
-        </div>  
-
+        </div>
     </div>
 
+    <div class="relative">
+        <div class="section" id="challenge">
+            <div class="container content">
+                <div class="row">
 
-    
-<footer>    
+                    <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
 
-    
-    <div class="container">
+                        <p class="step_description">Hello there!  I would love to show you my work here, but you know, business and privacy.  So I would love to show you my work in person!  Contact me at xcrystal.kwokx@gmail.com if you're interested!
+                        </p>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+<div class="container content">
         <div class="row">
-<div class="col-md-1 col-sm-1 col-xs-1"></div>
+          <div class="col-md-1 col-sm-1 col-xs-1"></div>
             <p class="col-md-3 col-sm-11 col-xs-11"> 
                 created by <a href="../index.html">Crystal Kwok</a><br>
-                 &copy; 2016
+                 &copy; 2017
             </p>
         </div>
     </div>
 </footer>
-
-
-</body>
 </html>

@@ -13,7 +13,6 @@
     margin:0;
 }
 
-
 html, body {
     width:auto !important;
     overflow-x: hidden !important;
@@ -61,13 +60,20 @@ li, a, p{
     right:9px;
 }
 
-.first-row {
-    position:relative;
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-top:2%;
+    margin-bottom:3%;
 }
 
-.second-row {
-    position:relative;
-    margin-top:63px;
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .square_display img {
@@ -181,11 +187,15 @@ li, a, p{
 .section.introduction p{
     margin-bottom:14px;
     color:#000;
-    line-height:21px;
+    line-height:25px;
 }
 
-.section .row:nth-child(even){
+.section .row:nth-child(n+1){
     margin-top:49px;
+}
+
+.section .row:nth-child(1) {
+    margin-top:0;
 }
 
 .content {
@@ -214,12 +224,24 @@ li, a, p{
     padding:28px;
 }
 
+.subtitle_list {
+    font-weight:600;
+    font-size:12px;
+    /*color:#3e68b5;*/
+    color:#51687c;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    padding-left:2px;
+    padding-bottom:7px;
 
-
-.step_class{
-    margin-top:30px;
-    margin-bottom:30px;
 }
+
+.subtitle_title {
+    font-weight:400;
+    color:#000;
+    font-size:14px;
+}
+
 
 p.step_title{
     text-transform: uppercase;
@@ -239,23 +261,17 @@ p.step_title{
 }
 
 .step_description {
-    line-height:21px;
+    line-height:25px;
     font-size:13px;
     font-weight:300;
     color:#999;
-}
-
-
-.subtitle {
-    font-weight:500;
-    font-size:25px;
 }
 
 .subtitle_description{
     font-weight:400;
     font-size:21px;
     color:#000;
-    line-height:28px;
+    line-height:32px;
 }
 
 .subtitle_description a, .subtitle_description i {
@@ -267,32 +283,6 @@ p.step_title{
     font-weight:700;
 }
 /*color:#50728E;*/
-
-.subtitle_list {
-    font-weight:600;
-    font-size:12px;
-    /*color:#3e68b5;*/
-    color:#51687c;
-    text-transform: uppercase;
-    letter-spacing:2px;
-    padding-left:2px;
-    padding-bottom:7px;
-
-}
-
-.subtitle_title {
-    font-weight:400;
-    color:#000;
-    font-size:14px;
-}
-
-.subtitle_subdescription {
-    font-size:13px;
-    line-height: 160%;
-    font-weight:300;
-    color:#7b8994;
-}
-
 
 /*big nav bar*/
 
@@ -334,8 +324,8 @@ p.step_title{
 }
 
 .navbar #activea {
-    border-bottom:4px solid #000 !important;
-    color:#000;
+    border-bottom:4px solid #6BB2BA !important;
+    color:#6BB2BA;
     font-weight:400;
     padding-bottom:16px;
 }
@@ -714,64 +704,6 @@ b {
 
 
 
-.left {
-    float:left;
-}
-
-.titles h2, .titles h3, .titles h4 {
-    font-weight:600;
-    font-size:18px;
-    text-align:center;
-    font-family:'Open Sans', sans-serif;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom:20px;
-    margin-top:20px;
-    line-height:130%;
-    padding-right:15px;
-    padding-left:15px;
-}
-
-.titles a {
-    font-size:18px;
-}
-
-/*.titles , .title */{
-    margin-bottom:1.3em;
-}
-
-
-
-.description_title {
-    font-size:15px;
-    font-weight:500;
-    color:#cccccc;
-    text-align:center;
-    margin-top:5px;
-    margin-bottom:20px;
-}
-
-.description_title a {
-    font-size:15px;
-}
-
-.right-side {
-    padding-bottom:1.5em;
-    padding-left:3em;
-    padding-right:0;
-}
-
-.right-side.row, .right-side .row {
-    margin-left:-3px;
-    margin-right:-3px;
-}
-
-
-.motivation a:hover, .right-side a:hover{
-    color:#999;
-    text-decoration: none;
-}
-
 .dropdown-menu #activea {
     border-left:3px solid #6BB2BA;
     border-bottom:0px !important;
@@ -816,33 +748,6 @@ b {
     font-style:italic;
 }
 
-
-.challenge {
-    background-color:#51687c;
-    padding-top:30px;
-    padding-bottom:30px;
-    padding-right:15px;
-    padding-left:15px;
-}
-
-.challenge p {
-    padding-right:15px;
-    padding-left:15px;
-}
-
-.challenge h3 {
-    color:#ffffff;
-    font-size:18px;
-    font-weight:600;
-    line-height:130%;
-}
-
-.challenge a {
-    color:#9abddc;
-    font-weight:600;
-}
-
-
 .body .overlay {
     position:absolute;
     top:0px;
@@ -872,6 +777,11 @@ b {
 
 @media only screen and (max-width:995px){
 
+
+ .smaller-second-row {
+    margin-top:35px;
+ }
+    
     .content {
         padding:98px 48px;
     }
@@ -885,32 +795,12 @@ b {
         padding:77px 48px;
     }
     
-    .jumbotron {
-        height:100%;   
-    }
 /*start changing navbar*/
 
     
         .navbar_description {
         font-size:15px;
         letter-spacing: 0.1em;
-    }
-    
-    .left {
-        padding:0 0;   
-    }
-    
-    
-    .left .top{
-        margin-bottom:-5px;
-        margin-top:3px;
-        padding:0 0;
-    }
-    
-    .left .bottom {
-        margin-top:-6px;  
-        margin-bottom:5px;
-        padding:0 0;
     }
     
 
@@ -1043,16 +933,6 @@ b {
 
 b {
     font-weight:600;
-}
-
-
-.split svg{
-    fill:#51687c;
-    height:30px;
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
-    text-align:center;
 }
 
 

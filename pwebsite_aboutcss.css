@@ -1,7 +1,7 @@
 .jumbotron p{
 	font-size:12.75px;
     color:#444;
-    line-height:131%;
+    line-height:21px;
     font-weight:300;
 }
 
@@ -34,16 +34,6 @@
   line-height:200%;
   font-size:14px;
   font-weight:400;
-}
-
-
-.content {
-    margin-bottom:70px;
-    margin-top:70px;
-}
-
-.content p {
-    color:#444;
 }
 
 
@@ -120,8 +110,6 @@
 }
 
 
-    
-
 @media only screen and (max-width:1200px){
 
      .self img {
@@ -130,7 +118,7 @@
     }
     
     .description {
-        margin-top:0%;   
+        margin-top:0%;  
     }
     
     .weird {
@@ -185,7 +173,6 @@
 
     .jumbotron p {
         margin-top:3%;  
-        line-height:170%;
     }
 
     .links a{
@@ -196,17 +183,16 @@
         line-height:160%;   
     }
 
-    .content {
-      margin-top:50px;
-    }
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (min-width:768px){
 
-    .jumbotron{
-        padding:0.5em;
+    .container .jumbotron{
+        padding:100px 0;
         margin-top:40px;
   }
 
 }
+
+
 

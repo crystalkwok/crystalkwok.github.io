@@ -17,6 +17,7 @@ font-family:'Open Sans', sans-serif;
     line-height: 170%;
     color:#444;
     margin-bottom:0;
+    padding:0 21px;
 }
 
 .description a {
@@ -137,14 +138,6 @@ font-family:'Open Sans', sans-serif;
 
 
 
-
-
-
-@media only screen and (max-width:995px){
- 
-    
-
-}
 
 
 @media only screen and (max-width:768px){
