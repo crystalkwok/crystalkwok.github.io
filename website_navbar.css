@@ -23,14 +23,22 @@ li, a, p{
     letter-spacing: .5px;
 }
 
-.problem-solution {
-    border-top:1px solid #ccc;
-    padding-top:28px;
-    margin-bottom:56px;
+b {
+    font-weight:600;
 }
-.problem-solution p{
-    margin-bottom:14px;
+
+.problem-solution .subtitle {
+    line-height:28px;
+    font-size:15px;
+    font-weight:500;
+    color:#bbb;
 }
+
+
+.problem-solution .subtitle_description {
+    margin-bottom:7px;
+}
+
 
 .problem-solution .solution + .subtitle_title {
     margin-bottom:28px;
@@ -91,7 +99,7 @@ li, a, p{
 .section hr {
     margin-top:49px;
     margin-bottom:49px;
-    border-top:1px solid #ccc;
+    border-top:1.5px solid #bbb;
 }
 
 
@@ -122,8 +130,8 @@ li, a, p{
 
 
 .inner-content {
-    margin-left:217px;
-    width:calc(100% - 217px);
+    margin-left:252px;
+    width:calc(100% - 252px);
 }
 
 
@@ -144,7 +152,7 @@ li, a, p{
 }
 
 .side-nav>.nav>li>a{
-    color:#999;
+    color:#888;
     font-weight:400;
     padding:0;
     display:inline;
@@ -179,10 +187,6 @@ li, a, p{
     background-color:#f6f6f6;
 }
 
-.section.introduction .content {
-    padding:77px;
-}
-
 .section.introduction .description {
     border-right:1px solid #ccc;
     padding-right:4%;
@@ -199,19 +203,23 @@ li, a, p{
 }
 
 .section .row:nth-child(n+1){
-    margin-top:49px;
+    margin-top:63px;
 }
 
 .section .row:nth-child(1) {
     margin-top:0;
 }
 
-.content {
-    padding: 119px 77px;
+.content{
+    padding: 119px;
+}
+
+.navbar .container {
+    padding:0 119px;
 }
 
 .thirds-section {
-    padding:0 10px;
+    padding:0 7px;
 }
 
 .thirds-section:first-of-type {
@@ -223,7 +231,8 @@ li, a, p{
 }
 
 .subsection.subtitle_list {
-    margin-bottom:7px;
+    padding:0 28px 14px 28px;
+    margin-bottom:0;
 
 }
 
@@ -246,9 +255,10 @@ li, a, p{
 }
 
 .subtitle_title {
-    font-weight:400;
+    font-weight:600;
     color:#000;
     font-size:14px;
+    line-height: 21px;
 }
 
 
@@ -270,17 +280,17 @@ p.step_title{
 }
 
 .step_description {
-    line-height:25px;
+    line-height:28px;
     font-size:13px;
     font-weight:300;
-    color:#999;
+    color:#888;
 }
 
 .subtitle_description{
     font-weight:400;
-    font-size:21px;
+    font-size:22px;
     color:#000;
-    line-height:32px;
+    line-height:35px;
 }
 
 .subtitle_description a, .subtitle_description i {
@@ -289,7 +299,7 @@ p.step_title{
 
 .subtitle_description b {
     font-size:21px;
-    font-weight:700;
+    font-weight:600;
 }
 /*color:#50728E;*/
 
@@ -305,8 +315,9 @@ p.step_title{
     transition:all .3s ease;
 }
 
-.navbar .pull-left {
-    padding-left:28px;
+
+.navbar .pull-left, .navbar .pull-right{
+    padding:0;
 }
 
 .navbar a {
@@ -363,7 +374,6 @@ p.step_title{
 .bigger .pull-right {
      margin-top:2em;
     transition: all .2s;
-    padding-right:28px;
     transition:all .2s ease;
 }
 
@@ -395,7 +405,6 @@ p.step_title{
 .shrink .pull-right {
     margin-top:.7em;
     transition:all .2s ease;
-    padding-right:28px;
 }
 
 .shrink #navbar_name {
@@ -409,7 +418,7 @@ p.step_title{
 }
 
 .shrink .ux_dropdown_big {
-    color:#999;
+    color:#888;
 }
 
 .dropdown-menu {
@@ -426,7 +435,7 @@ p.step_title{
 }
 
 .navbar .dropdown-menu>li>a {
-    color:#999;
+    color:#888;
 }
 
 
@@ -550,7 +559,7 @@ p.step_title{
 }
 
 .ux_dropdown_small a {
-    color:#999;
+    color:#888;
 }
 
  .ux_dropdown_small.show {
@@ -567,7 +576,7 @@ p.step_title{
 }
 
 #close_ux {
- color:#999;
+ color:#888;
  position:absolute;
  top:5%;
  right:10%;
@@ -610,7 +619,7 @@ footer a {
 }
 
 footer a:hover {
-    color:#999;
+    color:#888;
     text-decoration:none;
 }
 
@@ -690,7 +699,7 @@ footer a:hover {
 }
 
 .motivation a:hover, .end-note a:hover, .section a:hover{
-    color:#999;
+    color:#888;
     text-decoration: none;
 }
 
@@ -726,11 +735,11 @@ b {
 }
 
 .back_to_work a:hover line, .back_to_work a:hover polyline{
-    stroke:#999;
+    stroke:#888;
 }
 
 .back_to_work a:hover span {
-    color:#999;
+    color:#888;
 }
 
 .back_to_work a {
@@ -767,24 +776,27 @@ b {
     opacity:0;
 }
 
+@media only screen and (max-width:1200px){
+
+    .content {
+        padding:119px 77px;
+    }
+
+    .inner-content {
+        margin-left:217;
+        width:calc(100% - 217px);
+    }
+
+    .navbar .container {
+        padding:0 77px;
+    }
 
 
-
-
-@media only screen and (min-width:1600px){
-     #logo{
-		/*margin-top:32%;*/
-	}
-}
-
-@media only screen and (min-width:992px) {
-    .col-offset-half {
-    margin-left:4.2%;
-}
 }
 
 
 @media only screen and (max-width:995px){
+
 
 
  .smaller-second-row {
@@ -794,6 +806,11 @@ b {
     .content {
         padding:98px 48px;
     }
+
+    .navbar .container {
+        padding:0 48px;
+    }
+
 
 
     .thirds-section {
