@@ -175,7 +175,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     <div class="description col-md-8 col-sm-7 col-xs-12">
 
-                        <p>People with Locked-In Syndrome are rarely considered when designing or building for, therefore there is a lack of tools centered around allowing people with LIS to use them.  Locked-In Syndrome leaves the patient paralyzed except their eyes, but even that comes with limitations depending on the individual.  For example, Bob Veilette can only do vertical movements well.  We hope Myeplay can be centered around people with LIS, can alleve at least a small part of an LIS patient's pain points in life through social bonding.
+                        <p>While accessibility is currently considered of more importance now, people with Locked-In Syndrome have been rarely considered when designing or building for.  Locked-In Syndrome leaves the patient paralyzed except their eyes, but even that comes with limitations depending on the individual.  For example, Bob Veilette can only do vertical movements well.  We hope Myeplay can be centered around improving the life of people with LIS, and can alleve at least a small part of an LIS patient's pain points through social bonding.
                         </p>
                         <p><span class="subtitle_list">Deliverables</span>:  <a href="http://myeplay.herokuapp.com" target="_blank">Website</a> | 
                         <a href="https://github.com/hawaiianchimp/MyePlay" target="_blank">GitHub</a> | 
@@ -201,9 +201,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div role="navigation" class="side-nav hidden-xs">
                          <ul class="nav" >
                             <li class="active"><a href="#challenge">challenge</a></li>
+                            <li><a href="#research">research</a></li>
                             <li><a href="#approach">approach</a></li>
                             <li><a href="#design-process">design process</a></li>
-                            <li><a href="#need-solution">need + solution</a></li>
+                            <li><a href="#need-solution">solutions</a></li>
                             <li><a href="#final">final</a></li>
                             <li><a href="#takeaways">takeaways</a></li>
                             <li><a href="#improvements">improvements</a></li>
@@ -218,16 +219,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <span>challenge</span>
                         </p>
                             
-                            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                                <p class="subtitle_description">We wanted to improve life for <a href="http://www.bobveillette.com/" target="_blank">Bob Veillette</a>: a man with Locked-in Syndrome (LIS) which leaves him completely paralyzed except for his eyes.</p>
+                            <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+                                <p class="subtitle_description">Locked In Syndrome (LIS)</p>
 
-                                <p class="subsection subtitle_list col-md-12 col-sm-12 col-xs-12">constraint</p>
-                                <p class="step_description col-md-12 col-sm-12 col-xs-12">using EyeTribe, a cheaper eye tracker<br>tailoring to Bob, but no access to Bob as a user</p>
+                                <p class="step_description col-md-12 col-sm-12 col-xs-12">We were tasked with improving life for <a href="http://www.rep-am.com/news/2017/09/14/bob-veillette-of-naugatuck-longtime-managing-editor-dies-at-72/" target="_blank">Bob Veillette</a>: a man with Locked-in Syndrome (LIS) which leaves him completely paralyzed except for his eyes.</p>
+
+                                <p class="step_description">This task includes using an EyeTribe, a cheaper eye tracker to make it more accessible, and tailoring the application to Bob, but having no access to Bob as a user.</p>
 
                             </div>
 
-                            <img src="../images/myeplay/eyetribe.jpg" class="eye-tribe col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                            <img src="../images/myeplay/lockedinsyndrome.jpg" class="eye-tribe col-md-9 col-sm-12 col-xs-12 row">
                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="research">
+
+            <div class="container content">
+                <div class="inner-content">
+                    <div class="row">
+                        <p class="step_title col-md-12 col-sm-12 col-xs-12"><span>research</span></p>
+
+                        <div class="col-md-9">
+
+                            <p class="subtitle_description">Understanding LIS Patients through Other Resources</p>
+                                
+                            <p class="step_description">Since we had no access to Bob, yet had to tailor the application to Bob, we could only rely on other sources to understand the motivatinos and struggles of LIS patients.  We started by looking at different resources and papers <a href="../images/myeplay/papers/week1tu%20smith%20locked-in%20syndrome.pdf" target="_blank">[1]</a> <a href="../images/myeplay/papers/week2%20duchowski.pdf" target="_blank">[2]</a> <a href="../images/myeplay/papers/week2%20roda%20&%20thomas.pdf" target="_blank">[3]</a> <a href="../images/myeplay/papers/week2%20zhai.pdf" target="_blank">[4]</a> to better understand their lives, and to read on the challenges of using eyes as input. </p>
+
+                            <p class="step_description">From different resources, such as watching The Diving Bell and the Butterfly, reading Bob Veillette's previous website, and reading the first paper by Smith and Delargy, I got a glimpse into the daily life of someone with LIS-- constantly being bored and having someone take care of them.  They are completely cognizant of reality, yet they cannot communicate or socially interact in any way possible, and it is extremely difficult for others to interact with them as well.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,29 +262,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="inner-content">
                         <div class="row">
                             <p class="step_title col-md-12 col-sm-12 col-xs-12"><span>approach</span></p>
-                        </div>
-                        <div class="row">
-                            <img src="../images/myeplay/lockedinsyndrome.jpg" class="lockedinsyndromeimage col-md-5 col-sm-12 col-xs-12">
 
-                            <div class="col-md-6 col-md-offset-1">
-
-                                <p class="subtitle_description">We first started by looking at different resources and papers <a href="../images/myeplay/papers/week1tu%20smith%20locked-in%20syndrome.pdf" target="_blank">[1]</a> <a href="../images/myeplay/papers/week2%20duchowski.pdf" target="_blank">[2]</a> <a href="../images/myeplay/papers/week2%20roda%20&%20thomas.pdf" target="_blank">[3]</a> <a href="../images/myeplay/papers/week2%20zhai.pdf" target="_blank">[4]</a> to understand the motivations and struggles of LIS patients, and reading on the challenges of using eyes as input.</p>
-                                
-                                <p class="step_description">From different resources, such as watching The Diving Bell and the Butterfly, reading <a href="http://www.bobveillette.com/" target="_blank">Bob Veillette's website</a>, and reading the first paper by Smith and Delargy, I got a glimpse into the daily life of someone with LIS-- constantly being bored and having someone take care of them.  More social interaction is necessary to help improve their quality of life, but it seems like an impossible task without being able to move.  I wish we had more access to Bob, but unfortunately, that was not the situation.</p>
-                            </div>
-                        </div>
-                        
+                            <img src="../images/myeplay/social-interaction.jpg" class="diving_bell_picture col-md-9 col-sm-12 col-xs-12 ">
+                        </div>                        
                         <div class="row">
 
-                            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                                <p class="subtitle_description">Based on the challenges they faced, we wanted to help facilitate a better life with more social interaction by creating an entertainment suite for LIS patients.</p>
+                            <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+                                <p class="subtitle_description">More Social Interactions for the Cognizant</p>
 
 
-                                <p class="step_description">While there are many apps for entertainment for people without disabilities, there are only a few tailored to those with movement disabilities.  LIS patients also have communicated that they feel trapped in a limiting body, because they can still hear and be cognizant of the world around them, and their ability to think has not been damaged.  Loved ones usually only have a one-way communication with people with LIS. We wanted Bob's life to be enriched by relieving his boredom and to be enlightened when he is alone, and to socially interacting with his loved ones.</p>
+                                <p class="step_description">Based on the challenges they faced, we wanted to help facilitate a better life with more social interaction by creating an entertainment suite for LIS patients.  While there are many apps for entertainment for people without disabilities, there are only a few tailored to those with movement disabilities.</p>
+
+                                <p class="step_description">LIS patients also have communicated that they feel trapped in a limiting body, because they can still hear and be cognizant of the world around them, and their ability to think has not been damaged.  Loved ones usually only have a one-way communication with people with LIS. We wanted Bob's life to be enriched by relieving his boredom and to be enlightened when he is alone, and to socially interact with his loved ones.</p>
                                 
                             </div>
-
-                            <img src="../images/myeplay/social-interaction.jpg" class="smaller-second-row col-md-offset-1 diving_bell_picture col-md-6 col-sm-12 col-xs-12 ">
                         </div>
 
 
@@ -270,14 +283,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                 </div>
             </div>
-        </div>
         <div class="section" id="design-process">
             <div class="container content">
-                <div class="row">
-                    <div class="inner-content">
+                
+                <div class="inner-content">
+                    <div class="row">
                         <p class="step_title col-md-12 col-sm-12"><span>design process</span></p>
-                        <p class="subsection subtitle_list col-md-9 col-sm-9 col-xs-12">constraint</p>
-                        <p class="step_description col-md-9 col-sm-9 col-xs-12">While I would generally spend more time in different modes for designing (sketches, then digital wireframes, then prototypes with words, then detailed prototypes) time was of the essence, so I had to communicate my ideas to the engineers as soon as possible.  I also wish I were able to spend more time on different ideas.</p>
+                        
                         <div class="col-md-12 col-sm-12 square_display">
                                 <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/myeplay/wireframe.jpg" title="sketch">
                                     <img src="../images/myeplay/wireframe.jpg" alt="" class=" col-md-3 col-sm-4 col-xs-6"/>
@@ -301,55 +313,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <img src="../images/myeplay/storyboard.jpg" alt="" class=" col-md-3 col-sm-4 col-xs-6"/>
                                 </a>
                         </div><!--end process images-->
-                        
                     </div>
+                    <div class="row">
+
+                        <p class="step_description col-md-9 col-sm-9 col-xs-12">While I would generally spend more time in different modes for designing (sketches, then digital wireframes, then prototypes with words, then detailed prototypes) time was of the essence, so I had to communicate my ideas to the engineers as soon as possible.  I also wish I were able to spend more time on different ideas.</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
         <div class="section" id="need-solution">
             <div class="container content">
-                <div class="row">
-                    <div class="inner-content">
-                        <p class="step_title col-md-12 col-sm-12"><span>user needs + design solutions</span></p>
-                        <div class="col-md-5">
-                            <div class="problem-solution col-md-12">
-                                <div class="number"><p>1</p></div>
-                                <p class="subtitle_list col-md-4">problem</p>
-                                <p class="subtitle_title col-md-8">Bob and other LIS patients get bored easily without their caretakers</p>
+                
+                <div class="inner-content">
+                    <div class="row">
+                        <p class="step_title col-md-12 col-sm-12"><span>design solutions</span></p>
 
-                                <p class="solution subtitle_list col-md-4">solution</p>
-                                <p class="subtitle_title col-md-8">Media player with Bob's favorite jazz and piano pieces</p>
-                                <p class="step_description">While jazz and piano are specific to Bob's interests, other LIS caretakers and their loved ones could choose videos tailored to their patient's interests.
-                                </p>
-                            </div>
-                            <div class="problem-solution col-md-12">
-                                <div class="number"><p>2</p></div>
-                                <p class="subtitle_list col-md-4">problem</p>
-                                <p class="subtitle_title col-md-8">Bob and other LIS patients need to bond with their loved ones and have more social interaction</p>
-
-                                <p class="solution subtitle_list col-md-4">solution</p>
-                                <p class="subtitle_title col-md-8">2 player games that can be played with the eyes and hands</p>
-                            </div>
-                            <div class="problem-solution col-md-12">
-                                <div class="number"><p>3</p></div>
-                                <p class="subtitle_list col-md-4">problem</p>
-                                <p class="subtitle_title col-md-8">Bob has trouble looking horizontally</p>
-
-                                <p class="solution subtitle_list col-md-4">solution</p>
-                                <p class="subtitle_title col-md-8">Continuous vertical menu</p>
-                                <p class="step_description">This is specific to Bob, but it does bring to light different difficulties other LIS patients may face.  Even though their eyes may be the other thing that can move, there are still other physical limitations that other LIS patients struggle with with regards to their eyes. This made me about how others struggle with different kinds of eye movements, so this is something allow customization for, based on the user.</p>
-                            </div>
-                            <div class="problem-solution col-md-12">
-                                <div class="number"><p>4</p></div>
-                                <p class="subtitle_list col-md-4">problem</p>
-                                <p class="subtitle_title col-md-8">The eyetracker is more inaccurate</p>
-
-                                <p class="solution subtitle_list col-md-4">solution</p>
-                                <p class="subtitle_title col-md-8">Single option at a time</p>
-                                <p class="step_description">One of our requirements/constraints was needing to use the eyetracker that was provided.  This is considered a cheaper eye tracker, and therefore more inaccurate.  We wanted the user to accurately choose what they wanted, so we chose to make the design so that there was only one option at a time.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-md-offset-1 problem_solution">
+                        <div class="col-md-12 problem_solution">
                             <img src="../images/myeplay/first prototype/1.jpg" class="col-md-6 col-sm-6 col-xs-6"> 
                             <img src="../images/myeplay/first prototype/2.jpg" class="col-md-6 col-sm-6 col-xs-6">
                             <img src="../images/myeplay/first prototype/3.jpg" class="col-md-6 col-sm-6 col-xs-6">
@@ -358,6 +338,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <img src="../images/myeplay/first prototype/6.jpg" class="col-md-6 col-sm-6 col-xs-6">
                         </div>
                     </div>
+
+                        <div class="row">
+                            <div class="problem-solution col-md-5">
+                                <hr>
+                                <p class="subtitle_description col-md-12"><b>Self Entertainment First</b></p>
+                                <p class="subtitle col-md-12">Cognizant without Ability to Communicate</p>
+                                
+                                <p class="step_description">While jazz and piano are specific to Bob's interests, other LIS caretakers and their loved ones could choose videos tailored to their patient's interests with a media player.
+                                </p>
+                            </div>
+                            <div class="problem-solution col-md-5 col-md-offset-2">
+                                <hr>
+                                <p class="subtitle_description col-md-12"><b>Multiple Modes of Interaction</b></p>
+                                <p class="subtitle col-md-12">Need to bond with their Loved Ones and have more Social Interaction</p>
+                                <p class="step_description">We wanted to focus on the social interaction part, which is one of the biggest difficulties with the patients and their caretakers.  We created 2 player games that could be played with the eyes and hands.  While this is not exactly a form of communication, this allows for more quality time. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="problem-solution col-md-5">
+                                <hr>
+                                <p class="subtitle_description col-md-12"><b>Different Issues across Users</b></p>
+                                <p class="subtitle col-md-12">Bob has trouble looking horizontally</p>
+
+                                <p class="step_description">This is specific to Bob, but it does bring to light different difficulties other LIS patients may face.  Even though their eyes may be the only thing that can move, there are still other physical limitations other patients have with regards to their eyes. I wondered about how others struggle with different kinds of eye movements, and how we should allow for customization in this area, based on the user.  As for this specific design, I wanted to allow the affordance of looking up and down, and also a menu that repeats.</p>
+                            </div>
+                            <div class="problem-solution col-md-5 col-md-offset-2">
+                                <hr>
+                                <p class="subtitle_description col-md-12"><b>Creative Solution for Constraints</b></p>
+                                <p class="subtitle col-md-12">Cheaper Eyetracker is Inaccurate</p>
+                                
+                                <p class="step_description">One of our requirements/constraints was needing to use the eyetracker that was provided.  This is considered a cheaper eye tracker, and therefore more inaccurate.  We wanted the user to accurately choose what they wanted, so we chose to make the design so that there was only one option at a time.</p>
+                            </div>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -366,21 +381,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="row">
                     <div class="inner-content">
                         <p class="step_title col-md-12 col-sm-12"><span>final website</span></p>
-                        <p class="subsection subtitle_list col-md-9 col-sm-9 col-xs-12">constraint</p>
+
+                        <p class="subtitle_description">What We Encountered-- Compromise</p>
                         <p class="step_description col-md-9 col-sm-9 col-xs-12">The end result was not exactly what I designed, since time was of the essence.  We already had difficulty using the open source plugin to create the circular rolling design, and having multiple steps created more complexity we did not have time for.  Since our app was so simple anyways, having one screen for the game and the videos was fine with me.</p>
-                        <div class="final_prototypes_images">
-                            <img src="../images/myeplay/final prototype/1.jpg" class="col-md-4 col-sm-6 col-xs-6">
-                            <img src="../images/myeplay/final prototype/2.2.jpg" class="col-md-4  col-sm-6 col-xs-6">
-                            <img src="../images/myeplay/final prototype/3.3.jpg" class="col-md-4  col-sm-6 col-xs-6">
-                            <img src="../images/myeplay/final prototype/4.jpg" class="col-md-4  col-sm-6 col-xs-6">
-                            <img src="../images/myeplay/final prototype/5.jpg" class="col-md-4  col-sm-6 col-xs-6">
-                            <img src="../images/myeplay/final prototype/6.jpg" class="col-md-4  col-sm-6 col-xs-6">
+                        <div class="final_prototypes_images col-md-12 col-sm-12 col-xs-12">
+                            <img src="../images/myeplay/final prototype/1.jpg" class="col-md-6 col-sm-6 col-xs-6">
+                            <img src="../images/myeplay/final prototype/2.2.jpg" class="col-md-6  col-sm-6 col-xs-6">
+                            <img src="../images/myeplay/final prototype/3.3.jpg" class="col-md-6  col-sm-6 col-xs-6">
+                            <img src="../images/myeplay/final prototype/4.jpg" class="col-md-6  col-sm-6 col-xs-6">
+                            <img src="../images/myeplay/final prototype/5.jpg" class="col-md-6  col-sm-6 col-xs-6">
+                            <img src="../images/myeplay/final prototype/6.jpg" class="col-md-6  col-sm-6 col-xs-6">
                             <div class="pull-left">
-                                <img src="../images/myeplay/final prototype/7.jpg" class="col-md-4  col-sm-6 col-xs-6">
-                                <img src="../images/myeplay/final prototype/8.jpg" class="col-md-4  col-sm-6 col-xs-6">
+                                <img src="../images/myeplay/final prototype/7.jpg" class="col-md-6  col-sm-6 col-xs-6">
+                                <img src="../images/myeplay/final prototype/8.jpg" class="col-md-6  col-sm-6 col-xs-6">
                             </div>
                         </div>
-                        <div class="col-md-10 col-xs-12 col-sm-12 col-md-offset-1">
+                        <div class="col-md-10 col-xs-12 col-sm-12">
                             <div class="videoWrapper">
                                 <iframe width="560" height="349" src="http://www.youtube.com/embed/68j_zkgJKdA" frameborder="0" allowfullscreen></iframe>
                                 <!--<a href="#" id="paper_prototypes">[ TOGGLE PAPER PROTOTYPES ]</a>-->
@@ -399,7 +415,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
 
-                            <p class="subtitle_description">Rethinking and creating new possibilities and experiences for people with disabilities</p>
+                            <p class="subtitle_description">Creating New Experiences for People with Disabilities</p>
                             <p class="step_description">Having the chance to design for our users has created new possibilities for interfaces, user experiences, interactions, and even new discoveries to what is intuitive specifically to these users.  This project opened up new possibilities to <b>rethink already existing functions and purposes of the different parts of the people's bodies </b>, because people with LIS must learn to use their eyes for more purposes than people without LIS usually need to. I also started to open my eyes to understanding the idea that we have different kinds of users with disabilities, and we need to <b>start thinking about accessibility, and designing and considering these users.</b>  We feel privileged to have designed something to improve and enrich Bob's life, and to have redefined the <a href="../images/myeplay/roda%20and%20thomas.pdf" target="_blank">eye's purpose and function</a> as not just a passive way to indicate attention, but as an active decision maker.</p>
                             </div>
 
