@@ -27,7 +27,7 @@ b {
     font-weight:600;
 }
 
-.problem-solution .subtitle {
+.subtitle {
     line-height:28px;
     font-size:15px;
     font-weight:500;
@@ -99,7 +99,7 @@ b {
 .section hr {
     margin-top:49px;
     margin-bottom:49px;
-    border-top:1.5px solid #bbb;
+    border-top:1px solid #bbb;
 }
 
 
