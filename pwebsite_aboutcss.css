@@ -1,65 +1,11 @@
-.jumbotron p{
-	font-size:12.75px;
-    color:#444;
-    line-height:21px;
-    font-weight:300;
+.about {
+  margin-top:45px;
 }
 
-.jumbotron b {
-    font-weight:600;
+.about .step_description {
+  line-height: 22px;
 }
 
-/*change jumbotron*/
-.jumbotron{
-	background-color: #ffffff;
-  margin-bottom:0px;
-	width:100%;
-  height:100%;
-  margin-top:70px;
-  padding-left:0;
-  padding-right:0;
-
-}
-
-
-/*end jumbotron and triangle changes*/
-
-.contact {
-  background-color:#f8f8f8;
-  padding-top:3%;
-  padding-bottom:3%;
-}
-
-.contact p{
-  line-height:200%;
-  font-size:14px;
-  font-weight:400;
-}
-
-
-.links a, #instagramtext a{
-    text-decoration: none;
-    color:#6aa1d6;
-}
-
-#instagramtext a {
-    font-weight:700;
-}
-
-.links a:hover, #instagramtext a:hover{
-    color:#999;
-    text-decoration:none;
-}
-/*part of the resume that shoud be really small O.O*/
-
-.content p {
-    line-height: 160%;
-}
-
-
-.weird {
-    display:none;
-}
 
 
 #instafeed {
@@ -107,6 +53,11 @@
 
 #instafeed a:hover .likes {
   opacity:1;
+}
+
+.resume .step_description {
+  line-height: 22px;
+  color:#000;
 }
 
 
@@ -167,7 +118,6 @@
 
 /*change jumbotron*/
 	.jumbotron{
-        padding:0.5em;
         margin-top:100px;
 	}
 
