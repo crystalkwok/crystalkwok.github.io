@@ -7,6 +7,10 @@ font-family:'Open Sans', sans-serif;
     font-weight:400;
 }
 
+.middle {
+    padding-top:0;
+    padding-bottom:0;
+}
 
 
 
@@ -17,7 +21,6 @@ font-family:'Open Sans', sans-serif;
     line-height: 170%;
     color:#444;
     margin-bottom:0;
-    padding:0 21px;
 }
 
 .description a {
@@ -29,20 +32,6 @@ font-family:'Open Sans', sans-serif;
     color:#999;
 }
 
-
-.ux_work2 {
-    margin-bottom:8em;
-    margin-top:6em;
-}
-
-.ux_work2 .container{
-    padding-left:3em;
-    padding-right:3em;
-}
-
-.ux_work2 .col-md-3 {
-    padding:0 0;
-}
 
 .inspiration {
     background-color:#ececec;
