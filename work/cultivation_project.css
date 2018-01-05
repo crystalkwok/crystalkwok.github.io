@@ -1,0 +1,17 @@
+.body {
+    background: url(../images/cultivation_project/cultivate.jpg) no-repeat center bottom;
+    background-size:cover;
+    background-attachment:fixed;
+    width:100%;
+    position:relative;
+}
+
+.fullscreen-shots img{
+    box-shadow: 0 1px 2px rgba(43,59,93,.20), 
+    0 0 10px rgba(43,59,93,.20);
+    margin-bottom:49px;
+}
+
+
+
+
