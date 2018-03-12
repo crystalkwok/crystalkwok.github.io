@@ -1,10 +1,4 @@
-.body {
-    background: url(../images/casestack/background-photo.jpg) no-repeat center bottom;
-    background-size:cover;
-    background-attachment:fixed;
-    width:100%;
-    position:relative;
-}
+
 
 .right-side p, .right-side li {
 	font-size:13px;

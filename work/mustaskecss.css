@@ -1,12 +1,5 @@
 @charset 'UTF-8';
 
-.body {
-    background: url(../images/mustaske1/background-photo.jpg) no-repeat center bottom;
-    background-size:cover;
-    background-attachment:fixed;
-    width:100%;
-    position:relative;
-}
 .emphasis {
 	font-weight:600;
 	color:#6BB2BA;

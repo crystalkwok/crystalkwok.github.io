@@ -1,13 +1,5 @@
 @charset 'UTF-8';
 
-.body {
-    background: url(../images/designlab/background_photo.jpg) no-repeat center bottom;
-    background-size:cover;
-    background-attachment:fixed;
-    width:100%;
-    position:relative;
-}
-
 .feature_descriptions {
     border:1px solid #e2e2e2;
     background-color:#fafafa;

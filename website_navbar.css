@@ -96,6 +96,10 @@ b {
     opacity: .6;
 }
 
+.full-photo img {
+    width:calc(100% + 166px);
+}
+
 .section hr {
     margin-top:49px;
     margin-bottom:49px;
@@ -283,7 +287,7 @@ p.step_title{
     line-height:28px;
     font-size:13px;
     font-weight:300;
-    color:#888;
+    color:#666;
 }
 
 .subtitle_description{
@@ -517,22 +521,22 @@ p.step_title{
 }
 
 
+/*white*/
 
-
-.white.navbar.bigger a, .bigger .ux_dropdown_big {
+.navbar.bigger a, .bigger .ux_dropdown_big {
     color:#c1c2c2;
 }
 
-.white .dropdown-menu>li>a:hover, .white .ux_dropdown_small a:hover{
+.dropdown-menu>li>a:hover, .white .ux_dropdown_small a:hover{
     color:#000;
 }
 
-.white.navbar.bigger .hover_nav {
+.navbar.bigger .hover_nav {
     background:#c1c2c2;
 
 }
 
-.white.navbar.bigger {
+.navbar.bigger {
     background-color:#fff;
 }
 
@@ -632,22 +636,18 @@ footer a:hover {
 }
 
 
-
-
-
-.body, .top{
+.top{
     padding-top:164px;
-    padding-bottom:119px;
-}
-
-.top {
     padding-bottom:80px;
 }
 
-
-.body p{
-    text-align: center;
-    color:#fff;
+.body {
+    padding-top:75px;
+    position:relative;
+}
+.body .container.content {
+    padding-top:105px;
+    padding-bottom:105px;
 }
 
 .top p {
@@ -656,19 +656,14 @@ footer a:hover {
 }
 
 .body i {
-    color:#fff;
-    font-size:13px;
+    color:#000;
+    font-size:15px;
 }
 
 .page_description, .role{
     letter-spacing: .01em;
-    font-size:15px;
+    font-size:20px;
     font-weight:400;
-}
-
-.page_description {
-    padding-left:15px;
-    padding-right:15px;
 }
 
 /*page title*/
@@ -677,8 +672,8 @@ footer a:hover {
     font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.06em;
-    text-align: center;
-    font-weight:700;
+    text-align: left;
+    font-weight:400;
 }
 
 

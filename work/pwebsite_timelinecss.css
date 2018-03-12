@@ -1,13 +1,5 @@
 @charset 'UTF-8';
 
-.body {
-    background: url(../images/timeline/background-photo.jpg) no-repeat center bottom;
-    background-size:cover;
-    background-attachment:fixed;
-    width:100%;
-    position:relative;
-}
-
 
 /*fixed and relative time*/
 .captions{
