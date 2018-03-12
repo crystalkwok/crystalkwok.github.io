@@ -785,6 +785,10 @@ b {
         padding:119px 77px;
     }
 
+    .full-photo img {
+        width:calc(100% + 77px);
+    }
+
     .inner-content {
         margin-left:217;
         width:calc(100% - 217px);
@@ -808,6 +812,10 @@ b {
     
     .content {
         padding:98px 48px;
+    }
+
+    .full-photo img {
+        width:calc(100% + 88px);
     }
 
     .navbar .container {
@@ -893,6 +901,14 @@ b {
 
     .content {
         padding:70px 54px;
+    }
+
+    .full-photo img {
+        width:calc(100% + 54px);
+    }
+
+    .full-photo.left img {
+        margin-left:-54px;
     }
 
     .section.introduction .description {
