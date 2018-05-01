@@ -89,11 +89,15 @@ b {
 }
 
 .square_display img:hover {
-    opacity: .6;
+    opacity: .7;
+    transform:scale(1.005);
+    transition: all .3s ease;
 }
 
 .fancybox-thumb img:hover {
-    opacity: .6;
+    opacity: .7;
+    transform:scale(1.005);
+    transition: all .3s ease;
 }
 
 .full-photo img {
