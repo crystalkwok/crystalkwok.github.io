@@ -34,7 +34,14 @@ var divs = $('.body .overlay'),
                   
   //dropdown menu for ux toggles based on angle down        
     $('.ux_dropdown_big').click(function() {
-      $('.dropdown-menu').toggle();
+      $('.dropdown-menu.all-projects').toggle();
+      return false;
+    });
+
+      //dropdown menu for viewing more projects     
+    $('.view-more-proj').click(function() {
+      $('.more-projects.dropdown-menu').toggle();
+      $('.view-more-proj .description').toggleClass("semibold");
       return false;
     });
 

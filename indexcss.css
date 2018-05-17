@@ -85,12 +85,29 @@ font-family:'Open Sans', sans-serif;
     margin:7%;
 }
 
+.view-more-proj p.description{
+    display:block;
+    top:40%;
+    color: #6aa1d6;
+    text-decoration: none;
+    letter-spacing: .5px;
+    position:absolute;
+    text-align:center;
+    left:10%;
+}
+
+.view-more-proj:hover p.description {
+    font-weight:600;
+}
+
 .imageContainers:hover .description1 {
     display:block;
     top:25%;
     transition: bottom 1s ease;
     transition: display 1s ease;
 }
+
+
 
 .imageContainers:hover .title {
     display:none;
@@ -123,8 +140,15 @@ font-family:'Open Sans', sans-serif;
     background-color:#fff;
 }
 
+.more-projects {
+    width:160px;
+    top:60%;
+    left:10%;
+}
 
-
+.semibold {
+    font-weight:600;
+}
 
 
 

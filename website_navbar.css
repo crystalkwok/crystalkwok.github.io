@@ -433,16 +433,27 @@ p.step_title{
 
   min-width: 105px;
     border-radius:0;
-    border:1px #e2e2e2 solid;
+    border:1px #cccccc solid;
+    -webkit-box-shadow:0 2 4 30%;
+}
+
+.dropdown-menu.all-projects {
     margin:20px 0;
-    -webkit-box-shadow:0 0 0;
 }
 
 .dropdown-menu li {
     display:table-row;
 }
 
+.dropdown-menu li:hover {
+    background-color:#f6f6f6;
+}
+
 .navbar .dropdown-menu>li>a {
+    color:#888;
+}
+
+.dropdown-menu>li>a {
     color:#888;
 }
 
@@ -453,6 +464,7 @@ p.step_title{
     background-image: inherit;
 
 }
+
 
 .navbar_options{
     position:relative;
