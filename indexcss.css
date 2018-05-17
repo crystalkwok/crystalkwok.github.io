@@ -53,11 +53,15 @@ font-family:'Open Sans', sans-serif;
 
 .title {
     position:absolute;
-    top:88%;
     bottom:0px;
     width:100%;
     color:#fff;
     left:7%;
+    font-weight:600;
+}
+
+.title span {
+    font-weight:400;
 }
 
 .dark {
