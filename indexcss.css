@@ -42,13 +42,9 @@ font-family:'Open Sans', sans-serif;
     padding:0 0;   
 }
 
-.imageContainers {
-    position:relative;
-}
 
 .squareImages {
     opacity:.7;  
-    position:relative;
 }
 
 .title {
@@ -90,12 +86,13 @@ font-family:'Open Sans', sans-serif;
 }
 
 .view-more-proj p.description{
+    position:absolute;
     display:block;
     top:40%;
     color: #6aa1d6;
     text-decoration: none;
     letter-spacing: .5px;
-    position:absolute;
+    
     text-align:center;
     left:10%;
 }
@@ -126,9 +123,16 @@ font-family:'Open Sans', sans-serif;
     transition:transform .3s;
 }
 
+.imageContainers.view-more-proj:hover .squareImages {
+    transform:none;
+}
+
 .imageContainers {
     overflow:hidden;
-    position:relative;
+}
+
+.imageContainers.col-md-12 {
+    position:static;
 }
 
 .navbar.bigger a, .bigger .ux_dropdown_big {
