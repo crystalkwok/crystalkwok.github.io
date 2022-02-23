@@ -5,26 +5,23 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta property="name" content="About Crystal Kwok">
         <meta name="author" content="Crystal Kwok">
-        <meta name="keywords" content="san diego, los angeles, web design, crystal kwok, ucsd, ux, university of california san diego, crystal, kwok, website, design, interaction design, interaction designer,
-        crystalkwok, graphic design, prototyping, rapid, product design, jquery, user, experience, user experience, research, research assistant, serences, rainbow art, rainbow canvas, rainbow, art, artwork, admin, administrative assistant">
-        
 
-         <script src="../jquery-3.2.0/jquery-3.2.0.min.js"></script>
-        <script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
-        
+         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+         <script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
         <!--bootstrap-->
-        <link type="text/css" rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-theme.min.css">
-        
-
         <!--css-->
+
+        <!--bootstrap-->
+
+        <link href="../structure.css" rel="stylesheet" />
         <link href="../website_navbar.css" rel="stylesheet" />
         <link href="cultivation_project.css" rel="stylesheet" />
         <link href="../font-awesome-4.2/css/font-awesome.min.css" rel="stylesheet" />
 
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   
+
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -37,14 +34,16 @@
 
 
         <script src="../navbar.js"></script>
+        <script src="../navbarTop.js"></script>
+        <script src="../sidenavbarBottom.js"></script>
 
         <title>Cultivation Project--crystal kwok</title>
 
         <!--for the image galleries-->
                 <!-- fancyBox-->
 
-                <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        
+
+
         <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
          <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.js"></script>
         <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js"></script>
@@ -55,7 +54,7 @@
 
 
 <body data-spy="scroll" data-target=".side-nav" data-offset='200'>
-    
+
     <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N57DXK"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -65,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N57DXK');</script>
 <!-- End Google Tag Manager -->
-    
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -77,13 +76,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 
-    
+
 
 
 
 <!--normal nav bar-->
-   <div class="navbar bigger hidden-xs">
+   <div class="navbar bigger">
         <div class="container">
+          <div class="row">
             <ul class="pull-left">
                 <a href="../index.html"><img src="../images/logo%20gray.jpg"></a>
                 <!--<li id="navbar_name">Crystal Kwok</li>-->
@@ -92,21 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <li class="relative">
                         <span class="navbar_options">
                         <a href="../index.html">work</a>
-                        <span class="hover_nav"></span></span> 
-
-                        | <a href="#"><i class="fa fa-angle-down ux_dropdown_big"></i></a>
-                        
-                        <ul class="dropdown-menu all-projects">  
-                            <li><a href="bluebeam-markups.html">Bluebeam - Markup Tracking</a></li>
-                            <li><a href="bluebeam-studio-invite.html">Bluebeam - Invite & Manage</a>
-                            <li><a href="casestack-consolidation.html">CaseStack - Consolidation</a></li>
-                            <li><a href="casestack-tracking-loads.html">CaseStack - Tracking Loads</a></li>
-                            <li><a href="cultivationproject.html" id="activea">Cultivation Project</a></li>
-                            <li><a href="mustaske.html">MustAske</a></li>
-                            <!--<li><a href="timeline.html">Timeline</a></li>
-                            <li><a href="myeplay.html">MyePlay</a></li>
-                            <li><a href="designlab.html">Design Lab</a></li>-->
-                        </ul>
+                        <span class="hover_nav"></span></span>
                     </li>
                     <li class="navbar_options">
                             <a href="../art.html">art</a>
@@ -117,90 +103,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <span class="hover_nav"></span>
                     </li>
             </ul>
+          </div>
 
         </div>
     </div><!--end navbar-->
 
+    <div role="navigation" class="bottom-nav side-nav hidden-lg hidden-md hidden-sm">
+       <ul class="nav" >
+          <li class="active"><a href="#challenge">challenge</a></li>
+          <li><a href="#personal_journey">low-hanging fruit</a></li>
+          <li><a href="#context">research findings</a></li>
+          <li><a href="#discover">product strategy</a></li>
+          <li><a href="#thank_you">too long to invite many</a></li>
+          <li><a href="#thank_you2">invites missed & who's not here?</a></li>
+          <li><a href="#thank_you3">results - 4.3/5 ease of use rating</a></li>
+          <li><a href="#thank_you4">takeaways & new initiative</a></li>
+      </ul>
+    </div>
 
-    <!--small nav bar-->
 
-    <div class="navbar_small hidden-lg hidden-md hidden-sm">
-        <div class="container">
-            <div class="row">
-            <img src="../images/logo%20gray.jpg" class="smallLogo">
-
-            <ul class="navbar_small_list">
-                
-                <li>
-                    <a href="../index.html">work</a> | <i class="fa fa-angle-down fa_ux_dropdown" id="fa_ux"></i>
-                </li>
-                <li> 
-                    <a href="../art.html">art</a>
-                </li>
-                <li>
-                    <a href="../about.html">about</a>
-                </li>
-                
-            </ul>
-            <ul class="ux_dropdown_small">
-                <div class="ux_dropdown_small_relative">
-                    <i class="fa fa-times" id="close_ux"></i>
-                        <li><a href="bluebeam-markups.html">Bluebeam - Markup Tracking</a></li>
-                         <li><a href="bluebeam-studio-invite.html">Bluebeam - Invite & Manage</a>
-                        <li><a href="casestack-consolidation.html">CaseStack - Consolidation</a></li>
-                        <li><a href="casestack-tracking-loads.html">CaseStack - Tracking Loads</a></li>
-                        <li><a href="cultivationproject.html" id="activeb">Cultivation Project</a></li>
-                        <li><a href="mustaske.html">MustAske</a></li>
-                        <!--<li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="myeplay.html">MyePlay</a></li>
-                        <li><a href="designlab.html">Design Lab</a></li>-->
-                </div>
-             </ul>
-
-            </div>
-        </div>
-        
-
-    </div><!--end navbar_small-->
 
     <div class="body">
-        <div class="overlay"></div>
         <div class="container content">
             <div class="row">
-                <p class="name">CULTIVATION PROJECT</p>
-                 <p class="page_description">easy connecting between missionaries and supporters</p>
+              <div class="col-lg-6 col-md-6 col-sm-5 col-xs-8">
+                <label><span>Bluebeam</span><span>&#183;</span> <span>8 Min read</span></label>
+                <p class="name">Studio Invites</p>
+                <p class="page_description">Prioritizing security, increasing efficiency, and meeting legal requirements through experience delighters</p>
+
+                  <p class="page_description"><i>**If you're short on time, read the bolded parts!</i></p>
+               </div>
+            <div class="role col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-3 col-sm-3 col-xs-8">
+              <div class="row">
+                <div class="individual col-lg-12 col-md-12 col-sm-8 col-xs-4">
+                  <label>Role</label>
+                  <p>Lead Product Designer</p>
+                </div>
+                <div class="individual col-lg-12 col-md-12 col-sm-8 col-xs-4">
+                  <label>Team</label>
+                  <p>Jaji<br>3 Engineering Teams</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
     </div>
 
-    <div class="section row">
-
-        <img src="../images/cultivation_project/cultivation-cover2.jpg" class="col-md-12 col-sm-12 col-xs-12">
-
+    <div class="hero_image_container">
+      <div class="hero_image">
+        <img class="absolute" src="../images/bluebeam/studio_invites_green.gif">
+      </div>
     </div>
 
-    <div class="section introduction">
-        <div class="container content">
-            <div class="row">
-
-                    <div class="description col-md-8 col-sm-7 col-xs-12">
-
-                        <p class="step_description">Missionaries struggle to gather supporters and keep them updated; supporters have difficulty keeping up with all updates, and often stopping when they're overwhelmed when trying to catch up.  The Cultivation Project hopes to connect supporters to missionaries easily, and to encourage more prayer as the main avenue to support missionaries.  
-                        </p>
-                        <p><span class="subtitle_list">Deliverables</span>:  <a href="https://invis.io/QXF79OZ25" target="_blank">Invision Link</a></p>
-
-                    </div>
-                    <div class="deliverables col-md-3 col-sm-4 col-xs-12">
-                        <p><span class="subtitle_list">Role</span>:</p>
-                        <p>UX/UI Designer</p>
-                        
-                        <p><span class="subtitle_list">Collaborators</span>:</p>
-                        <p>Cameron Kuey, Ricky Nguyen, Josephine Sheu, Teresa Yuan, Matthew Woo, Gensen Choy, Tony Zhang</p>
-                    </div>
-                    
-            </div>
-        </div>
+    <div class="hero_image_container relative">
+      <div class="hero_image">
+        <img src="../images/bluebeam/manage_invites_yellow.gif">
+      </div>
     </div>
+
 
     <div class="relative">
         <div class="section" id="challenge">
@@ -209,212 +169,385 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div role="navigation" class="side-nav hidden-xs">
                          <ul class="nav" >
                             <li class="active"><a href="#challenge">challenge</a></li>
-                            <li><a href="#personal_journey">personal journey</a></li>
-                            <li><a href="#context">context</a></li>
-                            <li><a href="#discover">culture</a></li>
-                            <li><a href="#thank_you">thank you</a></li>
+                            <li><a href="#personal_journey">low-hanging fruit</a></li>
+                            <li><a href="#context">research findings</a></li>
+                            <li><a href="#discover">product strategy</a></li>
+                            <li><a href="#thank_you">too long to invite many</a></li>
+                            <li><a href="#thank_you2">invites missed & who's not here?</a></li>
+                            <li><a href="#thank_you3">results - 4.3/5 ease of use rating</a></li>
+                            <li><a href="#thank_you4">takeaways & new initiative</a></li>
                         </ul>
                     </div>
 
 
-                    <div class="inner-content">
-
-                        <p class="step_title col-md-12 col-sm-12">
-                            <span>challenge</span>
-                        </p>
-                            
-                            <div class="row">
-                                <div class="col-md-9 col-lg-9 col-sm-11 col-xs-12">
-                                    <p class="subtitle_description">Barriers to Supporting and Being Supported</p>
-
-                                    <p class="step_description col-md-12 col-sm-12 col-xs-12">Missionaries hope to share their stories and gather emotional support, yet have trouble easily sharing with existing supporters (mailing lists, facebook events), and gathering new supporters. Supporters struggle to support them whole-heartedly, as seen from lack of responses.</p>
-                                     <p class="step_description col-md-12 col-sm-12 col-xs-12">From our research, the biggest pain point was effective mass communication on both sides, so we dug deep to understand and solve the issues.</p>
-
-                                     <p class="step_description col-md-12 col-sm-12 col-xs-12">For everything, we also explored multiple options for profiles and discovery pages to address different issues (ex: wireframe below).</p>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <a class="fancybox-thumb col-md-12" rel="fancybox-thumb gallery2" href="../images/cultivation_project/tcp_research_2.jpg" title="Problem and Process">
-                                    <img src="../images/cultivation_project/tcp_research_2.jpg" alt="" class="col-md-12 col-sm-12 col-xs-12"/>
-                                </a>
+                    <div class="inner-content nine-column">
+                        <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8 weird-columning">
+                            <label>Challenge</label>
+                            <h2>Retain Enterprise Customers</h2>
+                            <div class="inner-section">
+                                <p>Bluebeam’s product team recently shifted focus onto better retaining enterprise customers, characterized by:</P>
+                                    <ul>
+                                      <li>working on bigger projects with more external (outside the company) collaborators</li>
+                                      <li>more internal employees with high turnover</li>
+                                      <li>heavy emphasis on security & legal requirements</li>
+                                    </ul>
                             </div>
 
-                   
+                            <p>Characterized by more employees, focusing on enterprise customers would give us more revenue based on our pricing structure at the time. On top of that, our competitors often geared towards enterprise customers, and we wanted to ensure we didn’t lose customers to our competitors in that market. </p>
+
+                        </div>
                     </div>
+
+                  </div>
+
                 </div>
+
             </div>
-        </div>
 
         <div class="section" id="personal_journey">
             <div class="container content">
-                <div class="inner-content">
-                    <div class="row">
-                        <p class="step_title col-md-12 col-sm-12 col-xs-12"><span>personal journey</span></p>
-
-                        <div class="col-md-9 col-lg-9 col-sm-11 col-xs-12">
-
-                            <p class="subtitle_description col-md-12">Physical, Emotional, Spiritual Updates</p>
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">All supporters emphasize following the missionary's journey-- spiritually, emotionally, and physically. Other general lifestyle blog posts feature unconnected single photos, quotes, or life advice; however, shared thoughts, feelings, and what was learned throughout the trip links updates together to paint a better picture of the missionary, the people being served, and the overall journey. Currently, accessing common actions to understand the journey is painful with singular posts.  </p>
-
-                            
+              <div class="row">
+                <div class="inner-content nine-column">
+                      <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                        <label>Initial Research</label>
+                        <div class="row">
+                          <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Low-Hanging Fruit in “Managing People in Spaces”</h2>
                         </div>
-                        
-                    </div>
+                        <div class="inner-section">
+                          <p>As a new team together, we wanted to start afresh and hear the most important pain points from our beloved customers.  We conducted qualitative research with about 7 enterprise sized customers, asking them about how they used Studio, what were some pain points, the reason behind their pain points or potential solutions, and how solving it would affect them.  Most common problems lied in:</P>
+                              <ul>
+                                <li>editing other people’s markups / notes (for various reasons that could be solved in different ways)</li>
+                                <li>updating new plans (they are different in different stages)</li>
+                                <li>managing people in spaces</li>
+                                <li>&amp; more!</li>
+                              </ul>
 
-                    <div class="row">
-                        <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 gifs" src="../images/cultivation_project/personal_journey.gif">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-9 col-lg-9 col-xs-12 col-sm-11">
+                          </div>
+                          <div class="inner-section">
+                            <p>We spent a lot of time really digging into why users mentioned pain points or feature requests, to see if we could solve those problems in other ways.  Together with engineering, we knew that for some of the problems, to solve it the right way would require massive technical rework, enough to warrant a completely new structure of Studio. We decided as a team to <b>solve problems within “creating a new space,” which did not demand a completely new structure</b>, and would provide value to our customers at our next release while we planned out how to provide significant value with huge technical rework.</p>
+                          </div>
 
-                            <p class="subtitle_description col-md-12">Separate Parts Make Up the Whole</p>
-
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">Supporters often read updates in succession, and enjoy seeing how it progressed from the beginning.  We focus on the written content of the post until intentional interaction to view other posts and appreciate the journey.  </p>
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">A bird's eye overview of all the posts chronologically visually supports quick understanding of the journey, how this post relates to all other posts, and access to other posts.  Common actions, such as scrolling through other posts quickly to find a particular one, became more accessible.  Each post is highlighted as a particular point in time and location in the journey through the vertical design.  
-
-                            </p>
-
-
+                          <p><i>**As reflection on how we could improve, I wish we had done more market research on enterprise customers to better choose and prioritize what work to work on for the most impact.</i></p>
                         </div>
-                        
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
 
 
-        <div class="section" id="context">
-            <div class="container content">
-                <div class="inner-content">
-                    <div class="row">
-                        <p class="step_title col-md-12 col-sm-12 col-xs-12"><span>context</span></p>
+            <div class="section" id="context">
+                <div class="container content">
+                  <div class="row">
+                    <div class="inner-content nine-column">
+                          <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                            <label>Research Findings</label>
+                            <div class="row">
+                              <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Biggest Pain Point: Inviting People for Enterprise</h2>
+                            </div>
+                            <div class="inner-section">
+                              <p>We also conducted multiple research studies with contextual inquiry, scripted interviews, and usability tests with 7 additional customers and internal industry experts, with multiple iterations and explorations of designs. We researched with enterprise and SMB customers, to make sure we didn’t isolate other customers with new designs.</P>
+                            </div>
 
-                        <div class="col-md-9 col-lg-9 col-sm-11 col-xs-12">
+                                <div class="inner-section row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                    </a>
+                                  <a class="fancybox-thumb" rel="fancybox-thumb gallery" href="../images/flunkless/wireframe1.png" title="wireframe">
+                                      <img src="../images/flunkless/wireframe1%20thumbnail.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                  </a>
+                              </div>
 
-                            <p class="subtitle_description col-md-12">Forgetful and Behind</p>
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">While supporters try following some of their friends and missionaries, they often forget the context. They missed a few posts due to notifications at inconvenient times, or the initial support letter was sent so long ago that they forgot what is happening on this trip. Supporters typically read the most recent update first, but knowing the story and context is key to even understanding the current post.  If the supporter is reading the reflection, what had happened before?</p>
+                              <p class="inner-section">
+                                Through our research, we found that the biggest pain point with managing people in a Studio space was the <b>process of inviting people, especially for enterprise customers.</b>
+                              </p>
 
-                        
-                        </div>
-                        
-                        
+                              <div class="inner-section row">
+                                <a class="fancybox-thumb" rel="fancybox-thumb gallery" href="../images/flunkless/wireframe1.png" title="wireframe">
+                                    <img src="../images/flunkless/wireframe1%20thumbnail.png" alt="" class="col-md-8 col-lg-7 col-sm-6 col-xs-8 middle"/>
+                                </a>
+                              </div>
+                              <p class="inner-section">
+                                We found that typically, people did not use the in-app method to invite people.  However, outside methods didn’t allow the collaboration space to be locked to only those invited, so whoever had the ID could join. In order to block someone’s access, they would have had to join before the Studio space could block their access. What terrible security!
+                              </p>
+                              <div class="inner-section">
+                                <p>We heard <b>5/7</b> of our participants <b><span class="important_underline">forgo security</span> by using outside-app methods to <span class="important_underline">invite for ease of use</span></b>, even if they value security. Most copied a link to the invitation and sent it via their work email, because moderators could:</p>
+                                <ul>
+                                  <li>easily access the emails of internal and external folks right from Outlook with autocomplete</li>
+                                  <li>invite many, or even the same, people with ease (one had an email template), since Enterprise projects had a lot of internal and external collaborators</li>
+                                  <li>see who had actually been invited, and compare & contrast who had joined or not joined yet</li>
+                                  <li>write an individualized message with a due date & email signature</li>
+                                </ul>
+                              </div>
+                              <p class="inner-section">
+                                <b>2/7</b> were legally required to use more secure access (i.e. sensitive information) and used the in-app method. One complained about how they took <span class="important_underline">30 minutes every time to invite people</span>, and another used a hack by creating fake “Contact Groups” in Outlook. People would often pawn it off to associates as “menial work” or have dedicated people just for inviting & managing people.
+                              </p>
+                              <p><b>4/7</b> people would list having to invite everyone again as a reason why they wouldn’t create new collaboration spaces, and would therefore ask for other features to avoid creating new spaces.</p>
+                            </div>
+                      </div>
                     </div>
-
-                    <div class="row">
-
-                        <a class="fancybox-thumb full-photo" rel="fancybox-thumb gallery2" href="../images/cultivation_project/context_photo.png" title="Context in Teams and Posts">
-                            <img src="../images/cultivation_project/context_photo.png" alt="" class="col-md-12 col-sm-12 col-xs-12"/>
-                        </a>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-9 col-lg-9 col-xs-12 col-sm-11">
-
-                            <p class="subtitle_description col-md-12">Providing Context</p>
-
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">  Being lost, confused, and overwhelmed from keeping up with the journey was a huge barrier.  By providing reminders on context and the bigger picture, we hope to increase long-term investment into the missionary, so supporters can easily catch up.</p>
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">After much research on the context where supporters often need reminders, each post now hosts the quick missions summary to serve as a quick reminder if needed. We include other hints on the context of the trip, such as time range (long term or a date range) and location-- what struggles will they come across? What stage are they at? By providing clarity immediately and easily, we give a sense of comfort to avoid feeling overwhelmed.
-                            </p>
-
-
-                        </div>
-
-                        
-                    </div>
-                </div>
+                  </div>
             </div>
-        </div>
 
-        <div class="section" id="discover">
-            <div class="container content">
-                <div class="inner-content">
-                    <div class="row">
-                        <p class="step_title col-md-12 col-sm-12 col-xs-12"><span>culture</span></p>
-
-                        <div class="col-md-9 col-lg-9 col-sm-11 col-xs-12">
-
-                            <p class="subtitle_description col-md-12">For Discovery and Personal Passion</p>
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">Supporters generally support a group they are passionate about that have a particular culture  -- Japanese, Chinese, etc. While missionaries around the world encounter similar problems, serving a particular culture faces its own set of struggles on how to effectively cross those cultural barriers.</p>
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">Supporters are more likely to venture out if the missionary serves the interested people group, or if the missionary's activity is something they are interested in or currently doing. Also, when naming their trips, missionaries always include something about the location.</p>
-
-                        
-                        </div>
-                        
-                        
+            <div class="section" id="discover">
+                <div class="container content">
+                  <div class="row">
+                    <div class="inner-content nine-column">
+                          <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                            <label>Product Direction &amp; Strategy</label>
+                            <div class="row">
+                              <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Increase In-app Inviting with Security &amp; Participation</h2>
+                            </div>
+                            <div class="inner-section">
+                              <p>After our initial research, our product team decided to focus on:</P>
+                              <ul>
+                                <li>improving the in-app inviting experience of Studio to increase stickiness of the product & reduce risk (ask me for more info!)</li>
+                                <li>stressing security so people wouldn’t have to choose between secure access or ease of adding others</li>
+                                <li>keeping legal requirements and project deadlines by ensuring particular parties are participating & reviewing so the project can move forward, as more emphasized by Enterprise companies.</li>
+                              </ul>
+                            </div>
+                            <blockquote class="inner-section">
+                              How can we make our in-app invite process better to easily maintain security, keep legal requirements, and meet deadlines?
+                            </blockquote>
+                              <p>We decided our <b>success metrics</b> would be to:</P>
+                              <ul>
+                                <li>increase the number of people using the Studio invite process</li>
+                                <li>increase the percentage of secured spaces</li>
+                                <li>improve participation rates as legally required, and meet deadlines</li>
+                              </ul>
+                          </div>
+                      </div>
                     </div>
-
-                    <div class="row">
-
-                        <a class="fancybox-thumb full-photo left" rel="fancybox-thumb gallery2" href="../images/cultivation_project/culture_photo.png" title="Culture in Discover and Profile">
-                            <img src="../images/cultivation_project/culture_photo.png" alt="" class="col-md-12 col-sm-12 col-xs-12"/>
-                        </a>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-9 col-lg-9 col-xs-12 col-sm-11">
-
-                            <p class="subtitle_description col-md-12">Providing Location</p>
-
-
-                            <p class="step_description col-md-12 col-sm-12 col-xs-12">By displaying the location more prominently, locations and cultures that interest supporters can easily be noticed, discovered, then followed in Discover.  We display it upfront in every Profile and post, to quickly understand the context of the missionary and the post.  It increases understanding for the journey, such as knowing the common struggles missionaries face with that particular culture and people.
-                            </p>
-
-
-                        </div>
-
-                        
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="section" id="thank_you">
 
-            <div class="container content">
-                <div class="row">
-                    <div class="inner-content">
-                        <p class="step_title col-md-12 col-sm-12"><span>Thank You!</span></p>
 
-                        <div class="col-lg-9 col-md-9 col-sm-11 col-xs-12">
-                            <p class="step_description">MVP has been launched, and I'm so excited to see it out in the wild!  Much improvements need to be made, but it's been great hearing how Klema.io (new name, new brand!) has been much easier and impactful so far.  More research to be done in the future, and now with quantitative data!</p>
-                            <p class="step_description">Great, impactful projects are never done alone.  Thank you Cam and Ricky for your support, trusting me wholeheartedly, and giving me the freedom to explore and change things in the midst of tight deadlines.  Thank you for being the sounding board and making those decisions I usually dread making.  Thank you developers for pushing yourselves for the hard design, but better experience-- I always much appreciate the hard work.</p>
+                <div class="section" id="thank_you">
+                    <div class="container content">
+                      <div class="row">
+                        <div class="inner-content nine-column">
+                              <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                                <label>Problem</label>
+                                <div class="row">
+                                  <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Too Long to Invite Many People in Multiple Parties</h2>
+                                </div>
+                                <label>Solution</label>
+                                <h3 class="solution">A flexible way to invite many people from multiple sources shortens the invite time and allows for easy secure access. Email domain organization helps ensure all necessary parties are invited to prevent legal issues.</h3>
+                                <p class="inner-section">
+                                  During our research, each collaboration space typically has a “<b>moderator</b>”, who manages the people aspect, such as ensuring “<b>participants</b>” join. The previous in-app method only allowed you to paste in one email at a time. Our Outlook integration only showed people that were within the company, so inviting external people was still individually typed.
+                                  <b>Even though security was a concern, moderators utilized workarounds & outside methods to invite many people with ease & fulfill other needs, but had no secure access.</b>
+                                </p>
 
+                                <div class="inner-section row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                    </a>
+                                  <a class="fancybox-thumb" rel="fancybox-thumb gallery1" href="../images/flunkless/wireframe1.png" title="wireframe">
+                                      <img src="../images/flunkless/wireframe1%20thumbnail.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                  </a>
+                                </div>
+                                <blockquote class="inner-section">
+                                  Design Goal: Make inviting many people easier with contact information from multiple sources
+                                </blockquote>
+                                <p class="inner-section">We found that teams stored the list of contact information to invite in easily accessible places for the team, but in different formats. For example, one was an email forwarded to them, saying “invite everyone on this email chain”; another was an Excel sheet on their network drive; another was on Google Docs. It could also be from multiple sources at a time because different companies send you their own list of people to invite.  Remember, enterprise customers were more likely to work with more external collaborators. </p>
+                                <p class="inner-section"><span class="important_underline"><b>A flexible solution that allows many people to be invited from any source(s) in-app</b></span> helps with easily accessing contact information, saving time, and allowing for more secure access. Moderators can copy and paste many emails from anywhere (Outlook, Excel, etc.), and we’ll only take the emails, and ignore special characters and names. People won’t have to clean up the email list, regardless of what the source includes. No user asked for this, but this understood the user’s context and it became a highlighted delighter. To accommodate similar people always working together and being invited, we also made our Groups feature more <b>discoverable</b> that many didn’t know about. This makes it easier to handle the constant churn of new internal people coming into a project that often happens with Enterprise companies.</p>
+                                <div class="inner-section row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-lg-3 col-md-4 col-sm-3 col-xs-4 smaller"/>
+                                    </a>
+                                  <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/flunkless/wireframe1.png" title="wireframe">
+                                      <img src="../images/flunkless/wireframe1%20thumbnail.png" alt="" class="col-lg-3 col-md-4 col-sm-3 col-xs-4 smaller"/>
+                                  </a>
+                                </div>
+                                <p class="inner-section"><b><span class="important_underline">Organizing the emails by domain</span> increases accuracy of inviting different parties to prevent legal issues & deadline delays.</b>
+                                  Since there were often multiple sources / lists from multiple external collaborators, moderators who often invited external people loved the domain separation because domains are an indicator of companies, so they could double-check easily if all the people that need to be involved were invited. For example, they’ll need to invite 4 subcontractors, but they’ll forget to include the electrical team since they sent over a separate list. Particular parties/roles must review the contracts or drawings before moving forward legally.</p>
+                                <div class="row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-lg-7 col-md-8 col-sm-6 col-xs-8 middle"/>
+                                    </a>
+                                </div>
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
-        </div>
-        <div class="section back_to_work">
-            <div class="container content">
-                <div><a href="../index.html"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
-                <line fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="118" y1="73" x2="27" y2="73"/>
-                <polyline fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" points="51.107,47.751 
-                    26,72.216 26,72.786 50.786,97.251 "/>
-                </svg>
-                 <span>&nbsp; back to work</span></a></div>
-             </div>
 
-        </div>
-    </div>
+                <div class="section" id="">
+                    <div class="container content">
+                      <div class="row">
+                        <div class="inner-content nine-column">
+                              <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                                <label>Problem</label>
+                                <div class="row">
+                                  <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Invites Missed & Who’s Not Here Yet?</h2>
+                                </div>
+                                <label>Solution</label>
+                                <h3 class="solution">Moderators can see & remind people who haven’t joined. Participants more easily access invites in-app, so participation increases as legally required and projects don’t delay, incurring more cost.</h3>
+                                <div class="inner-section">
+                                  <p>We found moderators also liked sending invites through their own email for:</p>
+                                  <ul>
+                                    <li>visibility on who they invited before to compare and remind those who hadn’t joined to participate by the deadline</li>
+                                  </ul>
+                                  <p>Studio previously only let you see who had joined, but not who hadn’t.</p>
+                                </div>
+                                <div class="inner-section">
+                                  <p>We also found that participants don’t join as fast because:</p>
+                                  <ul>
+                                    <li>Their invites get lost amongst their email clutter</li>
+                                    <li>Emails from Studio land into the “Spam” folder and are missed</li>
+                                  </ul>
+                                </div>
+
+                                <p class="inner-section">
+                                  It is imperative that participants join (ideally sooner) because particular roles are legally required to review the plans in the space.  For example, you cannot build a building without having structural engineers review and approve architects’ work, which typically requires collaborative conversations.  However, if they are <b>unaware of where to review work, the deadlines will be missed</b> and projects will be delayed, <b>costing more money</b>, since they cannot move forward until reviewed.
+                                  <b>Participation, which is legally required, is slower or even missed due to lack of visibility for moderators and invites being missed for participants, which pushes back deadlines.</b>
+                                </p>
+
+                                <blockquote class="inner-section">
+                                  Design Goal: Get more people to join sooner so they participate on time
+                                </blockquote>
+                                <p class="inner-section">We asked our moderators what they typically did after they saw who hadn’t joined yet, and 7/7 responded they would typically remind them to join and what the deadline was. We also found that participants find knowing who hadn’t joined yet helpful because they’ll know that someone hadn’t responded yet because they hadn’t joined. <b><span class="important_underline">Visibility</span> to who hasn’t joined & allowing moderators to <span class="important_underline">remind them</span> helps easily manage people in-app to ensure meeting legal requirements.</b></p>
+
+                                <div class="inner-section row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                    </a>
+                                  <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/flunkless/wireframe1.png" title="wireframe">
+                                      <img src="../images/flunkless/wireframe1%20thumbnail.png" alt="" class="col-md-4 col-lg-3 col-sm-3 col-xs-4 smaller"/>
+                                  </a>
+                                </div>
+                                <p class="inner-section">Participants can now more easily join in-app, which our loyal customers are typically on all day. While we can’t stop emails from going into Spam, we can help them easily join. <b><span class="important_underline">Making it easier for participants to join</span> increases participation as legally required and prevents project delays & increasing cost.</b></p>
+                                <div class="row">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                      <img src="../images/bluebeam/wireframes.png" alt="" class="col-md-8 col-lg-7 col-sm-6 col-xs-8 middle"/>
+                                    </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="section" id="">
+                    <div class="container content">
+                      <div class="row">
+                        <div class="inner-content nine-column">
+                              <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                                <label>Results &amp; Beta Feedback</label>
+                                <div class="row">
+                                  <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">4.3/5 Ease of Use</h2>
+                                </div>
+
+                                <p class="inner-section">
+                                    We’re still waiting to hear back about participation rates and people using the in-app invite process more. We received great feedback from our users, including an awesome review here (website has expired, but mentioned <b>how the improved Inviting experience really listened & focused on user feedback)</b>. From Beta, the ease of use was rated <b>4.3/5</b>. Here are some quotes:
+                                </p>
+
+                                <blockquote class="inner-section">
+                                  “Glad to see I’m [now] able to send individual reminders [as opposed] to a mass email. Would typically need to do this outside of Bluebeam. “— E.S.
+                                </blockquote>
+
+                                <blockquote class="inner-section">
+                                  “I had no idea till just now that I have several Projects and Sessions I have never joined! :|” — T.D.
+                                </blockquote>
+
+                                <blockquote class="inner-section">
+                                  “I can see this helping many projects with multiple Consultants and people.” — S.H.
+                                </blockquote>
+
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="section" id="">
+                    <div class="container content">
+                      <div class="row">
+                        <div class="inner-content nine-column">
+                              <div class="lg-seven-column md-eight-column sm-six-column col-lg-7 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                                <label>Takeaways</label>
+                                <div class="row">
+                                  <h2 class="col-lg-6 col-md-7 col-lg-fill-1 col-md-fill-1 col-sm-6 col-sm-no-fill col-xs-8">Future Initiative to Improve Ease of Use for Security</h2>
+                                </div>
+
+                                <p class="inner-section">
+                                    This project isn’t full of new, innovative interactions and can almost seem quite obvious, especially at first. However, it was a practice in identifying valuable ways to improve experiences and meet business goals that users won’t mention because they are so familiar with their current process.
+                                </p>
+
+                                <p class="inner-section">
+                                    Future initiatives with this team continued to <b>improve ease of use for security</b>, especially for Enterprise customers.  One of the reasons why people wanted to edit other’s markups / notes was because people would leave the company (higher company turnover within Enterprise companies), but no one else could edit their work. This would be detrimental if they wrote something incorrect that was shown to other external teams, or clients & owners of the projects. To provide value within our technical constraint, we allowed <b>moderators to deny people and reassign their markups</b> / notes to one other person already on the Studio space to edit and manage. Studio invites makes the security & management aspect possible, so only the right people with the right permission or access can be in the space without waiting for either people to open the external invite before it could happen.
+                                </p>
+
+                                <p class="inner-section">
+                                  Other future initiatives for managing people include managing different Groups across the entire organization so multiple people could invite the same people, and working on applying similar permissions easily across different companies and roles.
+                                </p>
+                                <div class="row">
+                                  <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="../images/bluebeam/wireframes.png" title="wireframe">
+                                    <img src="../images/bluebeam/wireframes.png" alt="" class="col-md-8 col-lg-7 col-sm-6 col-xs-8  middle"/>
+                                  </a>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="section">
+                    <div class="container content">
+                      <div class="row">
+                        <div class="final-navigation inner-content nine-column">
+                              <div class="lg-eight-column md-eight-column sm-six-column col-lg-8 col-lg-offset-1 col-md-offset-1 col-md-8 col-sm-6 col-xs-8">
+                                <div class="row">
+
+                                    <div class="projects col-lg-3 col-md-3 col-sm-2 col-xs-3">
+                                      <a href="">
+                                        <p>Consolidation</p>
+                                        <img src="../images/bluebeam/studio_invites_thumbnail.jpg" />
+                                      </a>
+                                    </div>
+
+
+                                    <div class="projects">
+                                      <a href="">
+                                        <p>all work</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect y="12.7998" width="11.2" height="11.2" rx="2" fill="#DEDEDE"/>
+                                          <rect x="12.7998" y="12.7998" width="11.2" height="11.2" rx="2" fill="#DEDEDE"/>
+                                          <rect width="11.2" height="11.2" rx="2" fill="#DEDEDE"/>
+                                          <rect x="12.7998" width="11.2" height="11.2" rx="2" fill="#DEDEDE"/>
+                                        </svg>
+                                      </a>
+                                    </div>
+
+
+                                    <div class="projects col-lg-3 col-md-3 col-sm-2 col-xs-3">
+                                      <a href="">
+                                        <p>Consolidation</p>
+                                        <img src="../images/bluebeam/studio_invites_thumbnail.jpg"/>
+                                      </a>
+                                    </div>
+
+                                </div>
+                              </div>
+
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
 
 <footer>
-<div class="container content">
+  <div class="container content">
         <div class="row">
-          <div class="col-md-1 col-sm-1 col-xs-1"></div>
-            <p class="col-md-3 col-sm-11 col-xs-11"> 
+            <p class="col-md-12 col-sm-8 col-xs-8">
                 created by <a href="../index.html">Crystal Kwok</a><br>
-                 &copy; 2018
+                 &copy; 2022
             </p>
         </div>
     </div>
 </footer>
+
 
     <script>
     $(document).ready(function() {
@@ -435,8 +568,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     })
 
 
-    });       
-    
+    });
+
 </script>
 </body>
 </html>
