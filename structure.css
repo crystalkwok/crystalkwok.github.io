@@ -9,6 +9,7 @@
   }
 }
 
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -16,7 +17,7 @@
 }
 @media (min-width: 904px) {
   .container {
-    max-width: 1088px;
+    max-width: 964px;
   }
 }
 @media (min-width: 1200px) {
@@ -74,6 +75,10 @@
 }
 .col-xs-1 {
   width: calc(12.5% - 32px);
+}
+
+.col-xs-offset-1 {
+  margin-left: calc(12.5% + 16px);
 }
 
 
@@ -136,51 +141,27 @@
     width: calc(16.66% - 32px);
   }
 
-  .col-sm-offset-12 {
-    margin-left: 100%;
+
+  .sm-six-column .col-sm-offset-1 {
+    margin-left: calc(16.66% + 16px);
   }
-  .col-sm-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-sm-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-sm-offset-9 {
-    margin-left: 75%;
-  }
-  .col-sm-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-sm-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-sm-offset-6 {
-    margin-left: 50%;
-  }
-  .col-sm-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-sm-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-sm-offset-3 {
-    margin-left: 25%;
-  }
+
+
   .col-sm-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: calc(25% + 16px);
   }
   .col-sm-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: calc(12.5% + 16px);
   }
   .col-sm-offset-0 {
-    margin-left: 0%;
+    margin-left: 16px;
   }
 
   .col-sm-no-fill {
     margin-right:0;
   }
   .col-sm-no-offset {
-    margin-left:0;
+    margin-left:16px;
   }
 }
 
@@ -225,43 +206,43 @@
     width: calc(8.33333333% - 32px);
   }
   .col-md-offset-12 {
-    margin-left: 100%;
+    margin-left: calc(100% + 32px);
   }
   .col-md-offset-11 {
-    margin-left: 91.66666667%;
+    margin-left: calc(91.66666667% + 16px);
   }
   .col-md-offset-10 {
-    margin-left: 83.33333333%;
+    margin-left: calc(83.33333333% + 16px);
   }
   .col-md-offset-9 {
-    margin-left: 75%;
+    margin-left: calc(75% + 16px);
   }
   .col-md-offset-8 {
-    margin-left: 66.66666667%;
+    margin-left: calc(66.66666667% + 16px);
   }
   .col-md-offset-7 {
-    margin-left: 58.33333333%;
+    margin-left: calc(58.33333333% + 16px);
   }
   .col-md-offset-6 {
-    margin-left: 50%;
+    margin-left: calc(50% + 16px);
   }
   .col-md-offset-5 {
-    margin-left: 41.66666667%;
+    margin-left: calc(41.66666667% + 16px);
   }
   .col-md-offset-4 {
-    margin-left: 33.33333333%;
+    margin-left: calc(3.33333333% + 16px);
   }
   .col-md-offset-3 {
-    margin-left: 25%;
+    margin-left: calc(25% + 16px);
   }
   .col-md-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: calc(16.66666667% + 16px);
   }
   .col-md-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: calc(8.33333333% + 16px);
   }
   .col-md-offset-0 {
-    margin-left: 0%;
+    margin-left: 16px;
   }
 
 
@@ -300,6 +281,11 @@
 
   .md-eight-column .col-md-fill-1 {
     margin-right:12.5%;
+  }
+
+
+  .md-eight-column .col-md-offset-1 {
+    margin-left:calc(12.5% + 16px);
   }
 
 }
@@ -382,6 +368,11 @@
       margin-right: 12.5%;
   }
 
+  .lg-eight-column .col-lg-offset-1 {
+      margin-left: calc(12.5% + 16px);
+  }
+
+
 
   .lg-seven-column  .col-lg-7 {
     width: calc(100% - 32px);
@@ -409,41 +400,15 @@
       margin-right: 14.28%;
   }
 
-  .col-lg-offset-12 {
-    margin-left: 100%;
+  .lg-seven-column .col-lg-offset-1 {
+    margin-left:calc(14.28% + 16px);
   }
-  .col-lg-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-lg-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-lg-offset-9 {
-    margin-left: 75%;
-  }
-  .col-lg-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-lg-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-lg-offset-6 {
-    margin-left: 50%;
-  }
-  .col-lg-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-lg-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-lg-offset-3 {
-    margin-left: 25%;
-  }
+
   .col-lg-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: calc(16.66666667% + 16px);
   }
   .col-lg-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: calc(8.33333333% + 16px);
   }
   .col-lg-offset-0 {
     margin-left: 0%;

@@ -1,31 +1,4 @@
-.hero_image_container {
-	position:relative;
-	filter: drop-shadow(0px 4px 24px rgba(61, 64, 91, 0.25));
-	width:100%;
-}
 
-.hero_image{
-	width:1240px;
-	margin-left: auto;
-	margin-right:auto;
-
-}
-
-.hero_image img {
-	border-radius:32px;
-	width:1240px;
-	height:auto;
-}
-
-.hero_image .absolute {
-	position:absolute;
-	top:-192px;
-}
-
-
-.relative .hero_image{
-	margin-top:484px;
-}
 
 @media (max-width: 1320px) {
 	.hero_image {
