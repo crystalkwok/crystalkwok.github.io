@@ -77,6 +77,10 @@
   width: calc(12.5% - 32px);
 }
 
+.col-xs-offset-2 {
+  margin-left: calc(25% + 16px);
+}
+
 .col-xs-offset-1 {
   margin-left: calc(12.5% + 16px);
 }
