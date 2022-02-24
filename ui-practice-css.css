@@ -8,6 +8,8 @@ body {
 
 }
 
+
+
 .test .absolute {
   position:absolute;
   background-color:#FDF8F0;
@@ -47,6 +49,22 @@ body {
 .images {
   margin-bottom:96px;
 }
+
+@media (min-width: 2000px) {
+  .test .absolute {
+    width: 62vw;
+  }
+}
+
+
+@media (min-width: 3000px) {
+  .test .absolute {
+    width: 60vw;
+  }
+}
+
+
+
 
 
 
