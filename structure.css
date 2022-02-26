@@ -85,6 +85,10 @@
   margin-left: calc(12.5% + 16px);
 }
 
+.col-xs-no-offset {
+  margin-left:16px;
+}
+
 
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
@@ -247,6 +251,10 @@
   }
   .col-md-offset-0 {
     margin-left: 16px;
+  }
+
+  .col-md-no-offset {
+    margin-left:16px;
   }
 
   .col-md-fill-2 {
@@ -464,6 +472,10 @@
   }
   .col-lg-offset-0 {
     margin-left: 0%;
+  }
+
+  .col-lg-no-offset {
+    margin-left:16px;
   }
 
   .col-lg-fill-3 {
