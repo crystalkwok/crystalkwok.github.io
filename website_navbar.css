@@ -91,12 +91,21 @@ blockquote.important:last-of-type {
 
 
 
-.inner-content h3 {
+h3 {
   font-size:21px;
   line-height:32px;
   font-weight:800;
   width:90%;
   margin-bottom:32px;
+}
+
+h4 {
+  font-family:'Abhaya Libre', sans-serif;
+  font-weight:700;
+  font-size:32px;
+  line-height:40px;
+  color:#000;
+  margin:0;
 }
 
 
@@ -754,15 +763,27 @@ b {
   width:auto!important;
 }
 
+.fancybox-overlay .fancybox-image {
+  max-width: calc(100vh - 128px)!important;
+  max-height: calc(100vh - 178px)!important;
+  border-radius:17px;
+}
+
 .fancybox-overlay .fancybox-wrap {
   width:auto!important;
-  left:auto;
+  left:auto ;
   top:64px!important;
+}
+
+.fancybox-overlay .fancybox-skin {
+  border-radius:17px;
 }
 
 .fancybox-overlay .fancybox-title {
   position:absolute!important;
   top:-40px;
+  font-family:'DM Sans', sans-serif!important;
+  font-size:18px!important;
 }
 
 
@@ -1041,6 +1062,10 @@ b {
       font-size:14px;
     }
 
+    .fancybox-overlay .fancybox-title {
+      font-size:16px!important;
+    }
+
 
 
 }
@@ -1133,6 +1158,10 @@ b {
 
   .bottom-nav>.nav>li>a{
     font-size:14px;
+  }
+
+  .fancybox-overlay .fancybox-title {
+    font-size:14px!important;
   }
 
 
