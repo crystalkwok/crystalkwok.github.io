@@ -45,6 +45,8 @@ var divs = $('.body .overlay'),
        // prevent default anchor click behavior
        e.preventDefault();
        // store hash
+
+       $(this).focus();
        var hash = this.hash;
 
        // animate

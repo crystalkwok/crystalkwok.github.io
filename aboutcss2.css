@@ -100,18 +100,13 @@ footer {
 
 @media (max-width: 1200px) {
 
-  *, p, li, b, a{
-    font-size:16px;
-    line-height:24px;
-  }
 
-  .top-section p, .bottom-section p {
-    font-size:16px;
-    line-height:24px;
-
-  }
   .bottom-section li{
-    line-height:24px;
+    line-height:28px;
+  }
+
+  .test .absolute {
+    height:980px;
   }
 
 
@@ -148,6 +143,18 @@ footer {
 }
 
 @media only screen and (max-width:768px){
+
+  *, p, li, b, a{
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .top-section p, .bottom-section p {
+    font-size:16px;
+    line-height:24px;
+
+  }
+
   .top-section {
     margin-top:25vh;
   }
