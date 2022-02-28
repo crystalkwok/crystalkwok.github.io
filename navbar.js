@@ -39,15 +39,36 @@ var divs = $('.body .overlay'),
       return false;
     });
 
+    var navList = $(".bottom-nav ul li a[href^='#']");
+    console.log(navList);
+
+    $(window).scroll(function(){
+
+      navList.each(function(index, elem) {
+
+        if ($(elem).parent().hasClass("active")) {
+
+          console.log(elem.hash + " is active");
+          $(elem).focus();
+        }
+      });
+
+    });
 
 
     $(".side-nav ul li a[href^='#']").on('click', function(e) {
        // prevent default anchor click behavior
        e.preventDefault();
        // store hash
-
-       $(this).focus();
+       var elem = $(this)[0];
        var hash = this.hash;
+
+       console.log('This Object ', elem);
+       console.log('This Hash ', hash);
+
+       //$(this.hash).scrollTop();
+       elem.scrollIntoView();
+       //
 
        // animate
        $('html, body').animate({

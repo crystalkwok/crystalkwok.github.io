@@ -49,6 +49,10 @@
 	text-align:center;
 }
 
+.side-nav a:focus {
+	border:1px solid red;
+}
+
 @media (max-width: 1320px) {
 	.hero_image {
 		width:100%;
