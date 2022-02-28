@@ -50,6 +50,11 @@ body {
   margin-bottom:96px;
 }
 
+.page_description a{
+  font-size:22px;
+  line-height:32px;
+}
+
 @media (min-width: 2000px) {
   .test .absolute {
     width: 62vw;
@@ -70,7 +75,7 @@ body {
 
 @media (max-width: 1200px) {
 
-  .top-section .page_description {
+  .top-section .page_description, .page_description a {
     font-size:18px;
     line-height:28px;
   }
@@ -106,7 +111,7 @@ body {
 
 @media only screen and (max-width:768px){
 
-  .top-section .page_description {
+  .top-section .page_description, .page_description a {
     font-size:16px;
     line-height:24px;
   }

@@ -40,7 +40,6 @@ var divs = $('.body .overlay'),
     });
 
     var navList = $(".bottom-nav ul li a[href^='#']");
-    console.log(navList);
 
     $(window).scroll(function(){
 
@@ -48,7 +47,6 @@ var divs = $('.body .overlay'),
 
         if ($(elem).parent().hasClass("active")) {
 
-          console.log(elem.hash + " is active");
           $(elem).focus();
         }
       });

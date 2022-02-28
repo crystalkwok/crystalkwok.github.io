@@ -32,7 +32,7 @@ body {
   margin-bottom:200px;
 }
 
-.top-section .page_description {
+.top-section .page_description, .page_description a {
   font-size:24px;
   line-height:36px;
 }
@@ -40,6 +40,7 @@ body {
 .subdescription {
   line-height:28px;
   margin-top:24px;
+  color:#6F7180;
 }
 
 .top-section .flex {
@@ -73,6 +74,7 @@ body {
 
 .work-projects:hover h2 {
   color:#438084;
+  transform:scale(1.01);
 }
 
 footer {
@@ -87,7 +89,7 @@ footer {
     height:calc(100% - 14vh);
   }
 
-  .top-section .page_description {
+  .top-section .page_description, .page_description a{
     font-size:18px;
     line-height:28px;
   }
