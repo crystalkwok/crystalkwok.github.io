@@ -62,7 +62,7 @@ h3 {
 }
 
 img {
-  border-radius:6px;
+  border-radius:13px;
 }
 
 .inner-content h2{
@@ -161,7 +161,7 @@ h4 {
 
 .fancybox-thumb .middle {
   height:360px;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 .full-photo img {
@@ -627,7 +627,7 @@ b {
 }
 
 .important_underline {
-  background-color: rgba(237, 106, 90, 0.25);
+  background-color: rgba(237, 106, 90, 0.2);
   font-weight:700;
 }
 
@@ -819,7 +819,7 @@ b {
 
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1360px) {
 	.hero_image {
 		width:100%;
 	}
