@@ -100,13 +100,16 @@ footer {
 }
 
 
-
-.fa {
-  color:#438084;
-    height:48px;
-    display: flex;
-    align-items: center;
+.icons svg{
+    fill:#438084;
+    height:32px;
+    margin-right:32px;
 }
+
+.etsy svg{
+  height:28px;
+}
+
 
 
 .resume svg {
@@ -123,6 +126,15 @@ footer {
 .resume {
   display:flex;
   align-items: center;
+  margin-top:16px;
+}
+
+.resume svg {
+  margin-right:0;
+}
+
+.resume span {
+  margin-right:0;
 }
 
 a.resume {
@@ -131,8 +143,8 @@ a.resume {
 
 .icons {
   display:flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {

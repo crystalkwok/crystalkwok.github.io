@@ -538,6 +538,22 @@ footer p{
     font-size:16px;
     text-align: right;
     letter-spacing: .25px;
+    margin-bottom:16px;
+}
+
+footer svg {
+  height:24px;
+  fill:#438084;
+  margin-right:16px;
+}
+
+footer .etsy svg {
+  height:22px;
+}
+
+footer .social {
+  text-align: right;
+  margin-top:24px;
 }
 
 
