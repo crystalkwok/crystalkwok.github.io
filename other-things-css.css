@@ -107,6 +107,11 @@ body {
   margin-left:16px;
 }
 
+.dancer img {
+  position:absolute;
+  margin-top:5px;
+}
+
 img.emoji {
   height:28px;
   margin-bottom:-4px;

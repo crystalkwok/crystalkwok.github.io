@@ -43,6 +43,11 @@ body {
   margin-left:16px;
 }
 
+.hand img {
+  position:absolute;
+  margin-top:10px;
+}
+
 .subdescription {
   margin-top:24px;
   display:flex;
@@ -166,6 +171,11 @@ footer {
   .work-projects h2 {
     font-size: 32px;
     line-height:40px;
+  }
+
+  .hand img {
+    height:36px;
+    margin-top: 5px;
   }
 
 }

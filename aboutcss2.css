@@ -13,7 +13,7 @@ body {
 .test .absolute {
   position:absolute;
   top:0;
-  height:884px;
+  height:calc(22vh + 680px);
   width:38%;
   background-color:#FDF8F0;
   border-radius:0 0 25px 25px;
