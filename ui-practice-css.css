@@ -14,7 +14,7 @@ body {
   position:absolute;
   background-color:#FDF8F0;
   z-index:-1;
-  margin-top:calc(22vh - 80px);
+  margin-top:calc(27vh - 80px);
   top:0;
   right:0;
   height:492px;
@@ -32,7 +32,7 @@ body {
 }
 
 .top-section {
-  margin-top:22vh;
+  margin-top:27vh;
   margin-bottom:200px;
 }
 

@@ -14,7 +14,7 @@ body {
   position:absolute;
   background-color:#FDF8F0;
   z-index:-1;
-  margin-top:calc(22vh - 80px);
+  margin-top:calc(27vh - 80px);
   top:0;
   left:0;
   height:276px;
@@ -67,7 +67,7 @@ body {
 }
 
 .top-section {
-  margin-top:22vh;
+  margin-top:27vh;
   margin-bottom:200px;
 }
 
@@ -79,6 +79,19 @@ body {
 .images {
   margin-bottom:96px;
 }
+
+.images svg {
+  fill:#438084;
+  height:20px;
+  margin-bottom:-3px;
+  margin-right:4px;
+}
+
+.images.etsy svg {
+  height:18px;
+  margin-bottom:-2px;
+}
+
 
 .stackable .first {
   width:calc(20% - 31px);
