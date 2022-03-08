@@ -683,6 +683,10 @@ b {
   margin-bottom:32px;
 }
 
+blockquote.inner-section {
+  margin-bottom:40px;
+}
+
 .weird-columning {
   margin-right:32px;
 }
@@ -868,9 +872,7 @@ b {
 		width:100%;
 	}
 
-  blockquote.inner-section {
-    margin-bottom:40px;
-  }
+
 
 }
 
@@ -1171,8 +1173,13 @@ b {
     height:150px;
   }
 
+  img {
+    border-radius:9px;
+  }
+
   .fancybox-thumb .middle {
     height:100%;
+    border-radius:9px;
   }
 
   .bigger img, .shrink img {

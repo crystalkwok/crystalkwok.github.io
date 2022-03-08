@@ -142,4 +142,15 @@
 		padding-bottom:72px;
 	}
 
+	.iteration-images .fancybox-thumb .middle {
+		border-radius:9px;
+	}
+
+}
+
+@media only screen and (max-width:577px){
+	.iteration-images .fancybox-thumb .middle {
+    height:64px;
+		border-radius:6px;
+  }
 }
