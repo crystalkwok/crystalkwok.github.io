@@ -6,33 +6,61 @@
 .stacked-images img{
 
 	margin-bottom:24px;
-		height:150px;
-		border-radius:9px;
+	height:150px;
+	border-radius:9px;
+	width:100%;
 }
 
 
 .stacked-images a:last-child img{
   margin-bottom:0;
 }
+.stacked-images p:first-of-type{
+	margin-bottom:16px;
+}
 
-.problem.caption{
-	text-align:center;
+.stacked-images .caption:last-child {
+	margin-bottom:0;
+	margin-top:0;
+}
+
+p.caption.inbetween {
+	margin-bottom:32px;
+	margin-top:0px;
+}
+
+h4 span {
+	font-family:'Abhaya Libre', sans-serif;
+	font-weight:300;
+	font-size:32px;
+	line-height:40px;
 }
 
 .step {
 	margin-top:64px;
 }
 
-.step .number {
-	position:absolute;
-	left:-40px;
+table {
+	border-collapse: collapse;
+	border-radius:10px;
+	border-spacing:0;
+	overflow:hidden;
 	width:100%;
-	font-family:'Abhaya Libre', sans-serif;
-	font-size:28px;
-	line-height:40px;
-	color:#6F7180;
-	font-weight:400;
 }
+table th, td {
+	padding:24px;
+	text-align:left;
+}
+
+table th {
+	font-weight:700;
+	background-color: #FDF8F0;
+}
+
+table .result td, table .result th {
+	background-color:#EDF3F3;
+}
+
 
 @media (max-width: 1320px) {
 	.hero_image {
