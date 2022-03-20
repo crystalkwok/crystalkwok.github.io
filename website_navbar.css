@@ -118,6 +118,7 @@ h4 {
 
 i {
   display:block;
+  line-height:24px;
 }
 
 
@@ -865,6 +866,10 @@ blockquote.inner-section {
 	margin-top:484px;
 }
 
+.inner-section-small {
+  margin-bottom:0px;
+}
+
 
 
 @media (max-width: 1360px) {
@@ -1026,6 +1031,11 @@ blockquote.inner-section {
     .role.col-sm-3 {
       width:calc(37.5% - 65px);
     }
+
+    .inner-section-small {
+      margin-bottom:32px;
+    }
+
 
 
     /*logo change*/
@@ -1190,6 +1200,19 @@ blockquote.inner-section {
     display:none;
   }
 
+  .navbar{
+    height:64px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .pull-right {
+    float:left!important;
+  }
+
+  .pull-right li:first-child {
+    margin-left:0;
+  }
 
 }
 

@@ -8,20 +8,14 @@
 	margin-bottom:24px;
 	height:150px;
 	border-radius:9px;
-	width:100%;
 }
 
 
-.stacked-images a:last-child img{
-  margin-bottom:0;
-}
-.stacked-images p:first-of-type{
-	margin-bottom:16px;
-}
+
 
 .stacked-images .caption:last-child {
 	margin-bottom:0;
-	margin-top:0;
+	margin-top:-8px;
 }
 
 p.caption.inbetween {
@@ -61,6 +55,10 @@ table .result td, table .result th {
 	background-color:#EDF3F3;
 }
 
+.inner-section-small {
+	margin-bottom:0px;
+}
+
 
 @media (max-width: 1320px) {
 	.hero_image {
@@ -88,9 +86,7 @@ table .result td, table .result th {
 		margin-top:400px;
 	}
 
-	.stacked-images {
-		margin-top:32px;
-	}
+
 }
 
 @media (max-width: 1035px) {
@@ -131,6 +127,8 @@ table .result td, table .result th {
 	.step img {
 		margin-top:32px;
 	}
+
+
 
 
 
