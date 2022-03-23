@@ -120,6 +120,12 @@ footer {
   align-items: center;
 }
 
+.project-description i {
+  margin-top:8px;
+  color:#6F7180;
+  font-size:16px;
+}
+
 
 @media (max-width: 1200px) {
 
