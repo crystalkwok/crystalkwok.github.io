@@ -20,7 +20,7 @@
 }
 
 .step {
-	margin-top:64px;
+	margin-top:72px;
 }
 
 .step .number {
@@ -104,15 +104,27 @@
 		margin-top:32px;
 	}
 
-
-
+	.step .number {
+		position:absolute;
+		left:0;
+		margin-top:-40px;
+	}
 
 }
 
-@media (max-width: 796px) {
-	.body {
-		padding-top:168px;
-		padding-bottom:72px;
+@media (max-width: 768px) {
+	.step .number {
+		left:-40px;
+		margin-top:0;
+	}
+}
+
+@media (max-width: 645px) {
+
+	.step .number {
+		position:absolute;
+		left:0;
+		margin-top:-40px;
 	}
 
 }

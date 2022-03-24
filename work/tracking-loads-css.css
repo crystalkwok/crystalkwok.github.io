@@ -21,10 +21,10 @@
 
 
 
-.iteration-images .fancybox-thumb .middle {
+.iteration-images .fancybox .middle {
 	width:calc(33.33% - 36px);
 	margin:0 16px;
-	border-radius:13px;
+	border-radius:10px;
 }
 
 .stacked-images img.first{
@@ -142,14 +142,14 @@
 		padding-bottom:72px;
 	}
 
-	.iteration-images .fancybox-thumb .middle {
+	.iteration-images .fancybox .middle {
 		border-radius:9px;
 	}
 
 }
 
 @media only screen and (max-width:577px){
-	.iteration-images .fancybox-thumb .middle {
+	.iteration-images .fancybox .middle {
     height:64px;
 		border-radius:6px;
   }
