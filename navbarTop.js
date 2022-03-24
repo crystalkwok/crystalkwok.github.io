@@ -4,7 +4,7 @@ $(document).ready(function(){
   var didScroll;
   var lastScrollTop = 0;
   var delta = 2;
-  var topNavbarHeight = $('.shrink').outerHeight();
+  var topNavbarHeight = $('.navbar').outerHeight();
 
   $(window).scroll(function(event){
       didScroll = true;
@@ -29,11 +29,11 @@ $(document).ready(function(){
       if (st > lastScrollTop && st > topNavbarHeight){
         // Scroll Down
           // Scroll Down
-          $('.shrink').removeClass('nav-down').addClass('nav-up');
+          $('.navbar').removeClass('nav-down').addClass('nav-up');
       } else {
           // Scroll Up
           if(st + $(window).height() < $(document).height()) {
-              $('.shrink').removeClass('nav-up').addClass('nav-down');
+              $('.navbar').removeClass('nav-up').addClass('nav-down');
           }
       }
 
