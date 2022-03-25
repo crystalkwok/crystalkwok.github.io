@@ -146,3 +146,10 @@ table .result td, table .result th {
 	}
 
 }
+
+@media only screen and (max-width:768px){
+  .role .row {
+    display:flex;
+    flex-direction:row;
+  }
+}
