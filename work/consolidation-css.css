@@ -47,18 +47,6 @@
 @media (max-width: 1200px) {
 
 
-	.hero_image {
-		padding:0 64px;
-	}
-
-  .hero_image img {
-		border-radius:32px;
-		width:calc(100% - 128px);
-	}
-
-	.relative .hero_image{
-		margin-top:400px;
-	}
 
 	.stacked-images {
 		margin-top:32px;
@@ -74,14 +62,7 @@
 
 @media (max-width: 904px) {
 
-	.hero_image {
-		width:100%;
-		padding:0;
-	}
-  .hero_image img {
-		border-radius:0;
-		width:100%;
-	}
+
 
 	.body {
 		padding-bottom:96px;

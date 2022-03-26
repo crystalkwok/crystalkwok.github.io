@@ -60,35 +60,6 @@ table .result td, table .result th {
 }
 
 
-@media (max-width: 1320px) {
-	.hero_image {
-		width:100%;
-	}
-  .hero_image img {
-		border-radius:0;
-		width:100%;
-	}
-}
-
-@media (max-width: 1200px) {
-
-
-	.hero_image {
-		padding:0 64px;
-	}
-
-  .hero_image img {
-		border-radius:32px;
-		width:calc(100% - 128px);
-	}
-
-	.relative .hero_image{
-		margin-top:400px;
-	}
-
-
-}
-
 @media (max-width: 1035px) {
 
 	.relative .hero_image {
@@ -97,24 +68,6 @@ table .result td, table .result th {
 }
 
 @media (max-width: 904px) {
-
-	.hero_image {
-		width:100%;
-		padding:0;
-	}
-  .hero_image img {
-		border-radius:0;
-		width:100%;
-	}
-
-	.body {
-		padding-bottom:96px;
-	}
-
-	.hero_image .absolute {
-		position:relative;
-		top:0;
-	}
 
 	.relative .hero_image{
 		margin-top:0;
@@ -131,11 +84,6 @@ table .result td, table .result th {
 	.inner-section-small {
 		margin-bottom:32px;
 	}
-
-
-
-
-
 
 }
 

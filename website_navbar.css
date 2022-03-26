@@ -941,7 +941,8 @@ button.carousel__button svg {
 
 
 	.hero_image {
-		padding:0 64px;
+		margin:0 64px;
+    padding:0;
 	}
 
   .hero_image img {
@@ -966,6 +967,7 @@ button.carousel__button svg {
 	.hero_image {
 		width:100%;
 		padding:0;
+    margin:0;
 	}
   .hero_image img {
 		border-radius:0;
