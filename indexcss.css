@@ -187,6 +187,12 @@ footer {
 
 }
 
+@media only screen and (max-width:800px) {
+  .subdescription p{
+    line-height:24px;
+  }
+}
+
 @media only screen and (max-width:768px){
   .top-section {
     margin-top:25vh;
@@ -226,5 +232,9 @@ footer {
 
     left:0;
 
+  }
+
+  .subdescription p{
+    line-height:20px;
   }
 }
