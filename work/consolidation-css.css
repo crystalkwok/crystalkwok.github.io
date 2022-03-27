@@ -34,7 +34,7 @@
 	font-weight:400;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1320px) and (min-width:1201px) {
 	.hero_image {
 		width:100%;
 	}
@@ -46,23 +46,34 @@
 
 @media (max-width: 1200px) {
 
-
-
 	.stacked-images {
 		margin-top:32px;
 	}
-}
-
-@media (max-width: 1035px) {
 
 	.relative .hero_image {
-		margin-top: 300px;
+		margin-top: 328px;
+	}
+
+
+}
+
+@media (max-width: 1110px) {
+
+	.relative .hero_image {
+		margin-top: 264px;
 	}
 }
 
+@media (max-width: 990px) {
+
+	.relative .hero_image {
+		margin-top: 200px;
+	}
+}
+
+
+
 @media (max-width: 904px) {
-
-
 
 	.body {
 		padding-bottom:96px;

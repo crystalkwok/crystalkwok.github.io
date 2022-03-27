@@ -1,36 +1,24 @@
 
 
-@media (max-width: 1320px) {
-	.hero_image {
-		width:100%;
-	}
-  .hero_image img {
-		border-radius:0;
-		width:100%;
-	}
-}
 
-@media (max-width: 1200px) {
-
-	.relative .hero_image{
-		margin-top:400px;
-	}
-}
-
-@media (max-width: 1035px) {
+@media only screen and (max-width: 1165px) and (min-width:1000px) {
 
 	.relative .hero_image {
-		margin-top: 300px;
+		margin-top: 350px;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (min-width:905px) {
+
+	.relative .hero_image {
+		margin-top: 250px;
 	}
 }
 
 @media (max-width: 904px) {
-
 	.body {
 		padding-bottom:96px;
 	}
-
-
 }
 
 @media (max-width: 796px) {

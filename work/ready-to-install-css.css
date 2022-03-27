@@ -1,5 +1,5 @@
 .relative .hero_image {
-	margin-top: 648px;
+	margin-top: 656px;
 }
 
 
@@ -59,18 +59,45 @@ table .result td, table .result th {
 	margin-bottom:0px;
 }
 
+@media (max-width: 1250px) {
+
+	.relative .hero_image {
+		margin-top: 600px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.relative .hero_image {
+		margin-top: 512px;
+	}
+}
+
+@media (max-width: 1110px) {
+
+	.relative .hero_image {
+		margin-top: 450px;
+	}
+}
 
 @media (max-width: 1035px) {
 
 	.relative .hero_image {
-		margin-top: 300px;
+		margin-top: 400px;
+	}
+}
+
+@media (max-width: 952px) {
+
+	.relative .hero_image {
+		margin-top: 350px;
 	}
 }
 
 @media (max-width: 904px) {
 
 	.relative .hero_image{
-		margin-top:0;
+		margin-top:32px;
 	}
 
 	.hero_image_container {
