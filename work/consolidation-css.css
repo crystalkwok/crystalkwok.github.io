@@ -26,6 +26,7 @@
 .step .number {
 	position:absolute;
 	left:-40px;
+	margin-top:26px;
 	width:100%;
 	font-family:'Abhaya Libre', sans-serif;
 	font-size:28px;
