@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Magi Christmas Verse Hangman</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Crimson Pro"', 'serif'],
+              sans: ['"DM Sans"', 'sans-serif'],
+            },
+            colors: {
+              black: '#111111',
+              white: '#ffffff',
+            }
+          },
+        },
+      }
+    </script>
+    
+    <style>
+      body {
+        background-color: #fdfbf7;
+        color: #111111;
+      }
+      /* Selection color for bold feel */
+      ::selection {
+        background: #064e3b;
+        color: #fff;
+      }
+      .fade-in-zoom {
+        animation: fadeInZoom 0.3s ease-out forwards;
+      }
+      @keyframes fadeInZoom {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start p-4 md:p-12 font-sans bg-[#fdfbf7] text-slate-900">
+
+    <!-- Decorative Top Border -->
+    <div class="fixed top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-900 via-red-800 to-emerald-900 z-50"></div>
+
+    <!-- Header -->
+    <header class="w-full max-w-7xl flex flex-col md:flex-row md:justify-between md:items-end mb-8 md:mb-16 border-b border-emerald-900/20 pb-6 mt-4 relative">
+        <div class="relative">
+             <!-- Minimalist Star Decoration (SVG) -->
+            <div class="absolute -top-6 -left-6 text-amber-500/20 hidden md:block">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter uppercase leading-none text-emerald-950 relative z-10">
+                Secret Magi Christmas
+                <span class="block text-red-900 font-serif italic normal-case tracking-normal">Verse Hangman</span>
+            </h1>
+            <p class="mt-4 text-sm md:text-lg font-medium text-emerald-800/60 max-w-2xl leading-relaxed">
+                Hi Toby! Find out the verse all the way to the end (there's more after you figure it out), and find the reference. (P.S. hope you like Captain America!)
+            </p>
+        </div>
+        
+        <div class="flex flex-row md:flex-col justify-between items-end gap-2 mt-4 md:mt-0">
+           <div id="status-display" class="text-xs md:text-sm font-bold uppercase tracking-widest text-emerald-800/50">
+             Attempts: 0
+           </div>
+           <button 
+            id="reset-btn"
+            class="group flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-emerald-900 hover:text-red-700 transition-colors"
+           >
+            Reset
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-500"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+           </button>
+        </div>
+    </header>
+
+    <!-- Main Game Area -->
+    <main class="w-full max-w-7xl grid grid-cols-[110px_1fr] md:grid-cols-12 gap-4 md:gap-24 items-start">
+        
+        <!-- Drawing Column -->
+        <div class="md:col-span-4 sticky top-4">
+           <div id="hangman-container" class="bg-white border-2 border-emerald-900/10 w-full h-[160px] md:h-auto md:aspect-square rounded-sm flex items-center justify-center relative shadow-sm p-0">
+              <div class="absolute top-2 left-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900/20">Figure</div>
+              <!-- SVG Injected Here -->
+           </div>
+        </div>
+
+        <!-- Word Display & Keyboard Column -->
+        <div class="md:col-span-8 flex flex-col gap-8 md:gap-16 pt-2 md:pt-0">
+          
+          <!-- The Verse Display -->
+          <div class="w-full">
+             <div class="mb-2 md:mb-4 text-[10px] md:text-xs font-bold uppercase tracking-widest text-emerald-900/30">Puzzle</div>
+             <div id="word-display" class="flex flex-wrap gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-8 w-full font-serif text-xl md:text-4xl leading-relaxed text-emerald-950">
+                <!-- Word Spans Injected Here -->
+             </div>
+          </div>
+
+          <!-- Keyboard -->
+          <div class="w-full col-span-2 md:col-span-1 mt-8 md:mt-0">
+             <div class="mb-2 md:mb-4 text-[10px] md:text-xs font-bold uppercase tracking-widest text-emerald-900/30">Input</div>
+             <div id="keyboard" class="flex flex-wrap gap-1 md:gap-2 w-full max-w-4xl">
+                 <!-- Keys Injected Here -->
+             </div>
+          </div>
+        </div>
+    </main>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+        <!-- Modal content injected via JS -->
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        // --- Constants & Config ---
+        const VERSE_TEXT = "The Word became flesh and made his dwelling among us.";
+        
+        // Colors
+        const COLORS = {
+            stroke: "#064e3b",
+            tree: "#15803d",
+            wood: "#78350f",
+            blue: "#2563EB",
+            red: "#DC2626",
+            white: "#FFFFFF",
+            skin: "#FFD6A5",
+            gold: "#fbbf24",
+            wreathGreen: "#14532d",
+            ornamentRed: "#ef4444",
+            ornamentGold: "#f59e0b",
+            ornamentBlue: "#3b82f6"
+        };
+
+        const KEYS = [
+          "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+          "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+        ];
+
+        // --- State ---
+        let state = {
+            guessedLetters: new Set(),
+            mistakes: 0,
+            isWinner: false,
+            lettersToGuess: new Set()
+        };
+
+        // --- Init ---
+        function initLettersToGuess() {
+            const letters = new Set();
+            for (const char of VERSE_TEXT) {
+                if (char.match(/[a-zA-Z]/)) {
+                    letters.add(char.toUpperCase());
+                }
+            }
+            state.lettersToGuess = letters;
+        }
+
+        function resetGame() {
+            state.guessedLetters.clear();
+            state.mistakes = 0;
+            state.isWinner = false;
+            
+            // Re-render UI
+            renderAll();
+            
+            // Hide modal
+            document.getElementById('modal-container').classList.add('hidden');
+        }
+
+        function checkWin() {
+            const isWinner = Array.from(state.lettersToGuess).every(letter => state.guessedLetters.has(letter));
+            if (isWinner && !state.isWinner) {
+                state.isWinner = true;
+                triggerConfetti();
+                setTimeout(() => showModal(), 500); // Small delay before modal
+            }
+            renderStatus();
+            renderKeyboard();
+            renderWordDisplay();
+        }
+
+        function handleGuess(letter) {
+            letter = letter.toUpperCase();
+            if (state.isWinner || state.guessedLetters.has(letter)) return;
+
+            state.guessedLetters.add(letter);
+
+            if (!state.lettersToGuess.has(letter)) {
+                state.mistakes++;
+            }
+
+            renderHangman();
+            renderKeyboard();
+            renderWordDisplay();
+            renderStatus();
+            checkWin();
+        }
+
+        // --- Rendering ---
+
+        function renderAll() {
+            renderStatus();
+            renderHangman();
+            renderWordDisplay();
+            renderKeyboard();
+        }
+
+        function renderStatus() {
+            const el = document.getElementById('status-display');
+            el.innerText = state.isWinner ? "Status: Solved" : `Attempts: ${state.guessedLetters.size}`;
+        }
+
+        function renderWordDisplay() {
+            const container = document.getElementById('word-display');
+            container.innerHTML = '';
+
+            const words = VERSE_TEXT.split(' ');
+            
+            words.forEach((word, wordIndex) => {
+                const wordDiv = document.createElement('div');
+                wordDiv.className = "flex whitespace-nowrap gap-[1px] md:gap-[2px]";
+                
+                word.split('').forEach((char, charIndex) => {
+                    const isLetter = char.match(/[a-zA-Z]/);
+                    const upperChar = char.toUpperCase();
+                    const isGuessed = state.guessedLetters.has(upperChar);
+                    const isVisible = isGuessed || !isLetter;
+                    
+                    const charWrapper = document.createElement('span');
+                    charWrapper.className = "flex flex-col items-center justify-end min-w-[10px] md:min-w-[20px]";
+                    
+                    const charSpan = document.createElement('span');
+                    charSpan.className = `text-emerald-950 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200 select-none mb-1`;
+                    charSpan.innerText = char;
+                    
+                    const lineSpan = document.createElement('span');
+                    lineSpan.className = isLetter ? "w-full h-[2px] md:h-[3px] bg-emerald-900/30" : "w-full h-[2px] md:h-[3px] bg-transparent";
+
+                    charWrapper.appendChild(charSpan);
+                    charWrapper.appendChild(lineSpan);
+                    wordDiv.appendChild(charWrapper);
+                });
+
+                container.appendChild(wordDiv);
+            });
+        }
+
+        function renderKeyboard() {
+            const container = document.getElementById('keyboard');
+            container.innerHTML = '';
+
+            KEYS.forEach(key => {
+                const isActive = state.guessedLetters.has(key) && state.lettersToGuess.has(key);
+                const isInactive = state.guessedLetters.has(key) && !state.lettersToGuess.has(key);
+                const disabled = state.isWinner || isActive || isInactive;
+
+                let classes = "h-10 w-8 md:h-12 md:w-12 text-sm md:text-base font-bold transition-all duration-200 rounded-sm ";
+                
+                if (isActive) {
+                    classes += "bg-emerald-900 text-amber-400 border border-emerald-900 cursor-default shadow-inner";
+                } else if (isInactive) {
+                    classes += "bg-red-50 text-red-900/30 border border-transparent cursor-default opacity-50";
+                } else {
+                    classes += "bg-white text-emerald-950 border border-emerald-900/20 hover:border-emerald-900 hover:bg-emerald-900 hover:text-white hover:shadow-lg";
+                }
+
+                const btn = document.createElement('button');
+                btn.className = classes;
+                btn.innerText = key;
+                btn.disabled = disabled;
+                btn.onclick = () => handleGuess(key);
+                
+                container.appendChild(btn);
+            });
+        }
+
+        function renderHangman() {
+            const container = document.getElementById('hangman-container');
+            const mistakes = state.mistakes;
+
+            // Parts Logic
+            // 1. Head
+            // 2. Body
+            // 3. Right Arm + Shield (Wreath)
+            // 4. Left Arm
+            // 5. Left Leg
+            // 6. Right Leg
+            
+            const showHead = mistakes >= 1;
+            const showBody = mistakes >= 2;
+            const showRightArmShield = mistakes >= 3;
+            const showLeftArm = mistakes >= 4;
+            const showLegLeft = mistakes >= 5;
+            const showLegRight = mistakes >= 6;
+
+            // Build SVG String
+            const svgContent = `
+            <svg viewBox="0 0 200 240" class="w-full h-full overflow-visible">
+                
+                <!-- Tree Trunk / Base -->
+                <rect x="52" y="210" width="16" height="20" fill="${COLORS.wood}" />
+                
+                <!-- The Christmas Tree -->
+                <g>
+                    <!-- Bottom Tier -->
+                    <path d="M 20 210 L 100 210 L 60 150 Z" fill="${COLORS.tree}" />
+                    <circle cx="35" cy="200" r="3" fill="${COLORS.ornamentRed}" />
+                    <circle cx="85" cy="200" r="3" fill="${COLORS.ornamentGold}" />
+                    <circle cx="60" cy="190" r="3" fill="${COLORS.ornamentBlue}" />
+                    <circle cx="45" cy="170" r="2" fill="#fff" class="animate-pulse" />
+                    <circle cx="75" cy="170" r="2" fill="#fff" class="animate-pulse" style="animation-delay: 0.5s" />
+
+                    <!-- Middle Tier -->
+                    <path d="M 30 160 L 90 160 L 60 100 Z" fill="${COLORS.tree}" />
+                    <circle cx="45" cy="150" r="3" fill="${COLORS.ornamentGold}" />
+                    <circle cx="75" cy="150" r="3" fill="${COLORS.ornamentRed}" />
+                    <circle cx="60" cy="130" r="3" fill="${COLORS.ornamentBlue}" />
+                    <circle cx="50" cy="120" r="2" fill="#fff" class="animate-pulse" style="animation-delay: 1s" />
+                    <circle cx="70" cy="120" r="2" fill="#fff" class="animate-pulse" style="animation-delay: 0.2s" />
+
+                    <!-- Top Tier -->
+                    <path d="M 40 110 L 80 110 L 60 20 Z" fill="${COLORS.tree}" />
+                    <circle cx="55" cy="90" r="3" fill="${COLORS.ornamentRed}" />
+                    <circle cx="65" cy="90" r="3" fill="${COLORS.ornamentGold}" />
+                    <circle cx="60" cy="60" r="2" fill="#fff" class="animate-pulse" style="animation-delay: 0.7s" />
+                </g>
+                
+                <!-- Star -->
+                <path transform="translate(60, 20) scale(1.5)" d="M 0 -10 L 2.5 -2.5 L 10 -2.5 L 4 2 L 6 10 L 0 5 L -6 10 L -4 2 L -10 -2.5 L -2.5 -2.5 Z" fill="${COLORS.gold}" stroke="#b45309" stroke-width="0.5" />
+
+                <!-- Beam -->
+                <line x1="60" y1="35" x2="140" y2="35" stroke="${COLORS.wood}" stroke-width="6" stroke-linecap="round" />
+                <line x1="140" y1="35" x2="140" y2="50" stroke="${COLORS.wood}" stroke-width="3" />
+
+                <!-- Captain America -->
+                
+                <!-- 1. Head -->
+                <g style="display: ${showHead ? 'block' : 'none'}">
+                    <circle cx="140" cy="75" r="24" fill="${COLORS.skin}" />
+                    <path d="M 116 75 A 24 24 0 1 1 164 75 Z" fill="${COLORS.blue}" />
+                    <text x="140" y="68" text-anchor="middle" fill="${COLORS.white}" font-size="14" font-weight="900" font-family="sans-serif">A</text>
+                    <circle cx="132" cy="80" r="2.5" fill="black" />
+                    <circle cx="148" cy="80" r="2.5" fill="black" />
+                </g>
+
+                <!-- 2. Body -->
+                <g style="display: ${showBody ? 'block' : 'none'}">
+                    <rect x="120" y="100" width="40" height="45" rx="8" fill="${COLORS.blue}" />
+                    <polygon points="140,110 142,116 148,116 143,120 145,126 140,122 135,126 137,120 132,116 138,116" fill="${COLORS.white}" />
+                    <rect x="125" y="130" width="4" height="15" fill="${COLORS.white}" />
+                    <rect x="133" y="130" width="4" height="15" fill="${COLORS.red}" />
+                    <rect x="143" y="130" width="4" height="15" fill="${COLORS.white}" />
+                    <rect x="151" y="130" width="4" height="15" fill="${COLORS.red}" />
+                </g>
+
+                <!-- 3. Right Arm (Holding Shield logic) - NOW 3rd MISTAKE -->
+                <g style="display: ${showRightArmShield ? 'block' : 'none'}">
+                    <rect x="164" y="105" width="16" height="35" rx="8" fill="${COLORS.blue}" transform="rotate(-20 160 110)" />
+                    <circle cx="174" cy="142" r="7" fill="${COLORS.red}" />
+                    
+                    <!-- Shield with Wreath -->
+                     <g transform="translate(176, 132) rotate(-15)">
+                        <!-- Wreath Leaves Loop -->
+                        ${Array.from({length: 12}).map((_, i) => 
+                            `<path d="M 0 0 Q 5 -4 10 0 Q 5 4 0 0" fill="${COLORS.wreathGreen}" stroke="#052e16" stroke-width="0.5" transform="rotate(${i * 30}) translate(21, -4) rotate(60)" />`
+                        ).join('')}
+                        ${Array.from({length: 12}).map((_, i) => 
+                            `<path d="M 0 0 Q 4 -3 8 0 Q 4 3 0 0" fill="#15803d" transform="rotate(${i * 30 + 15}) translate(22, -2) rotate(75)" />`
+                        ).join('')}
+
+                        <circle r="22" fill="${COLORS.red}" />
+                        <circle r="16" fill="${COLORS.white}" />
+                        <circle r="11" fill="${COLORS.red}" />
+                        <circle r="7" fill="${COLORS.blue}" />
+                        <polygon points="0,-5 1.5,-1.5 5,-1.5 2,1 3.5,5 0,2.5 -3.5,5 -2,1 -5,-1.5 -1.5,-1.5" fill="${COLORS.white}" />
+                        
+                        <!-- Berries -->
+                         <circle cx="0" cy="-28" r="3" fill="${COLORS.red}" stroke="#7f1d1d" stroke-width="0.5" />
+                         <circle cx="26" cy="14" r="3" fill="${COLORS.red}" stroke="#7f1d1d" stroke-width="0.5" />
+                         <circle cx="-26" cy="14" r="3" fill="${COLORS.red}" stroke="#7f1d1d" stroke-width="0.5" />
+                     </g>
+                </g>
+
+                <!-- 4. Left Arm -->
+                <g style="display: ${showLeftArm ? 'block' : 'none'}">
+                     <rect x="100" y="105" width="16" height="35" rx="8" fill="${COLORS.blue}" transform="rotate(20 120 110)" />
+                     <circle cx="106" cy="142" r="7" fill="${COLORS.red}" />
+                </g>
+
+                <!-- 5. Left Leg -->
+                <g style="display: ${showLegLeft ? 'block' : 'none'}">
+                    <rect x="125" y="140" width="14" height="40" rx="6" fill="${COLORS.blue}" />
+                    <path d="M 124 170 L 140 170 L 140 185 L 122 185 Z" fill="${COLORS.red}" />
+                </g>
+
+                <!-- 6. Right Leg -->
+                <g style="display: ${showLegRight ? 'block' : 'none'}">
+                    <rect x="141" y="140" width="14" height="40" rx="6" fill="${COLORS.blue}" />
+                    <path d="M 140 170 L 156 170 L 158 185 L 140 185 Z" fill="${COLORS.red}" />
+                </g>
+
+            </svg>`;
+
+            // Inject existing Figure text overlay which is part of the HTML structure, only replace SVG
+            // But here we are injecting into #hangman-container which has the figure label inside it.
+            // Let's preserve the label.
+            const label = `<div class="absolute top-2 left-2 text-[10px] font-bold uppercase tracking-widest text-emerald-900/20">Figure</div>`;
+            container.innerHTML = label + svgContent;
+        }
+
+        function showModal() {
+            const container = document.getElementById('modal-container');
+            
+            const modalContent = `
+            <div class="absolute inset-0 bg-emerald-950/80 backdrop-blur-sm" onclick="resetGame()"></div>
+            <div class="bg-[#fdfbf7] text-emerald-950 w-full max-w-2xl relative p-8 md:p-12 border-4 border-double border-emerald-900 shadow-2xl fade-in-zoom">
+                <button onclick="resetGame()" class="absolute top-4 right-4 text-emerald-900/40 hover:text-red-700 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 md:w-8 md:h-8"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+
+                <div class="space-y-6 text-center md:text-left">
+                  <div class="flex flex-row items-center justify-between w-full relative">
+                    <div class="flex flex-col items-start z-10 max-w-[60%]">
+                      <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-2 text-emerald-900">
+                        CONGRATS!
+                      </h2>
+                      <div class="h-1 w-24 bg-red-800 mb-4"></div>
+                      <p class="text-emerald-800 font-bold text-sm md:text-base leading-tight">
+                        But you're not done yet! Take a look at the clue below.
+                      </p>
+                    </div>
+
+                    <!-- Jumping Cap Animation SVG -->
+                    <div class="relative h-40 w-40 md:h-64 md:w-64 shrink-0 -my-8 -mr-8 md:-mr-12">
+                       <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible animate-bounce">
+                          <g transform="translate(50, 50)">
+                             <!-- Legs -->
+                             <path d="M -5 20 L -12 40" stroke="${COLORS.blue}" stroke-width="8" stroke-linecap="round" />
+                             <path d="M 5 20 L 12 40" stroke="${COLORS.blue}" stroke-width="8" stroke-linecap="round" />
+                             <path d="M -12 40 L -15 45" stroke="${COLORS.red}" stroke-width="8" stroke-linecap="round" />
+                             <path d="M 12 40 L 15 45" stroke="${COLORS.red}" stroke-width="8" stroke-linecap="round" />
+
+                             <!-- Torso -->
+                             <rect x="-10" y="-10" width="20" height="35" rx="4" fill="${COLORS.blue}" />
+                             <circle cx="0" cy="5" r="4" fill="${COLORS.white}" />
+                             <rect x="-5" y="15" width="10" height="10" fill="${COLORS.white}" opacity="0.5" />
+
+                             <!-- Head -->
+                             <circle cx="0" cy="-20" r="12" fill="${COLORS.blue}" />
+                             <text x="0" y="-22" text-anchor="middle" fill="${COLORS.white}" font-size="8" font-weight="bold" font-family="sans-serif">A</text>
+                             <path d="M -8 -18 Q 0 -10 8 -18 L 8 -12 Q 0 -2 -8 -12 Z" fill="${COLORS.skin}" />
+
+                             <!-- Arms -->
+                             <path d="M -10 -5 L -25 -25" stroke="${COLORS.blue}" stroke-width="6" stroke-linecap="round" />
+                             <path d="M 10 -5 L 25 -25" stroke="${COLORS.blue}" stroke-width="6" stroke-linecap="round" />
+                             <circle cx="-25" cy="-25" r="5" fill="${COLORS.red}" />
+                             <circle cx="25" cy="-25" r="5" fill="${COLORS.red}" />
+
+                             <!-- Shield -->
+                             <g transform="translate(25, -35) rotate(-10)">
+                                <circle r="10" fill="${COLORS.red}" />
+                                <circle r="7" fill="${COLORS.white}" />
+                                <circle r="5" fill="${COLORS.red}" />
+                                <circle r="3" fill="${COLORS.blue}" />
+                                <polygon points="0,-2 1,-1 3,-1 1,1 2,3 0,1.5 -2,3 -1,1 -3,-1 -1,-1" fill="${COLORS.white}" />
+                             </g>
+                         </g>
+                       </svg>
+                    </div>
+                  </div>
+
+                  <p class="text-lg md:text-xl text-emerald-800 font-serif leading-relaxed italic">
+                    "The Word became flesh..." <br/>
+                    You have revealed the truth.
+                  </p>
+
+                  <div class="space-y-4">
+                    <div class="border border-emerald-900/10 p-6 md:p-8 flex items-center gap-6 bg-emerald-50 rounded-sm text-left">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-red-800"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>
+                       <div>
+                          <span class="block text-xs uppercase tracking-widest text-emerald-600 font-bold mb-1">Destination</span>
+                          <span class="block text-xl md:text-3xl font-bold tracking-tight leading-tight text-emerald-950">
+                            The church library
+                          </span>
+                       </div>
+                    </div>
+
+                    <div class="text-center md:text-left text-emerald-900 text-sm md:text-base bg-emerald-50 p-3 rounded-sm border border-emerald-900/10">
+                        <span class="font-bold">Next challenge (do after 1pm on Sunday!): <br> <i> Know the reference? </i></span> <span class="font-serif italic font-bold text-emerald-950">ShelfRow(#+2) : Book#</span>
+                    </div>
+                  </div>
+                  
+                  <p class="text-center md:text-left text-pink-600 font-bold uppercase tracking-widest text-sm mt-2">
+                    Hint: pink post-its are for you!
+                  </p>
+
+                  <button onclick="resetGame()" class="w-full bg-emerald-900 text-white py-4 font-bold uppercase tracking-widest hover:bg-emerald-800 transition-colors shadow-lg mt-2">
+                    Play Again
+                  </button>
+                </div>
+            </div>`;
+            
+            container.innerHTML = modalContent;
+            container.classList.remove('hidden');
+        }
+
+        function triggerConfetti() {
+            const duration = 3000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 100 };
+            const colors = ['#d97706', '#b45309', '#991b1b', '#065f46'];
+
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                const particleCount = 50 * (timeLeft / duration);
+                
+                confetti({ ...defaults, particleCount, colors, origin: { x: 0.1 + Math.random() * 0.2, y: Math.random() - 0.2 } });
+                confetti({ ...defaults, particleCount, colors, origin: { x: 0.7 + Math.random() * 0.2, y: Math.random() - 0.2 } });
+            }, 250);
+        }
+
+        // --- Event Listeners ---
+        document.getElementById('reset-btn').addEventListener('click', resetGame);
+        
+        document.addEventListener('keypress', (e) => {
+            const key = e.key.toUpperCase();
+            if (key.match(/^[A-Z]$/)) {
+                e.preventDefault();
+                handleGuess(key);
+            }
+        });
+
+        // --- Boot ---
+        initLettersToGuess();
+        renderAll();
+
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

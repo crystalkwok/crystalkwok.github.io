@@ -1,0 +1,7 @@
+{
+  "name": "Heroic Rocker: Deck the Halls",
+  "description": "A high-energy Rock and Roll rhythm game featuring a custom procedural version of Deck the Halls. Hit the beats with your favorite heroes!",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Verse Hangman",
+  "description": "A classic Hangman game featuring a specific Bible verse. Solve the puzzle to reveal the location of your prize.",
+  "requestFramePermissions": []
+}
